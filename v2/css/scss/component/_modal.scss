@@ -1,0 +1,65 @@
+@charset "UTF-8";
+
+// layer popup, confirm, alert
+
+.popup{
+    position:fixed;
+    width:56.1rem;
+    background:#fff;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+    display:none;
+    &.md{
+        width:76.8rem;
+    }
+    &.lg{
+        width:145.1rem;
+    }
+    .popup-title{
+        position: relative;
+        padding:4rem 4rem 4.5rem 4rem;
+        font-size:2rem;
+        //color:$bk-color;
+        font-weight: 300;
+    }
+    .popup-sub-title {
+        position: absolute;
+        left:4rem;
+        bottom: 1.6rem;
+        font-size: 1.3rem;
+        font-weight: $font-weight-medium;
+    }
+    .popup-body{
+        padding:0 4rem 4rem 4rem;
+        box-sizing: border-box;
+        .inner{
+            overflow: auto;
+        }
+    }
+    .popup-btn{
+        display:flex;
+        padding:0 4rem 4rem 4rem;
+        .btn-type01 + .btn-type03{
+            margin-left:1.5rem;
+        }
+        .btn-type01, .btn-type03{
+            height:60px;
+            line-height: 60px;
+            flex:1;
+            font-size:1.8rem;
+            display:block;
+        }
+    }
+}
+.popup-bg{
+    z-index:9;
+    background:rgba(0,0,0,0.8);
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    display:none;
+}

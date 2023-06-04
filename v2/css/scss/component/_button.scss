@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+// button
+button.disabled {opacity: .2;cursor: default;}
+.btn-type01{
+    color:#fff;
+    background:#FF5D16;
+}
+.btn-type02{
+    color:#fff;
+    background:#FFDFD0;
+}
+.btn-type03{
+    color:#FF5D16;
+    border:solid .1rem #FFDFD0;
+    box-sizing: border-box ;
+}
+.btn-type04{ 
+    color:#000;
+    border:solid .1rem #D4D4D4;
+    box-sizing: border-box ;
+}
+.btn-type01, .btn-type02, .btn-type03, .btn-type04{
+    font-weight: 600;
+    height:4rem;
+    line-height: 4rem;
+    font-size:1.4rem;
+    border-radius: .2rem;
+    padding:0 2rem;
+    font-family: $font-family-apply;
+    box-sizing: border-box;
+    &.sm{
+        height:28px;
+        line-height: 28px;
+        font-size:1.3rem;
+        padding:0 1rem;
+    }
+}
+.btn-reset{
+    height:4rem;
+    line-height: 4rem;
+    font-size:1.4rem;
+    color:#000;
+    border-radius: .2rem;
+    border:solid .1rem #000;
+    padding:0 2rem;
+    box-sizing: border-box ;
+    font-family: $font-family-apply;
+}
+.btn-reset{
+    i{
+        display:inline-block;
+        margin-right:.6rem;
+        width:1rem;
+        img{
+            width:100%;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+// textarea, input text
+input[type="text"]:disabled,input[type="password"]:disabled, input[type="number"]:disabled{
+    background:#E9E9E9;
+    border:solid 1px #ccc;
+}
+input[type="text"]:disabled::placeholder, input[type="password"]:disabled::placeholder, input[type="number"]:disabled::placeholder{
+    color:#ccc;
+}
+input[type="text"], input[type="password"], input[type="number"]{
+    border:solid 1px #E9E9E9;
+    height:40px; 
+    line-height: 40px; 
+    border-radius: 2px; 
+    font-size:13px; 
+    padding:0 20px;
+    width:100%; 
+    box-sizing: border-box;
+}
+input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder{
+    color:#E9E9E9;
+}
+input[type="number"]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.input-date {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	width: 220px;
+	padding: 6px 10px;
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	background-color: #fff;
+	>input {
+		display: block;
+		margin: 0;
+		padding: 0;
+		height: 26px;
+		width: 100%;
+		border: 0 none;
+		font-size: 16px;
+		color: #222;
+		background-color: transparent;
+		outline: 0;
+        position: relative;
+        padding-right: 28px;
+        z-index: 2;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        right: 9px;
+        top: 50%;
+        display: block;
+        width: 23px;
+        height: 23px;
+        margin-top: -11.5px;
+        background: url(/UIDev/v2/images/icon/calendar.png) no-repeat;
+        background-position: 0 0;
+        background-size:23px;
+    }
+    &.readonly, &.disabled {
+        background-color: #E9E9E9;
+        >input {
+            cursor: default;
+            outline: none;
+        }
+    }
+}

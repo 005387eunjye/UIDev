@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+// form, form title, complex form ...
+
+
+//checkbox
+.form-chk{
+    position:relative;
+    input[type="checkbox"]{
+        display:none;
+        width:0;
+        height:0;
+        border:0 none;
+        font-size:0;
+        &:checked{
+            &+label::before{
+                background-color:#fff;
+                background-image: url(/UIDev/v2/images/icon/checked.png);
+                border:solid 1px #FF5D16;
+            }
+        }
+        & + label{
+            cursor:pointer;
+            &:before{
+                content:'';
+                display:inline-block;
+                border-radius:50%;
+                border:1px solid #ddd;
+                background-color:#ddd;
+                background-image: url(/UIDev/v2/images/icon/check.png);
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size:7px;
+                width:18px;
+                height:18px; 
+                text-align: center; 
+                font-size:10px; 
+                margin-right:5px; 
+                vertical-align:middle
+            }
+        }
+    }
+}
+//radio
+.form-radio input[type="radio"]{
+    display:none;
+    width:1;
+    height:1;
+    &:checked{
+        &+label{
+            &::before{
+                border:solid 1px #FF5D16;
+            }
+            &:after{
+                background:#FF5D16; 
+            }
+        }
+    }
+    & + label{
+        padding-left:23px;
+        position:relative;
+        &::before{
+            width:18px;
+            height:18px;
+            content: '';
+            position:absolute;
+            left:0;
+            top:50%;
+            transform: translateY(-50%);
+            border:solid 1px #ddd;
+            border-radius: 100%;
+        }
+        &::after{
+            width:8px;
+            height:8px;
+            content: '';
+            position:absolute;
+            left:5.5px;
+            top:50%;
+            transform: translateY(-50%);
+            background:#ddd;
+            border-radius: 100%;
+        }
+    }
+}
+
+// textarea
+.txar-tp1 {
+	display: block;
+	width: 100%;
+    padding: 1.6rem 2rem;
+	border: 1px solid #E9E9E9;
+	border-radius: .6rem;
+    box-sizing: border-box;
+    font-family: $font-family-apply;
+	//font-size: 16px;
+	//color: #222;
+	resize: none;
+	&::placeholder {
+		color: #999;
+	}
+	background-color: #fff;
+}

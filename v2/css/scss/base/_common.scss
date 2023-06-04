@@ -1,0 +1,100 @@
+@charset "UTF-8";
+// 스타일링용 클래스
+
+// 접근성용 hidden
+.a11y-hidden {
+    @include a11y-hidden;
+}
+
+// display none 
+.display-none {
+    display: none !important;
+}
+
+// 텍스트 정렬
+.tal {
+    text-align: left !important;
+}
+.tar {
+    text-align: right !important;
+}
+.tac {
+    text-align: center !important;
+}
+
+// font family
+.font-kb {
+    font-family: $font-family-apply !important;
+}
+.font-normal {
+    font-family: $font-family-normal !important;
+}
+
+// font 굵기
+.fw-regular {
+    font-weight: $font-weight-regular !important;
+}
+.fw-medium {
+    font-weight: $font-weight-medium !important;
+}
+.fw-light {
+    font-weight: $font-weight-light !important;
+}
+.fw-bold {
+    font-weight: $font-weight-bold !important;
+}
+
+// gap
+.mg-none {
+    margin: none !important;
+}
+.mg-auto {
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.mgt-xxs {
+    margin-top: 0.4rem !important;
+}
+.mgt-xs {
+    margin-top: 0.8rem !important;
+}
+.mgt-s {
+    margin-top: 1.2rem !important;
+}
+.mgt-m {
+    margin-top: 1.6rem !important;
+}
+.mgt-l {
+    margin-top: 2rem !important;
+}
+.mgt-xl {
+    margin-top: 2.4rem !important;
+}
+
+.mgb-xxs {
+    margin-bottom: 0.4rem !important;
+}
+.mgb-xs {
+    margin-bottom: 0.8rem !important;
+}
+.mgb-s {
+    margin-bottom: 1.2rem !important;
+}
+.mgb-m {
+    margin-bottom: 1.6rem !important;
+}
+.mgb-l {
+    margin-bottom: 2rem !important;
+}
+.mgb-xl {
+    margin-bottom: 2.4rem !important;
+}
+.mgl-m {
+    margin-left: 1.6rem !important;
+}
+.mgl-xl {
+    margin-left: 2.4rem !important;
+}
+.gap40 {padding-right:4rem;}
+.gap80 {padding-right:8rem;}

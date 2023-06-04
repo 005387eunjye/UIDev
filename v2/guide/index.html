@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차 딜러사이드 PC UI Guide</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+    <style>
+        .guide-content h3{
+            font-size:30px;
+            margin-top:20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .guide-content + .guide-content{margin-top:30px; border-top:solid 1px #eee; padding:30px 0;}
+        .guide-content .col dl dt{font-size:18px; font-weight: bold;}
+        .guide-content .col dl dd + dd{margin-top:10px;}
+        .guide-content ol{display:flex; }
+        .guide-content ol li div{padding-top:40px;position:relative; color:#fff; width:100px;}
+        .guide-content ol li + li{margin-left: 20px; }
+        .guide-content ol + ol{margin-top:10px;}
+        .main-color{background:#FF5D16;}
+        .sc-color{background:#FFCC00;}
+        .pt-color{background:#326FC8;}
+        .bk-color{background:#000;}
+        .wt-color{background:#fff;}
+        .sub-color1{background:#4F4F4F;}
+        .sub-color2{background:#757575;}
+        .sub-color3{background:#9999;}
+        .sub-color4{background:#E9E9E9;}
+        .sub-color5{background:#FFDFD0;}
+        .float-nav{
+            border-radius:4px;
+            background:#FFDFD0;
+            padding:15px;
+            position:fixed;
+            right:10px;
+            top:130px;
+            width:150px;
+            z-index:2;
+        }
+        .float-nav li + li{margin-top:10px;}
+        .float-nav li a{font-size:13px; display:block; color:#000; font-weight: bold;}
+    </style>
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <main class="body-area" id="wrap">
+
+        <header class="header-area"></header> <!-- common header-->
+
+        <!-- [Start] main-area -->
+        <section class="main-area">
+            <div class="section-area">
+                <div class="section-area-grid">
+                    <h2 class="title-area">
+                        KB차차차 딜러사이드 PC UI Guide
+                    </h2>
+                    <div class="float-nav">
+                        <ul>
+                            <li><a href="#Typograpy">Typograpy</a></li>
+                            <li><a href="#Color">Color</a></li>
+                            <li><a href="#Button">Button</a></li>
+                            <li><a href="#Icons">Icons</a></li>
+                            <li><a href="#Form">Form</a></li>
+                            <li><a href="#DropDown">DropDown</a></li>
+                            <li><a href="#ToolTip">ToolTip</a></li>
+                            <li><a href="#Modal">Modal</a></li>
+                            <li><a href="#Tab">Tab</a></li>
+                            
+                            <li><a href="http://localhost:9090/UIDev/v2/guide/pc_pagelist.html" target="_blank" style="background:#326FC8; color:#fff; border-radius: 8px; padding:10px;">PC Pub List</a></li>
+                            <li><a href="http://localhost:9080/UIDev/v2/guide/mo_pagelist.html" target="_blank" style="background:#326FC8; color:#fff; border-radius: 8px; padding:10px;">MO Pub List</a></li>
+                        </ul>
+                    </div>
+                    <div class="section-area-cont font-kb">
+                        <div class="guide-content" id="Typograpy">
+                            <h3>Typograpy</h3>
+                            <div class="col">
+                                <dl>
+                                    <dt>PC</dt>
+                                    <dd style="font-weight: bold; font-size:13px;">Apple SD Gothic Neo B</dd>
+                                    <dd style="font-weight: 600; font-size:13px;">Apple SD Gothic Neo SB</dd>
+                                    <dd style="font-weight: 500; font-size:13px;">Apple SD Gothic Neo</dd>
+                                    <dd style="font-weight: 400; font-size:13px;">Apple SD Gothic Neo L</dd>
+                                    <dd style="font-weight: 300; font-size:13px;">Apple SD Gothic Neo T</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="guide-content" id="Color">
+                            <h3>Color</h3>
+                            <ol>
+                                <li>
+                                    <div class="main-color">$main-color</div>
+                                </li>
+                                <li>
+                                    <div class="sc-color">$sc-color</div>
+                                </li>
+                                <li>
+                                    <div class="pt-color">$pt-color</div>
+                                </li>
+                            </ol>
+                            <ol>
+                                <!-- <li>
+                                    <div class="bk-color">$bk-color</div>
+                                </li> -->
+                                <li>
+                                    <div class="wt-color" style="border: 1px solid #f0f0f0; color:#000;">$wt-color</div>
+                                </li>
+                            </ol>
+                            <ol>
+                                <li>
+                                    <div class="sub-color1">$sub-color1</div>
+                                </li>
+                                <li>
+                                    <div class="sub-color2">$sub-color2</div>
+                                </li>
+                                <li>
+                                    <div class="sub-color3">$sub-color3</div>
+                                </li>
+                                <li>
+                                    <div class="sub-color4">$sub-color4</div>
+                                </li>
+                                <li>
+                                    <div class="sub-color5">$sub-color5</div>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="guide-content" id="Button">
+                            <h3>Button</h3>
+                            <div class="button-guide">
+                                <button type="button" class="btn-type01">.btn-type01</button>
+                                <button type="button" class="btn-type02">.btn-type02</button>
+                                <button type="button" class="btn-type03">.btn-type03</button>
+                                <button type="button" class="btn-type04">.btn-type04</button>
+                                <button type="button" class="btn-reset"><i><img src="/UIDev/v2/images/icon/fi-rotate-cw.png" alt="reset"></i>.btn-reset</button>
+                                <button type="button" class="btn-type01 sm">.btn-type01.sm</button>
+                            </div>
+                        </div>
+                        <div class="guide-content" id="Icons">
+                            <h3>Icons</h3>
+                            <div class="icons-guide">
+                                <i><img src="/UIDev/v2/images/icon/fi-rotate-cw.png" alt="reset"></i>
+                                <i><img src="/UIDev/v2/images/icon/calendar.png" alt="reset"></i>
+                                <i><img src="/UIDev/v2/images/icon/close.png" alt="reset"></i>
+                                <i><img src="/UIDev/v2/images/icon/down.png" alt="reset"></i>
+                            </div>
+                        </div>
+                        <div class="guide-content" id="Form">
+                            <h3>Form</h3>
+                            <div class="forms-guide">
+                                <input type="text" placeholder="placeholder" >
+                                <input type="text" placeholder="placeholder" disabled style="margin-top:10px;">
+                                
+                                <span class="input-date mgt-s">
+                                    <input type="text" title="날짜">
+                                </span>
+                                
+                                <div class="custom-select-box mgt-s">
+                                    <span class="custom-select-selection">select</span>
+                                    <div class="custom-select-option-box">
+                                        <ul>
+                                            <li class="active">옵션1</li>
+                                            <li>옵션2</li>
+                                            <li>옵션3</li>
+                                            <li>옵션4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <figure class="form-chk" style="margin-top:20px;">
+                                    <input type="checkbox" id="chk00" />
+                                    <label for="chk00">checkbox-label</label>
+                                </figure>
+
+                                <div class="form-radio">
+                                    <input type="radio" id="delivery1" value="collect" name="delivery">
+                                    <label for="delivery1">radio-label</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guide-content" id="DropDown">
+                            <h3>DropDown</h3>
+                            <div class="forms-guide">
+                                <div class="drop-down-box">
+                                    <span class="drop-down-box-tit">
+                                        <a href="javascript:;">DropDown</a>
+                                    </span>
+                                    <ul class="drop-down-box-option">
+                                        <li>DropDownOption1</li><!--// 기본값-->
+                                        <li>DropDownOption2</li>
+                                        <li>DropDownOption3</li>
+                                        <li>DropDownOption4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="guide-content" id="ToolTip">
+                            <h3>ToolTip</h3>
+                            <div class="forms-guide">
+                                <span class="tooltip-btn">?<span class="tooltip">옵션정보 확인이 필요해요.<a>확인하기</a></span></span>
+                            </div>
+                        </div>
+                        <div class="guide-content" id="Modal">
+                            <h3>Modal</h3>
+                            <div class="forms-guide">
+                                <button type="button" class="btn-type01 pop-btn-js" data-target="#layerPop">LayerPopup</button>
+                                <button type="button" class="btn-type01 pop-btn-js" data-target="#layerPop">ConfirmPopup</button>
+                                <button type="button" class="btn-type01 pop-btn-js" data-target="#layerPop">AlertPopup</button>
+                            </div> 
+                        </div>
+                        <div class="guide-content" id="Tab">
+                            <h3>Tab</h3>
+                            <div class="tab-list">
+                                <ul>
+                                    <li class="on">
+                                        <a href="#tab01">tab01</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab02">tab02</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tab03">tab03</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content">
+                                <div id="tab01">
+                                    tab01 입니다.
+                                </div>
+                                <div id="tab02">
+                                    tab02 입니다.
+                                </div>
+                                <div id="tab03">
+                                    tab03 입니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- [Start] 페이지 전용 js -->
+            <script type="text/javascript">
+                ;(function ($, win, doc, undefined) {
+                    // do something...
+
+
+                    //smooth_move
+                    $('.float-nav li a').click(function(){
+                        $('html, body').animate({scrollTop : $($.attr(this, 'href')).offset().top})
+                    });
+
+
+                    
+                })(jQuery, window, document);
+            </script>
+            <!-- // [End] 페이지 전용 js -->
+
+        </section>
+        <!-- // [End] main-area -->
+
+        <footer class="footer-area"></footer> <!-- common footer -->
+    </main>
+
+<!--popup-->
+<div class="popup-bg"></div>
+<div class="popup" id="layerPop">
+    <h2 class="popup-title">
+        LayerPopup입니다.
+    </h2>
+    <div class="popup-body">
+        <div class="inner">
+            LayerPopup입니다.
+        </div>
+    </div>
+    <div class="popup-btn">
+        <button type="button" class="btn-type01">확인</button>
+        <button type="button" class="btn-type03 popup-close-btn">취소</button>
+    </div>
+</div>
+</body>
+</html>

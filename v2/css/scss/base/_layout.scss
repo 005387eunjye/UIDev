@@ -1,0 +1,621 @@
+html {
+    font-size: 10px;
+}
+body {
+    background-color: $bg-color-white;
+    font-family: $font-family-apply;
+    font-size: $font-size-normal;
+    color: $font-color-black;
+    word-break: break-all;
+    letter-spacing: -0.1rem;
+}
+.body-area {
+    min-width: $pc-min-width;
+    width: 100%;
+    height: 100%;
+}
+.main-area {
+    width: 100%;
+    min-height: calc(100% - 20rem);
+}
+.section-area {
+    @include common-layout;
+    display:flex;
+    padding-top:4.8rem;
+    padding-bottom: 10.5rem;
+    .section-area-grid {
+        width:102.1rem;
+        &.section-area-grid-full {
+            width: 100%;
+        }
+    }
+}
+
+.lnb{
+    width:23.9rem;
+    //color:$bk-color;
+    font-weight: $font-weight-bold;
+    font-size:1.8rem;
+    text-align: left;
+    .lnb-title{
+        margin-bottom: 4.25rem;
+    }
+    .lnb-list{
+        li + li{
+            margin-top:2.75rem;
+        }
+        a.active{
+            color:$main-color;
+            span:first-child::after{
+                background:$main-color;
+            }
+        }
+        a{
+            display:inline-block;
+            span{
+                vertical-align: middle;
+                display:inline-block;
+            }
+            span:first-child::after{
+                content: '';
+                width:.1rem;
+                height:1.6rem;
+                margin:0 1rem;
+                display:inline-block;
+                background:#000;
+                vertical-align: middle;
+                margin-top:-0.3rem;
+            }
+        }
+    }
+    .lnb-btn{
+        margin-top:3rem;
+        .btn-type03{
+            display:block;
+        }
+        .btn-type03 + .btn-type03{
+            margin-top:1rem;
+        }
+    }
+}
+
+
+.section-area-grid .title-area{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    .title{
+        font-size:2.4rem;
+        font-weight: $font-weight-bold;
+        //color:$bk-color;
+        line-height: 2.4rem;
+        strong{
+            color:$main-color;
+            margin-right:0.4rem;
+        }
+    }
+    .btn-type03{
+        display: block;
+    }
+}
+
+.car-search-area{
+    margin-top:2rem;
+    background:#FAF9F8;
+    padding:3rem 4rem;
+    border-radius: .6rem;
+    display:flex;
+    flex-wrap: wrap;
+    .car-search-area-option-box{
+        width:38.7rem;
+        margin-right:2rem;
+        display: flex;
+        align-items: center;
+        &:nth-child(2) .tit{
+            width:5rem;
+        }
+        &:nth-child(1), &:nth-child(2){
+            margin-bottom: 2rem;
+        }
+        .tit{
+            font-size:1.6rem;
+            font-weight: 600;
+            margin-right:2rem;
+            flex-shrink: 0;
+        }
+        .con{
+            flex-shrink: 0;
+            .custom-select-box, input{
+                width:32rem;
+            }
+            .input-date{
+                width:15.5rem;
+                
+            }
+            .input-date>input{
+                width:100%;
+            }
+            .btn-type01{
+                margin-left:2rem;
+            }
+        }
+    }
+}
+
+
+.car-search-result-area{
+    margin-top:5rem; 
+}
+.car-search-result-mode-area{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    &.justify-end {
+        justify-content: flex-end;
+    }
+    .car-search-result-mode-area-box{
+        display:flex;
+        align-items: center;
+    }
+    .total-num{
+        //color:$bk-color;
+        font-size:1.8rem;
+        font-weight: $font-weight-bold;
+        margin:0 2rem;
+        strong{
+            color:$main-color;
+            font-size:2rem;
+        }
+    }
+    .mode-area{
+        background:#FAF9F8;
+        padding:.5rem;
+        border-radius: .6rem;
+    }
+    .mode-area ul{
+        display:flex;
+    }
+    .mode-area ul li + li{
+        margin-left:1.2rem;
+    }
+    .mode-area ul li a{
+        width:10.1rem;
+        display:block;
+        color:#999999;
+        font-size:1.3rem;
+        height:3.3rem;
+        line-height: 3.3rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .mode-area ul li a.active{
+        background:#fff;
+        box-shadow: 0px 2px 2px 0px #0000000F;
+        border-radius: 4px;
+        color:$main-color;
+    }
+    .drop-down-box{
+        margin:0 1rem;
+    }
+}
+
+.car-search-result-table{
+    margin-top:1.8rem;
+    .car-btn-area{
+        margin-top:2rem;
+        .btn-type03 + .btn-type03{
+            margin-left:1rem;
+        }
+    }
+    &.type-sm {
+        margin-top: 0;
+        .car-info {
+            .car-info-detail {
+                .car-name {
+                    font-size: 1.6rem;
+                    line-height: 1.6rem;
+                    font-weight: 700;
+                }
+                .car-etc span {
+                    font-size: 1.3rem;
+                    color: #757575;
+                    line-height: 1.3rem;
+                    font-weight: 500;
+                }
+                .price {
+                    padding-top: .7rem;
+                    font-size: 1.4rem;
+                    line-height: 1.4rem;
+                    font-weight: 700;
+                    strong {
+                        color: #ff5d16;
+                        font-weight: 900;
+                        font-size: 1.6rem;
+                        line-height: 1.6rem;
+                    }
+                }
+            }
+        }
+    }
+    table{
+        width:100%;
+        border-bottom: solid .1rem #E9E9E9;
+        td{
+            vertical-align: middle;
+            text-align: center;
+            padding:2rem 0;
+            border-top: solid .1rem #E9E9E9;
+            .btn-type02{
+                cursor:default;
+                pointer-events: none;
+            }
+        }
+    }
+    .car-info{
+        display:flex;
+        align-items: center;
+        .thumb-img{
+            width:11.8rem;
+            margin-right:1.3rem;
+            border-radius: .6rem;
+            overflow: hidden;
+            border:solid .1rem #e9e9e9;
+            span{
+                display:block;
+                background:#fff;
+                text-align: center;
+                padding:0.6rem 0;
+                font-size:1.2rem;
+                line-height: 1.2rem;
+                font-weight: $font-weight-bold;
+                //color:$bk-color;
+            }
+        }
+        .thumb-img img{
+            width:100%;
+        }
+        .car-info-detail{
+            text-align: left;
+            .tag span{
+                display:inline-block;
+                padding:.6rem;
+                background:#efefef;
+                //color:$bk-color;
+                font-size:1.2rem;
+                line-height: 1.2rem;
+                font-weight: 500;
+                border-radius: .2rem;
+            }
+            .tag span + span{
+                margin-left:.5rem;
+            }
+            .car-name{
+                text-align: left;
+                //color:$bk-color;
+                margin:1rem 0 .4rem 0;
+                font-size: 2rem;
+                line-height: 2rem;
+                font-weight: $font-weight-bold;
+            }
+            .car-etc span{
+                font-size:1.4rem;
+                color:#4F4F4F;
+                line-height: 1.4rem;
+                font-weight: 500;
+            }
+            .car-etc span::before{
+                content:'';
+                width:.1rem;
+                height:1rem;
+                background-color:#4F4F4F;
+                display:inline-block;
+                margin:0 .8rem;
+            }
+            .car-etc span:first-child::before{
+                display:none;        
+            }
+            .car-benefit{
+                font-size:1.3rem;
+                line-height: 1.3rem;
+                color:#757575;
+                text-align: left;
+                margin-top:.8rem;
+            }
+
+        }
+    }
+    .pre-price{
+        font-size:1.3rem;
+        color:#4F4F4F;
+        text-align: right;
+        text-decoration: line-through;
+        margin-bottom: .5rem;
+    }
+    .price{
+        font-size:1.4rem;
+        line-height:1.4rem;
+        //color:$bk-color;
+        text-align: right;
+        font-weight: $font-weight-bold;
+        & + .price {margin-top: 1rem;}
+        &.small {
+            font-size: 1.3rem;
+            margin-top: .4rem;
+        }
+        .price-tit {padding-right: 1rem;}
+        input {
+            width: 7.8rem;
+            height: 3.1rem;
+            padding: 0 1.2rem;
+            line-height: 2rem;
+            &.ipt-pay {
+                color: $main-color;
+                font-size: $font-size-large;
+                font-weight: $font-weight-bold;
+                text-align: right;
+                border-radius: .4rem;
+            }
+        }
+        strong{
+            color:$main-color;
+            font-weight: 900;
+            font-size:2rem;
+            line-height:2rem;
+        }
+    }
+    .tit-point {
+        color:$main-color;
+        font-weight: 700;
+        font-size:1.3rem;
+        line-height:1.3rem;
+    }
+    .price-txt {
+        color: $sub-color2;
+        font-size: 1rem;
+        text-align: right;
+        padding-top: .4rem;
+    }
+    .ad-ing{
+        font-size:1.4rem;
+        color:#4F4F4F;
+        text-align: left;
+        margin-bottom: 0.5rem;
+    }
+    .diagnosis{
+        font-size:1.5rem;
+        line-height:1.5rem;
+        font-weight: $font-weight-bold;
+        //color:$bk-color;
+        margin-bottom: 1.2rem;
+        text-align: left;
+        &.diagnosis-reservation a{
+            color:$main-color;
+            text-decoration: underline;
+            font-weight: $font-weight-bold;
+        }  
+        &.diagnosis-reservation a::after{
+            content:'';
+            width:1rem;
+            height:1rem;
+            border-bottom:solid .1rem $main-color;
+            border-right:solid .1rem $main-color;
+            display:inline-block;
+            transform: rotate(-47deg);
+        }
+        &.diagnosis-none{
+            color:#757575;
+        }
+        &.diagnosis-pd{
+            padding-left: 4rem;
+            margin-bottom: 1.05rem;
+        }
+    }
+    .view-num{
+        display:flex;
+        span{
+            padding-left:1.8rem;
+            display:block;
+            font-size:1.2rem;
+            //color:$bk-color;
+            font-weight: 400;
+            background-repeat: no-repeat;
+            background-position: left center;
+            background-size:1.6rem;
+            letter-spacing: .1rem;
+            background-image: url(/UIDev/v2/images/icon/view-icon.png);
+            &.like{
+                margin-left:1rem;
+                background-image: url(/UIDev/v2/images/icon/like-icon.png);
+            }
+        }
+    }
+    .button-area{
+        display:flex;
+        flex-wrap: wrap;
+        .btn-type04{
+            display:block;
+            width:8rem;
+            padding:0;
+            margin-bottom: .5rem;
+            flex-shrink: 0;
+        }
+        .btn-type04 + .btn-type04{
+            margin-left:.5rem;
+        }
+        .btn-type04:nth-of-type(3){
+            margin-left:0;
+        }
+        .btn-type04.full{
+            width:100%;
+            margin-left:0;
+            margin-bottom: 0;
+        }
+        .btn-type04.full em{
+            color:$main-color;
+        }
+    }
+    .button-area2 {
+        text-align: right;
+        button {
+            margin: .25rem 0 .5rem .25rem;
+            &:first-child {margin-left: 0;}
+        }
+    }
+}
+.txt-info {
+    color: $sub-color2;
+    line-height: 1.8rem;
+}
+.txt-list-tit {
+    line-height: 1.4rem;
+    color: $sub-color1;
+    font-size: $font-size-normal;
+    font-weight: $font-weight-medium;
+}
+.txt-list-tit + .txt-list {padding-top: 1.4rem}
+.txt-list {
+    &.sm {
+        >li {
+            position: relative;
+            line-height: 1.8rem;
+            padding-left: 1rem;
+            color: #666;
+            font-size: 1.2rem;
+            >.dot {
+                position: absolute;
+                left: .3rem;
+                top: .7rem;
+                display: block;
+                width: .2rem;
+                height: .2rem;
+                border-radius: 50%;
+                background-color: #999;
+                color: #999;
+            }
+        }
+    }
+    >li {
+        position: relative;
+        line-height: 1.8rem;
+        padding-left: 1rem;
+        color: #666;
+        font-size: 1.3rem;
+        >.icon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            display: block;
+            width: 1rem;
+            height: 2.4rem;
+            line-height: 2.4rem;
+        	color: #666;
+        }
+        >.dot {
+            position: absolute;
+            left: .3rem;
+            top: .7rem;
+            display: block;
+            width: .2rem;
+            height: .2rem;
+            border-radius: 50%;
+            background-color: #999;
+        	color: #999;
+        }
+    }
+	
+}
+.option-info {
+    width: 100%;
+    font-size: 0;
+    dt, dd {
+        padding: .2rem 0;
+        display:inline-block;
+        text-align: left;
+        vertical-align: top;
+    }
+    dt {
+        width: 42%;
+        color: $sub-color1;
+        font-size: 1.3rem;
+        font-weight: $font-weight-regular;
+    }
+    dd {
+        width:58%;
+        //color: $bk-color;
+        font-size: 1.3rem;
+        font-weight: $font-weight-bold;
+    }
+}
+
+.paginate {
+	display: -webkit-box;
+	margin: 3rem auto 0 auto;
+    max-width:20rem;
+	a,strong {
+		display: -webkit-box;
+		-webkit-box-flex: 1;
+		-webkit-box-pack: center;
+		-webkit-box-align: center;
+		position: relative;
+		height: 2.7rem;
+		text-decoration: none;
+		color: #999;
+		font-size: 1.3rem;
+		font-weight: 600;
+	}
+	strong {
+		span {
+			position: relative;
+			display: block;
+			width: 100%;
+			height: 100%;
+			text-align: center;
+			color: #fff;
+			line-height: 2.7rem;
+			font-size: 1.3rem;
+			z-index: 2;
+			&:after {
+				content: "";
+				position: absolute;
+				left:50%;
+				top:0;
+				background: #364f7f;
+				color: #fff;
+				width: 2.7rem;
+				height: 2.7rem;
+				border-radius: 100%;
+				margin-left: -1.3rem;
+				z-index: -1;
+			}
+		}
+	}
+	.prev,.next {
+		text-indent: -999em;
+	}
+	.prev:after,.next:after {
+		content: "";
+		border: solid #222;
+		position: absolute;
+		border-width: 0 0.2rem 0.2rem 0;
+		display: inline-block;
+		padding: .2rem;
+		left: 50%;
+		top: 50%;
+		margin: -0.3rem 0 0 -0.4rem;
+		transition: .6s ease;
+	}
+	.prev:after {
+		transform: rotate(135deg);
+	}
+	.next:after {
+		transform: rotate(-45deg);
+	}
+
+	&.orange {
+		strong {
+			span:after {
+				background: #ff5d16;
+			}
+		}
+	}
+}

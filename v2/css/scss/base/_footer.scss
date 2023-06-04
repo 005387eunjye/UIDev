@@ -1,0 +1,286 @@
+@charset "UTF-8";
+// header
+
+.footer-area {
+    //margin-top: 6rem;
+    padding: 5rem 0 9.5rem 0;
+    border-top: .1rem solid #F3F3F3;
+    background: #FDFDFD;
+    color: #8B8B8B;
+    font-size: $font-size-large;
+
+    .footer-area-grid {
+        @include common-layout;
+        position: relative;
+        .footer-ci {
+            display: block;
+            width: 13rem;
+            height: 3rem;
+            img {
+                vertical-align: top;
+            }
+        }
+        .footer-terms {
+            position: relative;
+            margin: 2.5rem 0 0 0;
+            padding: 0;
+            overflow: hidden;
+            & > a {
+                float: left;
+                position: relative;
+                margin-left: .1rem;
+                padding:0 2.5rem;
+                font-size: $font-size-large;
+                font-style: normal;
+                &.emphasize {
+                    color: #000;
+                }
+                &:hover {
+                    text-decoration: underline;
+                }
+                &:first-child {
+                    padding-left:0;
+                    &::before {
+                        display: none;
+                    }
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    left: -1px;
+                    top: 50%;
+                    display: inline-block;
+                    width: 1px;
+                    height: 13px;
+                    margin-top: -6px;
+                    background: #CECECE;
+                    vertical-align: middle;
+                }
+            }
+        }
+        .footer-info {
+            margin-top: 2.5rem;
+            & > div {
+                display: block;
+                & > span {
+                    position: relative;
+                    margin-left: .1rem;
+                    padding: 0 2.5rem;
+                    font-size: $font-size-large;
+                    font-style: normal;
+                    &:first-child {
+                        padding-left:0;
+                        &::before {
+                            display: none;
+                        }
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        left: -.1rem;
+                        top: 50%;
+                        display: inline-block;
+                        width: .1rem;
+                        height: 1.3rem;
+                        margin-top: -.6rem;
+                        background: #CECECE;
+                        vertical-align: middle;
+                    }
+                }
+            }
+        }
+        .footer-notice {
+            margin-top: 2.5rem;
+            font-size: 1.5rem;
+            line-height: 2.4rem;;
+        }
+        .footer-copy {
+            margin-top: 2.5rem;
+        }
+        .footer-customer {
+            position: absolute;
+            right: 0;
+            top: 5.5rem;
+            color: #222;
+            //overflow: hidden;
+          
+            .customer-content {
+                position: relative;
+                padding: 1rem 2.5rem;
+                background: #F7F7F7;
+                border-radius: 1rem;
+                border: .1rem solid #DDD;
+                font-size: 0;
+            }
+            .customer-content-line {
+                display: inline-block;
+                width: 0;
+                height: 3.7rem;
+                margin: 0 1.2rem;
+                border-right: .1rem dashed #DDD;
+                vertical-align: middle;
+            }
+            .customer-content-item {
+                display: inline-block;
+                vertical-align: middle;
+                padding: 0;
+            }
+            .customer-content-item-title {
+                display: block;
+                font-size: $font-size-normal;
+            }
+            .customer-content-tel {
+                display: block;
+                font-size: $font-size-large;
+                font-weight: bold;
+            }
+            .customer-content-foot {
+                display: block;
+                margin: .3rem 0 0 0;
+                font-size: $font-size-small;
+            }
+        }
+          
+        .footer-customer-head {
+            font-size: $font-size-normal;
+            font-weight: normal;
+            margin: 0 0 1rem 0;
+            padding: 0;
+        }
+        .footer-customer-title {
+            font-size: $font-size-normal;
+        }
+        .icon-common {
+            position: relative;
+            top: 0;
+            display: inline-block;
+            width: 2rem;
+            height: 1.9rem;
+            margin-right: .4rem;
+            background: url($img-root + 'icon/icon_common_v20210915.png') no-repeat;
+            background-position: -2.5rem -2.5rem;
+            vertical-align: middle;
+            overflow: hidden;
+        }
+        .footer-customer-content {
+            float: right;
+            margin-left: 2rem;
+            padding-left: 2.5rem;
+            border-left: .1rem solid #DDD;
+            line-height: 1.0;
+        }
+        .footer-customer-tel {
+            display: block;
+            font-size: 2.8rem;
+            font-weight: bold;
+            letter-spacing: -.1rem;
+        }
+        .footer-customer-time {
+            display: block;
+            margin-top: 1rem;
+            font-size: 1.7rem;
+        }
+          
+        .footer-app-award {
+            position: absolute;
+            right: 0;
+            top: 0;
+            display: none;
+            width: 19.7rem;
+            height: 4.8rem;
+          
+            img {
+              display: block;
+              width: 100%;
+              height: 100%;
+            }
+        }
+        .certify-marks {
+            display: block;
+            margin-top: 1rem;
+            text-align: right;
+        }
+        .logo-certify {
+            display: inline-block;
+            width: 6rem;
+            height: 6rem;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            color: transparent !important;
+            font-size: xx-small !important;
+            overflow: hidden;
+            text-indent: -99.9rem;
+            &.logo-certify-ismsp {
+                background-image: url($img-root + 'common/logo-ismsp.png');
+                
+            }
+        }
+        .help-tooltip {
+            position: relative;
+            &:hover {
+                .help-tooltip-box {display:block;}
+            }
+          }
+          .help-tooltip .help-tooltip-box {
+            position: absolute;
+            bottom: 100%;
+            left: 0;
+            display: none;
+            min-width: 22.5rem;
+            padding: 1.2rem 1.4rem;
+            border: .1rem solid #60584c;
+            background-color: #f9fcff;
+            -webkit-box-shadow: .4rem .4rem 0 rgba(0, 0, 0, 0.05);
+                    box-shadow: .4rem .4rem 0 rgba(0, 0, 0, 0.05);
+            font-size: $font-size-normal;
+            line-height: 1.42;
+            text-align: left;
+            color: #60584c;
+            white-space: nowrap;
+          }
+          .help-tooltip .help-tooltip-box {
+            bottom: 100%;
+            margin-bottom: .5rem;
+            left: auto;
+            right: -1rem;
+          }
+          .help-tooltip .help-tooltip-box.help-tooltip-box-top .help-tooltip-arrow {
+            -webkit-transform: rotate(225deg);
+                -ms-transform: rotate(225deg);
+                    transform: rotate(225deg);
+            top: auto;
+            bottom: -.7rem;
+          }
+          .help-tooltip .help-tooltip-box.help-tooltip-box-left {
+            left: -1rem;
+          }
+          .help-tooltip .help-tooltip-box.help-tooltip-box-left .help-tooltip-arrow {
+            left: 3rem;
+          }
+          .help-tooltip .help-tooltip-box.help-tooltip-box-right .help-tooltip-arrow {
+            left: auto;
+            right: 3rem;
+          }
+          .help-tooltip .help-tooltip-arrow {
+            position: absolute;
+            top: -.7rem;
+            left: 50%;
+            width: 1.4rem;
+            height: 1.4rem;
+            margin-left: -.7rem;
+            background-color: #f9fcff;
+            -webkit-box-shadow: -.1rem -.1rem 0 #60584c;
+                    box-shadow: -.1rem -.1rem 0 #60584c;
+            -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                    transform: rotate(45deg);
+          }
+          .help-tooltip.help-tooltip-show .help-tooltip-box {
+            display: inline-block !important;
+          }
+        
+    }
+}
+
+

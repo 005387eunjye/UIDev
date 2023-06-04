@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+// scroll (PC)
+
+.pop-scroll .mCSB_scrollTools {
+    .mCSB_dragger .mCSB_dragger_bar{
+        width:4px;
+        background-color:#AAAAAA;
+    }
+    .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+    .mCSB_dragger:active .mCSB_dragger_bar{
+        background-color:#AAAAAA;
+    }
+    .mCSB_draggerRail{
+        width:1px;
+        background-color:#ddd;
+    }
+}

@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+// select, dropdown
+
+.custom-select-box{
+    position:relative;
+    .custom-select-selection{
+        border-radius: .4rem;
+        border:solid .1rem #E9E9E9;
+        height: 4rem;
+        background:#fff url('/UIDev/v2/images/icon/down.png') calc(100% - 17px) center no-repeat;
+        background-size: 2rem;
+        padding: 0rem 4.4rem 0rem 1.4rem;
+        width:100%;
+        line-height: 4rem;
+        display:block;
+        cursor: pointer;
+    }
+    .custom-select-option-box{
+        position:absolute;
+        top:4rem;
+        display:none;
+        border:solid .1rem #E9E9E9;
+        max-height:15.3rem;
+        overflow-y:scroll;
+        width:100%;
+        z-index:1;
+        &:hover{
+            li.active{
+                background:#ccc;
+                color:black;
+            }
+        }
+        li{
+            line-height: 3.8rem;
+            padding: 0 0.9rem 0 1.5rem;
+            font-size: 1.6rem;
+            color: #000;
+            cursor: pointer;
+            background:#fff;
+            &:hover{
+                background-color: $main-color;
+                color:#fff;  
+            }
+            &.active{
+                background-color: $main-color;
+                color:#fff;  
+            }
+        }
+    }
+}
+
+
+.drop-down-box{
+    position:relative;
+    .drop-down-box-tit a{
+        font-weight: $font-weight-bold;
+        font-size:1.3rem;
+        color:#000;
+        display:inline-block;
+        padding:0 1rem;
+        box-sizing: border-box;
+        position:relative;
+        &::after{
+            content: '';
+            background:#fff url('/UIDev/v2/images/icon/down.png') 0 0 no-repeat;
+            background-size: 0.9rem;
+            margin-left:0.6rem;
+            width:0.9rem;
+            height:0.7rem;
+            position:absolute;
+            right:0;
+            top:50%;
+            margin-top:-0.35rem;
+            display:inline-block;
+        }
+    }
+    .drop-down-box-option{
+        position:absolute;
+        display: none;
+        top:3rem;
+        border-radius: 0.6rem;
+        background:#fff;
+        padding:1rem 0rem;
+        width:120%;
+        text-align: center;
+        box-shadow: 2px 2px 6px 4px #0000000F;
+        li{
+            font-size:1.3rem;
+            color:#000;
+            cursor: pointer;
+            & + li{
+                margin-top:1rem;
+            }
+            &:hover{
+                color:$main-color;
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+
+// datepicker
+.ui-datepicker {
+	display: none;
+	width: 17em;
+	padding: .2em .2em 0;
+	&.ui-widget-content {
+		border: 1px solid #c5c5c5;
+		border-radius: 3px;
+		background: #fff;
+		color: #333333;
+		a {
+			color: #333;
+		}
+	}
+	table {
+		width: 100%;
+		font-size: .9em;
+		border-collapse: collapse;
+		margin: 0 0 .4em;
+		th {
+			padding: .7em .3em;
+			text-align: center;
+			font-weight: bold;
+			border: 0;
+		}
+		td {
+			border: 0;
+			padding: 1px;
+			text-align: center;
+			span, a {
+				display: block;
+				padding: .2em;
+				text-align: right;
+				text-decoration: none;
+			}
+		}
+	}
+	.ui-widget-header {
+		height: 40px;
+		background: #fff;
+		border: 0;
+		line-height: 40px;
+		a {
+			position: absolute;
+			top: 0;
+			color: #333;
+			&.ui-datepicker-prev {
+				width: 20px;
+				height: 40px;
+				text-indent: -9999em;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					background: url(/UIDev/v2/images/icon/bg-calendar-arrow-l.png) no-repeat;
+					background-size: contain;
+					width: 6px;
+					height: 12px;
+					margin: -3px 0 0 -6px;
+				}
+			}
+			&.ui-datepicker-next {
+				right: 0;
+				width: 20px;
+				height: 40px;
+				text-indent: -9999em;
+				&:after {
+					content: "";
+					position: absolute;
+					left: 50%;
+					top: 50%;
+					background: url(/UIDev/v2/images/icon/bg-calendar-arrow-r.png) no-repeat;
+					background-size: contain;
+					width: 6px;
+					height: 12px;
+					margin: -3px 0 0 -6px;
+				}
+			}
+
+		}
+	}
+	.ui-datepicker-title {
+		display: -webkit-box;
+		-webkit-box-pack: center;
+		padding: 0 20px;
+		margin: 0;
+		line-height: 40px;
+		select {
+			display: -webkit-box;
+			-webkit-box-flex: 1;
+			margin: 0 5px !important;
+			border: 1px solid #ddd;
+			border-radius: 4px;
+			display: block;
+			height: 40px;
+			padding: 0 5px 0 10px;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			background: #fff url(/UIDev/v2/images/icon/bg-select.png) no-repeat right 0;
+			background-size: 33px 80px;
+			color: #222;
+			font-size: 15px;
+			font-weight: 600;
+		}
+		span.ui-datepicker-year,.ui-datepicker-month {
+			-webkit-box-flex: 1;
+			font-size: 15px;
+			font-weight: 600;
+			line-height: 40px;
+		}
+	}
+	//.ui-datepicker-next,.ui-datepicker-prev {
+	//	display: none;
+	//}
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+		border: 0 !important;
+		background: none !important;
+		text-align: center;
+	}
+	.ui-datepicker-today a {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin: auto;
+		color: #fff !important;
+    	background-color: #336fc9 !important;
+		border-radius: 25px;
+	}
+	.ui-state-active, .ui-widget-content .ui-state-active {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		margin: auto;
+		color: #222 !important;
+		background-color: #fffa90 !important;
+		border-radius: 25px;
+	}
+}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {display:none;}

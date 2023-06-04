@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>(PC)KB차차차 딜러 개선 페이지 목록</title>
+
+    <!-- <link type="text/css" rel="stylesheet" href="../css/style.min.css"> -->
+    <script type="text/javascript" src="../js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="../js/ui-common.min.js"></script>
+    <style type="text/css">
+        .menu-list {padding:10px;}
+        .tbl-list{border-collapse:collapse;width:100%;border-top:2px solid #000}
+        .tbl-list th{height:46px;background:#eee;font-size:14px;font-weight:700;border:solid #ccc 1px;}
+        .tbl-list td{height:32px;padding:0 12px;font-size:13px;border:solid #ccc 1px;}
+        .tbl-list tr:hover {background: #f3fbf6;}
+        .txt-point {color:red;font-weight: bold;}
+        .tr-point {background-color:#fbf7f7;}
+        .tbl-list .num{text-align:center}
+        .align-c{text-align:center}
+    </style>
+</head>
+
+<body>
+    <h1>(PC)KB차차차 딜러 개선 페이지 목록</h1>
+    <div class="menu-list">
+        <table class="tbl-list">
+            <colgroup>
+                <col style="width:64px">
+                <col style="width:auto;">
+                <col style="width:auto;">
+                <col style="width:auto;">
+                <col style="width:auto;">
+                <col style="width:auto;">
+                <col style="width:80px">
+                <col style="width:auto;">
+                <col style="width:80px;">
+                <col style="width:auto;">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">No.</th>
+                    <th scope="col">Depth 01</th>
+                    <th scope="col">Depth 02</th>
+                    <th scope="col">Depth 03</th>
+                    <th scope="col">화면명</th>
+                    <th scope="col">Page Type</th>
+                    <th scope="col">화면ID</th>
+                    <th scope="col">URL</th>
+                    <th scope="col">작업상태</th>
+                    <th scope="col">검수</th>
+                    <th scope="col">비고</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="num"></td>
+                    <td>index</td>
+                    <td></td>
+                    <td></td>
+                    <td>딜러 홈</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_index</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)데이트피커</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td>검색</td>
+                    <td>판매중리스트</td>
+                    <td></td>
+                    <td></td>
+                    <td class="align-c">page</td>
+                    <td>dealer_search01</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)툴팁</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>최근 검색조건</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_search01_p01</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr class="tr-point">
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>고객용 리스트(새창)</td>
+                    <td class="align-c">page</td>
+                    <td>dealer_search02</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td class="txt-point">개편X (GNB적용)</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)관심단지 설정</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_search01_p02</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)관심버튼, 탭</td>
+                </tr>
+                <tr class="tr-point">
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>판매중 리스트 > 차량상세</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_search03</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td class="txt-point">개편X (GNB적용)</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td>내차관리</td>
+                    <td>광고중</td>
+                    <td></td>
+                    <td>(탭)광고중-기본관리모드</td>
+                    <td class="align-c">Tab</td>
+                    <td>dealer_sell01</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL01.html" target="_blank" title="새창열림">PUB_DEALER_SELL01.html</a></td>
+                    <td class="align-c">진행중(샘플)</td>
+                    <td></td>
+                    <td>(컴포넌트)드롭다운, 데이트피커</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)차량가격 일괄수정</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell01_p01</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)금액 조정 버튼</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)차량 가격 수정</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell01_p02</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)옵션 정보 관리</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell01_p03</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)얼럿</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)잠깐!놓지고 있는 옵션이 있다면?</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell01_p04</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)얼럿</td>
+                </tr>
+                
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)(탭)코인광고 관리</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell01_p05</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)설명글 관리</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell01_p06</td>
+                    <td><a href="" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)드롭다운</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(탭)광고중-가격점검모드</td>
+                    <td class="align-c">Tab</td>
+                    <td>dealer_sell01_02</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL01_02.html" target="_blank" title="새창열림">PUB_DEALER_SELL01_02.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(탭)광고중-옵션점검모드</td>
+                    <td class="align-c">Tab</td>
+                    <td>dealer_sell01_03</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL01_03.html" target="_blank" title="새창열림">PUB_DEALER_SELL01_03.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(탭)광고중-광고점검모드</td>
+                    <td class="align-c">Tab</td>
+                    <td>dealer_sell01_04</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL01_04.html" target="_blank" title="새창열림">PUB_DEALER_SELL01_04.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td>광고대기</td>
+                    <td></td>
+                    <td>광고대기</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell02</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL02.html" target="_blank" title="새창열림">PUB_DEALER_SELL02.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td>판매완료</td>
+                    <td></td>
+                    <td>판매완료</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell03</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL03.html" target="_blank" title="새창열림">PUB_DEALER_SELL03.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)판매정보 입력/수정</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell03_p01</td>
+                    <td><a href="\UIDev\v2\views\PUB_P_DEALER_SELL03_P01.html" target="_blank" title="새창열림">PUB_P_DEALER_SELL03_P01.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td>예외신청</td>
+                    <td></td>
+                    <td>예외신청</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell04</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL04.html" target="_blank" title="새창열림">PUB_DEALER_SELL04.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)소명신청</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell04_p01</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL04_p01.html" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)예외신청 소명내용</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell04_p02</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL04_p02.html" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td>광고삭제</td>
+                    <td></td>
+                    <td>광고삭제</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell05</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL05.html" target="_blank" title="새창열림">PUB_DEALER_SELL05.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td>허위매물신고</td>
+                    <td></td>
+                    <td>허위매물신고</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell06</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL06.html" target="_blank" title="새창열림">PUB_DEALER_SELL06.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)컨펌창</td>
+                </tr>
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>(팝)허위매물신고 소명 신청</td>
+                    <td class="align-c">Popup</td>
+                    <td>dealer_sell06_p01</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL06_p01.html" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                
+                <tr>
+                    <td class="num"></td>
+                    <td></td>
+                    <td>임시저장</td>
+                    <td></td>
+                    <td>임시저장</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell07</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL07.html" target="_blank" title="새창열림">PUB_DEALER_SELL07.html</a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td>(컴포넌트)컨펌창</td>
+                </tr>
+                <tr class="tr-point">
+                    <td class="num"></td>
+                    <td></td>
+                    <td>광고등록/ 광고수정</td>
+                    <td></td>
+                    <td>광고등록</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell08</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL08.html" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td class="txt-point">개편X (GNB적용)</td>
+                </tr>
+                <tr class="tr-point">
+                    <td class="num"></td>
+                    <td></td>
+                    <td>진단광고관리</td>
+                    <td></td>
+                    <td>진단광고관리</td>
+                    <td class="align-c">Page</td>
+                    <td>dealer_sell09</td>
+                    <td><a href="\UIDev\v2\views\PUB_DEALER_SELL09.html" target="_blank" title="새창열림"></a></td>
+                    <td class="align-c"></td>
+                    <td></td>
+                    <td class="txt-point">개편X (GNB적용)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            pageNum();
+        });
+    
+        // 페이지 수
+        function pageNum() {
+            var menuList = $('.menu-list');
+            menuList.each(function() {
+                var pageNum = $(this).find('tbody').find('.num');
+                var count = pageNum.length;
+                for(var num=1; num<=count; num++) {
+                    pageNum.eq(num-1).text(num);
+                }
+            });
+        }
+    
+        
+    </script>
+</body>
+
+</html>

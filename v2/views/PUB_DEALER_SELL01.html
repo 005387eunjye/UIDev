@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <main class="body-area" id="wrap">
+
+        <header class="header-area"></header> <!-- common header-->
+
+        <!-- [Start] main-area -->
+        <section class="main-area">
+            <div class="section-area">
+                <!-- dealer sell lnb-->
+                <div class="lnb dealer-sell01-lnb">
+                </div>
+                <!-- // dealer sell lnb-->
+                <div class="section-area-grid">
+                    <div class="title-area">
+                        <h2 class="title">
+                            광고중 총 <strong>35</strong>대
+                        </h2>
+                        <button type="button" class="btn-type03 pop-btn-js" data-target="#popup01">설명글 관리</button>
+                    </div>
+
+                    <div class="section-area-cont">
+                        <div class="car-search-area">
+                            <div class="car-search-area-option-box">
+                                <div class="tit">제조사</div>
+                                <div class="con">
+                                    <select name="company" id="sel01" aria-hidden="true" class="a11y-hidden">
+                                        <option value="company01" selected></option>
+                                        <option value="company02">제조사1</option>
+                                        <option value="company03">제조사2</option>
+                                    </select>
+
+                                    <div class="custom-select-box">
+                                        <span class="custom-select-selection"></span>
+                                        <div class="custom-select-option-box">
+                                            <ul>
+                                                <li class="active">제조사1</li>
+                                                <li>제조사2</li>
+                                                <li>제조사3</li>
+                                                <li>제조사4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-search-area-option-box">
+                                <div class="tit">
+                                    모델
+                                </div>
+                                <div class="con">
+                                    <select name="model" id="sel02" aria-hidden="true" class="a11y-hidden">
+                                        <option value="model01" selected></option>
+                                        <option value="model02">모델1</option>
+                                        <option value="model03">모델2</option>
+                                    </select>
+
+                                    <div class="custom-select-box">
+                                        <span class="custom-select-selection"></span>
+                                        <div class="custom-select-option-box">
+                                            <ul>
+                                                <li class="active">모델1</li>
+                                                <li>모델2</li>
+                                                <li>모델3</li>
+                                                <li>모델4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-search-area-option-box">
+                                <div class="tit">등록일</div>
+                                <div class="con">
+                                    <span class="input-date">
+                                        <input type="text" title="날짜">
+                                    </span>
+                                    <span>~</span>
+                                    <span class="input-date">
+                                        <input type="text" title="날짜">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="car-search-area-option-box">
+                                <div class="tit">차량번호</div>
+                                <div class="con">
+                                    <input type="text" class="carnum-input">
+                                    <button type="button" class="btn-type01">조회</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="car-search-result-area">
+                            <div class="car-search-result-mode-area">
+                                <div class="car-search-result-mode-area-box">
+                                    <figure class="form-chk all-chk">
+                                        <input type="checkbox" id="chk00" />
+                                        <label for="chk00"></label>
+                                    </figure>
+                                    <div class="total-num">
+                                        총 <strong>11</strong> 대
+                                    </div>
+                                    <button type="button" class="btn-type03">가격 일괄 수정</button>
+                                </div>
+                                <div class="car-search-result-mode-area-box">
+                                    <div class="mode-area">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;" class="active">기본 관리모드</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">가격 점검모드</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">옵셤 점검모드</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">광고 점검모드</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-box">
+                                        <span class="drop-down-box-tit">
+                                            <a href="javascript:;">10개씩 보기</a>
+                                        </span>
+                                        <ul class="drop-down-box-option">
+                                            <li>10개씩 보기</li><!--// 기본값-->
+                                            <li>20개씩 보기</li>
+                                            <li>30개씩 보기</li>
+                                            <li>50개씩 보기</li>
+                                        </ul>
+                                    </div>
+                                    <div class="drop-down-box">
+                                        <span class="drop-down-box-tit">
+                                            <a href="javascript:;">광고등록일 최신순</a>
+                                        </span>
+                                        <ul class="drop-down-box-option">
+                                            <li>광고등록일 최신순</li><!--// 기본값-->
+                                            <li>업데이트 최신순</li>
+                                            <li>광고기간 오래된순/짧은순</li>
+                                            <li>판매가격 높은순/낮은순</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="car-search-result-table">
+                                <table>
+                                    <caption>내차관리 광고중 차 내역</caption>
+                                    <colgroup>
+                                        <col style="width: 3.5rem;">
+                                        <col style="*">
+                                        <col style="width: 12rem;">
+                                        <col style="width: 11.3rem;">
+                                        <col style="width: 16rem;">
+                                        <col style="width: 16.5rem;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <figure class="form-chk chk-js">
+                                                    <input type="checkbox" id="chk01" />
+                                                    <label for="chk01"></label>
+                                                </figure>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:;" class="car-info">
+                                                    <div class="thumb-img">
+                                                        <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                        <span class="car-info-num">123부6077</span>
+                                                    </div>
+                                                    <div class="car-info-detail">
+                                                        <div class="tag">
+                                                            <span>실차주</span>
+                                                            <span>연동광고</span>
+                                                            <span>진단</span>
+                                                        </div>
+                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                        <p class="car-etc">
+                                                            <span>20년 07월(20년형)</span>
+                                                            <span>7,831km</span>
+                                                            <span>가솔린</span>
+                                                        </p>
+                                                        <p class="car-benefit">
+                                                            헛걸음보상, 무이자, 연장보증                                                            
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <p class="pre-price">
+                                                    40,000만원
+                                                </p>
+                                                <p class="price">
+                                                    <strong>38,000</strong> 만원
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn-type01 sm">가격수정</button>
+                                            </td>
+                                            <td>
+                                                <p class="ad-ing">
+                                                    23.11.25광고 (58일째)
+                                                </p>
+                                                <p class="diagnosis-end diagnosis">
+                                                    진단 만료 D-320
+                                                </p>
+                                                <P class="view-num">
+                                                    <span class="view">
+                                                        414
+                                                    </span>
+                                                    <span class="like">
+                                                        120
+                                                    </span>
+                                                </P>
+                                            </td>
+                                            <td>
+                                                <div class="button-area">
+                                                    <button type="button" class="btn-type04 sm">정보수정</button>
+                                                    <button type="button" class="btn-type04 sm">코인광고</button>
+                                                    <button type="button" class="btn-type04 sm">광고대기</button>
+                                                    <button type="button" class="btn-type04 sm">판매완료</button>
+                                                    <button type="button" class="btn-type04 sm full">업데이트(<em>1/5</em>) 7/13 am10:58</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <figure class="form-chk chk-js">
+                                                    <input type="checkbox" id="chk02" />
+                                                    <label for="chk02"></label>
+                                                </figure>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:;" class="car-info">
+                                                    <div class="thumb-img">
+                                                        <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                        <span class="car-info-num">123부6077</span>
+                                                    </div>
+                                                    <div class="car-info-detail">
+                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                        <p class="car-etc">
+                                                            <span>20년 07월(20년형)</span>
+                                                            <span>7,831km</span>
+                                                            <span>가솔린</span>
+                                                        </p>
+                                                        <p class="car-benefit">
+                                                            헛걸음보상, 무이자, 연장보증                                                            
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <p class="price">
+                                                    <strong>리스승계</strong>
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn-type01 sm disabled">가격수정</button>
+                                            </td>
+                                            <td>
+                                                <p class="ad-ing">
+                                                    23.11.25광고 (58일째)
+                                                </p>
+                                                <p class="diagnosis-reservation diagnosis">
+                                                    <a href="javascript:;">
+                                                        진단 예약
+                                                    </a>
+                                                </p>
+                                                <P class="view-num">
+                                                    <span class="view">
+                                                        414
+                                                    </span>
+                                                    <span class="like">
+                                                        120
+                                                    </span>
+                                                </P>
+                                            </td>
+                                            <td>
+                                                <div class="button-area">
+                                                    <button type="button" class="btn-type04 sm">정보수정</button>
+                                                    <button type="button" class="btn-type04 sm">코인광고</button>
+                                                    <button type="button" class="btn-type04 sm">광고대기</button>
+                                                    <button type="button" class="btn-type04 sm">판매완료</button>
+                                                    <button type="button" class="btn-type04 sm full">업데이트(<em>1/5</em>) 7/13 am10:58</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <figure class="form-chk chk-js">
+                                                    <input type="checkbox" id="chk03" />
+                                                    <label for="chk03"></label>
+                                                </figure>
+                                            </td>
+                                            <td>
+                                                <a href="javascript:;" class="car-info">
+                                                    <div class="thumb-img">
+                                                        <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                        <span class="car-info-num">123부6077</span>
+                                                    </div>
+                                                    <div class="car-info-detail">
+                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                        <p class="car-etc">
+                                                            <span>20년 07월(20년형)</span>
+                                                            <span>7,831km</span>
+                                                            <span>가솔린</span>
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <p class="pre-price">
+                                                    45,000만원
+                                                </p>
+                                                <p class="price">
+                                                    <strong>41,000</strong> 만원
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn-type01 sm">가격수정</button>
+                                            </td>
+                                            <td>
+                                                <p class="ad-ing">
+                                                    23.11.25광고 (58일째)
+                                                </p>
+                                                <p class="diagnosis-none diagnosis">
+                                                    진단 미대상
+                                                </p>
+                                                <P class="view-num">
+                                                    <span class="view">
+                                                        414
+                                                    </span>
+                                                    <span class="like">
+                                                        120
+                                                    </span>
+                                                </P>
+                                            </td>
+                                            <td>
+                                                <div class="button-area">
+                                                    <button type="button" class="btn-type04 sm">정보수정<span class="tooltip-btn">?<span class="tooltip">옵션정보 확인이 필요해요.<a>확인하기</a></span></span></button>
+                                                    <button type="button" class="btn-type04 sm">코인광고</button>
+                                                    <button type="button" class="btn-type04 sm">광고대기</button>
+                                                    <button type="button" class="btn-type04 sm">판매완료</button>
+                                                    <button type="button" class="btn-type04 sm full">업데이트(<em>1/5</em>) 7/13 am10:58</button>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <div class="car-btn-area">
+                                    <button type="button" class="btn-type03">광고대기</button>
+                                    <button type="button" class="btn-type03">업데이트</button>
+                                </div>
+
+                                <div class="paginate">
+                                    <a href="#" class="prev">이전페이지</a>
+                                    <a href="#">1</a>
+                                    <strong><span>2</span></strong>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#" class="next">다음페이지</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [Start] 페이지 전용 js -->
+            <script type="text/javascript">
+                ;(function ($, win, doc, undefined) {
+                    $(".all-chk input").change(function() {
+                        if (this.checked) {
+                            $(".chk-js input").each(function() {
+                                this.checked=true;
+                            });
+                        } else {
+                            $(".chk-js input").each(function() {
+                                this.checked=false;
+                            });
+                        }
+                    });
+                    $(".chk-js input").click(function () {
+                        if ($(this).is(":checked")) {
+                            var isAllChecked = 0;
+
+                            $(".chk-js input").each(function() {
+                                if (!this.checked)
+                                    isAllChecked = 1;
+                            });
+
+                            if (isAllChecked == 0) {
+                                $(".all-chk input").prop("checked", true);
+                            }     
+                        }
+                        else {
+                            $(".all-chk input").prop("checked", false);
+                        }
+                    });
+                })(jQuery, window, document);
+            </script>
+            <!-- // [End] 페이지 전용 js -->
+
+        </section>
+        <!-- // [End] main-area -->
+
+        <footer class="footer-area"></footer> <!-- common footer -->
+    </main>
+    <!--popup-->
+    <div class="popup-bg"></div>
+    <div class="popup" id="popup01">
+        <h2 class="popup-title">
+            팝업입니다.
+        </h2>
+        <div class="popup-body">
+            <div class="inner">
+                팝업입니다.
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type01">확인</button>
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+        </div>
+    </div>
+</body>
+</html>

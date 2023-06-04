@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <main class="body-area" id="wrap">
+
+        <header class="header-area"></header> <!-- common header-->
+
+        <!-- [Start] main-area -->
+        <section class="main-area">
+            <div class="section-area">
+                <!-- dealer sell lnb-->
+                <div class="lnb dealer-sell01-lnb">
+                </div>
+                <!-- // dealer sell lnb-->
+                <div class="section-area-grid">
+                    <div class="title-area">
+                        <h2 class="title">
+                            광고삭제 총 <strong>35</strong>대
+                        </h2>
+                    </div>
+
+                    <div class="section-area-cont">
+                        <div class="car-search-area">
+                            <div class="car-search-area-option-box">
+                                <div class="tit">제조사</div>
+                                <div class="con">
+                                    <select name="company" id="sel01" aria-hidden="true" class="a11y-hidden">
+                                        <option value="company01" selected></option>
+                                        <option value="company02">제조사1</option>
+                                        <option value="company03">제조사2</option>
+                                    </select>
+
+                                    <div class="custom-select-box">
+                                        <span class="custom-select-selection"></span>
+                                        <div class="custom-select-option-box">
+                                            <ul>
+                                                <li class="active">제조사1</li>
+                                                <li>제조사2</li>
+                                                <li>제조사3</li>
+                                                <li>제조사4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-search-area-option-box">
+                                <div class="tit">
+                                    모델
+                                </div>
+                                <div class="con">
+                                    <select name="model" id="sel02" aria-hidden="true" class="a11y-hidden">
+                                        <option value="model01" selected></option>
+                                        <option value="model02">모델1</option>
+                                        <option value="model03">모델2</option>
+                                    </select>
+
+                                    <div class="custom-select-box">
+                                        <span class="custom-select-selection"></span>
+                                        <div class="custom-select-option-box">
+                                            <ul>
+                                                <li class="active">모델1</li>
+                                                <li>모델2</li>
+                                                <li>모델3</li>
+                                                <li>모델4</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="car-search-area-option-box">
+                                <div class="tit">등록일</div>
+                                <div class="con">
+                                    <span class="input-date">
+                                        <input type="text" title="날짜">
+                                    </span>
+                                    <span>~</span>
+                                    <span class="input-date">
+                                        <input type="text" title="날짜">
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="car-search-area-option-box">
+                                <div class="tit">차량번호</div>
+                                <div class="con">
+                                    <input type="text" class="carnum-input">
+                                    <button type="button" class="btn-type01">조회</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="car-search-result-area">
+                            <div class="car-search-result-mode-area">
+                                <div class="car-search-result-mode-area-box">
+                                    <div class="total-num">
+                                        총 <strong>11</strong> 대
+                                    </div>
+                                </div>
+                                <div class="car-search-result-mode-area-box">
+                                    <div class="drop-down-box">
+                                        <span class="drop-down-box-tit">
+                                            <a href="javascript:;">광고등록일 최신순</a>
+                                        </span>
+                                        <ul class="drop-down-box-option">
+                                            <li>광고등록일 최신순</li><!--// 기본값-->
+                                            <li>업데이트 최신순</li>
+                                            <li>광고기간 오래된순/짧은순</li>
+                                            <li>판매가격 높은순/낮은순</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="car-search-result-table">
+                                <table>
+                                    <caption>광고삭제 차 내역</caption>
+                                    <colgroup>
+                                        <col style="*">
+                                        <col style="width: 20rem;">
+                                        <col style="width: 20rem;">
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="javascript:;" class="car-info">
+                                                    <div class="thumb-img">
+                                                        <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                        <span class="car-info-num">123부6077</span>
+                                                    </div>
+                                                    <div class="car-info-detail">
+                                                        <div class="tag">
+                                                            <span>실차주</span>
+                                                            <span>연동광고</span>
+                                                            <span>진단</span>
+                                                        </div>
+                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                        <p class="car-etc">
+                                                            <span>20년 07월(20년형)</span>
+                                                            <span>7,831km</span>
+                                                            <span>가솔린</span>
+                                                        </p>
+                                                        <p class="car-benefit">
+                                                            헛걸음보상, 무이자, 연장보증                                                            
+                                                        </p>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <p class="price gap40">
+                                                    <strong>38,000</strong> 만원
+                                                </p>
+                                            </td>
+                                            <td>
+                                                <dl class="option-info gap40">
+                                                    <dt>광고개시일</dt>
+                                                    <dd>2022.01.25(58일)</dd>
+                                                    <dt>광고삭제일</dt>
+                                                    <dd>2022.11.30(시스템)</dd>
+                                                </dl>
+                                            </td>
+                                        </tr>
+                                        
+                                    </tbody>
+                                </table>
+
+                                <div class="paginate">
+                                    <a href="#" class="prev">이전페이지</a>
+                                    <a href="#">1</a>
+                                    <strong><span>2</span></strong>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#" class="next">다음페이지</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [Start] 페이지 전용 js -->
+            <script type="text/javascript">
+                ;(function ($, win, doc, undefined) {
+                    // do something...
+                })(jQuery, window, document);
+            </script>
+            <!-- // [End] 페이지 전용 js -->
+
+        </section>
+        <!-- // [End] main-area -->
+
+        <footer class="footer-area"></footer> <!-- common footer -->
+    </main>
+</body>
+</html>

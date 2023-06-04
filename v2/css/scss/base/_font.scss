@@ -1,0 +1,110 @@
+@charset "UTF-8";
+
+/* KB금융 본문체 Medium*/
+@font-face {
+    font-family: 'KBFGText';
+    font-style: normal;
+    font-weight: 400;
+    src: local('KBFGTextM'),
+        url('/UIDev/v2/font/KBFGTextM.woff') format('woff'),
+        url('/UIDev/v2/font/KBFGTextM.ttf') format('truetype'),
+        url('/UIDev/v2/font/KBFGTextM.svg#KBFGTextM') format('svg');
+}
+
+/* KB금융 본문체 Bold*/
+@font-face {
+    font-family: 'KBFGText';
+    font-style: normal;
+    font-weight: 700;
+    src: local('KBFGTextB'),
+        url('/UIDev/v2/font/KBFGTextB.woff') format('woff'),
+        url('/UIDev/v2/font/KBFGTextB.ttf') format('truetype'),
+        url('/UIDev/v2/font/KBFGTextB.svg#KBFGTextB') format('svg');
+}
+
+/* KB금융 본문체 Light*/
+@font-face {
+    font-family: 'KBFGText';
+    font-style: normal;
+    font-weight: 300;
+    src: local('KBFGTextM'),
+        url('/UIDev/v2/font/KBFGTextL.woff') format('woff'),
+        url('/UIDev/v2/font/KBFGTextL.ttf') format('truetype'),
+        url('/UIDev/v2/font/KBFGTextL.svg#KBFGTextL') format('svg');
+
+}
+
+/*KB금융 제목체 Light*/
+@font-face {
+    font-family: 'KBFGDisplay';
+    font-style: normal;
+    font-weight: 300;
+    src: local('KBFGDisplayL'),
+        url('/UIDev/v2/font/KBFGDisplayL.woff') format('woff'),
+        url('/UIDev/v2/font/KBFGDisplayL.ttf') format('truetype'),
+        url('/UIDev/v2/font/KBFGDisplayL.svg#KBFGDisplayL') format('svg');
+}
+
+/*KB금융 제목체 Medium*/
+@font-face {
+    font-family: 'KBFGDisplay';
+    font-style: normal;
+    font-weight: 500;
+    src: local('KBFGDisplayM'),
+        url('/UIDev/v2/font/KBFGDisplayM.woff') format('woff'),
+        url('/UIDev/v2/font/KBFGDisplayM.ttf') format('truetype'),
+        url('/UIDev/v2/font/KBFGDisplayM.svg#KBFGDisplayM') format('svg');
+}
+
+/*KB금융 제목체 Blod*/
+@font-face {
+    font-family: 'KBFGDisplay';
+    font-style: normal;
+    font-weight: 700;
+    src: local('KBFGDisplayB'),
+        url('/UIDev/v2/font/KBFGDisplayB.woff') format('woff'),
+        url('/UIDev/v2/font/KBFGDisplayB.ttf') format('truetype'),
+        url('/UIDev/v2/font/KBFGDisplayB.svg#KBFGDisplayB') format('svg');
+}
+
+/*apple 산돌고딕 bold*/
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: bold;
+    src: local('AppleSDGothicNeoB'),
+        url('/UIDev/v2/font/AppleSDGothicNeoB.ttf') format('truetype'),
+}
+
+/*apple 산돌고딕 semibold*/
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 600;
+    src: local('AppleSDGothicNeoSB'),
+        url('/UIDev/v2/font/AppleSDGothicNeoSB.ttf') format('truetype'),
+}
+/*apple 산돌고딕 normal*/
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 500;
+    src: local('AppleSDGothicNeoM'),
+        url('/UIDev/v2/font/AppleSDGothicNeoM.ttf') format('truetype'),
+}
+/*apple 산돌고딕 light*/
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight: 400;
+    src: local('AppleSDGothicNeoL'),
+        url('/UIDev/v2/font/AppleSDGothicNeoL.ttf') format('truetype'),
+}
+/*apple 산돌고딕 THIN*/
+@font-face {
+    font-family: 'Apple SD Gothic Neo';
+    font-style: normal;
+    font-weight:300;
+    src: local('AppleSDGothicNeoT'),
+        url('/UIDev/v2/font/AppleSDGothicNeoT.ttf') format('truetype'),
+}
