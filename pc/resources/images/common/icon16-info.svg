@@ -1,0 +1,9 @@
+<svg width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+    <g transform="translate(1 1)" fill="none" fill-rule="evenodd">
+        <circle stroke="#AAA" cx="7" cy="7" r="6.5"/>
+        <g transform="matrix(1 0 0 -1 6 11)" fill="#AAA">
+            <circle cx="1" cy="1" r="1"/>
+            <rect y="3" width="2" height="5" rx="1"/>
+        </g>
+    </g>
+</svg>

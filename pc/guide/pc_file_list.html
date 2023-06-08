@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script type="text/javascript" src="../resources/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+<title>KB차차차 3.0</title>
+<style>
+* {margin:0;padding: 0;}
+table {width: 100%;border-collapse: collapse;}
+h1 {padding: 0 10px 20px;}
+.table_type {padding: 0 10px 20px;}
+th {font-size: 14px;}
+td {font-size: 12px;}
+th,td {border: 1px solid #aaa;padding: 5px 10px}
+tbody tr td:first-child {text-align: center;}
+.bor_t td {border-top: 2px solid #aaa;}
+.sign {position: absolute;right:15px;top:10px;}
+.sign > span {position: relative;margin: 0 0 0 3px;padding: 0 0 0 15px;font-size: 12px;}
+.sign > span:after {content:"";position: absolute;left:0;top:4px;width: 9px;height: 9px;border: 1px solid #ccc;}
+.sign .m:after {background: #f9b3b3}
+.sign .c:after {background: #b3f9d0;}
+tbody tr:hover td {background:#f9ffcc;}
+.m td {background: #f9b3b3;}
+.c td {background: #b3f9d0;}
+.del td {text-decoration: line-through;background: #ff9245;}
+    .add td {background:#ffdc00;}
+body {min-width:800px;}
+/*.bor_t.c td {background: #007ae1;color:#fff;}*/
+.t-c {text-align: center;}
+</style>
+</head>
+<body>
+<h1>KB 차차차 3.0 - PC</h1>
+<div class="sign">
+ <span class="i">진행 : <span class="num"></span></span>
+ <span class="m">수정 <span class="num"></span></span>
+ <span class="c">완료 : <span class="num"></span> </span>
+</div>
+
+
+
+<div class="table_type">
+	<div style="margin: 20px 0 10px"><strong >최신 수정파일</strong></div>
+	<table>
+		<colgroup>
+			<col style="width:5%">
+			<col style="width:5%">
+			<col style="width:30%">
+			<col style="width:30%">
+			<col style="width:30%">
+		</colgroup>
+		<tbody>
+			<tr>
+				<td></td>
+				<td>안내 > 고객센터 (GNB 개편)</td>
+				<td><a href="../views/common/PUB_COM_99150000_T01.html" target="_blank">PUB_COM_99150000_T01.html</a></td>
+				<td></td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+<script>
+$(function(){
+	$(".table_type tbody tr").each(function(){
+		var num = $(this).index() + 1;
+		$(this).prepend("<td>" + num +"</td>")
+	});
+    //var cm = $('tr.c').length;
+    $('.sign .i .num').text($('.table_type tbody tr').length - $('tr.c').length);
+    $('.sign .c .num').text($('tr.c').length);
+
+});
+</script>
+</body>
+</html>

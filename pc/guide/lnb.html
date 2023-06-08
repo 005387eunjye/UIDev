@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<script src="../resources/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+<link rel="stylesheet" href="css/guide.css">
+<title>KB차차차 3.0</title>
+<script>
+var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ? true : false;
+
+jQuery(document).ready(function($){
+	if(isMobile) {
+		$("#wrap").addClass('m-guide');
+	}
+});	
+</script>
+<style>
+	.m-guide h2 {margin-bottom: 10px;}
+	.m-guide .guide-lnb ul > li {margin-bottom: 15px;}
+	.m-guide .guide-lnb ul > li strong {font-size: 22px;padding:0 0 0 25px;}
+	.m-guide .guide-lnb ul > li.sub strong:after {top: 1px;width: 20px;height: 20px;line-height: 20px;padding: 0 0 0 3px;}
+	.m-guide .guide-lnb ul > li > a {font-size: 16px;}
+</style>
+</head>
+<body>
+<div id="wrap" class="guide-wrap">
+	<div class="guide-header">
+		<h1 class="guide-tit">KB차차차 3.0</h1>
+	</div>
+	<div id="container">
+		<div class="content guide-lnb">
+			<h2>WSG</h2>
+			<ul style="margin-top: 5px;">
+				<li class="on"><strong>1. Pc 공통 Guide</strong>
+					<ul>
+						<li><a href="pc/guide_html.html">HTML 코드 작성 규칙(모바일 공통)</a></li>
+						<li><a href="pc/guide_form.html">폼(Form) 및 버튼(Button)</a></li>
+						<li><a href="pc/guide_table.html">테이블(Table) 및 박스리스트(Box List)</a></li>
+						<li><a href="pc/guide_list.html">리스트(List)</a></li>
+						<li><a href="pc/guide_popup.html">팝업(Popup)</a></li>
+						<li><a href="pc/guide_tab.html">탭(Tab)</a></li>
+						<li><a href="pc/guide_m02.html">박스(Box) </a></li>
+						<li><a href="pc/guide_option.html">옵션(Option) </a></li>
+						<!--<li><a href="pc/guide_buy.html"></a></li>-->
+						<li><a href="pc/guide_content.html">Guide Type1</a></li>
+						<li><a href="pc/guide_dealer.html">Guide Type2(중고차 딜러)</a></li>
+						<!--<li><a href="pc/guide_.html">시세 Guide</a></li>
+						<li><a href="pc/guide_search.html">검색 Guide</a></li>-->
+					</ul>
+				</li>
+			</ul>
+			<h2 style="margin-top: 30px;">KB차차차 3.0 HTML</h2>
+			<ul style="margin-top: 5px;">
+				<li><strong><a href="pc_file_list.html">PC 파일리스트</a></strong></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<script>
+$(function(){
+	$(".guide-lnb li a").click(function(){
+		$(this).attr("target","mainFrame");
+		$(".guide-lnb li a").parent().removeClass("on");
+		$(this).parent().addClass("on");
+	});
+	$(".guide-lnb strong").next("ul").each(function(){
+		if($(this).next("ul")) {
+			$(this).parent().toggleClass("sub");
+		}
+	});
+	$(".guide-lnb .sub strong").click(function(){
+		$(this).parent().toggleClass("on");
+	});
+	$(".guide-lnb strong").click(function(){
+		$("ul> li > ul > li.on").removeClass("on");
+	});
+})
+</script>
+</body>
+</html>
