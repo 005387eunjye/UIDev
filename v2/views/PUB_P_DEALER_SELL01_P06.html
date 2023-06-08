@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#popup01">설명글 관리</button>
+
+    <!--popup-->
+    <div class="popup-bg" style="display:block"></div>
+    <div class="popup" id="popup01" style="display:block">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">설명글 관리</h2>
+        <div class="popup-body">
+            <div class="inner pop-scroll">
+                <ol class="form-list list-type2">
+                    <li>
+                        <div class="form-cont">
+                            <span class="form-radio">
+                                <input type="radio" id="delivery1" name="delivery-group1" checked="checked">
+                                <label for="delivery1">나의 설명글</label>
+                                <div class="custom-select-box inline-ty1">
+                                    <span class="custom-select-selection">설명글1</span>
+                                    <div class="custom-select-option-box">
+                                        <ul>
+                                            <li class="active">설명글1</li>
+                                            <li>설명글1</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </span>
+                            <span class="form-radio">
+                                <input type="radio" id="delivery2" name="delivery-group1">
+                                <label for="delivery2">직접입력</label>
+                            </span>
+                            <span class="form-radio">
+                                <input type="radio" id="delivery3" name="delivery-group1">
+                                <label for="delivery3">딜러형 샘플</label>
+                            </span>
+                        </div>
+                    </li>
+                    <li>
+                        <input type="text" placeholder="설명글 제목 (최대 25자)">
+                    </li>
+                    <li>
+                        <textarea class="txar-tp1" placeholder="설명글 내용" style="height: 286px;"></textarea>
+                    </li>
+                </ol>
+            </div>
+                
+                
+
+        </div>
+        <div class="popup-btn">
+            <!-- <button type="button" class="btn-type01">나의 설명글로 저장하기</button> -->
+            <button type="button" class="btn-type03 popup-close-btn">삭제</button>
+            <button type="button" class="btn-type01">저장</button>
+        </div>
+    </div>
+    
+</body>
+</html>

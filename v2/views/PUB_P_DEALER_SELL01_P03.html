@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#popup01">옵션 정보 관리</button>
+
+    <!--popup-->
+    <div class="popup-bg" style="display:block"></div>
+    <div class="popup lg" id="popup01" style="display:block">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">옵션 정보 관리
+            <div class="txt-guide">차차차 추천 옵션</div>
+        </h2>
+        <div class="popup-body">
+            <!--// 스크롤 필요시 inner에 .pop-scroll 추가-->
+            <div class="inner">
+                <ul class="form-list3">
+                    <li class="display-flex-start-area">
+                        <div class="tit-area">외장 (<em>6</em>)</div>
+                        <ul class="box-chk-list2">
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk01" name="dealer-option1" />
+                                    <label for="chk01">썬루프</label>
+                                </figure> 
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk01-1" name="dealer-option1" />
+                                    <label for="chk01-1">일반</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk01-2" name="dealer-option1" />
+                                    <label for="chk01-2">파노라마</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk02" name="dealer-option1" />
+                                    <label for="chk02">제논라이트(HID)</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk03" name="dealer-option1" />
+                                    <label for="chk03">알루미늄휠</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk04" name="dealer-option1" />
+                                    <label for="chk04" class="point-push">전동접이식미러</label><!--// 차주 추천 옵션시 .point-push 추가 -->
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk05" name="dealer-option1" />
+                                    <label for="chk05">주간주행등(DLR)</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk06" name="dealer-option1" />
+                                    <label for="chk06">루프랙</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk07" name="dealer-option1" />
+                                    <label for="chk07">LED리어램프</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk08" name="dealer-option1" />
+                                    <label for="chk08">하이빔 어시스트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk09" name="dealer-option1" />
+                                    <label for="chk09">고스트 도어 클로징</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk10" name="dealer-option1" />
+                                    <label for="chk10">자동슬라이딩도어</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk11" name="dealer-option1" />
+                                    <label for="chk11">전동사이드스탭</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk12" name="dealer-option1" />
+                                    <label for="chk12">어댑티드헤드램프</label>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="display-flex-start-area">
+                        <div class="tit-area">내장 (<em>6</em>)</div>
+                        <ul class="box-chk-list2">
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk13" name="dealer-option2" />
+                                    <label for="chk13">열선시트</label>
+                                </figure>
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk14" name="dealer-option2" />
+                                    <label for="chk14">앞좌석</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk15" name="dealer-option2" />
+                                    <label for="chk15">뒷좌석</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk16" name="dealer-option2" />
+                                    <label for="chk16">통풍시트</label>
+                                </figure>
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk17" name="dealer-option2" />
+                                    <label for="chk17">운전석</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk18" name="dealer-option2" />
+                                    <label for="chk18">동승석</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk19" name="dealer-option2" />
+                                    <label for="chk19">파워핸들</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk20" name="dealer-option2" />
+                                    <label for="chk20">핸들 리모컨</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk21" name="dealer-option2" />
+                                    <label for="chk21">가죽시트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk22" name="dealer-option2" />
+                                    <label for="chk22">전동시트</label>
+                                </figure>
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk23" name="dealer-option2" />
+                                    <label for="chk23">운전석</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk24" name="dealer-option2" />
+                                    <label for="chk24">동승석</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk25" name="dealer-option2" />
+                                    <label for="chk25">뒷자석전동시트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk26" name="dealer-option2" />
+                                    <label for="chk26">메모리시트</label>
+                                </figure>
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk26-1" name="dealer-option2" />
+                                    <label for="chk26-1">운전석</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk26-2" name="dealer-option2" />
+                                    <label for="chk26-2">동승석</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk27" name="dealer-option2" />
+                                    <label for="chk27">안마시트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk28" name="dealer-option2" />
+                                    <label for="chk28">슈퍼비전계기판</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk29" name="dealer-option2" />
+                                    <label for="chk29">패들시프트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk30" name="dealer-option2" />
+                                    <label for="chk30">하이패스</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk31" name="dealer-option2" />
+                                    <label for="chk31">엠비언트라이트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk32" name="dealer-option2" />
+                                    <label for="chk32">워크인시트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk33" name="dealer-option2" />
+                                    <label for="chk33">전동햇빛가리개</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk34" name="dealer-option2" />
+                                    <label for="chk34">통풍시트(뒷좌석)</label>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="display-flex-start-area">
+                        <div class="tit-area">안전 (<em>6</em>)</div>
+                        <ul class="box-chk-list2">
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk35" name="dealer-option3" />
+                                    <label for="chk35">주차감지센서</label>
+                                </figure>
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk35-1" name="dealer-option3" />
+                                    <label for="chk35-1">전방</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk35-2" name="dealer-option3" />
+                                    <label for="chk35-2">후방</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk36" name="dealer-option3" />
+                                    <label for="chk36">사이드&#38;커튼에어백</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk37" name="dealer-option3" />
+                                    <label for="chk37">에어백</label>
+                                </figure>
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk37-1" name="dealer-option3" />
+                                    <label for="chk37-1">운전석</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk37-2" name="dealer-option3" />
+                                    <label for="chk37-2">동승석</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk38" name="dealer-option3" />
+                                    <label for="chk38">후방카메라</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk39" name="dealer-option3" />
+                                    <label for="chk39">어라운드뷰</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk40" name="dealer-option3" />
+                                    <label for="chk40">블랙박스</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk41" name="dealer-option3" />
+                                    <label for="chk41">ABS</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk42" name="dealer-option3" />
+                                    <label for="chk42">ECS</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk43" name="dealer-option3" />
+                                    <label for="chk43">TCS</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk44" name="dealer-option3" />
+                                    <label for="chk44">차체자세제어장치</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk45" name="dealer-option3" />
+                                    <label for="chk45">차선이탈경보장치</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk46" name="dealer-option3" />
+                                    <label for="chk46">도난경보기</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk47" name="dealer-option3" />
+                                    <label for="chk47">타이어 공기압감지</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk48" name="dealer-option3" />
+                                    <label for="chk48">무릎에어백</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk49" name="dealer-option3" />
+                                    <label for="chk49">전방카메라</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk50" name="dealer-option3" />
+                                    <label for="chk50">자동긴급제동(AEB)</label>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="display-flex-start-area">
+                        <div class="tit-area">편의 (<em>6</em>)</div>
+                        <ul class="box-chk-list2">
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk51" name="dealer-option4" />
+                                    <label for="chk51">스마트키</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk52" name="dealer-option4" />
+                                    <label for="chk52">파워윈도우</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk53" name="dealer-option4" />
+                                    <label for="chk53">자동도어잠금</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk54" name="dealer-option4" />
+                                    <label for="chk54">풀오토에어컨</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk55" name="dealer-option4" />
+                                    <label for="chk55">오토라이트</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk56" name="dealer-option4" />
+                                    <label for="chk56">자동주차시스템</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk57" name="dealer-option4" />
+                                    <label for="chk57">전자식파킹브레이크</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk58" name="dealer-option4" />
+                                    <label for="chk58">HUD</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk59" name="dealer-option4" />
+                                    <label for="chk59">ECM룸밀러</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk60" name="dealer-option4" />
+                                    <label for="chk60">크루즈컨트롤</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk61" name="dealer-option4" />
+                                    <label for="chk61">전동트렁크</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk62" name="dealer-option4" />
+                                    <label for="chk62">핸들열선</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk63" name="dealer-option4" />
+                                    <label for="chk63">무선도어잠금장치</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk64" name="dealer-option4" />
+                                    <label for="chk64">레인센서와이퍼</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk65" name="dealer-option4" />
+                                    <label for="chk65">스탑앤고</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk66" name="dealer-option4" />
+                                    <label for="chk66">무선충전</label>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="display-flex-start-area">
+                        <div class="tit-area">멀티<br>미디어 (<em>6</em>)</div>
+                        <ul class="box-chk-list2">
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk67" name="dealer-option5" />
+                                    <label for="chk67">내비게이션</label>
+                                </figure>
+                                <span class="form-gap">(</span>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk68" name="dealer-option5" />
+                                    <label for="chk68">운전석</label>
+                                </figure>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk69" name="dealer-option5" />
+                                    <label for="chk69">동승석</label>
+                                </figure>
+                                <span class="form-gap">)</span>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk70" name="dealer-option5" />
+                                    <label for="chk70">CD플레이어</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk71" name="dealer-option5" />
+                                    <label for="chk71">CD체인저</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk72" name="dealer-option5" />
+                                    <label for="chk72">AV시스템</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk73" name="dealer-option5" />
+                                    <label for="chk73">MP3</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk74" name="dealer-option5" />
+                                    <label for="chk74">AUX</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk75" name="dealer-option5" />
+                                    <label for="chk75">USB</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk76" name="dealer-option5" />
+                                    <label for="chk76">핸즈프리</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk77" name="dealer-option5" />
+                                    <label for="chk77">iPod단자</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk78" name="dealer-option5" />
+                                    <label for="chk78">뒷좌석모니터</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk79" name="dealer-option5" />
+                                    <label for="chk79">스마트폰미러링</label>
+                                </figure>
+                            </li>
+                            <li>
+                                <figure class="form-chk">
+                                    <input type="checkbox" id="chk80" name="dealer-option5" />
+                                    <label for="chk80">블루투스</label>
+                                </figure>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">삭제</button>
+            <button type="button" class="btn-type01">저장</button>
+        </div> -->
+    </div>
+    
+</body>
+</html>

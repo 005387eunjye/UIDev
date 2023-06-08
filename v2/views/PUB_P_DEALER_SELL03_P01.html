@@ -28,6 +28,7 @@
     <!--popup-->
     <div class="popup-bg" style="display:block"></div>
     <div class="popup" id="popup01" style="display:block">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
         <h2 class="popup-title">판매완료 신고</h2>
         <div class="popup-body">
             <div class="inner pop-scroll">
@@ -105,11 +106,11 @@
                         <p class="form-tit">판매대상을 선택</p>
                         <div class="form-cont">
                             <span class="form-radio">
-                                <input type="radio" id="delivery3" value="collect" name="delivery-group2">
+                                <input type="radio" id="delivery3" name="delivery-group2">
                                 <label for="delivery3">일반 고객</label>
                             </span>
                             <span class="form-radio">
-                                <input type="radio" id="delivery4" value="collect" name="delivery-group2">
+                                <input type="radio" id="delivery4" name="delivery-group2">
                                 <label for="delivery4">딜러</label>
                             </span>
                             <strong class="coin">+100</strong>
@@ -120,11 +121,11 @@
                         <p class="form-tit">금융사 이용</p>
                         <div class="form-cont">
                             <span class="form-radio">
-                                <input type="radio" id="delivery5" value="collect" name="delivery-group3">
+                                <input type="radio" id="delivery5" name="delivery-group3">
                                 <label for="delivery5">이용함</label>
                             </span>
                             <span class="form-radio">
-                                <input type="radio" id="delivery6" value="collect" name="delivery-group3">
+                                <input type="radio" id="delivery6" name="delivery-group3">
                                 <label for="delivery6">이용안함</label>
                             </span>
                             <strong class="coin">+25</strong>
@@ -162,16 +163,16 @@
                         <p class="form-tit">추가정보 여부</p>
                         <div class="form-cont">
                             <span class="form-radio">
-                                <input type="radio" id="delivery7" value="collect" name="delivery-group4">
+                                <input type="radio" id="delivery7" name="delivery-group4">
                                 <label for="delivery7">있음</label>
                             </span>
                             <span class="form-radio">
-                                <input type="radio" id="delivery8" value="collect" name="delivery-group4">
+                                <input type="radio" id="delivery8" name="delivery-group4">
                                 <label for="delivery8">없음</label>
                             </span>
                             <strong class="coin">+300</strong>
                         </div>
-                        <textarea class="txar-tp1 mgt-m" placeholder="내용 입력"></textarea>
+                        <textarea class="txar-tp1 mgt-m" placeholder="내용 입력" style="height: 109px;"></textarea>
                     </li>
                 </ol>
                 <!--// 입력 수정 정보 -->
@@ -185,8 +186,8 @@
 
         </div>
         <div class="popup-btn">
-            <button type="button" class="btn-type01">판매완료 확정</button>
             <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <button type="button" class="btn-type01">판매완료 확정</button>
         </div>
     </div>
     

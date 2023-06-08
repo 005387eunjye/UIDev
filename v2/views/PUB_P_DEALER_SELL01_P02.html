@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev01">일반차량 가격 수정</button>
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev02">특가차량 가격 수정</button>
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev03">KB인증차량 가격 수정</button>
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev04">운용리스 CASE</button>
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev05">금융리스 CASE</button>
+    <!--popup-->
+    <div class="popup-bg" style="display:block;"></div>
+    <div class="popup" id="price-rev01"  style="display:block;">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">차량 가격 수정</h2>
+        <div class="popup-body">
+            <div class="inner">
+                <div class="sell-price-area">
+                    <p class="tit">판매 가격</p>
+                    <p class="input-area">
+                        <input type="number" value="2430">만원
+                    </p>
+                </div>
+                <div class="sell-price-txt-ballon">
+                    <div class="ad-area">
+                        <span>AD</span>특가차량으로 광고 노출도를 더욱 높여보세요!
+                    </div>
+                    <div class="special-price-car-area">
+                        <p class="tit">특가차량 신청</p>
+                        <div class="form-box">
+                            <p class="input-area">
+                                <input type="number">만원
+                            </p>
+                            <button type="button" class="btn-type02 sm">신청</button>
+                        </div>
+                    </div>
+                    <ul class="dot-txt">
+                        <li>특가차량테마 구역에 차량이 노출됩니다.</li>
+                        <li>현재 판매금액보다 적은 금액만 입력할 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <button type="button" class="btn-type01">확인</button>
+        </div>
+    </div>
+    <div class="popup" id="price-rev02">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">차량 가격 수정</h2>
+        <div class="popup-body">
+            <div class="inner">
+                <div class="sell-price-area">
+                    <p class="tit">판매 가격</p>
+                    <p class="input-area del">
+                        <input type="number" value="2430">만원
+                    </p>
+                </div>
+                <div class="sell-price-txt-ballon">
+                    <div class="ad-area">
+                        <span>AD</span>특가차량으로 광고 노출도를 더욱 높여보세요!
+                    </div>
+                    <div class="special-price-car-area">
+                        <p class="tit">특가차량 신청</p>
+                        <div class="form-box">
+                            <p class="input-area">
+                                <input type="number" value="3350">만원
+                            </p>
+                            <button type="button" class="btn-type02 sm">취소</button>
+                        </div>
+                    </div>
+                    <ul class="dot-txt">
+                        <li>특가차량테마 구역에 차량이 노출됩니다.</li>
+                        <li>현재 판매금액보다 적은 금액만 입력할 수 있습니다.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <button type="button" class="btn-type01">확인</button>
+        </div>
+    </div>
+    <div class="popup" id="price-rev03">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">차량 가격 수정</h2>
+        <div class="popup-body">
+            <div class="inner">
+                <div class="sell-price-area">
+                    <p class="tit">현금 판매가</p>
+                    <p class="input-area">
+                        <input type="number" value="2430">만원
+                    </p>
+                </div>
+                <div class="sell-price-txt-ballon gray">
+                    <div class="special-price-car-area none-flex">
+                        <p class="tit">월 납입액</p>
+                        <div class="form-box">
+                            <div class="form-radio">
+                                <input type="radio" id="finance1" name="finance" value="finance">
+                                <label for="finance1">표기안함</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="finance2" name="finance" value="finance">
+                                <label for="finance2">인증리스</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="finance3" name="finance" value="finance">
+                                <label for="finance3">인증렌트</label>
+                            </div>
+                        </div>
+                        <ul class="dot-txt">
+                            <li>선수금 30% / 48개월 기준</li>
+                        </ul>
+                    </div> 
+                    <div class="special-price-car-area">
+                        <p class="tit">월 납입액</p>
+                        <div class="form-box">
+                            <p class="input-area">
+                                <input type="number" value="3350">만원
+                            </p>
+                        </div>
+                    </div>  
+                    <div class="special-price-car-area">
+                        <p class="tit">금융이용 할인금액</p>
+                        <div class="form-box">
+                            <p class="input-area">
+                                <input type="number" value="3350">만원
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <button type="button" class="btn-type01">확인</button>
+        </div>
+    </div>
+    <div class="popup" id="price-rev04">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">차량 가격 수정</h2>
+        <div class="popup-body">
+            <div class="inner pop-scroll">
+                <div class="sell-price-txt-ballon noBg">
+                    <div class="special-price-car-area none-flex">
+                        <p class="tit">리스 구분</p>
+                        <div class="form-box">
+                            <div class="form-radio">
+                                <input type="radio" id="lease1"  checked name="lease" value="lease">
+                                <label for="lease1">운용리스</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="lease2" name="lease" value="lease">
+                                <label for="lease2">금융리스</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lease-price-area">
+                        <div class="lease-price-box">
+                            <p class="tit">월리스료</p>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lease-price-box">
+                            <div class="tit">
+                                <div class="form-radio">
+                                    <input type="radio" id="leaseWay1" name="leaseWay" value="leaseWay">
+                                    <label for="leaseWay1">보증금</label>
+                                </div>
+                                <div class="form-radio">
+                                    <input type="radio" id="leaseWay2" name="leaseWay"  value="leaseWay"> 
+                                    <label for="leaseWay2">선수금</label>
+                                </div>
+                            </div>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lease-price-box">
+                            <p class="tit">인수비용</p>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lease-price-box">
+                            <p class="tit">잔존가치</p>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="special-price-car-area none-flex">
+                        <p class="tit">리스기간</p>
+                        <div class="form-box">
+                            <!--연도선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">연도 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- // 연도선택-->
+
+                            <!--월 선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">월 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 월 선택-->
+                            <div class="period"> ~ </div>
+                            <!--연도선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">연도 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- // 연도선택-->
+
+                            <!--월 선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">월 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 월 선택-->
+                        </div>
+                    </div>
+                    <div class="special-price-car-area none-flex">
+                        <p class="tit">잔여 기간<em>(선택)</em></p>
+                        <div class="form-box">
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="total-month">/ 총 00 개월</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <button type="button" class="btn-type01">확인</button>
+        </div>
+    </div>
+    <div class="popup" id="price-rev05">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">차량 가격 수정</h2>
+        <div class="popup-body">
+            <div class="inner pop-scroll">
+                <div class="sell-price-txt-ballon noBg">
+                    <div class="special-price-car-area none-flex">
+                        <p class="tit">리스 구분</p>
+                        <div class="form-box">
+                            <div class="form-radio">
+                                <input type="radio" id="lease3" name="">
+                                <label for="lease3">운용리스</label>
+                            </div>
+                            <div class="form-radio">
+                                <input type="radio" id="lease4"  checked name="">
+                                <label for="lease4">금융리스</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lease-price-area">
+                        <div class="lease-price-box">
+                            <p class="tit">월리스료</p>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lease-price-box">
+                            <div class="tit">
+                                보증금
+                            </div>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lease-price-box">
+                            <p class="tit">인수비용</p>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                        <div class="lease-price-box">
+                            <p class="tit">잔존가치</p>
+                            <div class="form-box">
+                                <p class="input-area">
+                                    <input type="number" value="0">만원
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="special-price-car-area none-flex">
+                        <p class="tit">리스기간</p>
+                        <div class="form-box">
+                            <!--연도선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">연도 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- // 연도선택-->
+
+                            <!--월 선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">월 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 월 선택-->
+                            <div class="period"> ~ </div>
+                            <!--연도선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">연도 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- // 연도선택-->
+
+                            <!--월 선택-->
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">월 선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 월 선택-->
+                        </div>
+                    </div>
+                    <div class="special-price-car-area none-flex">
+                        <p class="tit">잔여 기간<em>(선택)</em></p>
+                        <div class="form-box">
+                            <div class="custom-select-box">
+                                <span class="custom-select-selection">선택</span>
+                                <div class="custom-select-option-box">
+                                    <ul>
+                                        <li class="active">옵션1</li>
+                                        <li>옵션2</li>
+                                        <li>옵션3</li>
+                                        <li>옵션4</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <span class="total-month">/ 총 00 개월</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <button type="button" class="btn-type01">확인</button>
+        </div>
+    </div>
+</body>
+</html>

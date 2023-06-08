@@ -14,7 +14,9 @@
 
     <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
     <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
     <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
     <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
 
@@ -32,6 +34,7 @@
                 <div class="lnb dealer-sell01-lnb">
                 </div>
                 <!-- // dealer sell lnb-->
+                
                 <div class="section-area-grid">
                     <div class="title-area">
                         <h2 class="title">
@@ -156,8 +159,10 @@
                                         <ul class="drop-down-box-option">
                                             <li>광고등록일 최신순</li><!--// 기본값-->
                                             <li>업데이트 최신순</li>
-                                            <li>광고기간 오래된순/짧은순</li>
-                                            <li>판매가격 높은순/낮은순</li>
+                                            <li>광고기간 오래된순</li>
+                                            <li>광고기간 짧은순</li>
+                                            <li>판매가격 높은순</li>
+                                            <li>판매가격 낮은순</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -168,7 +173,7 @@
                                     <caption>내차관리 광고중 차 내역</caption>
                                     <colgroup>
                                         <col style="width: 3.5rem;">
-                                        <col style="*">
+                                        <col style="width:auto">
                                         <col style="width: 12rem;">
                                         <col style="width: 11.3rem;">
                                         <col style="width: 16rem;">
@@ -188,13 +193,13 @@
                                                         <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
                                                         <span class="car-info-num">123부6077</span>
                                                     </div>
-                                                    <div class="car-info-detail">
+                                                    <div class="car-info-detail wid-ty-normal">
                                                         <div class="tag">
                                                             <span>실차주</span>
                                                             <span>연동광고</span>
                                                             <span>진단</span>
                                                         </div>
-                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8 페라리 F8 Tributo 3.9 V8</h3>
                                                         <p class="car-etc">
                                                             <span>20년 07월(20년형)</span>
                                                             <span>7,831km</span>
@@ -256,7 +261,7 @@
                                                         <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
                                                         <span class="car-info-num">123부6077</span>
                                                     </div>
-                                                    <div class="car-info-detail">
+                                                    <div class="car-info-detail wid-ty-normal">
                                                         <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
                                                         <p class="car-etc">
                                                             <span>20년 07월(20년형)</span>
@@ -318,7 +323,7 @@
                                                         <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
                                                         <span class="car-info-num">123부6077</span>
                                                     </div>
-                                                    <div class="car-info-detail">
+                                                    <div class="car-info-detail wid-ty-normal">
                                                         <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
                                                         <p class="car-etc">
                                                             <span>20년 07월(20년형)</span>
@@ -385,10 +390,28 @@
                         </div>
                     </div>
                 </div>
+                <!--wing banner-->
+                <div class="wing-banner">
+                    <h4 class="title">
+                        차차차's TIP!
+                    </h4>
+                    <i>
+                        <img src="/UIDev/v2/images/icon/sell01-icon01.png" alt="">
+                    </i>
+                    <div class="txt">
+                        어드민에서 직접<br><span>입력한</span> 텍스트 내용<br>노출
+                    </div>
+                    <div class="btn">
+                        <button type="button" class="btn-type02 sm">버튼명</button>
+                    </div>
+                </div>
+                <!--// wing banner-->
             </div>
             <!-- [Start] 페이지 전용 js -->
             <script type="text/javascript">
                 ;(function ($, win, doc, undefined) {
+
+                    //all check
                     $(".all-chk input").change(function() {
                         if (this.checked) {
                             $(".chk-js input").each(function() {
@@ -417,6 +440,35 @@
                             $(".all-chk input").prop("checked", false);
                         }
                     });
+
+
+                    //wing banner
+                    if($('.wing-banner').length > 0){
+                        $('.section-area-cont').addClass('hasWing');
+                    }
+                    
+
+                    $(window).scroll(function(){
+                        const winWid = $(window).scrollLeft();
+                        const wingLeft = $('body').width() / 2 + 630 - winWid;
+                        const winScroll = $(window).scrollTop();
+                        const contH = $('.section-area-cont').height();
+                        const wing = $('.wing-banner');
+                        const wingTop = $('.section-area-cont').offset().top;
+
+                        if(winScroll >= 0 && winScroll < wingTop){
+                            wing.removeClass('scroll-on');
+                            wing.removeClass('scroll-end');
+                            wing.css('left', 'auto');
+                        }else if(winScroll >= wingTop && winScroll <= wingTop + contH - (wing.height() + 150)){
+                            wing.addClass('scroll-on');
+                            wing.css('left', wingLeft);
+                        }else if(winScroll > wingTop + contH - (wing.height() + 150)){
+                            wing.removeClass('scroll-on');
+                            wing.addClass('scroll-end');
+                            wing.css('left', 'auto');
+                        }
+                    });
                 })(jQuery, window, document);
             </script>
             <!-- // [End] 페이지 전용 js -->
@@ -429,6 +481,7 @@
     <!--popup-->
     <div class="popup-bg"></div>
     <div class="popup" id="popup01">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close btn</a>
         <h2 class="popup-title">
             팝업입니다.
         </h2>

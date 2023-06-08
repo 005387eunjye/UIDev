@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#popup01">차량 가격 일괄 수정</button>
+
+    <!--popup-->
+    <div class="popup-bg" style="display:block"></div>
+    <div class="popup md" id="popup01" style="display:block">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">차량 가격 일괄 수정
+            <p class="popup-sub-title color-gray">※ 리스승계 초특가 차량의 가격은 광고수정 화면에서 수정할 수 있습니다.</p>
+        </h2>
+        <div class="popup-body">
+            <div class="tbl-th-item">
+                <span style="width:40rem;">차량정보</span>
+                <span style="width:10rem;">현재가격</span>
+                <span style="width:15rem;">수정가격</span>
+            </div>
+            <div class="inner pop-scroll">
+                <div class="car-search-result-table mgt-0">
+                    <table>
+                        <caption>내차관리 광고중 차 내역</caption>
+                        <colgroup>
+                            <col style="width:auto;">
+                            <col style="width: 10rem;">
+                            <col style="width: 15rem;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <!-- car-info -->
+                                    <div class="car-search-result-table type-sm">
+                                        <div class="car-info">
+                                            <div class="thumb-img">
+                                                <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                <span class="car-info-num">123부6077</span>
+                                            </div>
+                                            <div class="car-info-detail wid-ty-normal">
+                                                <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                <p class="car-etc">
+                                                    <span>20년 07월(20년형)</span>
+                                                    <span>7,831km</span>
+                                                    <span>가솔린</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// car-info -->
+                                </td>
+                                <td class="tal">
+                                    <p class="price-ty2"><span>4,000</span> 만원</p>
+                                </td>
+                                <td>
+                                    <div class="input-price-area">
+                                        <span class="price">
+                                            <input id='result' type="number" class="ipt-pay" value="38000"> 만원 <!--// 가격 수정시 .ty-normal 삭제 -->
+                                        </span>
+                                        <span class="btn-pm-area">
+                                            <button type="button" class="btn-plus"><span>plus</span></button>
+                                            <button type="button" class="btn-minus"><span>minus</span></button>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- car-info -->
+                                    <div class="car-search-result-table type-sm">
+                                        <div class="car-info">
+                                            <div class="thumb-img">
+                                                <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                <span class="car-info-num">123부6077</span>
+                                            </div>
+                                            <div class="car-info-detail wid-ty-normal">
+                                                <h3 class="car-name">페라리 F8 Tributo 3.9 V8 페라리 F8 Tributo 3.9 V8페라리 F8 Tributo 3.9 V8</h3>
+                                                <p class="car-etc">
+                                                    <span>20년 07월(20년형)</span>
+                                                    <span>7,831km</span>
+                                                    <span>가솔린</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// car-info -->
+                                </td>
+                                <td class="tal">
+                                    <p class="price-ty2"><span>40,000</span> 만원</p>
+                                </td>
+                                <td>
+                                    <div class="input-price-area">
+                                        <span class="price">
+                                            <input type="number" class="ipt-pay ty-normal" value="38000"> 만원  <!--// 가격 수정시 .ty-normal 삭제 -->
+                                        </span>
+                                        <span class="btn-pm-area">
+                                            <button type="button" class="btn-plus"><span>plus</span></button>
+                                            <button type="button" class="btn-minus"><span>minus</span></button>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- car-info -->
+                                    <div class="car-search-result-table type-sm">
+                                        <div class="car-info">
+                                            <div class="thumb-img">
+                                                <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                <span class="car-info-num">123부6077</span>
+                                            </div>
+                                            <div class="car-info-detail wid-ty-normal">
+                                                <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                <p class="car-etc">
+                                                    <span>20년 07월(20년형)</span>
+                                                    <span>7,831km</span>
+                                                    <span>가솔린</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// car-info -->
+                                </td>
+                                <td class="tal">
+                                    <p class="price-ty2"><span>400,000</span> 만원</p>
+                                </td>
+                                <td>
+                                    <div class="input-price-area">
+                                        <span class="price">
+                                            <input type="number" class="ipt-pay" value="38000"> 만원 <!--// 가격 수정시 .ty-normal 삭제 -->
+                                        </span>
+                                        <span class="btn-pm-area">
+                                            <button type="button" class="btn-plus"><span>plus</span></button>
+                                            <button type="button" class="btn-minus"><span>minus</span></button>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- car-info -->
+                                    <div class="car-search-result-table type-sm">
+                                        <div class="car-info">
+                                            <div class="thumb-img">
+                                                <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                <span class="car-info-num">123부6077</span>
+                                            </div>
+                                            <div class="car-info-detail wid-ty-normal">
+                                                <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                <p class="car-etc">
+                                                    <span>20년 07월(20년형)</span>
+                                                    <span>7,831km</span>
+                                                    <span>가솔린</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// car-info -->
+                                </td>
+                                <td class="tal">
+                                    <p class="price-ty2"><span>40,000</span> 만원</p>
+                                </td>
+                                <td>
+                                    <div class="input-price-area">
+                                        <span class="price">
+                                            <input type="number" class="ipt-pay ty-normal" value="38000"> 만원 <!--// 가격 수정시 .ty-normal 삭제 -->
+                                        </span>
+                                        <span class="btn-pm-area">
+                                            <button type="button" class="btn-plus"><span>plus</span></button>
+                                            <button type="button" class="btn-minus"><span>minus</span></button>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <!-- car-info -->
+                                    <div class="car-search-result-table type-sm">
+                                        <div class="car-info">
+                                            <div class="thumb-img">
+                                                <img src="/UIDev/v2/images/temp/@thumb-car1.jpg" alt="차 이미지">
+                                                <span class="car-info-num">123부6077</span>
+                                            </div>
+                                            <div class="car-info-detail wid-ty-normal">
+                                                <h3 class="car-name">페라리 F8 Tributo 3.9 V8</h3>
+                                                <p class="car-etc">
+                                                    <span>20년 07월(20년형)</span>
+                                                    <span>7,831km</span>
+                                                    <span>가솔린</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// car-info -->
+                                </td>
+                                <td class="tal">
+                                    <p class="price-ty2"><span>40,000</span> 만원</p>
+                                </td>
+                                <td>
+                                    <div class="input-price-area">
+                                        <span class="price">
+                                            <input type="number" class="ipt-pay ty-normal" value="38000"> 만원 <!--// 가격 수정시 .ty-normal 삭제 -->
+                                        </span>
+                                        <span class="btn-pm-area">
+                                            <button type="button" class="btn-plus"><span>plus</span></button>
+                                            <button type="button" class="btn-minus"><span>minus</span></button>
+                                        </span>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <button type="button" class="btn-type01">확인</button>
+        </div>
+    </div>
+    
+</body>
+</html>

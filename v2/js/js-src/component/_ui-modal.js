@@ -5,12 +5,6 @@ const uiModal = () => {
         let popupLayer = $(this).attr('data-target');
         openPop(popupLayer);
     });
-
-    $('.popup-bg').click(function(){
-        $('.popup').hide();
-        closePop();
-    });
-
     $('.popup-close-btn').click(function(){
         let popupLayer  = $(this).parents('.popup').attr('id');
         closePop(popupLayer);

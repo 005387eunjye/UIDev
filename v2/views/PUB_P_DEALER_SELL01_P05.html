@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#popup01">코인광고 관리</button>
+
+    <!--popup-->
+    <div class="popup-bg" style="display:block"></div>
+    <div class="popup md" id="popup01" style="display:block">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">코인광고 관리</h2>
+        <div class="popup-body">
+            <div class="inner">
+                <h3 class="tit-h3">나의 KB코인 <span class="color-main">345,350c</span></h3>
+                
+                <div class="tab-list tab-ty2 mgt-l">
+                    <ul>
+                        <li class="on">
+                            <a href="#tab01">
+                                <strong class="tab-tit">자동업데이트 <em>100c</em></strong>
+                                <span class="tab-sub-txt">차량을 일반차량 리스트 맨 앞으로<br>이동시키는 업데이트 광고</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab02">
+                                <strong class="tab-tit">딜러우대광고 <em>500c</em></strong>
+                                <span class="tab-sub-txt">차량 리스트 상단<br>주요영역에 노출하는 광고</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#tab03">
+                                <strong class="tab-tit">핫마크<span class="flag-ing">이용중</span> <em>500c</em></strong>
+                                <span class="tab-sub-txt">차량의 강점 키워드를<br>리스트에서 안내하는 광고</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content tab-cont-ty2">
+                    <div id="tab01">
+                        <h4 class="tit-h4">업데이트 시간설정</h4>
+                        <p class="txt-sub">차량이 업데이트 되는 시간을 입력해보세요!</p>
+
+                        <div class="display-flex-area mgt-l">
+                            <ol class="form-list2">
+                                <li>
+                                    <span class="tit-center-area">1회</span> 
+                                    <div class="img-input-area"><span class="img-input"><input type="number"><span class="gap-item">:</span><input type="number"></span></div>
+                                </li>
+                                <li>
+                                    <span class="tit-center-area">2회</span> 
+                                    <div class="img-input-area"><span class="img-input"><input type="number"><span class="gap-item">:</span><input type="number"></span></div>
+                                </li>
+                                <li>
+                                    <span class="tit-center-area">3회</span> 
+                                    <div class="img-input-area"><span class="img-input"><input type="number"><span class="gap-item">:</span><input type="number"></span></div>
+                                </li>
+                                <li>
+                                    <span class="tit-center-area">4회</span> 
+                                    <div class="img-input-area"><span class="img-input"><input type="number"><span class="gap-item">:</span><input type="number"></span></div>
+                                </li>
+                                <li>
+                                    <span class="tit-center-area">5회</span> 
+                                    <div class="img-input-area"><span class="img-input"><input type="number"><span class="gap-item">:</span><input type="number"></span></div>
+                                </li>
+                                <li>
+                                    <span class="tit-center-area">6회</span> 
+                                    <div class="img-input-area"><span class="img-input"><input type="number"><span class="gap-item">:</span><input type="number"></span></div>
+                                </li>
+                            </ol> 
+                            
+                            <div class="box-tip-area">
+                                <p class="tit-blue"><i class="icon-recommend"></i>차차차’s TIP!</p>
+                                <p class="txt-sub2">시간 설정이 어렵다면?<br>아래 <strong>추천시간 자동입력</strong>을 활용해보세요!</p>
+                                <ul class="list-btn-area wid-sm">
+                                    <li><span>출퇴근 시간 공략</span><button type="button" class="btn-type02 sm">적용하기</button></li>
+                                    <li><span>조회 노출 많은시간 공략</span><button type="button" class="btn-type02 sm">적용하기</button></li>
+                                    <li><span>구매문의 많은 시간 공략</span><button type="button" class="btn-type02 sm">적용하기</button></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="popup-btn pop-btn-ty2">
+                            <button type="button" class="btn-type01">자동업데이트 이용하기</button>
+                        </div>
+                    </div>
+                    <div id="tab02">
+                        <div class="display-flex-area mgt-l">
+                            <div>
+                                <img src="/UIDev/v2/images/common/img-sell01-p05.jpg" alt="홈페이지 내 우대광고 위치를 보여주는 이미지">
+                            </div> 
+                            
+                            <div class="box-tip-area">
+                                <p class="tit-blue"><i class="icon-recommend"></i>차차차’s TIP!</p>
+                                <p class="txt-sub2">리스트 첫페이지 상단에 노출되는 딜러 우대광고를<br>활용해서 광고 효과를 높여보세요!</p>
+                            </div>
+                        </div>
+                        <div class="popup-btn pop-btn-ty2">
+                            <button type="button" class="btn-type01">딜러우대광고 이용하기</button>
+                        </div>
+                    </div>
+                    <div id="tab03">
+                        <h4 class="tit-h4">핫마크를 선택해주세요 (최대 3개)</h4>
+                        <div class="box-chk-list">
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk00" checked="checked">
+                                <label for="chk00">급매</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk01">
+                                <label for="chk01">가격절충</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk02">
+                                <label for="chk02">리스승계</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk03">
+                                <label for="chk03">개인직거래</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk04">
+                                <label for="chk04">가격저렴</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk05">
+                                <label for="chk05">신차급</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk06">
+                                <label for="chk06">튜닝</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk07" checked="checked">
+                                <label for="chk07">특옵션</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk08">
+                                <label for="chk08">제조사보증</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk09" checked="checked">
+                                <label for="chk09">짧은km</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk10">
+                                <label for="chk10">4륜구동</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk11">
+                                <label for="chk11">무사고</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk12">
+                                <label for="chk12">LPG</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk13">
+                                <label for="chk13">전기차</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk14">
+                                <label for="chk14">하이브리드</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk15">
+                                <label for="chk15">1인소유</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk16">
+                                <label for="chk16">여성소유</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk17">
+                                <label for="chk17">비흡연</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk18">
+                                <label for="chk18">장애인</label>
+                            </figure>
+                            <figure class="form-chk2">
+                                <input type="checkbox" id="chk19">
+                                <label for="chk19">24시상담</label>
+                            </figure>
+                        </div>
+                        <div class="popup-btn pop-btn-ty2">
+                            <button type="button" class="btn-type01">핫마크 이용하기</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                
+            
+        </div>
+        
+    </div>
+    
+</body>
+</html>

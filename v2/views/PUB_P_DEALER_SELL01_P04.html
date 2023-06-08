@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#popup01">잠깐! 놓치고 있는 옵션이 있다면?</button>
+
+    <!--popup-->
+    <div class="popup-bg" style="display:block"></div>
+    <div class="popup sm" id="popup01" style="display:block">
+        <h2 class="popup-title tit-ty1 gap-ty">잠깐! 놓치고 있는 옵션이 있다면?</h2>
+        <div class="popup-body">
+            <!--// 스크롤 필요시 inner에 .pop-scroll 추가-->
+            <div class="inner">
+                <div class="box-gray tac">
+                    <p class="box-gray-tit">차차차가 아래와 같이 알려드려요.</p>
+                    <p class="box-txt-ty1"><span class="point-push">가죽시트</span></p>
+                    <ul class="txt-list display-inline-block">
+                        <li><span class="dot"></span>실제 있는 옵션인지 확인 후 체크해주세요.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type01 popup-close-btn">확인</button>
+        </div>
+    </div>
+    
+</body>
+</html>
