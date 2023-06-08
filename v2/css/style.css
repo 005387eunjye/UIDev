@@ -287,7 +287,7 @@ body {
 }
 
 .body-area {
-  min-width: 126rem;
+  min-width: 130rem;
   width: 100%;
   height: 100%;
 }
@@ -298,12 +298,11 @@ body {
 }
 
 .section-area {
-  width: 126rem;
+  width: 130rem;
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  padding-top: 4.8rem;
-  padding-bottom: 10.5rem;
+  padding: 4.8rem 2rem 10.5rem 2rem;
   position: relative;
 }
 .section-area .section-area-grid {
@@ -316,14 +315,16 @@ body {
 .lnb {
   width: 23.9rem;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   text-align: left;
 }
 .lnb .lnb-title {
-  margin-bottom: 4.25rem;
+  margin-bottom: 4.2rem;
+  font-size: 1.8rem;
+  font-weight: 700;
 }
 .lnb .lnb-list li + li {
-  margin-top: 2.75rem;
+  margin-top: 2rem;
 }
 .lnb .lnb-list a.active {
   color: #FF5D16;
@@ -349,28 +350,32 @@ body {
   margin-top: -0.3rem;
 }
 .lnb .lnb-btn {
-  margin-top: 3rem;
+  margin-top: 4.5rem;
 }
 .lnb .lnb-btn .ad-btn {
+  position: relative;
   display: block;
+  width: 17rem;
   height: 4rem;
-  line-height: 4rem;
+  padding: 0 1.6rem 0 1.25rem;
   background-color: #f7f5f2;
   box-sizing: border-box;
-  padding: 0 1.6rem 0 1.25rem;
+  line-height: 4rem;
   font-size: 1.6rem;
   text-align: left;
-  width: 17rem;
-  position: relative;
+  font-weight: 500;
+  letter-spacing: -0.03em;
+  font-family: inherit;
 }
 .lnb .lnb-btn .ad-btn span:before {
   content: "";
   background-repeat: no-repeat;
   background-position: center center;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   margin-right: 0.86rem;
   display: inline-block;
+  vertical-align: -2px;
 }
 .lnb .lnb-btn .ad-btn:after {
   content: "";
@@ -403,6 +408,9 @@ body {
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 2.4rem;
+}
+.section-area-grid .title-area .title span {
+  margin-right: 1rem;
 }
 .section-area-grid .title-area .title strong {
   color: #FF5D16;
@@ -721,7 +729,7 @@ body {
   color: #757575;
 }
 .car-search-result-table .diagnosis.diagnosis-pd {
-  padding-left: 4rem;
+  padding-left: 1rem;
   margin-bottom: 1.05rem;
 }
 .car-search-result-table .view-num {
@@ -766,6 +774,7 @@ body {
 }
 .car-search-result-table .button-area .btn-type04.full em {
   color: #FF5D16;
+  font-style: normal;
 }
 .car-search-result-table .button-area2 {
   text-align: right;
@@ -940,7 +949,7 @@ body {
 .wing-banner {
   position: absolute;
   right: -19rem;
-  top: 11rem;
+  top: 4.8rem;
   border: solid 1px #E9E9E9;
   border-radius: 0.8rem;
   text-align: center;
@@ -996,6 +1005,7 @@ body {
 .dot-txt li {
   padding-left: 0.6rem;
   position: relative;
+  letter-spacing: normal;
 }
 .dot-txt li:before {
   content: "";
@@ -1010,9 +1020,10 @@ body {
 
 .header-area {
   border-bottom: 0.1rem solid #EDEDED;
+  padding: 0 2rem;
 }
 .header-area .header-area-grid {
-  width: 126rem;
+  width: 130rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1165,7 +1176,7 @@ body {
   font-size: 1.6rem;
 }
 .footer-area .footer-area-grid {
-  width: 126rem;
+  width: 130rem;
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -1648,8 +1659,8 @@ button.disabled {
   font-size: 0;
 }
 .form-chk input[type=checkbox]:checked + label::before {
-  background-image: url(/UIDev/v2/images/icon/checked.png);
-  border: solid 1px #FF5D16;
+  background-image: url(/UIDev/v2/images/icon/icon-ck-on.png);
+  border: solid 0.1rem #FF5D16;
 }
 .form-chk input[type=checkbox] + label {
   cursor: pointer;
@@ -1659,15 +1670,14 @@ button.disabled {
   display: inline-block;
   border-radius: 50%;
   border: 1px solid #ddd;
-  background-image: url(/UIDev/v2/images/icon/check.png);
+  background-image: url(/UIDev/v2/images/icon/icon-ck-off.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 7px;
-  width: 18px;
-  height: 18px;
+  background-position: 0.3rem 0.4rem;
+  width: 1.8rem;
+  height: 1.8rem;
   text-align: center;
-  font-size: 10px;
-  margin-right: 5px;
+  font-size: 1rem;
+  margin-right: 0.5rem;
   vertical-align: middle;
 }
 
@@ -1682,7 +1692,7 @@ button.disabled {
   font-size: 0;
 }
 .form-chk2 input[type=checkbox]:checked + label {
-  border: 1px solid #FFDFD0;
+  border: 0.1rem solid #FFDFD0;
   color: #FF5D16;
 }
 .form-chk2 input[type=checkbox]:checked + label::before {
@@ -2011,14 +2021,13 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   font-size: 1.3rem;
   color: #000;
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0 1.4rem 0 1rem;
   box-sizing: border-box;
   position: relative;
 }
 .drop-down-box .drop-down-box-tit a::after {
   content: "";
-  background: #fff url("/UIDev/v2/images/icon/down.png") 0 0 no-repeat;
-  background-size: 0.9rem;
+  background: #fff url("/UIDev/v2/images/icon/icon_down-s.png") 0 0 no-repeat;
   margin-left: 0.6rem;
   width: 0.9rem;
   height: 0.7rem;
@@ -2194,6 +2203,10 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 .form-list > li .form-cont .form-radio + .form-radio {
   margin-left: 1.5rem;
 }
+.form-list > li .form-cont .form-radio label.tit {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 .form-list > li .form-cont .form-radio .inline-ty1 {
   margin-left: 1rem;
 }
@@ -2278,6 +2291,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 
 .wid-ty-normal {
   width: 28rem;
+  padding-right: 2rem;
 }
 
 .wid-ty-s {
@@ -2924,7 +2938,7 @@ span.point-push::after {
   padding: 2.2rem 3rem;
   position: relative;
   border-radius: 0.8rem;
-  padding-top: 1rem;
+  padding-top: 1.867rem;
   margin-top: 1rem;
 }
 .sell-price-txt-ballon.gray {

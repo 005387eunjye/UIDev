@@ -3,6 +3,7 @@
 
 .header-area {
     border-bottom: .1rem solid #EDEDED;
+    padding: 0 2rem;
     .header-area-grid {
         @include common-layout;
         position: relative;

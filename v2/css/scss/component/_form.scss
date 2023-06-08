@@ -14,8 +14,8 @@
         font-size:0;
         &:checked{
             &+label::before{
-                background-image: url(/UIDev/v2/images/icon/checked.png);
-                border:solid 1px #FF5D16;
+                background-image: url(/UIDev/v2/images/icon/icon-ck-on.png);
+                border:solid .1rem #FF5D16;
             }
         }
         & + label{
@@ -25,15 +25,15 @@
                 display:inline-block;
                 border-radius:50%;
                 border:1px solid #ddd;
-                background-image: url(/UIDev/v2/images/icon/check.png);
+                background-image: url(/UIDev/v2/images/icon/icon-ck-off.png);
                 background-repeat: no-repeat;
-                background-position: center center;
-                background-size:7px;
-                width:18px;
-                height:18px; 
+                background-position: .3rem .4rem;
+                
+                width:1.8rem;
+                height:1.8rem; 
                 text-align: center; 
-                font-size:10px; 
-                margin-right:5px; 
+                font-size:1rem; 
+                margin-right:.5rem; 
                 vertical-align:middle;
 
             }
@@ -51,7 +51,7 @@
         font-size:0;
         &:checked{
             &+label {
-                border:1px solid #FFDFD0;
+                border:.1rem solid #FFDFD0;
                 color: $main-color;
                 &::before{
                     content:'';

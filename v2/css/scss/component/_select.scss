@@ -50,7 +50,6 @@
     }
 }
 
-
 .drop-down-box{
     position:relative;
     .drop-down-box-tit a{
@@ -58,13 +57,13 @@
         font-size:1.3rem;
         color:#000;
         display:inline-block;
-        padding:0 1rem;
+        padding:0 1.4rem 0 1rem;
         box-sizing: border-box;
         position:relative;
         &::after{
             content: '';
-            background:#fff url('/UIDev/v2/images/icon/down.png') 0 0 no-repeat;
-            background-size: 0.9rem;
+            background:#fff url('/UIDev/v2/images/icon/icon_down-s.png') 0 0 no-repeat;
+            
             margin-left:0.6rem;
             width:0.9rem;
             height:0.7rem;

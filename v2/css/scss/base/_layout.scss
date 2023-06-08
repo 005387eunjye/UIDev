@@ -7,7 +7,7 @@ body {
     font-size: $font-size-normal;
     color: $font-color-black;
     word-break: break-all;
-    letter-spacing: -0.1rem;
+    letter-spacing: -.05rem;
 }
 .body-area {
     min-width: $pc-min-width;
@@ -21,8 +21,7 @@ body {
 .section-area {
     @include common-layout;
     display:flex;
-    padding-top:4.8rem;
-    padding-bottom: 10.5rem;
+    padding: 4.8rem 2rem 10.5rem 2rem;
     position: relative;
     .section-area-grid {
         width:102.1rem;
@@ -36,14 +35,16 @@ body {
     width:23.9rem;
     //color:$bk-color;
     font-weight: $font-weight-bold;
-    font-size:1.8rem;
+    font-size:1.6rem;
     text-align: left;
     .lnb-title{
-        margin-bottom: 4.25rem;
+        margin-bottom: 4.2rem;
+        font-size: $font-size-xlarge;
+        font-weight: $font-weight-bold;
     }
     .lnb-list{
         li + li{
-            margin-top:2.75rem;
+            margin-top:2rem;
         }
         a.active{
             color:$main-color;
@@ -70,27 +71,31 @@ body {
         }
     }
     .lnb-btn{
-        margin-top:3rem;
+        margin-top:4.5rem;
         .ad-btn{
+            position:relative;
             display:block;
+            width:17rem;
             height:4rem;
-            line-height: 4rem;
+            padding:0 1.6rem 0 1.25rem;
             background-color:#f7f5f2;
             box-sizing: border-box;
-            padding:0 1.6rem 0 1.25rem;
+            line-height: 4rem;
             font-size:1.6rem;
             text-align: left;
-            width:17rem;
-            position:relative;
+            font-weight: $font-weight-medium;
+            letter-spacing: -.03em;
+            font-family: inherit;
         }
         .ad-btn span:before{
             content:'';
             background-repeat: no-repeat;
             background-position: center center;
-            width:1.4rem;
-            height:1.4rem;
+            width:1.5rem;
+            height:1.5rem;
             margin-right:0.86rem;
             display:inline-block;
+            vertical-align: -2px;
         }
         .ad-btn:after{
             content:'';
@@ -126,6 +131,7 @@ body {
         font-weight: $font-weight-bold;
         //color:$bk-color;
         line-height: 2.4rem;
+        span {margin-right: 1rem}
         strong{
             color:$main-color;
             margin-right:0.4rem;
@@ -327,6 +333,7 @@ body {
                 line-height: 1.2rem;
                 font-weight: 500;
                 border-radius: .2rem;
+                letter-spacing: normal;
             }
             .tag span + span{
                 margin-left:.5rem;
@@ -451,7 +458,7 @@ body {
             color:#757575;
         }
         &.diagnosis-pd{
-            padding-left: 4rem;
+            padding-left: 1rem;
             margin-bottom: 1.05rem;
         }
     }
@@ -466,7 +473,7 @@ body {
             background-repeat: no-repeat;
             background-position: left center;
             background-size:1.6rem;
-            letter-spacing: .1rem;
+            letter-spacing: .05rem;
             background-image: url(/UIDev/v2/images/icon/view-icon.png);
             &.like{
                 margin-left:1rem;
@@ -497,6 +504,7 @@ body {
         }
         .btn-type04.full em{
             color:$main-color;
+            font-style: normal;
         }
     }
     .button-area2 {
@@ -675,7 +683,7 @@ body {
 .wing-banner{
     position:absolute;
     right:-19rem;
-    top:11rem;
+    top:4.8rem;
     border:solid 1px #E9E9E9;
     border-radius: 0.8rem;
     text-align: center;
@@ -708,7 +716,6 @@ body {
     .txt{
         font-size:1.3rem;
         margin-top:2.4rem;
-        letter-spacing: -3%;
         color:#4f4f4f;
         span{
             color:$main-color;
@@ -730,6 +737,7 @@ body {
     li{
         padding-left:.6rem;
         position:relative;
+        letter-spacing: normal;
         &:before{
             content:'';
             width:.2rem;

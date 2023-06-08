@@ -38,7 +38,7 @@
                 <div class="section-area-grid">
                     <div class="title-area">
                         <h2 class="title">
-                            광고중 총 <strong>35</strong>대
+                            <span>광고중</span> 총 <strong>35</strong>대
                         </h2>
                         <button type="button" class="btn-type03 pop-btn-js" data-target="#popup01">설명글 관리</button>
                     </div>
@@ -392,18 +392,6 @@
                 </div>
                 <!--wing banner-->
                 <div class="wing-banner">
-                    <h4 class="title">
-                        차차차's TIP!
-                    </h4>
-                    <i>
-                        <img src="/UIDev/v2/images/icon/sell01-icon01.png" alt="">
-                    </i>
-                    <div class="txt">
-                        어드민에서 직접<br><span>입력한</span> 텍스트 내용<br>노출
-                    </div>
-                    <div class="btn">
-                        <button type="button" class="btn-type02 sm">버튼명</button>
-                    </div>
                 </div>
                 <!--// wing banner-->
             </div>
@@ -438,35 +426,6 @@
                         }
                         else {
                             $(".all-chk input").prop("checked", false);
-                        }
-                    });
-
-
-                    //wing banner
-                    if($('.wing-banner').length > 0){
-                        $('.section-area-cont').addClass('hasWing');
-                    }
-                    
-
-                    $(window).scroll(function(){
-                        const winWid = $(window).scrollLeft();
-                        const wingLeft = $('body').width() / 2 + 630 - winWid;
-                        const winScroll = $(window).scrollTop();
-                        const contH = $('.section-area-cont').height();
-                        const wing = $('.wing-banner');
-                        const wingTop = $('.section-area-cont').offset().top;
-
-                        if(winScroll >= 0 && winScroll < wingTop){
-                            wing.removeClass('scroll-on');
-                            wing.removeClass('scroll-end');
-                            wing.css('left', 'auto');
-                        }else if(winScroll >= wingTop && winScroll <= wingTop + contH - (wing.height() + 150)){
-                            wing.addClass('scroll-on');
-                            wing.css('left', wingLeft);
-                        }else if(winScroll > wingTop + contH - (wing.height() + 150)){
-                            wing.removeClass('scroll-on');
-                            wing.addClass('scroll-end');
-                            wing.css('left', 'auto');
                         }
                     });
                 })(jQuery, window, document);

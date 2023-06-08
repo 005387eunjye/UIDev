@@ -7,6 +7,7 @@ import { uiTab } from "./component/_ui-tab";
 import { uiTooltip } from "./component/_ui-tooltip";
 import { uiCalendar } from "./component/_ui-calendar";
 import { uiSelect } from "./component/_ui-select";
+import { uiWing } from "./component/_ui-wing";
 
 (function(window, document, $, undefined){
 
@@ -20,9 +21,12 @@ import { uiSelect } from "./component/_ui-select";
         uiSelect();
         uiModal();
         uiScroll();
-
+        
         if (document.querySelector('.lnb')) {
             dealerSell01LnbLoad();
+        }
+        if(document.querySelector('.wing-banner')){
+            uiWing();
         }
     }
 

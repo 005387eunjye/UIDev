@@ -25,6 +25,10 @@
         .form-cont {
             .form-radio + .form-radio {margin-left: 1.5rem;}
             .form-radio {
+                label.tit {
+                    font-size: 1.5rem;
+                    font-weight: $font-weight-bold;
+                }
                 .inline-ty1 {
                     margin-left: 1rem;
                 }
@@ -99,7 +103,7 @@
 .wid100 {width: 100%;}
 .wid100 + .wid100 {margin-left: 1rem;}
 
-.wid-ty-normal {width: 28rem;}
+.wid-ty-normal {width: 28rem;padding-right:2rem;}
 .wid-ty-s {width: 22rem;}
 .wid-ty-md {width: 35rem;}
 .wid-ty-lg {width: 48rem;}

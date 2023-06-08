@@ -296,6 +296,65 @@ var uiTooltip = function uiTooltip() {
 
 /***/ }),
 
+/***/ "./pc/UIDev/v2/js/js-src/component/_ui-wing.js":
+/*!*****************************************************!*\
+  !*** ./pc/UIDev/v2/js/js-src/component/_ui-wing.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "uiWing": () => (/* binding */ uiWing)
+/* harmony export */ });
+/* harmony import */ var _babel_runtime_corejs3_core_js_stable_promise__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/promise */ "./.yarn/cache/@babel-runtime-corejs3-npm-7.21.5-f07017f763-c349a15675.zip/node_modules/@babel/runtime-corejs3/core-js-stable/promise.js");
+/* harmony import */ var _babel_runtime_corejs3_core_js_stable_promise__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_promise__WEBPACK_IMPORTED_MODULE_0__);
+
+
+
+var uiWing = function uiWing() {
+  //wing banner
+  if ($('.wing-banner').length > 0) {
+    $('.section-area-cont').addClass('hasWing');
+  }
+  $(window).scroll(function () {
+    var winWid = $(window).scrollLeft();
+    var wingLeft = $('body').width() / 2 + 665 - winWid;
+    var winScroll = $(window).scrollTop();
+    var contH = $('.section-area-cont').height();
+    var wing = $('.wing-banner');
+    var wingTop = $('.section-area-grid').offset().top;
+    if (winScroll >= 0 && winScroll < wingTop) {
+      wing.removeClass('scroll-on');
+      wing.removeClass('scroll-end');
+      wing.css('left', 'auto');
+    } else if (winScroll >= wingTop && winScroll <= wingTop + contH - (wing.height() + 90)) {
+      wing.addClass('scroll-on');
+      wing.css('left', wingLeft);
+    } else if (winScroll > wingTop + contH - (wing.height() + 90)) {
+      wing.removeClass('scroll-on');
+      wing.addClass('scroll-end');
+      wing.css('left', 'auto');
+    }
+  });
+  (function () {
+    return new (_babel_runtime_corejs3_core_js_stable_promise__WEBPACK_IMPORTED_MODULE_0___default())(function (resolve, reject) {
+      $.get('/UIDev/v2/views/_include/_wing-banner.html', function (response) {
+        if (response) {
+          resolve(response);
+        }
+        reject(new Error('Request is failed'));
+      });
+    });
+  })().then(function (data) {
+    var elWing = document.querySelector('.wing-banner');
+    elWing.innerHTML = data;
+  });
+};
+
+
+/***/ }),
+
 /***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/es/array/virtual/concat.js":
 /*!*****************************************************************************************************************!*\
   !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/es/array/virtual/concat.js ***!
@@ -5163,6 +5222,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _component_ui_tooltip__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./component/_ui-tooltip */ "./pc/UIDev/v2/js/js-src/component/_ui-tooltip.js");
 /* harmony import */ var _component_ui_calendar__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./component/_ui-calendar */ "./pc/UIDev/v2/js/js-src/component/_ui-calendar.js");
 /* harmony import */ var _component_ui_select__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./component/_ui-select */ "./pc/UIDev/v2/js/js-src/component/_ui-select.js");
+/* harmony import */ var _component_ui_wing__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./component/_ui-wing */ "./pc/UIDev/v2/js/js-src/component/_ui-wing.js");
+
 
 
 
@@ -5186,6 +5247,9 @@ __webpack_require__.r(__webpack_exports__);
     (0,_component_ui_scroll__WEBPACK_IMPORTED_MODULE_3__.uiScroll)();
     if (document.querySelector('.lnb')) {
       (0,_component_ui_layout__WEBPACK_IMPORTED_MODULE_1__.dealerSell01LnbLoad)();
+    }
+    if (document.querySelector('.wing-banner')) {
+      (0,_component_ui_wing__WEBPACK_IMPORTED_MODULE_8__.uiWing)();
     }
   };
 
