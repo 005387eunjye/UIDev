@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>멤버십 | KB차차차</title>
+<link rel="stylesheet" href="../../resources/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+<link rel="stylesheet" href="../../resources/vendor/swiper/v4.5.0/css/swiper.min.css">
+<link rel="stylesheet" href="../../resources/vendor/select2/v4.0.2/css/select2.min.css" />
+<link rel="stylesheet" href="../../resources/css/style.css">
+<link rel="stylesheet" href="../../resources/css/common.css">
+<link rel="stylesheet" href="../../resources/css/style_v2.css"> <!-- [D] 개편 layout 적용 시, style_v2.css import --><!--// 20230608 추가 -->
+<link rel="stylesheet" href="../../resources/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+<script type="text/javascript" src="../../resources/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="../../resources/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+<script type="text/javascript" src="../../resources/vendor/swiper/v4.5.0/js/swiper.min.js"></script>
+<script type="text/javascript" src="../../resources/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+<script type="text/javascript" src="../../resources/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="../../resources/js/common.js"></script>
+</head>
+<body>
+<div class="wrap v2-area"> <!-- [D] 개편 layout 적용 시, v2-area 클래스 추가 --><!--// 20230608 수정 -->
+	<!-- 20230608 new header 추가 -->
+	<!-- header -->
+	<header class="header-area">
+		<div class="header-area-grid">
+			<h1 class="header-logo"><a href="javascript:void(0);"><img src="../../resources/images/common/kb_logo.png" alt=""></a></h1>
+			<nav class="header-nav">
+				<ul class="gnb-menu">
+					<li><a href="javascript:void(0);">홈</a></li>
+					<li><a href="javascript:void(0);">검색</a></li>
+					<li><a href="javascript:void(0);">내차관리</a></li>
+					<li><a href="javascript:void(0);">상담관리</a></li>
+					<li><a href="javascript:void(0);">경매</a></li>
+					<li><a href="javascript:void(0);">안내</a></li>
+				</ul>
+		
+				<div class="gnb-util">
+					<div class="membrt-info"><strong>심은정</strong>딜러님</div>
+					<a href="javascript:void(0);" class="navigation-util"><i class="icon-common sign-out"></i>로그아웃</a>
+				</div>
+		
+				<div class="navigation-quick">
+					<a href="/public/event/basicMaster.kbc">이벤트</a>
+					<a href="/public/notice/list.kbc">새소식</a>
+					<a href="javascript:void(0);" class="all-menu">전체서비스</a>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--// header -->
+	<!--// 20230608 new header 추가 -->
+
+	<!-- 스킵 메뉴 -->
+	<div class="skip-menu">
+		<a href="#content">본문바로가기</a>
+	</div>
+	<!-- 스킵 메뉴 -->
+	<div class="container">
+		<!-- 공통 Left 메뉴  -->
+		<div class="common-left-area">
+			<!-- 20230608 new sell lnb 추가 -->
+			<!-- dealer sell lnb-->
+			<div class="lnb dealer-sell01-lnb">
+				<h2 class="lnb-title">내차관리</h2>
+				<ul class="lnb-list">
+					<li>
+						<a href="javascript:;" class="active"><span>광고중</span><span>35</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>광고대기</span><span>0</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>판매완료</span><span>152</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>예외신청</span><span>0</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>광고삭제</span><span>2</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>허위매물신고</span><span>0</span></a>
+					</li>
+					<li>
+						<a href="javascript:;"><span>임시저장 </span><span>1</span></a>
+					</li>
+				</ul>
+				<div class="lnb-btn">
+					<button type="button" class="ad-btn setting"><span>진단광고 관리</span></button>
+					<button type="button" class="ad-btn add"><span>광고등록</span></button>
+				</div>
+			</div>
+			<!-- // dealer sell lnb-->
+			<!--// 20230608 new sell lnb 추가 -->
+
+			<!-- 20230608 기존 lnb삭제 -->
+			<!-- <h1 class="logo"><a href="#"><span class="blind">KB차차차</span></a></h1>
+			<div class="gnb">
+				<ul>
+					<li class="buy on"><a href="#"><span>살때</span></a></li>
+					<li class="sell"><a href="#"><span>팔때</span></a></li>
+					<li class="price"><a href="#"><span>시세</span></a></li>
+					<li class="benefit"><a href="#"><span>혜택</span></a></li>
+					<li class="guide"><a href="#"><span>안내</span></a></li>
+				</ul>
+			</div>
+			<div class="mycar-going">
+				<ul>
+					<li><a href="#"><span>내차고</span></a></li>
+					<li><a href="#"><span>어디가지?</span></a></li>
+				</ul>
+			</div>
+			<div class="magazine"><a href="#">관심차량을<br>구독해보세요</a></div>
+			<div class="promotion">
+				<a href="#">
+					<div class="img"><img src="../../resources/images/temp/thumbnail-car01.png" alt="SM6"></div>
+					<div class="txt">SM6 640만원<br>할인프로모션<span>딱! 99대 한정판매</span></div>
+				</a>
+			</div> -->
+			<!--// 20230608 기존 lnb삭제 -->
+		</div>
+		<!-- //공통 Left 메뉴 -->
+
+		<!-- 컨텐츠 시작 -->
+		<div id="content" class="common-content content--hero-color">
+			<!-- 20230608 기존 공통 상단 삭제 -->
+			<!-- 공통 상단 -->
+			<!-- <div class="common-top-area dealer-top-area">
+				<div class="common-container common-container--top">
+					<div class="common-search-bar">
+						<div class="car-search">
+							<div>
+								<fieldeset>
+									<legend>차량검색</legend>
+									<span class="txt"><strong>101,516 대</strong>의 차량이 있습니다.</span>
+									<input type="text">
+									<button type="button"><span class="blind">검색</span></button>
+								</fieldeset>
+							</div>
+						</div>
+					</div>
+					<div class="login-area">
+						<a href="#" class="myinfo new"><span class="blind">나의정보</span></a>
+						<div class="layer-myinfo">
+							<ul>
+								<li><a href="#">로그인</a></li>
+								<li><a href="#">회원가입</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">견적함<span class="num">3</span></a></li>
+								<li><a href="#">문의함<span class="num">5</span></a></li>
+								<li><a href="#">리뷰<span class="num">100</span></a></li>
+								<li><a href="#">멤버십<span class="num">105P</span></a></li>
+								<li><a href="#">직거래차량관리</a></li>
+							</ul>
+						</div>
+						<a href="#" class="ctm-screen"><span class="blind">고객화면</span></a>
+					</div>
+				</div>
+			</div> -->
+			<!--// 20230608 기존 공통 상단 삭제 -->
+
+			<div class="dealer-wrap common-container">
+				<div class="top-location">
+					<a href="#" class="depth">KB차차차</a>
+					<span class="now">광고등록</span>
+				</div>
+
+				<div class="dealer-cmm-top-wrap">
+					<div class="top-car-model-info search-num">
+						<strong class="top-tit-copy"> <!-- 2019-11-13 문구수정 --> 
+							<span class="cor-blue">김국민</span> 딜러님의 <br />
+							판매 차량번호를 <br />
+							입력하세요.
+						</strong>
+					</div>
+				</div>
+
+				<div class="dealer-car-num-search">
+					<div class="txt">
+						<span>반갑습니다!</span>
+						차량번호를 정확히 입력하신 후 검색버튼을 눌러주세요.
+					</div>
+					<div class="num-search mg-b200">
+						<label>
+							<span>예) 26머 0104</span>
+							<input type="text" title="차량번호" />
+						</label>
+						<button type="button"><span class="blind">검색</span></button>
+					</div>
+				</div>
+			</div>
+
+			<!-- 공통 하단 메뉴 -->
+			<!-- <div class="common-menu-list">
+				<div class="common-container">
+					<div class="buy common-menu-list__item">
+						<dl>
+							<dt>살때</dt>
+							<dd class="list1"><a href="#">구해줘 차차차</a></dd>
+							<dd class="list2"><a href="#">중고차/신차</a></dd>
+							<dd class="list3"><a href="#">자동차 용품</a></dd>
+						</dl>
+					</div>
+					<div class="sell common-menu-list__item">
+						<dl>
+							<dt>팔때</dt>
+							<dd class="list1"><a href="#">팔아줘 차차차</a></dd>
+							<dd class="list2"><a href="#">직거래 차차차</a></dd>
+							<dd class="list3"><a href="#">바꿔줘 차차차</a></dd>
+							<dd class="list4"><a href="#">직거래 차량관리</a></dd>
+						</dl>
+					</div>
+					<div class="price common-menu-list__item">
+						<dl>
+							<dt>시세</dt>
+							<dd class="list1"><a href="#">내차시세</a></dd>
+							<dd class="list2"><a href="#">중고차시세</a></dd>
+						</dl>
+					</div>
+					<div class="event common-menu-list__item">
+						<dl>
+							<dt>혜택</dt>
+							<dd class="list1"><a href="#">룰렛 이벤트</a></dd>
+							<dd class="list2"><a href="#">출석체크 이벤트</a></dd>
+							<dd class="list3"><a href="#">이벤트</a></dd>
+							<dd class="list4"><a href="#">친구에게 추천하기</a></dd>
+						</dl>
+					</div>
+					<div class="guide common-menu-list__item">
+						<dl>
+							<dt>안내</dt>
+							<dd class="list1"><a href="#">새소식</a></dd>
+							<dd class="list2"><a href="#">자주하는질문</a></dd>
+							<dd class="list3"><a href="#">문의하기</a></dd>
+							<dd class="list4"><a href="#">제안하기</a></dd>
+							<dd class="list5"><a href="#">서비스가이드</a></dd>
+							<dd class="list6"><a href="#">구매팁</a></dd>
+						</dl>
+					</div>
+				</div>
+			</div> -->
+			<!-- //공통 하단 메뉴 -->
+			<!-- 20230608 new 푸터 추가 -->
+			<!-- 공통 푸터 -->
+			<div class="cmm-footer">
+				<footer class="footer-area">
+					<div class="footer-area-grid">
+						<h1 class="footer-ci">
+							<a href="https://www.kbcapital.co.kr" target="_blank"><img src="../../resources/images/common/footer_logo.png" alt="KB캐피탈"></a>
+						</h1>
+				
+						<div class="footer-terms">
+							<a href="#">이용약관</a>
+							<a href="#" class="emphasize">개인정보처리방침</a>
+						</div>
+				
+						<address class="footer-info">
+							<div>
+								<span>대표이사: 황수남</span>
+								<span>주소: 서울특별시 서초구 서초대로 301 동익성봉빌딩</span>
+							</div>
+							<div>
+								<span>사업자등록번호: 214-85-08573</span>
+								<span>준법감시인 심의필번호: 20191108-0004 (2019.11.08 ~ 2020.11.07)</span>
+							</div>
+						</address>
+				
+						<div class="footer-notice">
+							<div>
+								※ KB차차차가 제공하는 서비스는 온라인 거래장소 및 기타 부가정보 제공에 한하며, 실제 거래의 모든 책임은 판매자와 구매자에게 있음을 안내드립니다.
+							</div>
+							<div>
+								※ 본 사이트/앱 상의 모든 정보, 콘텐츠, UI 등에 대한 무단 복제, 배포, 스크래핑 등의 행위는 법에 의하여 엄격히 금지됩니다.
+							</div>
+						</div>
+				
+						<div class="footer-customer">
+							<h2 class="footer-customer-head">
+								<small class="footer-customer-title">
+									<i class="icon-common icon-common-center"></i>
+									무엇이든 물어보세요.
+								</small>
+							</h2>
+				
+							<div class="customer-content">
+								<div class="customer-content-item">
+									<span class="customer-content-item-title">금융상담</span>
+									<span class="customer-content-tel">1522-1112</span>
+								</div>
+								<i class="customer-content-line"></i>
+								<div class="customer-content-item">
+									<span class="customer-content-item-title">일반문의</span>
+									<span class="customer-content-tel">1670-4777</span>
+								</div>
+				
+								<div class="customer-content-foot">상담가능시간: 평일 09:00 ~ 18:00</div>
+							</div>
+							<div class="certify-marks">
+								<div class="help-tooltip">
+									<a href="javascript:void(0);" class="logo-certify logo-certify-ismsp">정보보호 및 개인정보보호 관리체계(ISMS-P) 인증 완료 사이트</a>
+									<div class="help-tooltip-box help-tooltip-box-top help-tooltip-box-right" tabindex="0">
+										<div class="help-tooltip-arrow"></div>
+										<div class="help-tooltip-cont">인증범위 : KB차차차 및 마이데이터 서비스<br>유효기간 : 2023.03.29 ~ 2026.03.28</div>
+									</div>
+							
+								</div>
+							</div>
+						</div>
+						<p class="footer-copy">COPYRIGHT 2018 KB CAPITAL.CO.,LTD. ALL RIGHTS RESERVED.</p>
+					</div>
+				</footer>
+			</div>
+
+			<!--// 20230608 new 푸터 추가 -->
+			<!-- 20230608 기존 푸터 삭제 -->
+			<!-- <div class="common-footer">
+				<div class="common-container">
+					<div class="footer-logo"><a href="#"><img src="../../resources/images/common/footer_logo.png"
+															  alt="KB캐피탈"></a></div>
+					<div class="footer-content">
+						<div class="addr-area">
+							<div class="addr">서울특별시 서초구 서초대로 301 동익성봉빌딩 KB캐피탈㈜<br>대표이사 : 황수남<br>사업자등록번호 :
+								214-85-08573<br>준법감시인 심의필 번호 : N20180524-
+
+
+								0012</div>
+							<div class="copyright">COPYRIGHT 2018 KB CAPITAL.CO.,LTD. ALL RIGHTS RESERVED.</div>
+						</div>
+						<div class="footer-content__right">
+							<div class="tl-area">
+								<p>무엇이든 물어보세요.</p>
+								<strong>1670-4777</strong>
+								<span>평일 09:00~18:00</span>
+							</div>
+							<div class="down-sns">
+								<div class="download">
+									<a href="#" class="ios"><span class="blind">아이폰 앱스토어</span></a>
+									<a href="#" class="android"><span class="blind">안드로이드 플레이스토어</span></a>
+								</div>
+								<div class="sns-link">
+									<a href="" class="facebook"><span class="blind">페이스북</span></a>
+									<a href="" class="indtagram"><span class="blind">인스타그램</span></a>
+									<a href="" class="blog"><span class="blind">네이버블로그</span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+			<!--// 20230608 기존 푸터 삭제 -->
+
+			<!-- //공통 푸터 -->
+		</div>
+	</div>
+</div>
+<script>
+$(function() {
+//	common.tabmenu("#tabs",0);
+
+	$('.dealer-car-num-search .num-search input[type="text"]').focusin(function() {
+		console.log('focusin');
+		var _this = $(this);
+		var _searchBox = _this.parents('.num-search');
+		var _label = _this.parent();
+		var _placeholder = _this.prev();
+		var _val = _this.val();
+
+		_placeholder.hide();
+
+	}).focusout(function() {
+		console.log('focusin');
+		var _this = $(this);
+		var _searchBox = _this.parents('.num-search');
+		var _label = _this.parent();
+		var _placeholder = _this.prev();
+		var _val = _this.val();
+
+		if(_val == '') {
+			_placeholder.show();
+		}else{
+			_placeholder.hide();
+		}
+	});
+});
+</script>
+</body>
+</html>
