@@ -150,6 +150,7 @@
   padding-top: 48px;
   width: 1260px;
   margin: 0 auto;
+  overflow: hidden;
 }
 .v2-area .cmm-content {
   padding-left: 239px;
@@ -560,5 +561,14 @@
 }
 .v2-area .dealer-wrap {
   padding: 0;
+}
+.v2-area .diag-table .car-price {
+  font-size: 18px;
+}
+.v2-area .car-name-ad, .v2-area .diag-table .pic-info .car-txt .car-num {
+  font-size: 14px;
+}
+.v2-area .car-info span {
+  font-size: 13px;
 }
 /*# sourceMappingURL=style_v2.css.map */

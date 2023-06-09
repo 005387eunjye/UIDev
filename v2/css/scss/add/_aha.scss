@@ -50,7 +50,7 @@
 }
 .form-list3 {
     & > li {
-        padding-top: 4rem;
+        padding-top: 3.3rem;
         &:first-child {padding-top: 0;}
         .tit-area {
             width: 7.8rem;
@@ -493,12 +493,13 @@
     justify-content: flex-start;
     align-items: self-start;
     width: 100%;
-    margin-top: -.6rem;
+    margin-top: -.3rem;
     & > li {
         width:20%;
-        padding: .4em 0;
+        padding: .3em 0;
         & .form-chk {
             display: inline-block;
+            letter-spacing: -.1rem;
             & + .form-chk {margin-left: 1rem;}
         }
 
@@ -510,7 +511,7 @@
 }
 .form-gap {
     display: inline-block;
-    padding: 0 .2rem;
+    padding: 0 .1rem;
 }
 
 .point-push {

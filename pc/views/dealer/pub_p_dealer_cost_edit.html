@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>진단예약 | KB차차차</title>
+    <link rel="stylesheet" href="../../resources/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="../../resources/vendor/owlCarousel2/v2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../resources/vendor/select2/v4.0.2/css/select2.min.css" />
+    <link rel="stylesheet" href="../../resources/css/style.css">
+    <link rel="stylesheet" href="../../resources/css/common.css">
+    <link rel="stylesheet" href="../../resources/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="../../resources/vendor/bxslide/css/jquery.bxslider.css">
+    <link rel="stylesheet" href="../../resources/vendor/swiper/v4.5.0/css/swiper.min.css">
+    <script type="text/javascript" src="../../resources/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/amcharts/v3.21.15/amcharts.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/amcharts/v3.21.15/pie.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/amcharts/v3.21.15/serial.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/owlCarousel2/v2.3.4/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="../../resources/js/common.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/noUiSlider/v13.1.5/nouislider.min.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/wNumb/v1.1.0/wNumb.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/bxslide/js/jquery.bxslider.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/bxslide/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/swiper/v4.5.0/js/swiper.min.js"></script>
+    <script type="text/javascript" src="../../resources/vendor/swiper/v4.5.0/js/swiper.min.js"></script>
+    <style>
+        body > a:nth-child(1) {position: absolute;left:50%;top:50%;margin: 0px 0 0 -75px !important;}
+    </style>
+</head>
+<body>
+<a href="javascript:;" class="btn-m bc-blue w150" onclick="common.popSh('pDealerCostEdit')"><span>차량 가격 수정</span></a>
+
+<!-- 차량 가격 수정 -->
+<div class="popup-wrap" id="pDealerCostEdit">
+    <div class="pop-whBox">
+        <div class="pop-area w800">
+            <div class="pop-con">
+                <div class="pop-tit">
+                    <h2>차량 가격 수정</h2>
+                </div>
+                <div class="pop-scroll">
+					<div class="dealer-regi-sell-price type2 no-box">
+						<div class="regi-price">
+							<div class="form-tit-area">
+								<span class="form-tit">금융 제공 여부</span>
+							</div>
+							<div class="form-area2">
+								<div class="form-label">구분</div>
+								<div class="form-item">
+									<div class="selection-area">
+										<span class="inp-rd type-new"><input type="radio" id="rdo1-1Pop" name="rdo1GroupPop" checked><label for="rdo1-1Pop"><span>인증리스</span></label></span>
+										<span class="inp-rd type-new"><input type="radio" id="rdo1-2Pop" name="rdo1GroupPop"><label for="rdo1-2Pop"><span>인증렌트</span></label></span>
+										<span class="inp-rd type-new"><input type="radio" id="rdo1-3Pop" name="rdo1GroupPop" data-no-show><label for="rdo1-3Pop"><span>표기안함</span></label></span>
+									</div>
+								</div>
+							</div>
+							<div class="form-area2">
+								<label for="inpMonthPricePop" class="form-label">월 납입액</label>
+								<div class="form-item">
+									<div class="inp-t inp-money dealer-tp02">
+										<input type="number" id="inpMonthPricePop" name="inpFinanceGroupPop" class="ta-r">
+										<div class="t-txt">만원</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-area2">
+								<label for="inpDiscountPricePop" class="form-label">금융이용<br>할인금액</label>
+								<div class="form-item">
+									<div class="inp-t inp-money dealer-tp02">
+										<input type="number" id="inpDiscountPricePop" name="inpFinanceGroupPop" class="ta-r">
+										<div class="t-txt">만원</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-area2">
+								<div class="form-label"></div>
+								<p class="form-desc">선수금 30% / 48개월 기준</p>
+							</div>
+						</div>
+						<div class="regi-price result">
+							<div class="form-tit-area">
+								<span class="form-tit">현금 판매가</span>
+							</div>
+							<div class="form-area2">
+								<label for="inpPricePop" class="form-label">판매가격</label>
+								<div class="form-item">
+									<div class="inp-t inp-money dealer-tp02">
+										<input type="number" id="inpPricePop" class="ta-r">
+										<div class="t-txt">만원</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+                </div>
+            </div>
+			
+            <div class="pop-btn leg02">
+                <button type="button" class="pBtn" onclick="common.popSh('pDealerCostEdit')"><span>취소</span></button>
+                <button type="button" class="pBtn pb-blue" onclick="common.popSh('pDealerCostEdit')"><span>확인</span></button>
+            </div>
+            <button type="button" class="pop-close" onclick="common.popSh('pDealerCostEdit')"><span>팝업 닫기</span></button>
+        </div>
+    </div>
+</div>
+<!--// 차량 가격 수정 -->
+
+<script>
+    $(document).ready(function(){
+        common.popSh('pDealerCostEdit');
+
+
+		// Start of [20221110] 판매가 입력 UI 관련 기능 추가
+		function setFinanceRdo(){
+			var elsRdoCategory = document.querySelectorAll('[name="rdo1GroupPop"]');
+
+			if (elsRdoCategory.length < 1) {
+				return;
+			}
+			for (var i = 0; i < elsRdoCategory.length; i++) {
+				(function(j){
+					var elRdoCategory = elsRdoCategory[j];
+
+					elRdoCategory.addEventListener('change', function(){
+						if (!!this.hasAttribute('data-no-show')) {
+							toggleInputbox(false);
+							return;
+						}
+						toggleInputbox(true);
+					})
+				})(i);
+			}
+		}
+		function toggleInputbox(isAbled) {
+			var elsInputbox = document.querySelectorAll('[name="inpFinanceGroupPop"]');
+			
+			for (var i = 0; i < elsInputbox.length; i ++) {
+				elsInputbox[i].disabled = !isAbled;
+				if (!!isAbled) {
+					elsInputbox[i].closest('.inp-t').classList.remove('disabled');
+				} else {
+					elsInputbox[i].closest('.inp-t').classList.add('disabled');
+				}
+			}
+		}
+
+		setFinanceRdo();
+		// End of [20221110] 판매가 입력 UI 관련 기능 추가
+
+    })
+</script>
+</body>
+</html>
