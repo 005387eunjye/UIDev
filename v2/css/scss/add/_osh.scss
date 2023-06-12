@@ -25,9 +25,9 @@
             &:before{
                 content: '';
                 width:10rem;
-                height:1px;
+                height:.1rem;
                 top:50%;
-                right:8.5rem;
+                right:9rem;
                 display:block;
                 position:absolute;
                 background:#999;
@@ -159,12 +159,11 @@
                 margin-right:.3rem;
                 color:$main-color;
                 font-weight: bold;
-                height:3.4rem;
-                line-height: 3.4rem;
+                height:3rem;
+                font-size:$font-size-large;
                 width:70%;
                 box-sizing: border-box;
                 padding:0;
-                vertical-align: top;
             }
             input:focus{
                 outline: none;
@@ -177,7 +176,7 @@
             margin-left:1rem;
         }
         .custom-select-box{
-            width:10rem;
+            width:11rem;
             & + .custom-select-box{
                 margin-left:1rem;
             }
@@ -185,6 +184,7 @@
                 background:#fff url("/UIDev/v2/images/icon/down.png") calc(100% - 7px) center no-repeat;
                 background-size:2rem;
                 padding:0 3.4rem 0 1rem;
+                font-size:1.3rem;
             }
         }
         .period{
@@ -233,8 +233,7 @@
                 margin-right:.3rem;
                 color:$main-color;
                 font-weight: bold;
-                height:3.3rem;
-                line-height: 3.3rem;
+                height:3rem;
                 width:70%;
                 box-sizing: border-box;
                 padding:0;
@@ -392,5 +391,12 @@
     } 40% {
         -webkit-transform: scale(1);
         transform: scale(1);
+    }
+}
+
+
+#tab01{
+    .btn-type02.sm{
+        font-size:$font-size-small;
     }
 }

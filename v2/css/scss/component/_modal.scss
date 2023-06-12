@@ -12,7 +12,7 @@
     z-index:10;
     display:none;
     &.sm{
-        width:36rem;
+        width:37rem;
     }
     &.md{
         width:76.8rem;
@@ -70,6 +70,11 @@
     .popup-body{
         padding:0 4rem 4rem 4rem;
         box-sizing: border-box;
+        .car-search-result-table .price{
+            font-size:$font-size-normal;
+            font-weight: $font-weight-bold;
+            line-height: 3.1rem;
+        }
     }
     .popup-btn{
         display:block;
@@ -88,7 +93,7 @@
             height:6rem;
             line-height: 6rem;
             flex:1;
-            font-size:1.8rem;
+            font-size:$font-size-large;
             display:inline-block;
         }
     }

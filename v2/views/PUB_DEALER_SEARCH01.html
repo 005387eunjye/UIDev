@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    
+    <title>KB차차차</title>
+
+    <link type="text/css" rel="stylesheet" href="/UIDev/v2/css/style.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/v2/js/lib/jquery.mCustomScrollbar.min.css">
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v2/js/ui-common.min.js"></script>
+
+</head>
+
+<body class="only-pub"> <!-- [D] 개발 시에는 only-pub 클래스 제거 -->
+    <main class="body-area" id="wrap">
+
+        <header class="header-area"></header> <!-- common header-->
+
+        <!-- [Start] main-area -->
+        <section class="main-area">
+            <div class="section-area">
+                <div class="section-area-grid section-area-grid-full">
+
+                    <!-- 검색 -->
+                    <ul class="seacrh-item">
+                        <li class="active">
+                            <p class="seacrh-tit">제조사</p>
+                            <div class="search-cont-inner cont-scroll">
+                                <!-- 대분류 반복 -->
+                                <div class="search-list-group">
+                                    <p>국산차</p>
+                                    <ul>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk01" name="group01" checked>
+                                                <label for="chk01"><span class="tit">현대</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk02" name="group01">
+                                                <label for="chk02"><span class="tit">제네시스</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk03" name="group01">
+                                                <label for="chk03"><span class="tit">기아</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk04" name="group01">
+                                                <label for="chk04"><span class="tit">한국GM</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk05" name="group01">
+                                                <label for="chk05"><span class="tit">르노삼성</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk06" name="group01">
+                                                <label for="chk06"><span class="tit">쌍용</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <!--// 대분류 반복 -->
+                                <!-- 대분류 반복 -->
+                                <div class="search-list-group">
+                                    <p>수입차 인기</p>
+                                    <ul>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk21" name="group02">
+                                                <label for="chk21"><span class="tit">벤츠</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk22" name="group02">
+                                                <label for="chk22"><span class="tit">제네시스</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk23" name="group02">
+                                                <label for="chk23"><span class="tit">기아</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk24" name="group02">
+                                                <label for="chk24"><span class="tit">한국GM</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk25" name="group02">
+                                                <label for="chk25"><span class="tit">르노삼성</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk26" name="group02">
+                                                <label for="chk26"><span class="tit">쌍용</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <!--// 대분류 반복 -->
+                            </div>
+                        </li>
+                        <li>
+                            <p class="seacrh-tit">모델</p>
+                            <div class="search-cont-inner cont-scroll ty-nodata"><!--// data 없을 시 .ty-nodata 추가 -->
+                                <div class="no-data">모델을 선택하세요.</div>
+                                <!-- 대분류 반복 -->
+                                <div class="search-list-group">
+                                    <p>인기모델</p>
+                                    <ul>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk31" name="group03" checked>
+                                                <label for="chk31"><span class="tit">그랜저</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk32" name="group03">
+                                                <label for="chk32"><span class="tit">쏘나타</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk33" name="group03">
+                                                <label for="chk33"><span class="tit">아반떼</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk34" name="group03">
+                                                <label for="chk34"><span class="tit">스타렉스</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk35" name="group03">
+                                                <label for="chk35"><span class="tit">산타페</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk36" name="group03">
+                                                <label for="chk36"><span class="tit">투싼</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <!--// 대분류 반복 -->
+                                <!-- 대분류 반복 -->
+                                <div class="search-list-group">
+                                    <p>이름순</p>
+                                    <ul>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk41" name="group04">
+                                                <label for="chk41"><span class="tit">i30</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk42" name="group04">
+                                                <label for="chk42"><span class="tit">i40</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk43" name="group04">
+                                                <label for="chk43"><span class="tit">아반떼</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk44" name="group04">
+                                                <label for="chk44"><span class="tit">스타렉스</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk45" name="group04">
+                                                <label for="chk45"><span class="tit">산타페</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk46" name="group04">
+                                                <label for="chk46"><span class="tit">투싼</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <!--// 대분류 반복 -->
+                            </div>
+                        </li>
+                        <li>
+                            <p class="seacrh-tit">세부모델</p>
+                            <div class="search-cont-inner cont-scroll"><!--// data 없을 시 .ty-nodata 추가 -->
+                                <div class="no-data">세부모델을 선택하세요.</div>
+                                <!-- 대분류 반복 -->
+                                <div class="search-list-group mgt-l">
+                                    <ul>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk51" name="group05">
+                                                <label for="chk51"><span class="tit">디 올 뉴 그렌저 <em>(22년 ~ 현재)</em></span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk52" name="group05">
+                                                <label for="chk52"><span class="tit">디 올뉴 그랜저 하이브리드 <em>(22년 ~ 현재)</em></span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk53" name="group05">
+                                                <label for="chk53"><span class="tit">더 뉴 그랜저 IG</span><span></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk54" name="group05">
+                                                <label for="chk54"><span class="tit">더 뉴 그랜저 IG 하이브리드</span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk55" name="group05">
+                                                <label for="chk55"><span class="tit">그랜저 HG <em>(11년 ~ 현재)</em></span> <span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-radio3">
+                                                <input type="radio" id="chk56" name="group05">
+                                                <label for="chk56"><span class="tit">두글자 차량 이름 및 연식 두글자 케이스  <em>(11년 ~ 현재)</em></span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>    
+                                </div>
+                                <!--// 대분류 반복 -->
+                            </div>
+                        </li>
+                        <li>
+                            <p class="seacrh-tit">등급</p>
+                            <div class="search-cont-inner cont-scroll"><!--// data 없을 시 .ty-nodata 추가 -->
+                                <div class="no-data">등급을 선택하세요.</div>
+                                <div class="search-list-group">
+                                    <p>2.5 가솔린 2WD</p>
+                                    <ul>
+                                        <li>
+                                            <figure class="form-chk3">
+                                                <input type="checkbox" id="chk61" name="group06">
+                                                <label for="chk61"><span class="tit">프리미엄</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk3">
+                                                <input type="checkbox" id="chk62" name="group06">
+                                                <label for="chk62"><span class="tit">익스클루시브</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>    
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="search-btn-item">
+                        <button type="button">연식</button>
+                        <button type="button">주행거리</button>
+                        <button type="button">가격</button>
+                        <button type="button">연료</button>
+                        <button type="button">색상</button>
+                        <button type="button">지역</button>
+                        <button type="button">판매구분</button>
+                        <button type="button">변속기</button>
+                        <button type="button">옵션</button>
+                    </div>
+                    <!--// 검색 -->
+
+                    <div class="title-area">
+                        <div class="title-ty1">
+                            <h2 class="title small">
+                                <span>검색결과</span> 총 <strong>148,350</strong>대
+                            </h2>
+                            <button type="button" class="btn-type04 sm"><i class="icon-refresh"></i>검색초기화</button>
+                            <button type="button" class="btn-type04 sm"><i class="icon-search"></i>최근 검색조건</button>
+                        </div>
+                        <div class="box-input-cont2">
+                            <div class="inp-search" style="width: 358px">
+                                <input type="text" placeholder="차량번호/판매자명 검색">
+                                <button type="button" class="btn-search1"><span>검색</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-area-cont">
+                       
+                        <div class="car-search-result-area">
+                            <div class="car-search-result-mode-area">
+                                
+                                <div class="car-search-result-mode-area-box">
+                                    <div class="mode-area">
+                                        <ul>
+                                            <li>
+                                                <a href="javascript:;" class="active">판매중 리스트</a>
+                                            </li>
+                                            <li>
+                                                <a href="javascript:;">판매완료 리스트</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button type="button" class="btn-type03 gap-btn">고객용 리스트</button>
+                                </div>
+                                <div>
+                                    <span class="txt-link-item">
+                                        <a href="javascript:;">최신 등록일순</a>
+                                        <a href="javascript:;">가격</a>
+                                        <a href="javascript:;">주행거리</a>
+                                        <a href="javascript:;">연식</a>
+                                    </span>
+
+                                    <span class="switch-item">
+                                        <label>
+                                            <span>관심단지 차량 보기</span>
+                                            <input role="switch" type="checkbox" />
+                                        </label>
+                                    </span>
+
+                                    <a href="javascript:;" class="txt-link-underline">설정</a>
+                                </div>
+                            </div>
+
+                            <div class="car-search-result-table ty-search">
+                                <table>
+                                    <caption>검색 결과 목록</caption>
+                                    <colgroup>
+                                        <col style="width:36rem">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                        <col style="width:auto">
+                                    </colgroup>
+                                    <thead>
+                                        <th scope="col">차량명</th>
+                                        <th scope="col">보험이력</th>
+                                        <th scope="col">연식</th>
+                                        <th scope="col">연료</th>
+                                        <th scope="col">주행거리</th>
+                                        <th scope="col">색상</th>
+                                        <th scope="col">최초취득가 
+                                            <span class="tooltip-btn ty-black">?
+                                                <span class="tooltip">신차로 구입할때 지불한 가격으로, 출고 시 장착된 옵션가와 프로모션가가 반영되어있으나, 취득세는 제외된 금액입니다.</span>
+                                            </span>
+                                        </th>
+                                        <th scope="col">광고가</th>
+                                        <th scope="col">단지</th>
+                                        <th scope="col">딜러명</th>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="javascript:;" class="car-info">
+                                                    <div class="thumb-img">
+                                                        <img src="/UIDev/v2/images/temp/@thumb-car2.jpg" alt="차 이미지">
+                                                    </div>
+                                                    <div class="car-info-detail wid-ty-s">
+                                                        <div class="tag">
+                                                            <span>실차주</span>
+                                                        </div>
+                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8 페라리 F8 Tributo 3.9 V8</h3>
+                                                    </div>
+                                                </a>
+                                            </td>
+                                            
+                                            <td>
+                                                <span class="tooltip-btn ty-txt">0 건
+                                                    <span class="tooltip">
+                                                        <span class="tooltip-tit">내차 피해 보험이력</span>
+                                                        <dl class="table-dl-ty1">
+                                                            <dt>건수</dt>
+                                                            <dd>1 건</dd>
+                                                            <dt>수리비용</dt>
+                                                            <dd>2,102,163원</dd>
+                                                        </dl>
+                                                    </span>
+                                                </span>
+                                            </td>
+                                            <td>20/05
+                                                <div>(2020)</div>
+                                            </td>
+                                            <td>디젤
+                                            </td>
+                                            <td>175,433km
+                                            </td>
+                                            <td>빨간색
+                                            </td>
+                                            <td><div class="txt-point-color">4,850</div>
+                                            </td>
+                                            <td><div class="txt-point-color">2,580</div>
+                                            </td>
+                                            <td>인천
+                                                엠파크허브
+                                            </td>
+                                            <td>
+                                                <span class="tooltip-btn ty-tel">홍길동
+                                                    <span class="tooltip">
+                                                        <dl class="table-dl-ty2">
+                                                            <dt>홍길동 딜러<span>차차차 모터스</span></dt>
+                                                            <dd>0513-1234-5678</dd>
+                                                        </dl>
+                                                    </span>
+                                                </span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <div class="paginate">
+                                    <a href="#" class="prev">이전페이지</a>
+                                    <a href="#">1</a>
+                                    <strong><span>2</span></strong>
+                                    <a href="#">3</a>
+                                    <a href="#">4</a>
+                                    <a href="#">5</a>
+                                    <a href="#" class="next">다음페이지</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--wing banner-->
+                <div class="wing-banner">
+                </div>
+                <!--// wing banner-->
+            </div>
+            <!-- [Start] 페이지 전용 js -->
+            <script type="text/javascript">
+                ;(function ($, win, doc, undefined) {
+
+                    //all check
+                    $(".all-chk input").change(function() {
+                        if (this.checked) {
+                            $(".chk-js input").each(function() {
+                                this.checked=true;
+                            });
+                        } else {
+                            $(".chk-js input").each(function() {
+                                this.checked=false;
+                            });
+                        }
+                    });
+                    $(".chk-js input").click(function () {
+                        if ($(this).is(":checked")) {
+                            var isAllChecked = 0;
+
+                            $(".chk-js input").each(function() {
+                                if (!this.checked)
+                                    isAllChecked = 1;
+                            });
+
+                            if (isAllChecked == 0) {
+                                $(".all-chk input").prop("checked", true);
+                            }     
+                        }
+                        else {
+                            $(".all-chk input").prop("checked", false);
+                        }
+                    });
+                })(jQuery, window, document);
+            </script>
+            <!-- // [End] 페이지 전용 js -->
+
+        </section>
+        <!-- // [End] main-area -->
+
+        <footer class="footer-area"></footer> <!-- common footer -->
+    </main>
+    <!--popup-->
+    <div class="popup-bg"></div>
+    <div class="popup" id="popup01">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close btn</a>
+        <h2 class="popup-title">
+            팝업입니다.
+        </h2>
+        <div class="popup-body">
+            <div class="inner">
+                팝업입니다.
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type01">확인</button>
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+        </div>
+    </div>
+</body>
+</html>

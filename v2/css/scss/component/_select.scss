@@ -8,12 +8,13 @@
         border-radius: .4rem;
         border:solid .1rem #E9E9E9;
         height: 4rem;
-        background:#fff url('/UIDev/v2/images/icon/down.png') calc(100% - 17px) center no-repeat;
+        background:#fff url('/UIDev/v2/images/icon/down.png') calc(100% - .9rem) center no-repeat;
         background-size: 2rem;
         padding: 0rem 4.4rem 0rem 1.4rem;
         width:100%;
         line-height: 4rem;
         display:block;
+        font-size:$font-size-small;
         cursor: pointer;
     }
     .custom-select-option-box{
@@ -34,7 +35,7 @@
         li{
             line-height: 3.8rem;
             padding: 0 0.9rem 0 1.5rem;
-            font-size: 1.6rem;
+            font-size:$font-size-small;
             color: #000;
             cursor: pointer;
             background:#fff;
@@ -53,8 +54,8 @@
 .drop-down-box{
     position:relative;
     .drop-down-box-tit a{
-        font-weight: $font-weight-bold;
-        font-size:1.3rem;
+        font-weight: $font-weight-regular;
+        font-size:$font-size-small;
         color:#000;
         display:inline-block;
         padding:0 1.4rem 0 1rem;
@@ -83,6 +84,7 @@
         padding:1rem 0rem;
         width:100%;
         text-align: center;
+        z-index: 1;
         box-shadow: 2px 2px 6px 4px #0000000F;
         li{
             font-size:1.3rem;

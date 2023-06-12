@@ -71,77 +71,42 @@ caption {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 400;
-  src: local("KBFGTextM"), url("/UIDev/v2/font/KBFGTextM.woff") format("woff"), url("/UIDev/v2/font/KBFGTextM.ttf") format("truetype"), url("/UIDev/v2/font/KBFGTextM.svg#KBFGTextM") format("svg");
+  src: local("KBFGTextM"), url("/font/KBFGTextM.woff") format("woff");
 }
 /* KB금융 본문체 Bold*/
 @font-face {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 700;
-  src: local("KBFGTextB"), url("/UIDev/v2/font/KBFGTextB.woff") format("woff"), url("/UIDev/v2/font/KBFGTextB.ttf") format("truetype"), url("/UIDev/v2/font/KBFGTextB.svg#KBFGTextB") format("svg");
+  src: local("KBFGTextB"), url("/font/KBFGTextB.woff") format("woff");
 }
 /* KB금융 본문체 Light*/
 @font-face {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 300;
-  src: local("KBFGTextM"), url("/UIDev/v2/font/KBFGTextL.woff") format("woff"), url("/UIDev/v2/font/KBFGTextL.ttf") format("truetype"), url("/UIDev/v2/font/KBFGTextL.svg#KBFGTextL") format("svg");
+  src: local("KBFGTextM"), url("/font/KBFGTextL.woff") format("woff");
 }
 /*KB금융 제목체 Light*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 300;
-  src: local("KBFGDisplayL"), url("/UIDev/v2/font/KBFGDisplayL.woff") format("woff"), url("/UIDev/v2/font/KBFGDisplayL.ttf") format("truetype"), url("/UIDev/v2/font/KBFGDisplayL.svg#KBFGDisplayL") format("svg");
+  src: local("KBFGDisplayL"), url("/font/KBFGDisplayL.woff") format("woff");
 }
 /*KB금융 제목체 Medium*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 500;
-  src: local("KBFGDisplayM"), url("/UIDev/v2/font/KBFGDisplayM.woff") format("woff"), url("/UIDev/v2/font/KBFGDisplayM.ttf") format("truetype"), url("/UIDev/v2/font/KBFGDisplayM.svg#KBFGDisplayM") format("svg");
+  src: local("KBFGDisplayM"), url("/font/KBFGDisplayM.woff") format("woff");
 }
 /*KB금융 제목체 Blod*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 700;
-  src: local("KBFGDisplayB"), url("/UIDev/v2/font/KBFGDisplayB.woff") format("woff"), url("/UIDev/v2/font/KBFGDisplayB.ttf") format("truetype"), url("/UIDev/v2/font/KBFGDisplayB.svg#KBFGDisplayB") format("svg");
-}
-/*apple 산돌고딕 bold*/
-@font-face {
-  font-family: "Apple SD Gothic Neo";
-  font-style: normal;
-  font-weight: bold;
-  src: local("AppleSDGothicNeoB"), url("/UIDev/v2/font/AppleSDGothicNeoB.ttf") format("truetype");
-}
-/*apple 산돌고딕 semibold*/
-@font-face {
-  font-family: "Apple SD Gothic Neo";
-  font-style: normal;
-  font-weight: 600;
-  src: local("AppleSDGothicNeoSB"), url("/UIDev/v2/font/AppleSDGothicNeoSB.ttf") format("truetype");
-}
-/*apple 산돌고딕 normal*/
-@font-face {
-  font-family: "Apple SD Gothic Neo";
-  font-style: normal;
-  font-weight: 500;
-  src: local("AppleSDGothicNeoM"), url("/UIDev/v2/font/AppleSDGothicNeoM.ttf") format("truetype");
-}
-/*apple 산돌고딕 light*/
-@font-face {
-  font-family: "Apple SD Gothic Neo";
-  font-style: normal;
-  font-weight: 400;
-  src: local("AppleSDGothicNeoL"), url("/UIDev/v2/font/AppleSDGothicNeoL.ttf") format("truetype");
-}
-/*apple 산돌고딕 THIN*/
-@font-face {
-  font-family: "Apple SD Gothic Neo";
-  font-style: normal;
-  font-weight: 300;
-  src: local("AppleSDGothicNeoT"), url("/UIDev/v2/font/AppleSDGothicNeoT.ttf") format("truetype");
+  src: local("KBFGDisplayB"), url("/font/KBFGDisplayB.woff") format("woff");
 }
 .a11y-hidden {
   overflow: hidden !important;
@@ -177,7 +142,7 @@ caption {
 }
 
 .font-normal {
-  font-family: -apple-system, "Roboto", "NotoSansKR", "Arial", sans-serif !important;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "APPLE SD Gothic NEO", "Segoe UI", "Malgun Gothic", "맑은 고딕", Dotum, 돋움, "Noto Sans", "Noto Sans CJK KR", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif !important;
 }
 
 .fw-regular {
@@ -279,11 +244,11 @@ html {
 
 body {
   background-color: #fff;
-  font-family: "Apple SD Gothic Neo", -apple-system, "Roboto", "NotoSansKR", "Arial", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "APPLE SD Gothic NEO", "Segoe UI", "Malgun Gothic", "맑은 고딕", Dotum, 돋움, "Noto Sans", "Noto Sans CJK KR", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
   font-size: 1.4rem;
   color: #000;
   word-break: break-all;
-  letter-spacing: -0.05rem;
+  letter-spacing: -0.1rem;
 }
 
 .body-area {
@@ -315,11 +280,11 @@ body {
 .lnb {
   width: 23.9rem;
   font-weight: 700;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   text-align: left;
 }
 .lnb .lnb-title {
-  margin-bottom: 4.2rem;
+  margin-bottom: 4.15rem;
   font-size: 1.8rem;
   font-weight: 700;
 }
@@ -361,7 +326,7 @@ body {
   background-color: #f7f5f2;
   box-sizing: border-box;
   line-height: 4rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-align: left;
   font-weight: 500;
   letter-spacing: -0.03em;
@@ -410,11 +375,14 @@ body {
   line-height: 2.4rem;
 }
 .section-area-grid .title-area .title span {
-  margin-right: 1rem;
+  margin-right: 0.4rem;
 }
 .section-area-grid .title-area .title strong {
   color: #FF5D16;
   margin-right: 0.4rem;
+}
+.section-area-grid .title-area .title.small {
+  font-size: 1.6rem;
 }
 .section-area-grid .title-area .btn-type03 {
   display: block;
@@ -430,12 +398,12 @@ body {
 }
 .car-search-area .car-search-area-option-box {
   width: 38.7rem;
-  margin-right: 2rem;
+  margin-right: 6rem;
   display: flex;
   align-items: center;
 }
 .car-search-area .car-search-area-option-box:nth-child(2) .tit {
-  width: 5rem;
+  width: 6rem;
 }
 .car-search-area .car-search-area-option-box:nth-child(1), .car-search-area .car-search-area-option-box:nth-child(2) {
   margin-bottom: 2rem;
@@ -450,7 +418,7 @@ body {
   flex-shrink: 0;
 }
 .car-search-area .car-search-area-option-box .con .custom-select-box, .car-search-area .car-search-area-option-box .con input {
-  width: 32rem;
+  width: 32.5rem;
 }
 .car-search-area .car-search-area-option-box .con .input-date {
   width: 15.5rem;
@@ -478,12 +446,16 @@ body {
   display: flex;
   align-items: center;
 }
+.car-search-result-mode-area .form-chk + .total-num {
+  margin-left: 1.2rem;
+}
 .car-search-result-mode-area .total-num {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 700;
-  margin: 0 2rem;
+  margin: 0 2rem 0 0;
 }
 .car-search-result-mode-area .total-num strong {
+  font-size: 1.6rem;
   color: #FF5D16;
   font-size: 2rem;
 }
@@ -502,16 +474,17 @@ body {
   width: 10.1rem;
   display: block;
   color: #999999;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   height: 3.3rem;
   line-height: 3.3rem;
   font-weight: 600;
   text-align: center;
+  letter-spacing: -3%;
 }
 .car-search-result-mode-area .mode-area ul li a.active {
   background: #fff;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.0588235294);
-  border-radius: 4px;
+  box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.0588235294);
+  border-radius: 0.4rem;
   color: #FF5D16;
 }
 .car-search-result-mode-area .drop-down-box {
@@ -521,6 +494,16 @@ body {
 .car-search-result-table {
   position: relative;
   margin-top: 1.8rem;
+}
+.car-search-result-table.ty-search {
+  margin-top: 1rem;
+}
+.car-search-result-table.ty-search .tag span {
+  background: #FAEDE1 !important;
+  color: #FF5D16;
+}
+.car-search-result-table.ty-search .car-name {
+  font-size: 1.6rem !important;
 }
 .car-search-result-table .car-btn-area {
   margin-top: 2rem;
@@ -560,6 +543,7 @@ body {
 }
 .car-search-result-table table th {
   padding: 1.5rem 0.4rem;
+  border-top: 0.1rem solid #e9e9e9;
   color: #757575;
   font-size: 1.3rem;
 }
@@ -572,6 +556,9 @@ body {
 .car-search-result-table table td .btn-type02 {
   cursor: default;
   pointer-events: none;
+}
+.car-search-result-table table td .btn-type01.sm, .car-search-result-table table td .btn-type03.sm {
+  font-size: 1.2rem;
 }
 .car-search-result-table .car-info {
   display: flex;
@@ -603,26 +590,26 @@ body {
   display: inline-block;
   padding: 0.6rem;
   background: #efefef;
-  font-size: 1.2rem;
-  line-height: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1rem;
   font-weight: 500;
   border-radius: 0.2rem;
   letter-spacing: normal;
 }
 .car-search-result-table .car-info .car-info-detail .tag span + span {
-  margin-left: 0.5rem;
+  margin-left: 0.3rem;
 }
 .car-search-result-table .car-info .car-info-detail .car-name {
   text-align: left;
-  margin: 1rem 0 0.4rem 0;
+  margin: 1rem 0 0.8rem 0;
   font-size: 2rem;
   line-height: 2rem;
   font-weight: 700;
 }
 .car-search-result-table .car-info .car-info-detail .car-etc span {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   color: #4F4F4F;
-  line-height: 1.4rem;
+  line-height: 1.3rem;
   font-weight: 500;
 }
 .car-search-result-table .car-info .car-info-detail .car-etc span::before {
@@ -637,8 +624,8 @@ body {
   display: none;
 }
 .car-search-result-table .car-info .car-info-detail .car-benefit {
-  font-size: 1.3rem;
-  line-height: 1.3rem;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
   color: #757575;
   text-align: left;
   margin-top: 0.8rem;
@@ -651,10 +638,9 @@ body {
   margin-bottom: 0.5rem;
 }
 .car-search-result-table .price {
-  font-size: 1.4rem;
-  line-height: 1.4rem;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
   text-align: right;
-  font-weight: 700;
 }
 .car-search-result-table .price + .price {
   margin-top: 1rem;
@@ -670,11 +656,12 @@ body {
   width: 7.8rem;
   height: 3.1rem;
   padding: 0 1.2rem;
-  line-height: 2rem;
+  line-height: 3.1rem;
 }
 .car-search-result-table .price input.ipt-pay {
   color: #FF5D16;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
   font-weight: 700;
   text-align: right;
   border-radius: 0.4rem;
@@ -696,13 +683,12 @@ body {
 }
 .car-search-result-table .price-txt {
   color: #757575;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: right;
   padding-top: 0.4rem;
 }
 .car-search-result-table .ad-ing {
-  font-size: 1.4rem;
-  color: #4F4F4F;
+  font-size: 1.3rem;
   text-align: left;
   margin-bottom: 0.5rem;
 }
@@ -731,7 +717,6 @@ body {
   color: #757575;
 }
 .car-search-result-table .diagnosis.diagnosis-pd {
-  padding-left: 1rem;
   margin-bottom: 1.05rem;
 }
 .car-search-result-table .view-num {
@@ -745,7 +730,6 @@ body {
   background-repeat: no-repeat;
   background-position: left center;
   background-size: 1.6rem;
-  letter-spacing: 0.05rem;
   background-image: url(/UIDev/v2/images/icon/view-icon.png);
 }
 .car-search-result-table .view-num span.like {
@@ -758,10 +742,11 @@ body {
 }
 .car-search-result-table .button-area .btn-type04 {
   display: block;
-  width: 8rem;
+  width: calc(50% - 0.3rem);
   padding: 0;
   margin-bottom: 0.5rem;
   flex-shrink: 0;
+  font-size: 1.2rem;
 }
 .car-search-result-table .button-area .btn-type04 + .btn-type04 {
   margin-left: 0.5rem;
@@ -864,12 +849,12 @@ body {
 .option-info dt {
   width: 42%;
   color: #4F4F4F;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 .option-info dd {
   width: 58%;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -950,8 +935,8 @@ body {
 
 .wing-banner {
   position: absolute;
-  right: -19rem;
   top: 4.8rem;
+  right: -16rem;
   border: solid 1px #E9E9E9;
   border-radius: 0.8rem;
   text-align: center;
@@ -1174,7 +1159,7 @@ body {
   border-top: 0.1rem solid #F3F3F3;
   background: #FDFDFD;
   color: #8B8B8B;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
 }
 .footer-area .footer-area-grid {
   width: 130rem;
@@ -1201,7 +1186,7 @@ body {
   position: relative;
   margin-left: 0.1rem;
   padding: 0 2.5rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-style: normal;
 }
 .footer-area .footer-area-grid .footer-terms > a.emphasize {
@@ -1238,7 +1223,7 @@ body {
   position: relative;
   margin-left: 0.1rem;
   padding: 0 2.5rem;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-style: normal;
 }
 .footer-area .footer-area-grid .footer-info > div > span:first-child {
@@ -1261,7 +1246,6 @@ body {
 }
 .footer-area .footer-area-grid .footer-notice {
   margin-top: 2.5rem;
-  font-size: 1.5rem;
   line-height: 2.4rem;
 }
 .footer-area .footer-area-grid .footer-copy {
@@ -1300,7 +1284,7 @@ body {
 }
 .footer-area .footer-area-grid .footer-customer .customer-content-tel {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 .footer-area .footer-area-grid .footer-customer .customer-content-foot {
@@ -1475,15 +1459,15 @@ button.disabled {
   font-weight: 600;
   height: 4rem;
   line-height: 4rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   border-radius: 0.2rem;
   padding: 0 2rem;
-  font-family: "Apple SD Gothic Neo", -apple-system, "Roboto", "NotoSansKR", "Arial", sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "APPLE SD Gothic NEO", "Segoe UI", "Malgun Gothic", "맑은 고딕", Dotum, 돋움, "Noto Sans", "Noto Sans CJK KR", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
   box-sizing: border-box;
 }
 .btn-type01.sm, .btn-type02.sm, .btn-type03.sm, .btn-type04.sm {
-  height: 28px;
-  line-height: 28px;
+  height: 2.8rem;
+  line-height: 2.6rem;
   font-size: 1.3rem;
   padding: 0 1rem;
 }
@@ -1721,6 +1705,60 @@ button.disabled {
   text-align: center;
 }
 
+.form-chk3 {
+  position: relative;
+}
+.form-chk3 input[type=checkbox] {
+  display: none;
+  width: 0;
+  height: 0;
+  border: 0 none;
+  font-size: 0;
+}
+.form-chk3 input[type=checkbox]:checked + label {
+  color: #FF5D16;
+  font-weight: 700;
+  text-align: left;
+}
+.form-chk3 input[type=checkbox]:checked + label > .tit > em {
+  font-weight: 400;
+}
+.form-chk3 input[type=checkbox]:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.6rem;
+  margin-top: 0.2rem;
+  background-image: url(/UIDev/v2/images/icon/icon-fi-check.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1.2rem 1.2rem;
+}
+.form-chk3 input[type=checkbox] + label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #4F4F4F;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.form-chk3 input[type=checkbox] + label > .tit {
+  width: 19rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.form-chk3 input[type=checkbox] + label > .tit > em {
+  font-style: normal;
+  color: #999;
+}
+.form-chk3 input[type=checkbox] + label .txt-rht {
+  float: right;
+  color: rgba(153, 153, 153, 0.6);
+  font-weight: 400;
+}
+
 .form-radio input[type=radio] {
   display: none;
   width: 1;
@@ -1759,6 +1797,60 @@ button.disabled {
   border-radius: 100%;
 }
 
+.form-radio3 {
+  position: relative;
+}
+.form-radio3 input[type=radio] {
+  display: none;
+  width: 0;
+  height: 0;
+  border: 0 none;
+  font-size: 0;
+}
+.form-radio3 input[type=radio]:checked + label {
+  color: #FF5D16;
+  font-weight: 700;
+  text-align: left;
+}
+.form-radio3 input[type=radio]:checked + label > .tit > em {
+  font-weight: 400;
+}
+.form-radio3 input[type=radio]:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.6rem;
+  margin-top: 0.2rem;
+  background-image: url(/UIDev/v2/images/icon/icon-fi-check.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 1.2rem 1.2rem;
+}
+.form-radio3 input[type=radio] + label {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  color: #4F4F4F;
+  font-weight: 400;
+  line-height: 1.8rem;
+}
+.form-radio3 input[type=radio] + label > .tit {
+  width: 19rem;
+  display: inline-block;
+  vertical-align: top;
+}
+.form-radio3 input[type=radio] + label > .tit > em {
+  font-style: normal;
+  color: #999;
+}
+.form-radio3 input[type=radio] + label .txt-rht {
+  float: right;
+  color: rgba(153, 153, 153, 0.6);
+  font-weight: 400;
+}
+
 .txar-tp1 {
   display: block;
   width: 100%;
@@ -1772,6 +1864,52 @@ button.disabled {
 }
 .txar-tp1::placeholder {
   color: #999;
+}
+
+.switch-item label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  font-weight: 700;
+}
+.switch-item [type=checkbox] {
+  appearance: none;
+  position: relative;
+  background-color: #E9E9E9;
+  border-radius: 1.2rem;
+  width: 4.6rem;
+  height: 2.4rem;
+}
+.switch-item [type=checkbox]::before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.2rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transform: scale(0.8);
+  background-color: white;
+  transition: left 250ms linear;
+}
+.switch-item [type=checkbox]:checked {
+  background-color: #FF5D16;
+}
+.switch-item [type=checkbox]:checked::before {
+  background-color: white;
+  left: 2.4rem;
+}
+.switch-item [type=checkbox]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.switch-item [type=checkbox]:disabled:before {
+  background-color: lightgray;
+}
+.switch-item [type=checkbox]:disabled + span {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 input[type=text]:disabled, input[type=password]:disabled, input[type=number]:disabled {
@@ -1860,7 +1998,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   display: none;
 }
 .popup.sm {
-  width: 36rem;
+  width: 37rem;
 }
 .popup.md {
   width: 76.8rem;
@@ -1918,6 +2056,11 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   padding: 0 4rem 4rem 4rem;
   box-sizing: border-box;
 }
+.popup .popup-body .car-search-result-table .price {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 3.1rem;
+}
 .popup .popup-btn {
   display: block;
   padding: 0 4rem 4rem 4rem;
@@ -1936,7 +2079,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   height: 6rem;
   line-height: 6rem;
   flex: 1;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   display: inline-block;
 }
 
@@ -1955,17 +2098,22 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   padding-bottom: 3rem !important;
 }
 
-.pop-scroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+.pop-scroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar, .cont-scroll .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
   width: 4px;
   background-color: #AAAAAA;
 }
 .pop-scroll .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
-.pop-scroll .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
+.pop-scroll .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar, .cont-scroll .mCSB_scrollTools .mCSB_dragger.mCSB_dragger_onDrag .mCSB_dragger_bar,
+.cont-scroll .mCSB_scrollTools .mCSB_dragger:active .mCSB_dragger_bar {
   background-color: #AAAAAA;
 }
-.pop-scroll .mCSB_scrollTools .mCSB_draggerRail {
+.pop-scroll .mCSB_scrollTools .mCSB_draggerRail, .cont-scroll .mCSB_scrollTools .mCSB_draggerRail {
   width: 1px;
   background-color: #ddd;
+}
+
+.pop-scroll .mCSB_inside > .mCSB_container {
+  margin-right: 1.5rem;
 }
 
 .custom-select-box {
@@ -1975,12 +2123,13 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   border-radius: 0.4rem;
   border: solid 0.1rem #E9E9E9;
   height: 4rem;
-  background: #fff url("/UIDev/v2/images/icon/down.png") calc(100% - 17px) center no-repeat;
+  background: #fff url("/UIDev/v2/images/icon/down.png") calc(100% - 0.9rem) center no-repeat;
   background-size: 2rem;
   padding: 0rem 4.4rem 0rem 1.4rem;
   width: 100%;
   line-height: 4rem;
   display: block;
+  font-size: 1.2rem;
   cursor: pointer;
 }
 .custom-select-box .custom-select-option-box {
@@ -2000,7 +2149,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 .custom-select-box .custom-select-option-box li {
   line-height: 3.8rem;
   padding: 0 0.9rem 0 1.5rem;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   color: #000;
   cursor: pointer;
   background: #fff;
@@ -2018,8 +2167,8 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   position: relative;
 }
 .drop-down-box .drop-down-box-tit a {
-  font-weight: 700;
-  font-size: 1.3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
   color: #000;
   display: inline-block;
   padding: 0 1.4rem 0 1rem;
@@ -2047,6 +2196,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   padding: 1rem 0rem;
   width: 100%;
   text-align: center;
+  z-index: 1;
   box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.0588235294);
 }
 .drop-down-box .drop-down-box-option li {
@@ -2127,11 +2277,63 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   position: relative;
   display: inline-block;
   border-radius: 100%;
-  line-height: 1.2rem;
+  line-height: 0.8rem;
   box-sizing: border-box;
   padding-top: 0.2rem;
   margin-left: 0.2rem;
   text-align: center;
+}
+.tooltip-btn.ty-black {
+  background: #4f4f4f;
+  color: white;
+}
+.tooltip-btn.ty-black .tooltip {
+  bottom: 2rem;
+  top: unset;
+}
+.tooltip-btn.ty-black .tooltip::before {
+  bottom: -0.5rem;
+}
+.tooltip-btn.ty-tel {
+  width: auto;
+  height: auto;
+  background: none;
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.tooltip-btn.ty-tel::after {
+  content: "";
+  width: 2.1rem;
+  height: 2rem;
+  background: url("/UIDev/v2/images/icon/icon-tel.png") no-repeat;
+  position: relative;
+  display: inline-block;
+  vertical-align: -0.4rem;
+}
+.tooltip-btn.ty-txt {
+  width: auto;
+  height: auto;
+  color: #000;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
+  background: none;
+  text-decoration: underline;
+  position: relative;
+  display: block;
+}
+.tooltip-btn.ty-txt > span {
+  text-decoration: none;
+}
+.tooltip-btn.ty-txt .tooltip {
+  left: -50%;
+  top: -133px;
+  width: 21rem;
+  filter: drop-shadow(0px 4px 8px rgba(153, 153, 153, 0.4));
+}
+.tooltip-btn.ty-txt .tooltip::before {
+  bottom: -5px;
+  left: calc(50% - 1.1rem);
 }
 
 .tooltip {
@@ -2248,7 +2450,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   background-color: #E9E9E9;
   color: rgba(153, 153, 153, 0.6);
   font-size: 1.4rem;
-  line-height: 1.8rem;
+  line-height: 1.4rem;
 }
 .coin::after {
   content: "c";
@@ -2263,7 +2465,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   background-color: #FFCC00;
   color: #FF8E0A;
   font-size: 1.4rem;
-  line-height: 1.8rem;
+  line-height: 1.4rem;
 }
 
 .display-inline-block {
@@ -2315,7 +2517,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 }
 
 .tit-blue {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   color: #326FC8;
   font-weight: 700;
 }
@@ -2427,6 +2629,48 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   line-height: 26px;
 }
 
+.box-input-cont2 .inp-money, .box-input-cont2 .inp-search {
+  position: relative;
+  height: 4rem;
+  border: solid 1px #e9e9e9;
+  border-radius: 0.4rem;
+  line-height: 4rem;
+  font-size: 1.3rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+.box-input-cont2 .inp-money input, .box-input-cont2 .inp-search input {
+  height: 3.8rem;
+  padding-right: 4rem;
+  border: none;
+  border-radius: 0.6rem;
+  line-height: 3.8rem;
+  vertical-align: top;
+  outline: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+.box-input-cont2 .inp-money .btn-search1, .box-input-cont2 .inp-search .btn-search1 {
+  position: absolute;
+  right: 0.5rem;
+  top: 0;
+  width: 4rem;
+  height: 4rem;
+  background: url("/UIDev/v2/images/icon/icon-btn-search.png") no-repeat;
+  background-position: center center;
+  display: inline-block;
+}
+.box-input-cont2 .inp-money .btn-search1 span, .box-input-cont2 .inp-search .btn-search1 span {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
 .box-gray {
   position: relative;
   z-index: -1;
@@ -2507,12 +2751,18 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   color: rgba(153, 153, 153, 0.6);
 }
 
+.txt-point-color {
+  font-size: 1.8rem;
+  color: #FF5D16;
+  font-weight: 700;
+}
+
 .price-ty2 {
   font-weight: 500;
 }
 .price-ty2 > span {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .ul-list .tit-normal {
@@ -2558,7 +2808,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   border: 1px solid #E9E9E9;
   border-radius: 2px;
   display: inline-block;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-align: center;
 }
 
@@ -2586,6 +2836,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 .txt-sub2 {
   padding-top: 1rem;
   color: #4F4F4F;
+  font-size: 1.3rem;
 }
 
 .tab-list.tab-ty2 > ul {
@@ -2648,8 +2899,8 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 
 .box-tip-area {
   position: relative;
-  padding: 1.9rem 2.8rem;
-  background-color: #FFF0E0;
+  padding: 1.9rem 2.1rem;
+  background-color: #FAF9F8;
   border-radius: 0.8rem;
 }
 .box-tip-area:before {
@@ -2660,7 +2911,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   width: 0;
   height: 0;
   border-top: 0.8rem solid transparent;
-  border-right: 1.6rem solid #FFF0E0;
+  border-right: 1.6rem solid #FAF9F8;
   border-bottom: 0.8rem solid transparent;
 }
 
@@ -2715,6 +2966,10 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   padding: 0.8rem 0;
   display: inline-block;
 }
+.box-chk-list > .form-chk2 input[type=checkbox] + label {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
 
 .box-chk-list2 {
   display: flex;
@@ -2724,16 +2979,19 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   width: 100%;
   margin-top: -0.3rem;
 }
+.box-chk-list2 > li:nth-child(5n+0) {
+  width: 16%;
+}
 .box-chk-list2 > li {
-  width: 20%;
+  width: 21%;
   padding: 0.3em 0;
 }
 .box-chk-list2 > li .form-chk {
   display: inline-block;
-  letter-spacing: -0.1rem;
+  letter-spacing: -0.2rem;
 }
 .box-chk-list2 > li .form-chk + .form-chk {
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 .box-chk-list2 > .form-chk2 {
   padding: 0.8rem 0;
@@ -2887,6 +3145,247 @@ span.point-push::after {
   background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
+.seacrh-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: self-start;
+  border: 0.1rem solid #E9E9E9;
+  border-radius: 0.4rem;
+}
+.seacrh-item > li {
+  width: 100%;
+  height: 36rem;
+  border-left: 1px solid #E9E9E9;
+}
+.seacrh-item > li:first-child {
+  border-left: 0;
+}
+.seacrh-item > li.active .seacrh-tit {
+  background-color: #fff;
+  color: #FF5D16;
+  font-weight: 700;
+}
+.seacrh-item > li .seacrh-tit {
+  height: 5.2rem;
+  padding: 1.4rem 0.5rem;
+  background-color: #FAF9F8;
+  color: #222;
+  font-size: 1.8rem;
+  text-align: center;
+  font-weight: 500;
+}
+.seacrh-item > li .search-cont-inner {
+  height: 30.7rem;
+}
+.seacrh-item > li .search-cont-inner.ty-nodata .no-data {
+  width: 100%;
+  height: 30.7rem;
+  color: #888;
+  font-size: 1.6rem;
+  line-height: 30.7rem;
+  text-align: center;
+  display: block;
+}
+.seacrh-item > li .search-cont-inner .no-data {
+  display: none;
+}
+.seacrh-item > li .search-list-group:last-child {
+  padding-bottom: 2rem;
+}
+.seacrh-item > li .search-list-group > p {
+  padding: 2rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.seacrh-item > li .search-list-group > ul {
+  width: 28.3rem;
+  padding: 0 0 0 2rem;
+}
+.seacrh-item > li .search-list-group > ul > li + li {
+  margin-top: 0.5rem;
+}
+
+.search-btn-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: self-start;
+  margin: 2rem 0 1rem;
+}
+.search-btn-item > button {
+  width: 100%;
+  height: 4.6rem;
+  margin-left: 1rem;
+  border: 1px solid #E9E9E9;
+  border-radius: 0.4rem;
+  font-weight: 500;
+  text-align: center;
+}
+.search-btn-item > button:first-child {
+  margin-left: 0;
+}
+.search-btn-item > button::before {
+  display: inline-block;
+  content: "";
+  width: 1.9rem;
+  height: 1.8rem;
+  margin-right: 0.3rem;
+  background-repeat: no-repeat;
+  vertical-align: top;
+}
+.search-btn-item > button:nth-child(1)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh01-model.png");
+}
+.search-btn-item > button:nth-child(2)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh02-mile.png");
+}
+.search-btn-item > button:nth-child(3)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh03-price.png");
+}
+.search-btn-item > button:nth-child(4)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh04-fuel.png");
+}
+.search-btn-item > button:nth-child(5)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh05-color.png");
+}
+.search-btn-item > button:nth-child(6)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh06-area.png");
+}
+.search-btn-item > button:nth-child(7)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh07-sale.png");
+}
+.search-btn-item > button:nth-child(8)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh08-geerbox.png");
+}
+.search-btn-item > button:nth-child(9)::before {
+  background-image: url("/UIDev/v2/images/icon/icon-sh09-option.png");
+}
+
+.icon-refresh {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.4rem;
+  background: url("/UIDev/v2/images/icon/icon-fi-refresh.png") no-repeat;
+  background-size: 1.2rem 1.2rem;
+  vertical-align: -0.1rem;
+}
+
+.icon-search {
+  display: inline-block;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin-right: 0.4rem;
+  background: url("/UIDev/v2/images/icon/icon-fi-search.png") no-repeat;
+  background-size: 1.2rem 1.2rem;
+  vertical-align: -0.1rem;
+}
+
+.title-ty1 {
+  font-size: 0;
+}
+.title-ty1 h2 {
+  display: inline-block;
+  vertical-align: middle;
+}
+.title-ty1 h2 + button {
+  margin-left: 1rem;
+}
+.title-ty1 button {
+  margin-left: 0.5rem;
+  vertical-align: middle;
+}
+
+.gap-btn {
+  margin-left: 1rem;
+}
+
+.txt-link-underline {
+  color: #757575;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.txt-link-item {
+  margin: 0 3rem;
+}
+.txt-link-item a {
+  display: inline-block;
+  color: #4F4F4F;
+  line-height: 1.4rem;
+  font-weight: 500;
+}
+.txt-link-item a:active {
+  opacity: 0.8;
+}
+.txt-link-item a::before {
+  content: "";
+  width: 0.1rem;
+  height: 1rem;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 0 0.8rem;
+}
+.txt-link-item a:first-child::before {
+  display: none;
+}
+
+.table-dl-ty1 {
+  border: 1px solid #E9E9E9;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 17.6rem;
+  border-bottom: 0;
+}
+.table-dl-ty1 > dt, .table-dl-ty1 > dd {
+  border-bottom: 1px solid #E9E9E9;
+  display: block;
+  padding: 0.8rem 1.5rem;
+  text-align: center;
+  line-height: 1.4rem;
+  font-weight: 400;
+}
+.table-dl-ty1 > dt {
+  width: 45%;
+  background-color: #FAF9F8;
+  border-right: 1px solid #E9E9E9;
+  color: #666;
+}
+.table-dl-ty1 > dd {
+  width: 55%;
+  color: #222;
+}
+
+.table-dl-ty2 > dt, .table-dl-ty2 > dd {
+  display: block;
+  text-align: center;
+  line-height: 1.4rem;
+}
+.table-dl-ty2 > dt {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.table-dl-ty2 > dt > span {
+  display: block;
+  color: #666;
+  font-size: 1.4rem;
+}
+.table-dl-ty2 > dd {
+  padding: 1rem 0.3rem;
+  border-top: 0.1rem solid #E9E9E9;
+  border-bottom: 0.1rem solid #E9E9E9;
+  color: #FF5D16;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.tooltip-tit {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
 .sell-price-area .tit {
   font-size: 2rem;
   font-weight: bold;
@@ -2911,9 +3410,9 @@ span.point-push::after {
 .sell-price-area .input-area.del:before {
   content: "";
   width: 10rem;
-  height: 1px;
+  height: 0.1rem;
   top: 50%;
-  right: 8.5rem;
+  right: 9rem;
   display: block;
   position: absolute;
   background: #999;
@@ -3043,12 +3542,11 @@ span.point-push::after {
   margin-right: 0.3rem;
   color: #FF5D16;
   font-weight: bold;
-  height: 3.4rem;
-  line-height: 3.4rem;
+  height: 3rem;
+  font-size: 1.6rem;
   width: 70%;
   box-sizing: border-box;
   padding: 0;
-  vertical-align: top;
 }
 .special-price-car-area .form-box .input-area input:focus {
   outline: none;
@@ -3060,7 +3558,7 @@ span.point-push::after {
   margin-left: 1rem;
 }
 .special-price-car-area .form-box .custom-select-box {
-  width: 10rem;
+  width: 11rem;
 }
 .special-price-car-area .form-box .custom-select-box + .custom-select-box {
   margin-left: 1rem;
@@ -3069,6 +3567,7 @@ span.point-push::after {
   background: #fff url("/UIDev/v2/images/icon/down.png") calc(100% - 7px) center no-repeat;
   background-size: 2rem;
   padding: 0 3.4rem 0 1rem;
+  font-size: 1.3rem;
 }
 .special-price-car-area .form-box .period {
   margin: 0 1rem;
@@ -3116,8 +3615,7 @@ span.point-push::after {
   margin-right: 0.3rem;
   color: #FF5D16;
   font-weight: bold;
-  height: 3.3rem;
-  line-height: 3.3rem;
+  height: 3rem;
   width: 70%;
   box-sizing: border-box;
   padding: 0;
@@ -3276,6 +3774,9 @@ span.point-push::after {
     -webkit-transform: scale(1);
     transform: scale(1);
   }
+}
+#tab01 .btn-type02.sm {
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=style.css.map */

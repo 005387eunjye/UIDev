@@ -168,6 +168,9 @@ var uiScroll = function uiScroll() {
   $(".pop-scroll").mCustomScrollbar({
     setHeight: 407
   });
+  $(".cont-scroll").mCustomScrollbar({
+    setHeight: 307
+  });
 };
 
 
@@ -317,13 +320,24 @@ var uiWing = function uiWing() {
   if ($('.wing-banner').length > 0) {
     $('.section-area-cont').addClass('hasWing');
   }
-  $(window).scroll(function () {
+  var wingLeft = '';
+  function wingScrollLeft() {
     var winWid = $(window).scrollLeft();
-    var wingLeft = $('body').width() / 2 + 665 - winWid;
+    if ($(window).width() >= 1600) {
+      wingLeft = $('body').width() / 2 + 620;
+    } else if ($(window).width() < 1600 && $(window).width() >= 1300) {
+      wingLeft = $(window).width() / 2 + 620 - winWid;
+    } else if ($(window).width() < 1300) {
+      wingLeft = $('.section-area').width() / 2 + 640 - winWid;
+    }
+  }
+  $(window).scroll(function () {
     var winScroll = $(window).scrollTop();
     var contH = $('.section-area-cont').height();
     var wing = $('.wing-banner');
     var wingTop = $('.section-area-grid').offset().top;
+    console.log($(window).width());
+    wingScrollLeft();
     if (winScroll >= 0 && winScroll < wingTop) {
       wing.removeClass('scroll-on');
       wing.removeClass('scroll-end');

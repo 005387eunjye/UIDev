@@ -2,7 +2,7 @@
 
 // scroll (PC)
 
-.pop-scroll .mCSB_scrollTools {
+.pop-scroll .mCSB_scrollTools, .cont-scroll .mCSB_scrollTools {
     .mCSB_dragger .mCSB_dragger_bar{
         width:4px;
         background-color:#AAAAAA;
@@ -14,5 +14,12 @@
     .mCSB_draggerRail{
         width:1px;
         background-color:#ddd;
+    }
+    
+}
+
+.pop-scroll{
+    .mCSB_inside>.mCSB_container{
+        margin-right:1.5rem;
     }
 }

@@ -164,14 +164,15 @@
 }
 .v2-area .cmm-footer {
   overflow: visible;
-  margin-left: -239px;
+  padding-left: 20px;
+  padding-right: 20px;
   position: relative;
   z-index: 1;
   border: none;
 }
 .v2-area .cmm-footer:before {
   content: "";
-  width: 1000%;
+  width: 100%;
   z-index: 1;
   height: 1px;
   background: #ddd;
@@ -183,6 +184,8 @@
           transform: translateX(-50%);
 }
 .v2-area .cmm-footer .footer-area {
+  width: 1260px;
+  margin: 0 auto;
   background: #FDFDFD;
   color: #8B8B8B;
   font-size: 16px;
@@ -556,8 +559,17 @@
 .v2-area .common-sub-content {
   padding-top: 0;
 }
+.v2-area .postionRelative .common-sub-content {
+  padding-top: 0 !important;
+}
 .v2-area .common-content {
   padding-left: 239px;
+}
+.v2-area .common-content.comm-full {
+  padding: 0;
+}
+.v2-area .common-content.comm-full::after {
+  display: none;
 }
 .v2-area .dealer-wrap {
   padding: 0;

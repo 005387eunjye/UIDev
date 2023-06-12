@@ -39,9 +39,9 @@ $bg-color-gray: #f8f8f8;
 $bg-color-yellow: #ffcc00;
 
 // fonts
-$font-family-normal: -apple-system, 'Roboto', 'NotoSansKR', 'Arial', sans-serif;
+$font-family-normal: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue", "APPLE SD Gothic NEO", "Segoe UI", "Malgun Gothic", "맑은 고딕", Dotum, 돋움, "Noto Sans", "Noto Sans CJK KR", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", sans-serif;
 $font-family-kbfg: 'KBFGText', -apple-system, 'Roboto', 'NotoSansKR', 'Arial', sans-serif;
-$font-family-apply: 'Apple SD Gothic Neo', -apple-system, 'Roboto', 'NotoSansKR', 'Arial', sans-serif;
+$font-family-apply: 'Apple SD Gothic Neo', -apple-system, 'Roboto', 'NotoSansKR', 'Arial', sans-serif; // [20230612/ejh] 애플고딕 웹폰트 제거. KB폰트 사용 외에는 font-family-normal 으로 통일.
 
 //color
 $main-color:#FF5D16;

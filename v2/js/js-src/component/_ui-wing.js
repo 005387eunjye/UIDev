@@ -5,18 +5,31 @@ const uiWing = () => {
     if($('.wing-banner').length > 0){
         $('.section-area-cont').addClass('hasWing');
     }
-    $(window).scroll(function(){
+    let wingLeft = '';
+
+    function wingScrollLeft(){
         const winWid = $(window).scrollLeft();
-        const wingLeft = $('body').width() / 2 + 665 - winWid;
+        if($(window).width() >= 1600){
+            wingLeft = $('body').width() / 2 + 620;
+        }else if($(window).width() < 1600 && $(window).width() >= 1300){
+            wingLeft = $(window).width() / 2 + 620 - winWid;  
+        }else if($(window).width() < 1300){
+            wingLeft = $('.section-area').width() / 2 + 640 - winWid; 
+        }
+    }
+
+    $(window).scroll(function(){
         const winScroll = $(window).scrollTop();
         const contH = $('.section-area-cont').height();
         const wing = $('.wing-banner');
         const wingTop = $('.section-area-grid').offset().top;
+        console.log($(window).width());
+        wingScrollLeft();
 
         if(winScroll >= 0 && winScroll < wingTop){
             wing.removeClass('scroll-on');
             wing.removeClass('scroll-end');
-            wing.css('left', 'auto');
+            wing.css('left', 'auto' );
         }else if(winScroll >= wingTop && winScroll <= wingTop + contH - (wing.height() + 90)){
             wing.addClass('scroll-on');
             wing.css('left', wingLeft);

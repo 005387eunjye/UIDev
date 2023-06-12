@@ -81,6 +81,56 @@
         }
     }
 }
+.form-chk3{
+    position:relative;
+    input[type="checkbox"]{
+        display:none;
+        width:0;
+        height:0;
+        border:0 none;
+        font-size:0;
+        &:checked{
+            &+label {
+                color: $main-color;
+                font-weight: $font-weight-bold;
+                text-align: left;
+                & > .tit {
+                    & > em {font-weight: $font-weight-regular;}
+                }
+                &::before{
+                    content:'';
+                    display: inline-block;
+                    width:1.2rem;
+                    height:1.2rem;
+                    margin-right: .6rem;
+                    margin-top: .2rem;
+                    background-image: url(/UIDev/v2/images/icon/icon-fi-check.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 1.2rem 1.2rem;
+                }   
+            }
+        }
+        & + label{
+            cursor:pointer;
+            position: relative;
+            display: block;
+            width: 100%;
+            color: $sub-color1;
+            font-weight: $font-weight-regular;
+            line-height: 1.8rem;
+            & > .tit {width: 19rem;display: inline-block;vertical-align: top;
+                & > em {font-style: normal;color:#999;}
+            }
+            .txt-rht {
+                float: right;
+                color: $sub-color3;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
+}
+
 //radio
 .form-radio input[type="radio"]{
     display:none;
@@ -124,6 +174,55 @@
     }
 }
 
+.form-radio3{
+    position:relative;
+    input[type="radio"]{
+        display:none;
+        width:0;
+        height:0;
+        border:0 none;
+        font-size:0;
+        &:checked{
+            &+label {
+                color: $main-color;
+                font-weight: $font-weight-bold;
+                text-align: left;
+                & > .tit {
+                    & > em {font-weight: $font-weight-regular;}
+                }
+                &::before{
+                    content:'';
+                    display: inline-block;
+                    width:1.2rem;
+                    height:1.2rem;
+                    margin-right: .6rem;
+                    margin-top: .2rem;
+                    background-image: url(/UIDev/v2/images/icon/icon-fi-check.png);
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 1.2rem 1.2rem;
+                }   
+            }
+        }
+        & + label{
+            cursor:pointer;
+            position: relative;
+            display: block;
+            width: 100%;
+            color: $sub-color1;
+            font-weight: $font-weight-regular;
+            line-height: 1.8rem;
+            & > .tit {width: 19rem;display: inline-block;vertical-align: top;
+                & > em {font-style: normal;color:#999;}
+            }
+            .txt-rht {
+                float: right;
+                color: $sub-color3;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
+}
 // textarea
 .txar-tp1 {
 	display: block;
@@ -140,4 +239,54 @@
 		color: #999;
 	}
 	background-color: #fff;
+}
+
+//switch
+.switch-item {
+    label {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      font-weight: $font-weight-bold;
+    }
+    [type="checkbox"] {
+      appearance: none;
+      position: relative;
+      background-color: #E9E9E9;
+      border-radius: 1.2rem;
+      width: 4.6rem;
+      height: 2.4rem;
+    }
+    [type="checkbox"]::before {
+      content: "";
+      position: absolute;
+      left: .2rem;
+      top: .2rem;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 50%;
+      transform: scale(0.8);
+      background-color: white;
+      transition: left 250ms linear;
+    }
+    [type="checkbox"]:checked {
+      background-color: $main-color;
+    }
+    [type="checkbox"]:checked::before {
+      background-color: white;
+      left: 2.4rem;
+    }
+    [type="checkbox"]:disabled {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
+    [type="checkbox"]:disabled:before {
+      background-color: lightgray;
+    }
+    
+    [type="checkbox"]:disabled + span {
+      opacity: 0.7;
+      cursor: not-allowed;
+    }
 }

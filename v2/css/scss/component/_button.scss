@@ -24,14 +24,14 @@ button.disabled {opacity: .2;cursor: default;}
     font-weight: 600;
     height:4rem;
     line-height: 4rem;
-    font-size:1.4rem;
+    font-size:1.3rem;
     border-radius: .2rem;
     padding:0 2rem;
-    font-family: $font-family-apply;
+    font-family: $font-family-normal;
     box-sizing: border-box;
     &.sm{
-        height:28px;
-        line-height: 28px;
+        height:2.8rem;
+        line-height: 2.6rem;
         font-size:1.3rem;
         padding:0 1rem;
     }
