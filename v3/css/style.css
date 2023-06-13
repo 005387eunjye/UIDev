@@ -71,7 +71,7 @@ caption {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 400;
-  src: local("KBFGTextM"), url("/UIDev/UIDev/font/KBFGTextM.woff") format("woff");
+  src: local("KBFGTextM"), url("/UIDev/font/KBFGTextM.woff") format("woff");
 }
 /* KB금융 본문체 Bold*/
 @font-face {
@@ -665,6 +665,8 @@ body {
   font-weight: 700;
   text-align: right;
   border-radius: 0.4rem;
+  width: 8.5rem;
+  padding: 0 0.5rem;
 }
 .car-search-result-table .price input.ipt-pay.ty-normal {
   color: #000;
@@ -693,23 +695,54 @@ body {
   margin-bottom: 0.5rem;
 }
 .car-search-result-table .diagnosis {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1.5rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
   text-align: left;
+}
+.car-search-result-table .diagnosis em {
+  color: #326FC8;
+  font-style: normal;
+  display: block;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 .car-search-result-table .diagnosis.diagnosis-reservation a {
   color: #FF5D16;
   text-decoration: underline;
   font-weight: 700;
 }
+.car-search-result-table .diagnosis.diagnosis-reservation a.disabled {
+  pointer-events: none;
+  cursor: default;
+  color: #999;
+  text-decoration: none;
+}
+.car-search-result-table .diagnosis.diagnosis-reservation a.disabled::after {
+  display: none;
+}
+.car-search-result-table .diagnosis.diagnosis-reservation a.black {
+  color: #000;
+  display: inherit;
+}
+.car-search-result-table .diagnosis.diagnosis-reservation a.black em {
+  color: #FF5D16;
+  margin-top: 0;
+}
+.car-search-result-table .diagnosis.diagnosis-reservation a.black::after {
+  border-bottom: solid 0.1rem currentColor;
+  border-right: solid 0.1rem currentColor;
+}
+.car-search-result-table .diagnosis.diagnosis-reservation a + a, .car-search-result-table .diagnosis .sub + a {
+  margin-top: 1rem;
+}
 .car-search-result-table .diagnosis.diagnosis-reservation a::after {
   content: "";
-  width: 1rem;
-  height: 1rem;
-  border-bottom: solid 0.1rem #FF5D16;
-  border-right: solid 0.1rem #FF5D16;
+  width: 0.8rem;
+  height: 0.8rem;
+  border-bottom: solid 0.1rem currentColor;
+  border-right: solid 0.1rem currentColor;
   display: inline-block;
   transform: rotate(-47deg);
 }
@@ -1643,12 +1676,32 @@ button.disabled {
   border: 0 none;
   font-size: 0;
 }
+.form-chk input[type=checkbox]:disabled {
+  cursor: none;
+}
+.form-chk input[type=checkbox]:disabled + label {
+  color: #999;
+}
+.form-chk input[type=checkbox]:disabled + label::before {
+  background-image: url(/UIDev/v3/images/icon/icon-ck-white.png);
+  background-color: #ddd;
+  border: solid 0.1rem #ddd;
+}
 .form-chk input[type=checkbox]:checked + label::before {
   background-image: url(/UIDev/v3/images/icon/icon-ck-on.png);
   border: solid 0.1rem #FF5D16;
 }
 .form-chk input[type=checkbox] + label {
   cursor: pointer;
+}
+.form-chk input[type=checkbox] + label .txt-rht {
+  float: right;
+  color: rgba(153, 153, 153, 0.6);
+  font-weight: 400;
+}
+.form-chk input[type=checkbox] + label .tit-lft {
+  width: 20rem;
+  display: inline-block;
 }
 .form-chk input[type=checkbox] + label:before {
   content: "";
@@ -1663,7 +1716,7 @@ button.disabled {
   text-align: center;
   font-size: 1rem;
   margin-right: 0.5rem;
-  vertical-align: middle;
+  vertical-align: top;
 }
 
 .form-chk2 {
@@ -2116,6 +2169,10 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   margin-right: 1.5rem;
 }
 
+.cont-scroll .mCSB_inside > .mCSB_container {
+  margin-right: 1.5rem;
+}
+
 .custom-select-box {
   position: relative;
 }
@@ -2294,23 +2351,6 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 .tooltip-btn.ty-black .tooltip::before {
   bottom: -0.5rem;
 }
-.tooltip-btn.ty-tel {
-  width: auto;
-  height: auto;
-  background: none;
-  color: #000;
-  font-size: 1.4rem;
-  font-weight: 500;
-}
-.tooltip-btn.ty-tel::after {
-  content: "";
-  width: 2.1rem;
-  height: 2rem;
-  background: url("/UIDev/v3/images/icon/icon-tel.png") no-repeat;
-  position: relative;
-  display: inline-block;
-  vertical-align: -0.4rem;
-}
 .tooltip-btn.ty-txt {
   width: auto;
   height: auto;
@@ -2327,12 +2367,13 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 }
 .tooltip-btn.ty-txt .tooltip {
   left: -50%;
-  top: -133px;
-  width: 21rem;
+  top: -154px;
+  width: 22rem;
+  padding: 2.4rem 2rem;
   filter: drop-shadow(0px 4px 8px rgba(153, 153, 153, 0.4));
 }
 .tooltip-btn.ty-txt .tooltip::before {
-  bottom: -5px;
+  bottom: -0.5rem;
   left: calc(50% - 1.1rem);
 }
 
@@ -2437,6 +2478,13 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   font-weight: 700;
 }
 
+.form-list4 > li {
+  padding-top: 1.2rem;
+}
+.form-list4 > li:first-child {
+  padding-top: 0;
+}
+
 .coin {
   font-size: 2.8rem;
   font-weight: 700;
@@ -2490,6 +2538,10 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 
 .wid100 + .wid100 {
   margin-left: 1rem;
+}
+
+.ty-wid {
+  width: 25.6rem;
 }
 
 .wid-ty-normal {
@@ -2677,6 +2729,11 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   padding: 2.4rem;
   background-color: #FAF9F8;
   border-radius: 0.4rem;
+}
+.box-gray.ty1 {
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1rem;
+  z-index: 0;
 }
 .box-gray .box-gray-tit {
   font-weight: 500;
@@ -3003,6 +3060,14 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   padding: 0 0.1rem;
 }
 
+.gap-input {
+  padding: 0.4rem 0;
+}
+
+.pdt-30 {
+  padding-top: 3rem;
+}
+
 .point-push {
   position: relative;
 }
@@ -3198,7 +3263,7 @@ span.point-push::after {
   font-weight: 700;
 }
 .seacrh-item > li .search-list-group > ul {
-  width: 28.3rem;
+  width: 29.6rem;
   padding: 0 0 0 2rem;
 }
 .seacrh-item > li .search-list-group > ul > li + li {
@@ -3213,6 +3278,7 @@ span.point-push::after {
 }
 .search-btn-item > button {
   width: 100%;
+  position: relative;
   height: 4.6rem;
   margin-left: 1rem;
   border: 1px solid #E9E9E9;
@@ -3259,6 +3325,76 @@ span.point-push::after {
 .search-btn-item > button:nth-child(9)::before {
   background-image: url("/UIDev/v3/images/icon/icon-sh09-option.png");
 }
+.search-btn-item > button.active {
+  border: 1px solid #FFDFD0;
+  color: #FF5D16;
+}
+.search-btn-item > button.active:nth-child(1)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh01-model-on.png");
+}
+.search-btn-item > button.active:nth-child(2)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh02-mile-on.png");
+}
+.search-btn-item > button.active:nth-child(3)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh03-price-on.png");
+}
+.search-btn-item > button.active:nth-child(4)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh04-fuel-on.png");
+}
+.search-btn-item > button.active:nth-child(5)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh05-color-on.png");
+}
+.search-btn-item > button.active:nth-child(6)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh06-area-on.png");
+}
+.search-btn-item > button.active:nth-child(7)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh07-sale-on.png");
+}
+.search-btn-item > button.active:nth-child(8)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh08-geerbox-on.png");
+}
+.search-btn-item > button.active:nth-child(9)::before {
+  background-image: url("/UIDev/v3/images/icon/icon-sh09-option-on.png");
+}
+.search-btn-item > button .list-option {
+  position: absolute;
+  left: 0;
+  top: 4.6rem;
+  width: 36rem;
+  min-height: 18.6rem;
+  max-height: 46.4rem;
+  padding: 2.4rem;
+  background-color: white;
+  filter: drop-shadow(0px 4px 8px rgba(153, 153, 153, 0.4));
+  color: #000;
+  text-align: left;
+  z-index: 1;
+}
+.search-btn-item > button .list-option > .btn-layer-close {
+  position: absolute;
+  top: 2.4rem;
+  right: 2.4rem;
+  border: none;
+  width: 2rem;
+  height: 2rem;
+  display: block;
+  background: url("/UIDev/v3/images/icon/popup-close-icon.png") no-repeat center center;
+  font-size: 0;
+  text-indent: -9999rem;
+  z-index: 1;
+}
+.search-btn-item > button .list-option .list-tit {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+.search-btn-item > button .list-option .list-cont {
+  margin-top: 2.4rem;
+}
+
+.list-unit {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
 
 .icon-refresh {
   display: inline-block;
@@ -3278,6 +3414,15 @@ span.point-push::after {
   background: url("/UIDev/v3/images/icon/icon-fi-search.png") no-repeat;
   background-size: 1.2rem 1.2rem;
   vertical-align: -0.1rem;
+}
+
+.icon-tel {
+  display: inline-block;
+  width: 2.1rem;
+  height: 2rem;
+  background: url("/UIDev/v3/images/icon/icon-tel.png") no-repeat;
+  position: relative;
+  vertical-align: -0.4rem;
 }
 
 .title-ty1 {
@@ -3364,15 +3509,18 @@ span.point-push::after {
 }
 .table-dl-ty2 > dt {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 .table-dl-ty2 > dt > span {
   display: block;
+  padding-top: 1rem;
   color: #666;
   font-size: 1.4rem;
+  font-weight: 400;
 }
 .table-dl-ty2 > dd {
   padding: 1rem 0.3rem;
+  margin-top: 2rem;
   border-top: 0.1rem solid #E9E9E9;
   border-bottom: 0.1rem solid #E9E9E9;
   color: #FF5D16;
@@ -3384,6 +3532,31 @@ span.point-push::after {
   display: inline-block;
   margin-bottom: 1.2rem;
   font-weight: 700;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.select-option-list > a {
+  display: inline-block;
+  margin-right: 2rem;
+  color: #222;
+  font-weight: 700;
+}
+.select-option-list > a:active {
+  opacity: 0.7;
+}
+.select-option-list > a::after {
+  content: "";
+  width: 2rem;
+  height: 2rem;
+  margin-left: 0.7rem;
+  background: url("/UIDev/v3/images/icon/icon-x-circle.png") no-repeat;
+  display: inline-block;
+  vertical-align: -0.2rem;
+  background-size: 2rem 2rem;
+  vertical-align: top;
 }
 
 .sell-price-area .tit {
