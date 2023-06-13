@@ -3,7 +3,7 @@
 const navLoad = () => {
     (() => {
         return new Promise(function (resolve, reject) {
-            $.get('/UIDev/v2/views/_include/_header.html', function (response) {
+            $.get('/UIDev/v3/views/_include/_header.html', function (response) {
                 if (response) {
                     resolve(response);
                 }
@@ -22,7 +22,7 @@ const navLoad = () => {
 const footerLoad = () => {
     (() => {
         return new Promise(function (resolve, reject) {
-            $.get('/UIDev/v2/views/_include/_footer.html', function (response) {
+            $.get('/UIDev/v3/views/_include/_footer.html', function (response) {
                 if (response) {
                     resolve(response);
                 }
@@ -38,7 +38,7 @@ const footerLoad = () => {
 const dealerSell01LnbLoad = () => {
     (() => {
         return new Promise(function (resolve, reject) {
-            $.get('/UIDev/v2/views/_include/_dealer-sell01-lnb.html', function (response) {
+            $.get('/UIDev/v3/views/_include/_dealer-sell01-lnb.html', function (response) {
                 if (response) {
                     resolve(response);
                 }

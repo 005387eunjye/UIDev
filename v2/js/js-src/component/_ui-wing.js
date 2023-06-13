@@ -42,7 +42,7 @@ const uiWing = () => {
 
     (() => {
         return new Promise(function (resolve, reject) {
-            $.get('/UIDev/v2/views/_include/_wing-banner.html', function (response) {
+            $.get('/UIDev/v3/views/_include/_wing-banner.html', function (response) {
                 if (response) {
                     resolve(response);
                 }
