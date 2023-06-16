@@ -12,13 +12,19 @@
     
     <title>KB차차차</title>
 
-    <link type="text/css" rel="stylesheet" href="/UIDev/v3/css/style.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery-ui.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery.mCustomScrollbar.min.css">
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script>
+    <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <!--230616 수정 : css 추가-->
+    <link rel="stylesheet" href="/UIDev/vendor/select2/v4.0.2/css/select2.min.css.css" />
+    <!-- //230616 수정 : css 추가-->
+    <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
+
+    <script type="text/javascript" src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
 
 </head>
 
@@ -38,15 +44,14 @@
                             <span class="form-radio">
                                 <input type="radio" id="delivery1" name="delivery-group1" checked="checked">
                                 <label for="delivery1" class="tit">나의 설명글</label>
-                                <div class="custom-select-box inline-ty1">
-                                    <span class="custom-select-selection">설명글1</span>
-                                    <div class="custom-select-option-box">
-                                        <ul>
-                                            <li class="active">설명글1</li>
-                                            <li>설명글1</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <!--230616 수정 : select box 수정-->
+                                <select name="explain" id="explain01" class="inline-ty1" style="display:inline-block;">
+                                    <option value="explain01" selected>설명글1</option>
+                                    <option value="explain02">설명글1</option>
+                                    <option value="explain03">설명글2</option>
+                                    <option value="explain04">설명글3</option>
+                                </select>
+                                <!-- //230616 수정 : select box 수정-->
                             </span>
                             <span class="form-radio">
                                 <input type="radio" id="delivery2" name="delivery-group1">

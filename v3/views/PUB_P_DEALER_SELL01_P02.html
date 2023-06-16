@@ -12,13 +12,19 @@
     
     <title>KB차차차</title>
 
-    <link type="text/css" rel="stylesheet" href="/UIDev/v3/css/style.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery-ui.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery.mCustomScrollbar.min.css">
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script>
+    <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <!--230616 수정 : css 추가-->
+    <link rel="stylesheet" href="/UIDev/vendor/select2/v4.0.2/css/select2.min.css.css" />
+    <!-- //230616 수정 : css 추가-->
+    <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
+
+    <script type="text/javascript" src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
 
 </head>
 
@@ -223,77 +229,56 @@
                     <div class="special-price-car-area none-flex">
                         <p class="tit">리스기간</p>
                         <div class="form-box">
+                            <!--230616 수정 : select box 수정-->
                             <!--연도선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">연도 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="years" id="years01">
+                                <option value="year01" selected>연도 선택</option>
+                                <option value="year02">옵션1</option>
+                                <option value="year03">옵션2</option>
+                                <option value="year04">옵션3</option>
+                            </select>
                             <!-- // 연도선택-->
 
                             <!--월 선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">월 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="month" id="month01">
+                                <option value="month01" selected>월 선택</option>
+                                <option value="month02">옵션1</option>
+                                <option value="month03">옵션2</option>
+                                <option value="month04">옵션3</option>
+                            </select>
                             <!--// 월 선택-->
                             <div class="period"> ~ </div>
                             <!--연도선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">연도 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="years" id="years02">
+                                <option value="year01" selected>연도 선택</option>
+                                <option value="year02">옵션1</option>
+                                <option value="year03">옵션2</option>
+                                <option value="year04">옵션3</option>
+                            </select>
                             <!-- // 연도선택-->
 
                             <!--월 선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">월 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="month" id="month02">
+                                <option value="month01" selected>월 선택</option>
+                                <option value="month02">옵션1</option>
+                                <option value="month03">옵션2</option>
+                                <option value="month04">옵션3</option>
+                            </select>
                             <!--// 월 선택-->
+                            <!-- //230616 수정 : select box 수정-->
                         </div>
                     </div>
                     <div class="special-price-car-area none-flex">
                         <p class="tit">잔여 기간<em>(선택)</em></p>
                         <div class="form-box">
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <!--230616 수정 : select box 수정-->
+                            <select name="period" id="period01">
+                                <option value="period01" selected>선택</option>
+                                <option value="period02">옵션1</option>
+                                <option value="period03">옵션2</option>
+                                <option value="period04">옵션3</option>
+                            </select>
+                            <!-- //230616 수정 : select box 수정-->
                             <span class="total-month">/ 총 00 개월</span>
                         </div>
                     </div>
@@ -363,77 +348,56 @@
                     <div class="special-price-car-area none-flex">
                         <p class="tit">리스기간</p>
                         <div class="form-box">
+                            <!--230616 수정 : select box 수정-->
                             <!--연도선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">연도 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="years" id="years03">
+                                <option value="year01" selected>연도 선택</option>
+                                <option value="year02">옵션1</option>
+                                <option value="year03">옵션2</option>
+                                <option value="year04">옵션3</option>
+                            </select>
                             <!-- // 연도선택-->
 
                             <!--월 선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">월 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="month" id="month03">
+                                <option value="month01" selected>월 선택</option>
+                                <option value="month02">옵션1</option>
+                                <option value="month03">옵션2</option>
+                                <option value="month04">옵션3</option>
+                            </select>
                             <!--// 월 선택-->
                             <div class="period"> ~ </div>
                             <!--연도선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">연도 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="years" id="years04">
+                                <option value="year01" selected>연도 선택</option>
+                                <option value="year02">옵션1</option>
+                                <option value="year03">옵션2</option>
+                                <option value="year04">옵션3</option>
+                            </select>
                             <!-- // 연도선택-->
 
                             <!--월 선택-->
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">월 선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <select name="month" id="month04">
+                                <option value="month01" selected>월 선택</option>
+                                <option value="month02">옵션1</option>
+                                <option value="month03">옵션2</option>
+                                <option value="month04">옵션3</option>
+                            </select>
                             <!--// 월 선택-->
+                            <!-- //230616 수정 : select box 수정-->
                         </div>
                     </div>
                     <div class="special-price-car-area none-flex">
                         <p class="tit">잔여 기간<em>(선택)</em></p>
                         <div class="form-box">
-                            <div class="custom-select-box">
-                                <span class="custom-select-selection">선택</span>
-                                <div class="custom-select-option-box">
-                                    <ul>
-                                        <li class="active">옵션1</li>
-                                        <li>옵션2</li>
-                                        <li>옵션3</li>
-                                        <li>옵션4</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <!--230616 수정 : select box 수정-->
+                            <select name="period" id="period02">
+                                <option value="period01" selected>선택</option>
+                                <option value="period02">옵션1</option>
+                                <option value="period03">옵션2</option>
+                                <option value="period04">옵션3</option>
+                            </select>
+                            <!-- //230616 수정 : select box 수정-->
                             <span class="total-month">/ 총 00 개월</span>
                         </div>
                     </div>

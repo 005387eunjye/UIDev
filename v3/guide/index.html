@@ -11,11 +11,17 @@
     <meta name="format-detection" content="telephone=no">
     
     <title>KB차차차 딜러사이드 PC UI Guide</title>
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-    <link type="text/css" rel="stylesheet" href="/UIDev/v3/css/style.min.css">
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery-3.6.1.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script>
+    
+    <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
+
+    <script src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
     <style>
         .guide-content h3{
             font-size:30px;
@@ -187,6 +193,19 @@
                                     <input type="radio" id="delivery1" value="collect" name="delivery">
                                     <label for="delivery1">radio-label</label>
                                 </div>
+
+                                <span class="switch-item">
+                                    <label>
+                                        <span>switch</span>
+                                        <input role="switch" type="checkbox" />
+                                    </label>
+                                </span>
+                                <span class="switch-item">
+                                    <label>
+                                        <span>switch:disabled</span>
+                                        <input role="switch" type="checkbox" disabled />
+                                    </label>
+                                </span>
                             </div>
                         </div>
                         <div class="guide-content" id="DropDown">
@@ -245,6 +264,34 @@
                                     tab03 입니다.
                                 </div>
                             </div>
+
+                            <div id="tab2" class="car-search-result-area">
+                                <div class="car-search-result-mode-area">
+                                    
+                                    <div class="car-search-result-mode-area-box">
+                                        <div class="mode-area">
+                                            <ul class="tab-item">
+                                                <li>
+                                                    <a href="#tab21" class="active">판매중 리스트</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#tab22">판매완료 리스트</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="tab-content-item">
+                                    <div id="tab21">
+                                        11
+                                    </div>
+                                    <div id="tab22">
+                                        22
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                 </div>

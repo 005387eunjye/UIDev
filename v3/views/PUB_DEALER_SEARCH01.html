@@ -12,13 +12,21 @@
     
     <title>KB차차차</title>
 
-    <link type="text/css" rel="stylesheet" href="/UIDev/v3/css/style.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery-ui.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery.mCustomScrollbar.min.css">
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script>
+    <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/UIDev/vendor/swiper/v4.5.3/css/swiper-bundle.min.css"> <!-- [D] swiper import -->
+    <!--230616 수정 : css 추가-->
+    <link rel="stylesheet" href="/UIDev/vendor/select2/v4.0.2/css/select2.min.css.css" />
+    <!-- //230616 수정 : css 추가-->
+    <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
+
+    <script type="text/javascript" src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/swiper/v4.5.3/js/swiper-bundle.min.js"></script> <!-- [D] swiper import -->
+    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
 
 </head>
 
@@ -43,38 +51,38 @@
                                     <ul>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk01" name="group01" checked>
-                                                <label for="chk01"><span class="tit">현대</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck01" name="group01" checked>
+                                                <label for="ck01"><span class="tit">현대</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk02" name="group01">
-                                                <label for="chk02"><span class="tit">제네시스</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck02" name="group01">
+                                                <label for="ck02"><span class="tit">제네시스</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk03" name="group01">
-                                                <label for="chk03"><span class="tit">기아</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck03" name="group01">
+                                                <label for="ck03"><span class="tit">기아</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk04" name="group01">
-                                                <label for="chk04"><span class="tit">한국GM</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck04" name="group01">
+                                                <label for="ck04"><span class="tit">한국GM</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk05" name="group01">
-                                                <label for="chk05"><span class="tit">르노삼성</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck05" name="group01">
+                                                <label for="ck05"><span class="tit">르노삼성</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk06" name="group01">
-                                                <label for="chk06"><span class="tit">쌍용</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck06" name="group01">
+                                                <label for="ck06"><span class="tit">쌍용</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                     </ul>    
@@ -86,38 +94,38 @@
                                     <ul>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk21" name="group02">
-                                                <label for="chk21"><span class="tit">벤츠</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck21" name="group02">
+                                                <label for="ck21"><span class="tit">벤츠</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk22" name="group02">
-                                                <label for="chk22"><span class="tit">제네시스</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck22" name="group02">
+                                                <label for="ck22"><span class="tit">제네시스</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk23" name="group02">
-                                                <label for="chk23"><span class="tit">기아</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck23" name="group02">
+                                                <label for="ck23"><span class="tit">기아</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk24" name="group02">
-                                                <label for="chk24"><span class="tit">한국GM</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck24" name="group02">
+                                                <label for="ck24"><span class="tit">한국GM</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk25" name="group02">
-                                                <label for="chk25"><span class="tit">르노삼성</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck25" name="group02">
+                                                <label for="ck25"><span class="tit">르노삼성</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk26" name="group02">
-                                                <label for="chk26"><span class="tit">쌍용</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck26" name="group02">
+                                                <label for="ck26"><span class="tit">쌍용</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                     </ul>    
@@ -135,38 +143,38 @@
                                     <ul>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk31" name="group03" checked>
-                                                <label for="chk31"><span class="tit">그랜저</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck31" name="group03" checked>
+                                                <label for="ck31"><span class="tit">그랜저</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk32" name="group03">
-                                                <label for="chk32"><span class="tit">쏘나타</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck32" name="group03">
+                                                <label for="ck32"><span class="tit">쏘나타</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk33" name="group03">
-                                                <label for="chk33"><span class="tit">아반떼</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck33" name="group03">
+                                                <label for="ck33"><span class="tit">아반떼</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk34" name="group03">
-                                                <label for="chk34"><span class="tit">스타렉스</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck34" name="group03">
+                                                <label for="ck34"><span class="tit">스타렉스</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk35" name="group03">
-                                                <label for="chk35"><span class="tit">산타페</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck35" name="group03">
+                                                <label for="ck35"><span class="tit">산타페</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk36" name="group03">
-                                                <label for="chk36"><span class="tit">투싼</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck36" name="group03">
+                                                <label for="ck36"><span class="tit">투싼</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                     </ul>    
@@ -178,38 +186,38 @@
                                     <ul>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk41" name="group04">
-                                                <label for="chk41"><span class="tit">i30</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck41" name="group04">
+                                                <label for="ck41"><span class="tit">i30</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk42" name="group04">
-                                                <label for="chk42"><span class="tit">i40</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck42" name="group04">
+                                                <label for="ck42"><span class="tit">i40</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk43" name="group04">
-                                                <label for="chk43"><span class="tit">아반떼</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck43" name="group04">
+                                                <label for="ck43"><span class="tit">아반떼</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk44" name="group04">
-                                                <label for="chk44"><span class="tit">스타렉스</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck44" name="group04">
+                                                <label for="ck44"><span class="tit">스타렉스</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk45" name="group04">
-                                                <label for="chk45"><span class="tit">산타페</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck45" name="group04">
+                                                <label for="ck45"><span class="tit">산타페</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk46" name="group04">
-                                                <label for="chk46"><span class="tit">투싼</span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck46" name="group04">
+                                                <label for="ck46"><span class="tit">투싼</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                     </ul>    
@@ -226,38 +234,38 @@
                                     <ul>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk51" name="group05">
-                                                <label for="chk51"><span class="tit">디 올 뉴 그렌저 <em>(22년 ~ 현재)</em></span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck51" name="group05">
+                                                <label for="ck51"><span class="tit">디 올 뉴 그렌저 <em>(22년 ~ 현재)</em></span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk52" name="group05">
-                                                <label for="chk52"><span class="tit">디 올뉴 그랜저 하이브리드 <em>(22년 ~ 현재)</em></span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck52" name="group05">
+                                                <label for="ck52"><span class="tit">디 올뉴 그랜저 하이브리드 <em>(22년 ~ 현재)</em></span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk53" name="group05">
-                                                <label for="chk53"><span class="tit">더 뉴 그랜저 IG</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck53" name="group05">
+                                                <label for="ck53"><span class="tit">더 뉴 그랜저 IG</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk54" name="group05">
-                                                <label for="chk54"><span class="tit">더 뉴 그랜저 IG 하이브리드</span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck54" name="group05">
+                                                <label for="ck54"><span class="tit">더 뉴 그랜저 IG 하이브리드</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk55" name="group05">
-                                                <label for="chk55"><span class="tit">그랜저 HG <em>(11년 ~ 현재)</em></span> <span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck55" name="group05">
+                                                <label for="ck55"><span class="tit">그랜저 HG <em>(11년 ~ 현재)</em></span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="chk56" name="group05">
-                                                <label for="chk56"><span class="tit">두글자 차량 이름 및 연식 두글자 케이스  <em>(11년 ~ 현재)</em></span><span class="txt-rht">6,975</span></label>
+                                                <input type="radio" id="ck56" name="group05">
+                                                <label for="ck56"><span class="tit">두글자 차량 이름 및 연식 두글자 케이스  <em>(11년 ~ 현재)</em></span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                     </ul>    
@@ -274,14 +282,14 @@
                                     <ul>
                                         <li>
                                             <figure class="form-chk3">
-                                                <input type="checkbox" id="chk61" name="group06">
-                                                <label for="chk61"><span class="tit">프리미엄</span><span class="txt-rht">6,975</span></label>
+                                                <input type="checkbox" id="ck61" name="group06">
+                                                <label for="ck61"><span class="tit">프리미엄</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk3">
-                                                <input type="checkbox" id="chk62" name="group06">
-                                                <label for="chk62"><span class="tit">익스클루시브</span><span class="txt-rht">6,975</span></label>
+                                                <input type="checkbox" id="ck62" name="group06">
+                                                <label for="ck62"><span class="tit">익스클루시브</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                     </ul>    
@@ -291,7 +299,8 @@
                     </ul>
 
                     <div class="search-btn-item">
-                        <button type="button" class="active">연식
+                        <div>
+                            <button type="button" class="active">연식</button>
                             <!-- 옵션 목록 -->
                             <div class="list-option">
                                 <a href="javascript:;" class="btn-layer-close">close</a>
@@ -301,32 +310,24 @@
                                     <ul class="form-list4">
                                         <li>
                                             <div class="display-flex-area">
-                                                <div class="custom-select-box ty-wid">
-                                                    <span class="custom-select-selection">연도 선택</span>
-                                                    <div class="custom-select-option-box">
-                                                        <ul>
-                                                            <li class="active">옵션1</li>
-                                                            <li>옵션2</li>
-                                                            <li>옵션3</li>
-                                                            <li>옵션4</li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="sel-wid">
+                                                    <select name="model" id="">
+                                                        <option value="model01" selected></option>
+                                                        <option value="model02">option1</option>
+                                                        <option value="model03">option2</option>
+                                                    </select>
                                                 </div>
                                                 <div class="list-unit">부터</div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="display-flex-area">
-                                                <div class="custom-select-box ty-wid">
-                                                    <span class="custom-select-selection">연도 선택</span>
-                                                    <div class="custom-select-option-box">
-                                                        <ul>
-                                                            <li class="active">옵션1</li>
-                                                            <li>옵션2</li>
-                                                            <li>옵션3</li>
-                                                            <li>옵션4</li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="sel-wid">
+                                                    <select name="model" id="">
+                                                        <option value="model01" selected></option>
+                                                        <option value="model02">option1</option>
+                                                        <option value="model03">option2</option>
+                                                    </select>
                                                 </div>
                                                 <div class="list-unit">까지</div>
                                             </div>
@@ -335,9 +336,9 @@
                                 </div>
                             </div>
                             <!--// 옵션 목록 -->
-                        </button><!--// 선택시 .active 추가 -->
-                        <button type="button">주행거리
-
+                        </div><!--// 선택시 .active 추가 -->
+                        <div>
+                            <button type="button">주행거리</button>
                             <!-- 옵션 목록 -->
                             <div class="list-option">
                                 <a href="javascript:;" class="btn-layer-close">close</a>
@@ -347,72 +348,65 @@
                                     <ul class="form-list4">
                                         <li>
                                             <div class="display-flex-area">
-                                                <div class="custom-select-box ty-wid">
-                                                    <span class="custom-select-selection">선택</span>
-                                                    <div class="custom-select-option-box">
-                                                        <ul>
-                                                            <li class="active">옵션1</li>
-                                                            <li>옵션2</li>
-                                                            <li>옵션3</li>
-                                                            <li>옵션4</li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="sel-wid">
+                                                    <select name="model" id="">
+                                                        <option value="model01" selected></option>
+                                                        <option value="model02">option1</option>
+                                                        <option value="model03">option2</option>
+                                                    </select>
                                                 </div>
                                                 <div class="list-unit">부터</div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="display-flex-area">
-                                                <div class="custom-select-box ty-wid">
-                                                    <span class="custom-select-selection">선택</span>
-                                                    <div class="custom-select-option-box">
-                                                        <ul>
-                                                            <li class="active">옵션1</li>
-                                                            <li>옵션2</li>
-                                                            <li>옵션3</li>
-                                                            <li>옵션4</li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="sel-wid">
+                                                    <select name="model" id="">
+                                                        <option value="model01" selected></option>
+                                                        <option value="model02">option1</option>
+                                                        <option value="model03">option2</option>
+                                                    </select>
                                                 </div>
                                                 <div class="list-unit">까지</div>
                                             </div>
                                         </li>
                                         <li class="pdt-30">
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00">2만km 미만</label>
+                                                <input type="checkbox" id="option01" />
+                                                <label for="option01">2만km 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk01" />
-                                                <label for="chk01">2만km ~ 4만km 미만</label>
+                                                <input type="checkbox" id="option02" />
+                                                <label for="option02">2만km ~ 4만km 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk02" />
-                                                <label for="chk02">4만km ~ 6만km 미만</label>
+                                                <input type="checkbox" id="option03" />
+                                                <label for="option03">4만km ~ 6만km 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk03" />
-                                                <label for="chk03">6만km ~ 8만km 미만</label>
+                                                <input type="checkbox" id="option04" />
+                                                <label for="option04">6만km ~ 8만km 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk04" />
-                                                <label for="chk04">8만km ~ 10만km 미만</label>
+                                                <input type="checkbox" id="option05" />
+                                                <label for="option05">8만km ~ 10만km 미만</label>
                                             </figure>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <!--// 옵션 목록 -->
-                        </button>
-                        <button type="button">가격
+                        </div>
+                        <div>
+                            <button type="button">가격</button>
                             <!-- 옵션 목록 -->
                             <div class="list-option">
                                 <a href="javascript:;" class="btn-layer-close">close</a>
@@ -422,64 +416,56 @@
                                     <ul class="form-list4">
                                         <li>
                                             <div class="display-flex-area">
-                                                <div class="custom-select-box ty-wid">
-                                                    <span class="custom-select-selection">선택</span>
-                                                    <div class="custom-select-option-box">
-                                                        <ul>
-                                                            <li class="active">옵션1</li>
-                                                            <li>옵션2</li>
-                                                            <li>옵션3</li>
-                                                            <li>옵션4</li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="sel-wid">
+                                                    <select name="model" id="">
+                                                        <option value="model01" selected></option>
+                                                        <option value="model02">option1</option>
+                                                        <option value="model03">option2</option>
+                                                    </select>
                                                 </div>
                                                 <div class="list-unit">부터</div>
                                             </div>
                                         </li>
                                         <li>
                                             <div class="display-flex-area">
-                                                <div class="custom-select-box ty-wid">
-                                                    <span class="custom-select-selection">선택</span>
-                                                    <div class="custom-select-option-box">
-                                                        <ul>
-                                                            <li class="active">옵션1</li>
-                                                            <li>옵션2</li>
-                                                            <li>옵션3</li>
-                                                            <li>옵션4</li>
-                                                        </ul>
-                                                    </div>
+                                                <div class="sel-wid">
+                                                    <select name="model" id="">
+                                                        <option value="model01" selected></option>
+                                                        <option value="model02">option1</option>
+                                                        <option value="model03">option2</option>
+                                                    </select>
                                                 </div>
                                                 <div class="list-unit">까지</div>
                                             </div>
                                         </li>
                                         <li class="pdt-30">
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00">1,500만 ~ 2,000만원 미만</label>
+                                                <input type="checkbox" id="option11" />
+                                                <label for="option11">1,500만 ~ 2,000만원 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk01" />
-                                                <label for="chk01">2,000만 ~ 3,500만원 미만</label>
+                                                <input type="checkbox" id="option12" />
+                                                <label for="option12">2,000만 ~ 3,500만원 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk02" />
-                                                <label for="chk02">3,500만 ~ 4,000만원 미만</label>
+                                                <input type="checkbox" id="option13" />
+                                                <label for="option13">3,500만 ~ 4,000만원 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk03" />
-                                                <label for="chk03">4,500만 ~ 5,000만원 미만</label>
+                                                <input type="checkbox" id="option14" />
+                                                <label for="option14">4,500만 ~ 5,000만원 미만</label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk04" />
-                                                <label for="chk04">5,500만 ~ 6,000만원 미만</label>
+                                                <input type="checkbox" id="option15" />
+                                                <label for="option15">5,500만 ~ 6,000만원 미만</label>
                                             </figure>
                                         </li>
                                     </ul>
@@ -487,8 +473,9 @@
                             </div>
                             <!--// 옵션 목록 -->
 
-                        </button>
-                        <button type="button">연료
+                        </div>
+                        <div>
+                            <button type="button">연료</button>
                             <!-- 옵션 목록 -->
                             <div class="list-option">
                                 <a href="javascript:;" class="btn-layer-close">close</a>
@@ -498,74 +485,929 @@
                                     <ul class="form-list4">
                                         <li class="pdt-30">
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">가솔린</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option21" />
+                                                <label for="option21"><span class="tit-lft">가솔린</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">디젤</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option22" />
+                                                <label for="option22"><span class="tit-lft">디젤</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">LPG</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option23" />
+                                                <label for="option23"><span class="tit-lft">LPG</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">가솔린 + LPG</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option24" />
+                                                <label for="option24"><span class="tit-lft">가솔린 + LPG</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">하이브리드(LPG)</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option25" />
+                                                <label for="option25"><span class="tit-lft">하이브리드(LPG)</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">하이브리드(가솔린)</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option26" />
+                                                <label for="option26"><span class="tit-lft">하이브리드(가솔린)</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk001" disabled />
-                                                <label for="chk001"><span class="tit-lft">하이브리드(디젤)</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option27" disabled />
+                                                <label for="option27"><span class="tit-lft">하이브리드(디젤)</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">CNG</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option28" />
+                                                <label for="option28"><span class="tit-lft">CNG</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">전기</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option29" />
+                                                <label for="option29"><span class="tit-lft">전기</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-chk gap-input">
-                                                <input type="checkbox" id="chk00" />
-                                                <label for="chk00"><span class="tit-lft">기타</span><span class="txt-rht">16,322</span></label>
+                                                <input type="checkbox" id="option30" />
+                                                <label for="option30"><span class="tit-lft">기타</span><span class="txt-rht">16,322</span></label>
                                             </figure>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                             <!--// 옵션 목록 -->
-                        </button>
-                        <button type="button">색상</button>
-                        <button type="button">지역</button>
-                        <button type="button">판매구분</button>
-                        <button type="button">변속기</button>
-                        <button type="button">옵션</button>
+                        </div>
+                        <div>
+                            <button type="button">색상</button>
+                            <!-- 옵션 목록 -->
+                            <div class="list-option">
+                                <a href="javascript:;" class="btn-layer-close">close</a>
+
+                                <p class="list-tit">색상 선택</p>
+                                <div class="list-cont cont-scroll">
+                                    <ul class="form-list4">
+                                        <li class="pdt-30">
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option31" />
+                                                <label for="option31"><span class="tit-lft"><i class="color blackColor"></i>검정색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option32" />
+                                                <label for="option32"><span class="tit-lft"><i class="color whiteColor"></i>흰색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option33" />
+                                                <label for="option33"><span class="tit-lft"><i class="color silverColor"></i>은색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option34" />
+                                                <label for="option34"><span class="tit-lft"><i class="color pearlColor"></i>진주색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option35" />
+                                                <label for="option35"><span class="tit-lft"><i class="color grayColor"></i>회색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option36" />
+                                                <label for="option36"><span class="tit-lft"><i class="color redColor"></i>빨간색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option37" />
+                                                <label for="option37"><span class="tit-lft"><i class="color blueColor"></i>파란색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option38" />
+                                                <label for="option38"><span class="tit-lft"><i class="color orangeColor"></i>주황색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option39" />
+                                                <label for="option39"><span class="tit-lft"><i class="color brownColor"></i>갈색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option40" />
+                                                <label for="option40"><span class="tit-lft"><i class="color greenColor"></i>초록색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option41" />
+                                                <label for="option41"><span class="tit-lft"><i class="color yellowColor"></i>노란색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option42" />
+                                                <label for="option42"><span class="tit-lft"><i class="color purpleColor"></i>보라색</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 옵션 목록 -->
+
+                        </div>
+                        <div>
+                            <button type="button">지역</button>
+                            <!-- 옵션 목록 -->
+                            <div class="list-option">
+                                <a href="javascript:;" class="btn-layer-close">close</a>
+
+                                <p class="list-tit">지역선택</p>
+                                <div class="list-cont cont-scroll">
+                                    <ul class="form-list4">
+                                        <li class="pdt-30">
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option43" />
+                                                <label for="option43"><span class="tit-lft">서울</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option44" />
+                                                <label for="option44"><span class="tit-lft">인천</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option45" />
+                                                <label for="option45"><span class="tit-lft">대전</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option46" />
+                                                <label for="option46"><span class="tit-lft">대구</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option47" />
+                                                <label for="option47"><span class="tit-lft">광주</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option48" />
+                                                <label for="option48"><span class="tit-lft">부산</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option49" />
+                                                <label for="option49"><span class="tit-lft">울산</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option50" />
+                                                <label for="option50"><span class="tit-lft">세종</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option51" />
+                                                <label for="option51"><span class="tit-lft">경기</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option52" />
+                                                <label for="option52"><span class="tit-lft">강원</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li class="pdt-30">
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option53" />
+                                                <label for="option53"><span class="tit-lft">경남</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option54" />
+                                                <label for="option54"><span class="tit-lft">경북</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option55" />
+                                                <label for="option55"><span class="tit-lft">전남</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option56" />
+                                                <label for="option56"><span class="tit-lft">전북</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option57" />
+                                                <label for="option57"><span class="tit-lft">충남</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option58" />
+                                                <label for="option58"><span class="tit-lft">충북</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option59" />
+                                                <label for="option59"><span class="tit-lft">제주</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 옵션 목록 -->
+                        </div>
+                        <div>
+                            <button type="button">판매구분</button>
+                            <!-- 옵션 목록 -->
+                            <div class="list-option">
+                                <a href="javascript:;" class="btn-layer-close">close</a>
+
+                                <p class="list-tit">판매구분 선택</p>
+                                <div class="list-cont cont-scroll">
+                                    <ul class="form-list4">
+                                        <li class="pdt-30">
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option60" />
+                                                <label for="option60"><span class="tit-lft">실차주</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option61" />
+                                                <label for="option61"><span class="tit-lft">직거래(개인)</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option62" />
+                                                <label for="option62"><span class="tit-lft">할인특가</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option63" />
+                                                <label for="option63"><span class="tit-lft">리스승계</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option64" />
+                                                <label for="option64"><span class="tit-lft">무사고차량</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option65" />
+                                                <label for="option65"><span class="tit-lft">KB차차차 진단중고차</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option66" />
+                                                <label for="option66"><span class="tit-lft">제조사 인증중고차</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option67" />
+                                                <label for="option67"><span class="tit-lft">KB캐피탈 인증중고차</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 옵션 목록 -->
+                        </div>
+                        <div>
+                            <button type="button">변속기</button>
+                            <!-- 옵션 목록 -->
+                            <div class="list-option">
+                                <a href="javascript:;" class="btn-layer-close">close</a>
+
+                                <p class="list-tit">변속기 선택</p>
+                                <div class="list-cont cont-scroll">
+                                    <ul class="form-list4">
+                                        <li class="pdt-30">
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option68" />
+                                                <label for="option68"><span class="tit-lft">오토</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option69" />
+                                                <label for="option69"><span class="tit-lft">수동</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option70" />
+                                                <label for="option70"><span class="tit-lft">세미오토</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option71" />
+                                                <label for="option71"><span class="tit-lft">CVT</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk gap-input">
+                                                <input type="checkbox" id="option" />
+                                                <label for="option"><span class="tit-lft">기타</span><span class="txt-rht">16,322</span></label>
+                                            </figure>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 옵션 목록 -->
+                        </div>
+                        <div>
+                            <button type="button">옵션</button>
+                            <!-- 옵션 목록 -->
+                            <div class="list-option ty-full">
+                                <a href="javascript:;" class="btn-layer-close">close</a>
+
+                                <p class="list-tit">옵션 선택</p>
+                                <div class="list-cont cont-scroll">
+                                    <ul class="form-list3">
+                                        <li class="display-flex-start-area">
+                                            <div class="tit-area">외장 (<em>6</em>)</div>
+                                            <ul class="box-chk-list2">
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk01" name="dealer-option1" />
+                                                        <label for="chk01">썬루프</label>
+                                                    </figure> 
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk01-1" name="dealer-option1" />
+                                                        <label for="chk01-1">일반</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk01-2" name="dealer-option1" />
+                                                        <label for="chk01-2">파노라마</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk02" name="dealer-option1" />
+                                                        <label for="chk02">제논라이트(HID)</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk03" name="dealer-option1" />
+                                                        <label for="chk03">알루미늄휠</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk04" name="dealer-option1" />
+                                                        <label for="chk04" class="point-push">전동접이식미러</label><!--// 차주 추천 옵션시 .point-push 추가 -->
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk05" name="dealer-option1" />
+                                                        <label for="chk05">주간주행등(DLR)</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk06" name="dealer-option1" />
+                                                        <label for="chk06">루프랙</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk07" name="dealer-option1" />
+                                                        <label for="chk07">LED리어램프</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk08" name="dealer-option1" />
+                                                        <label for="chk08">하이빔 어시스트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk09" name="dealer-option1" />
+                                                        <label for="chk09">고스트 도어 클로징</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk10" name="dealer-option1" />
+                                                        <label for="chk10">자동슬라이딩도어</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk11" name="dealer-option1" />
+                                                        <label for="chk11">전동사이드스탭</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk12" name="dealer-option1" />
+                                                        <label for="chk12">어댑티드헤드램프</label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="display-flex-start-area">
+                                            <div class="tit-area">내장 (<em>6</em>)</div>
+                                            <ul class="box-chk-list2">
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk13" name="dealer-option2" />
+                                                        <label for="chk13">열선시트</label>
+                                                    </figure>
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk14" name="dealer-option2" />
+                                                        <label for="chk14">앞좌석</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk15" name="dealer-option2" />
+                                                        <label for="chk15">뒷좌석</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk16" name="dealer-option2" />
+                                                        <label for="chk16">통풍시트</label>
+                                                    </figure>
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk17" name="dealer-option2" />
+                                                        <label for="chk17">운전석</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk18" name="dealer-option2" />
+                                                        <label for="chk18">동승석</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk19" name="dealer-option2" />
+                                                        <label for="chk19">파워핸들</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk20" name="dealer-option2" />
+                                                        <label for="chk20">핸들 리모컨</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk21" name="dealer-option2" />
+                                                        <label for="chk21">가죽시트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk22" name="dealer-option2" />
+                                                        <label for="chk22">전동시트</label>
+                                                    </figure>
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk23" name="dealer-option2" />
+                                                        <label for="chk23">운전석</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk24" name="dealer-option2" />
+                                                        <label for="chk24">동승석</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk25" name="dealer-option2" />
+                                                        <label for="chk25">뒷자석전동시트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk26" name="dealer-option2" />
+                                                        <label for="chk26">메모리시트</label>
+                                                    </figure>
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk26-1" name="dealer-option2" />
+                                                        <label for="chk26-1">운전석</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk26-2" name="dealer-option2" />
+                                                        <label for="chk26-2">동승석</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk27" name="dealer-option2" />
+                                                        <label for="chk27">안마시트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk28" name="dealer-option2" />
+                                                        <label for="chk28">슈퍼비전계기판</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk29" name="dealer-option2" />
+                                                        <label for="chk29">패들시프트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk30" name="dealer-option2" />
+                                                        <label for="chk30">하이패스</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk31" name="dealer-option2" />
+                                                        <label for="chk31">엠비언트라이트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk32" name="dealer-option2" />
+                                                        <label for="chk32">워크인시트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk33" name="dealer-option2" />
+                                                        <label for="chk33">전동햇빛가리개</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk34" name="dealer-option2" />
+                                                        <label for="chk34">통풍시트(뒷좌석)</label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="display-flex-start-area">
+                                            <div class="tit-area">안전 (<em>6</em>)</div>
+                                            <ul class="box-chk-list2">
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk35" name="dealer-option3" />
+                                                        <label for="chk35">주차감지센서</label>
+                                                    </figure>
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk35-1" name="dealer-option3" />
+                                                        <label for="chk35-1">전방</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk35-2" name="dealer-option3" />
+                                                        <label for="chk35-2">후방</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk36" name="dealer-option3" />
+                                                        <label for="chk36">사이드&#38;커튼에어백</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk37" name="dealer-option3" />
+                                                        <label for="chk37">에어백</label>
+                                                    </figure>
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk37-1" name="dealer-option3" />
+                                                        <label for="chk37-1">운전석</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk37-2" name="dealer-option3" />
+                                                        <label for="chk37-2">동승석</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk38" name="dealer-option3" />
+                                                        <label for="chk38">후방카메라</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk39" name="dealer-option3" />
+                                                        <label for="chk39">어라운드뷰</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk40" name="dealer-option3" />
+                                                        <label for="chk40">블랙박스</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk41" name="dealer-option3" />
+                                                        <label for="chk41">ABS</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk42" name="dealer-option3" />
+                                                        <label for="chk42">ECS</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk43" name="dealer-option3" />
+                                                        <label for="chk43">TCS</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk44" name="dealer-option3" />
+                                                        <label for="chk44">차체자세제어장치</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk45" name="dealer-option3" />
+                                                        <label for="chk45">차선이탈경보장치</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk46" name="dealer-option3" />
+                                                        <label for="chk46">도난경보기</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk47" name="dealer-option3" />
+                                                        <label for="chk47">타이어 공기압감지</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk48" name="dealer-option3" />
+                                                        <label for="chk48">무릎에어백</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk49" name="dealer-option3" />
+                                                        <label for="chk49">전방카메라</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk50" name="dealer-option3" />
+                                                        <label for="chk50">자동긴급제동(AEB)</label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="display-flex-start-area">
+                                            <div class="tit-area">편의 (<em>6</em>)</div>
+                                            <ul class="box-chk-list2">
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk51" name="dealer-option4" />
+                                                        <label for="chk51">스마트키</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk52" name="dealer-option4" />
+                                                        <label for="chk52">파워윈도우</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk53" name="dealer-option4" />
+                                                        <label for="chk53">자동도어잠금</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk54" name="dealer-option4" />
+                                                        <label for="chk54">풀오토에어컨</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk55" name="dealer-option4" />
+                                                        <label for="chk55">오토라이트</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk56" name="dealer-option4" />
+                                                        <label for="chk56">자동주차시스템</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk57" name="dealer-option4" />
+                                                        <label for="chk57">전자식파킹브레이크</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk58" name="dealer-option4" />
+                                                        <label for="chk58">HUD</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk59" name="dealer-option4" />
+                                                        <label for="chk59">ECM룸밀러</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk60" name="dealer-option4" />
+                                                        <label for="chk60">크루즈컨트롤</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk61" name="dealer-option4" />
+                                                        <label for="chk61">전동트렁크</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk62" name="dealer-option4" />
+                                                        <label for="chk62">핸들열선</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk63" name="dealer-option4" />
+                                                        <label for="chk63">무선도어잠금장치</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk64" name="dealer-option4" />
+                                                        <label for="chk64">레인센서와이퍼</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk65" name="dealer-option4" />
+                                                        <label for="chk65">스탑앤고</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk66" name="dealer-option4" />
+                                                        <label for="chk66">무선충전</label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="display-flex-start-area">
+                                            <div class="tit-area">멀티<br>미디어 (<em>6</em>)</div>
+                                            <ul class="box-chk-list2">
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk67" name="dealer-option5" />
+                                                        <label for="chk67">내비게이션</label>
+                                                    </figure>
+                                                    <span class="form-gap">(</span>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk68" name="dealer-option5" />
+                                                        <label for="chk68">운전석</label>
+                                                    </figure>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk69" name="dealer-option5" />
+                                                        <label for="chk69">동승석</label>
+                                                    </figure>
+                                                    <span class="form-gap">)</span>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk70" name="dealer-option5" />
+                                                        <label for="chk70">CD플레이어</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk71" name="dealer-option5" />
+                                                        <label for="chk71">CD체인저</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk72" name="dealer-option5" />
+                                                        <label for="chk72">AV시스템</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk73" name="dealer-option5" />
+                                                        <label for="chk73">MP3</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk74" name="dealer-option5" />
+                                                        <label for="chk74">AUX</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk75" name="dealer-option5" />
+                                                        <label for="chk75">USB</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk76" name="dealer-option5" />
+                                                        <label for="chk76">핸즈프리</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk77" name="dealer-option5" />
+                                                        <label for="chk77">iPod단자</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk78" name="dealer-option5" />
+                                                        <label for="chk78">뒷좌석모니터</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk79" name="dealer-option5" />
+                                                        <label for="chk79">스마트폰미러링</label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk">
+                                                        <input type="checkbox" id="chk80" name="dealer-option5" />
+                                                        <label for="chk80">블루투스</label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// 옵션 목록 -->
+                        </div>
                     </div>
                     <!--// 검색 -->
 
@@ -586,7 +1428,64 @@
                                 <span>검색결과</span> 총 <strong>148,350</strong>대
                             </h2>
                             <button type="button" class="btn-type04 sm"><i class="icon-refresh"></i>검색초기화</button>
-                            <button type="button" class="btn-type04 sm"><i class="icon-search"></i>최근 검색조건</button>
+                            <div class="layer-item">
+                                <button id="recentSearch" type="button" class="btn-type04 sm"><i class="icon-search"></i>최근 검색조건</button>
+                                
+                                <div class="layer-option">
+                                    <a href="javascript:;" class="btn-layer-close">close</a>
+
+                                    <p class="list-tit">최근 검색 조건 <span class="list-tit-s">최근 검색조건 5개까지 자동 저장됩니다.</span></p>
+                                    <div class="list-cont cont-scroll2">
+                                        <a href="javascript:;" class="txt-del-item">차량 전체</a>
+                                        <div class="txt-etc">
+                                            <span>12</span>
+                                        </div>
+                                    
+                                        <a href="javascript:;" class="txt-del-item">현대 디 올 뉴 그랜저 (22년 ~ 현재)</a>
+                                        <div class="txt-etc">
+                                            <span>2022년 ~ 2023년</span>
+                                            <span>내비게이션(순정)</span>
+                                            <span>제논라이트(HID)</span>
+                                            <span>풀오토에어컨</span>
+                                            <span>2022년 ~ 2023년</span>
+                                            <span>내비게이션(순정)</span>
+                                            <span>제논라이트(HID)</span>
+                                            <span>풀오토에어컨</span>
+                                            <span>2022년 ~ 2023년</span>
+                                            <span>내비게이션(순정)</span>
+                                            <span>제논라이트(HID)</span>
+                                            <span>풀오토에어컨</span>
+                                            <span>2022년 ~ 2023년</span>
+                                            <span>내비게이션(순정)</span>
+                                            <span>제논라이트(HID)</span>
+                                            <span>풀오토에어컨</span>
+                                            <span>2022년 ~ 2023년</span>
+                                            <span>내비게이션(순정)</span>
+                                            <span>제논라이트(HID)</span>
+                                        </div>
+                                    
+                                        <a href="javascript:;" class="txt-del-item">현대 LF소나타 (14년 ~ 17년)</a>
+                                        <div class="txt-etc">
+                                            <span>2022년 ~ 2023년</span>
+                                            <span>내비게이션(순정)</span>
+                                            <span>제논라이트(HID)</span>
+                                            <span>풀오토에어컨</span>
+                                        </div>
+                                    
+                                        <a href="javascript:;" class="txt-del-item">현대 디 올 뉴 그랜저 (22년 ~ 현재) (외 1개 모델)</a>
+                                        <div class="txt-etc">
+                                            <span>세부조건 없음</span>
+                                        </div>
+                                    
+                                        <a href="javascript:;" class="txt-del-item">현대 디 올 뉴 그랜저 (22년 ~ 현재) (외 2개 모델)</a>
+                                        <div class="txt-etc">
+                                            <span>세부조건 없음</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            
                         </div>
                         <div class="box-input-cont2">
                             <div class="inp-search" style="width: 358px">
@@ -597,17 +1496,26 @@
                     </div>
 
                     <div class="section-area-cont">
-                        <div class="car-search-result-area">
+                        <div id="tab" class="car-search-result-area">
                             <div class="car-search-result-mode-area">
                                 
                                 <div class="car-search-result-mode-area-box">
                                     <div class="mode-area">
-                                        <ul>
+                                        <ul class="tab-item">
                                             <li>
-                                                <a href="javascript:;" class="active">판매중 리스트</a>
+                                                <a href="#tab01" class="active">판매중 리스트</a>
                                             </li>
                                             <li>
-                                                <a href="javascript:;">판매완료 리스트</a>
+                                                <a href="#tab02" class="hover-item">판매완료 리스트
+                                                    <!-- 툴팁 -->
+                                                    <div class="hover-box">
+                                                        <ul class="txt-list ty-black">
+                                                            <li><span class="dot"></span><strong>최근 3개월간의</strong> 판매완료 리스트만 제공됩니다.</li>
+                                                            <li><span class="dot"></span>리스, 가격상담 차량은 제외됩니다.</li>
+                                                        </ul>
+                                                    </div>
+                                                    <!--// 툴팁 -->
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
@@ -628,113 +1536,359 @@
                                         </label>
                                     </span>
 
-                                    <a href="javascript:;" class="txt-link-underline">설정</a>
+                                    <a id="favoritesLayer" href="javascript:;" class="txt-link-underline">설정</a>
+
+                                    <!-- 관심단지 설정 layer -->
+                                    <div class="favorites-item" style="display: none;">
+                                        <div class="favorites-option">
+                                            <a href="javascript:;" class="btn-layer-close">close</a>
+                                            <p class="list-tit">관심단지 설정</p>
+
+                                            <div>
+                                                <div class="favorites-th">
+                                                    <span>지역</span>
+                                                    <span class="ty-align">단지</span>
+                                                    <span>관심</span>
+                                                </div>
+                                                <!-- swiper -->
+                                                <div class="favorites-menu swiper-area">
+                                                    <div class="favorites-lft">
+                                                        <ul id="navbar" class="favorites-navbar swiper-wrapper">
+                                                            <li class="swiper-slide"><a href="javascript:;"><strong>MY</strong></a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">서울</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">인천</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">대전</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">대구</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">광주</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">부산</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">울산</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">세종</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">경기</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">강원</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">경남</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">경북</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">전남</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">전북</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">충남</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">충북</a></li>
+                                                            <li class="swiper-slide"><a href="javascript:;">제주</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="favorites-rht">
+                                                        <div class="swiper-wrapper">
+                                                            <div class="favorites-list swiper-slide">
+                                                                <div class="favorites-no-data">
+                                                                    등록된 관심단지가 없습니다.
+                                                                    <span>단지 검색 후<br>하트를 눌러주세요.</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="favorites-list swiper-slide">
+                                                                <a href="javascript:;" class="active">12</a>
+                                                                <a href="javascript:;">2</a>
+                                                                <a href="javascript:;">2</a>
+                                                                <a href="javascript:;">2</a>
+                                                                <a href="javascript:;">2</a>
+                                                                <a href="javascript:;">경매장매매단지</a>
+                                                                <a href="javascript:;">고려매매단지</a>
+                                                                <a href="javascript:;">고양시 덕양구 개별단지</a>
+                                                                <a href="javascript:;" class="active">DY카랜드</a>
+                                                                <a href="javascript:;">SK V1모터스매매단지</a>
+                                                                <a href="javascript:;">경기단지</a>
+                                                                <a href="javascript:;">경기자동차매매단지</a>
+                                                                <a href="javascript:;">경매자동차매매단지</a>
+                                                                <a href="javascript:;">경매장매매단지</a>
+                                                                <a href="javascript:;">고려매매단지</a>
+                                                                <a href="javascript:;">마지막</a>
+                                                            </div>
+                                                            <div class="favorites-list swiper-slide">
+                                                                <a href="javascript:;" class="active">13</a>
+                                                                <a href="javascript:;">SK 3</a>
+                                                                <a href="javascript:;">3</a>
+                                                                <a href="javascript:;">3</a>
+                                                                <a href="javascript:;">경매자동차매매단지</a>
+                                                                <a href="javascript:;">경매장매매단지</a>
+                                                                <a href="javascript:;">고려매매단지</a>
+                                                                <a href="javascript:;">고양시 덕양구 개별단지</a>
+                                                                <a href="javascript:;" class="active">DY카랜드</a>
+                                                                <a href="javascript:;">SK V1모터스매매단지</a>
+                                                                <a href="javascript:;">경기단지</a>
+                                                                <a href="javascript:;">경기자동차매매단지</a>
+                                                                <a href="javascript:;">경매자동차매매단지</a>
+                                                                <a href="javascript:;">경매장매매단지</a>
+                                                                <a href="javascript:;">고려매매단지</a>
+                                                                <a href="javascript:;">마지막</a>
+                                                            </div>
+                                                            <div class="favorites-list swiper-slide">
+                                                                <a href="javascript:;" class="active">14</a>
+                                                                <a href="javascript:;">SK 4</a>
+                                                                <a href="javascript:;">3</a>
+                                                                <a href="javascript:;">4</a>
+                                                                <a href="javascript:;">4</a>
+                                                                <a href="javascript:;">경매장매매단지</a>
+                                                                <a href="javascript:;">고려매매단지</a>
+                                                                <a href="javascript:;">고양시 덕양구 개별단지</a>
+                                                                <a href="javascript:;" class="active">DY카랜드</a>
+                                                                <a href="javascript:;">SK V1모터스매매단지</a>
+                                                                <a href="javascript:;">경기단지</a>
+                                                                <a href="javascript:;">경기자동차매매단지</a>
+                                                                <a href="javascript:;">경매자동차매매단지</a>
+                                                                <a href="javascript:;">경매장매매단지</a>
+                                                                <a href="javascript:;">고려매매단지</a>
+                                                                <a href="javascript:;">마지막</a>
+                                                            </div>
+                                                            <div class="favorites-list swiper-slide">
+                                                                <a href="javascript:;" class="active">14</a>
+                                                                <a href="javascript:;">SK 4</a>
+                                                                <a href="javascript:;">3</a>
+                                                                <a href="javascript:;">4</a>
+                                                            </div>
+                                                            <div class="favorites-list swiper-slide">t</div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide"></div>
+                                                            <div class="favorites-list swiper-slide">
+                                                                <a href="javascript:;" class="active">14</a>
+                                                                <a href="javascript:;">SK 4</a>
+                                                                <a href="javascript:;">3</a>
+                                                                <a href="javascript:;">4</a>
+                                                                마지막</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--// swiper -->
+                                            </div>
+                                            <div class="layer-btn-area">
+                                                <button type="button" class="btn-type01">저장</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--// 관심단지 설정 -->
                                 </div>
                             </div>
 
-                            <div class="car-search-result-table ty-search">
-                                <table>
-                                    <caption>검색 결과 목록</caption>
-                                    <colgroup>
-                                        <col style="width:36rem">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                        <col style="width:auto">
-                                    </colgroup>
-                                    <thead>
-                                        <th scope="col">차량명</th>
-                                        <th scope="col">보험이력</th>
-                                        <th scope="col">연식</th>
-                                        <th scope="col">연료</th>
-                                        <th scope="col">주행거리</th>
-                                        <th scope="col">색상</th>
-                                        <th scope="col">최초취득가 
-                                            <span class="tooltip-btn ty-black">?
-                                                <span class="tooltip">신차로 구입할때 지불한 가격으로, 출고 시 장착된 옵션가와 프로모션가가 반영되어있으나, 취득세는 제외된 금액입니다.</span>
-                                            </span>
-                                        </th>
-                                        <th scope="col">광고가</th>
-                                        <th scope="col">단지</th>
-                                        <th scope="col">딜러명</th>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <a href="javascript:;" class="car-info">
-                                                    <div class="thumb-img">
-                                                        <img src="/UIDev/v3/images/temp/@thumb-car2.jpg" alt="차 이미지">
-                                                    </div>
-                                                    <div class="car-info-detail wid-ty-s">
-                                                        <div class="tag">
-                                                            <span>실차주</span>
+                            <div class="tab-content-item">
+                                <div id="tab01">
+                                    <div class="car-search-result-table ty-search">
+                                        <table>
+                                            <caption>검색 결과 목록</caption>
+                                            <colgroup>
+                                                <col style="width:36rem">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <thead>
+                                                <th scope="col">차량명</th>
+                                                <th scope="col">보험이력</th>
+                                                <th scope="col">연식</th>
+                                                <th scope="col">연료</th>
+                                                <th scope="col">주행거리</th>
+                                                <th scope="col">색상</th>
+                                                <th scope="col">최초취득가 
+                                                    <span class="tooltip-btn ty-black">?
+                                                        <span class="tooltip">신차로 구입할때 지불한 가격으로, 출고 시 장착된 옵션가와 프로모션가가 반영되어있으나, 취득세는 제외된 금액입니다.</span>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">광고가</th>
+                                                <th scope="col">단지</th>
+                                                <th scope="col">딜러명</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;" class="car-info">
+                                                            <div class="thumb-img">
+                                                                <img src="/UIDev/v3/images/temp/@thumb-car2.jpg" alt="차 이미지">
+                                                            </div>
+                                                            <div class="car-info-detail wid-ty-s">
+                                                                <div class="tag">
+                                                                    <span>실차주</span>
+                                                                </div>
+                                                                <h3 class="car-name">페라리 F8 Tributo 3.9 V8 페라리 F8 Tributo 3.9 V8</h3>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <span class="tooltip-btn ty-txt">0 건
+                                                            <span class="tooltip">
+                                                                <span class="tooltip-tit">내차 피해 보험이력</span>
+                                                                <dl class="table-dl-ty1">
+                                                                    <dt>건수</dt>
+                                                                    <dd>1 건</dd>
+                                                                    <dt>수리비용</dt>
+                                                                    <dd>2,102,163원</dd>
+                                                                </dl>
+                                                            </span>
+                                                        </span>
+                                                    </td>
+                                                    <td>20/05
+                                                        <div>(2020)</div>
+                                                    </td>
+                                                    <td>디젤</td>
+                                                    <td>175,433km</td>
+                                                    <td>빨간색</td>
+                                                    <td><div class="txt-point-color">4,850</div></td>
+                                                    <td><div class="txt-point-color">2,580</div></td>
+                                                    <td>인천
+                                                        엠파크허브
+                                                    </td>
+                                                    <td>
+                                                        <div class="tooltip-btn ty-txt text-decoration-none">홍길동
+                                                            <i class="icon-tel"></i>
+                                                            <span class="tooltip">
+                                                                <dl class="table-dl-ty2">
+                                                                    <dt>홍길동 딜러<span>차차차 모터스</span></dt>
+                                                                    <dd>0513-1234-5678</dd>
+                                                                </dl>
+                                                            </span>
                                                         </div>
-                                                        <h3 class="car-name">페라리 F8 Tributo 3.9 V8 페라리 F8 Tributo 3.9 V8</h3>
-                                                    </div>
-                                                </a>
-                                            </td>
-                                            
-                                            <td>
-                                                <span class="tooltip-btn ty-txt">0 건
-                                                    <span class="tooltip">
-                                                        <span class="tooltip-tit">내차 피해 보험이력</span>
-                                                        <dl class="table-dl-ty1">
-                                                            <dt>건수</dt>
-                                                            <dd>1 건</dd>
-                                                            <dt>수리비용</dt>
-                                                            <dd>2,102,163원</dd>
-                                                        </dl>
+                                                    </td>
+                                                </tr>
+                                                <!-- 검색 결과 없을 시 -->
+                                                <tr>
+                                                    <td colspan="10">
+                                                        <div class="i-no-data">검색 조건에 맞는 차량이 없습니다.<br>
+                                                            다른 조건으로 검색해보세요.</div>
+                                                    </td>
+                                                </tr>
+                                                <!--// 검색 결과 없을 시 -->
+                                            </tbody>
+                                        </table>
+        
+                                        <div class="paginate ty-orange">
+                                            <a href="#" class="prev">이전페이지</a>
+                                            <a href="#">1</a>
+                                            <strong><span>2</span></strong>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#" class="next">다음페이지</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="tab02">
+                                    <div class="car-search-result-table ty-search">
+                                        <table>
+                                            <caption>검색 결과 목록</caption>
+                                            <colgroup>
+                                                <col style="width:36rem">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                                <col style="width:auto">
+                                            </colgroup>
+                                            <thead>
+                                                <th scope="col">차량명</th>
+                                                <th scope="col">보험이력</th>
+                                                <th scope="col">연식</th>
+                                                <th scope="col">연료</th>
+                                                <th scope="col">주행거리</th>
+                                                <th scope="col">색상</th>
+                                                <th scope="col">최초취득가 
+                                                    <span class="tooltip-btn ty-black">?
+                                                        <span class="tooltip">신차로 구입할때 지불한 가격으로, 출고 시 장착된 옵션가와 프로모션가가 반영되어있으나, 취득세는 제외된 금액입니다.</span>
                                                     </span>
-                                                </span>
-                                            </td>
-                                            <td>20/05
-                                                <div>(2020)</div>
-                                            </td>
-                                            <td>디젤
-                                            </td>
-                                            <td>175,433km
-                                            </td>
-                                            <td>빨간색
-                                            </td>
-                                            <td><div class="txt-point-color">4,850</div>
-                                            </td>
-                                            <td><div class="txt-point-color">2,580</div>
-                                            </td>
-                                            <td>인천
-                                                엠파크허브
-                                            </td>
-                                            <td>
-                                                <div class="tooltip-btn ty-txt text-decoration-none">홍길동
-                                                    <i class="icon-tel"></i>
-                                                    <span class="tooltip">
-                                                        <dl class="table-dl-ty2">
-                                                            <dt>홍길동 딜러<span>차차차 모터스</span></dt>
-                                                            <dd>0513-1234-5678</dd>
-                                                        </dl>
+                                                </th>
+                                                <th scope="col">원부 취득가
+                                                    <span class="tooltip-btn ty-black">?
+                                                        <span class="tooltip">해당 차량이 원부상 마지막으로 거래된 가격입니다. </span>
                                                     </span>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-
-                                <div class="paginate">
-                                    <a href="#" class="prev">이전페이지</a>
-                                    <a href="#">1</a>
-                                    <strong><span>2</span></strong>
-                                    <a href="#">3</a>
-                                    <a href="#">4</a>
-                                    <a href="#">5</a>
-                                    <a href="#" class="next">다음페이지</a>
+                                                </th>
+                                                <th scope="col">판매 완료가
+                                                    <span class="tooltip-btn ty-black">?
+                                                        <span class="tooltip">차차차에 판매완료 처리된 가격으로, 실제 거래가와 차이가 있을 수 있습니다.</span>
+                                                    </span>
+                                                </th>
+                                                <th scope="col">단지</th>
+                                                <th scope="col">판매일</th>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <a href="javascript:;" class="car-info">
+                                                            <div class="car-info-detail">
+                                                                <h3 class="car-name">페라리 F8 Tributo 3.9 V8 페라리 F8 Tributo 3.9 V8</h3>
+                                                            </div>
+                                                        </a>
+                                                    </td>
+                                                    
+                                                    <td>
+                                                        <span class="tooltip-btn ty-txt">0 건
+                                                            <span class="tooltip">
+                                                                <span class="tooltip-tit">내차 피해 보험이력</span>
+                                                                <dl class="table-dl-ty1">
+                                                                    <dt>건수</dt>
+                                                                    <dd>1 건</dd>
+                                                                    <dt>수리비용</dt>
+                                                                    <dd>2,102,163원</dd>
+                                                                </dl>
+                                                            </span>
+                                                        </span>
+                                                    </td>
+                                                    <td>20/05
+                                                        <div>(2020)</div>
+                                                    </td>
+                                                    <td>디젤</td>
+                                                    <td>175,433km</td>
+                                                    <td>빨간색</td>
+                                                    <td><div class="txt-point-color">4,850</div>
+                                                    </td>
+                                                    <td><div class="txt-point-color">2,580</div>
+                                                    <td><div class="txt-point-color">2,580</div>
+                                                    </td>
+                                                    <td>인천<br>엠파크허브</td>
+                                                    <td>23.04.20</td>
+                                                </tr>
+                                                <!-- 검색 결과 없을 시 -->
+                                                <tr>
+                                                    <td colspan="11">
+                                                        <div class="i-no-data">검색 조건에 맞는 차량이 없습니다.<br>
+                                                            다른 조건으로 검색해보세요.</div>
+                                                    </td>
+                                                </tr>
+                                                <!--// 검색 결과 없을 시 -->
+                                            </tbody>
+                                        </table>
+        
+                                        <div class="paginate ty-orange">
+                                            <a href="#" class="prev">이전페이지</a>
+                                            <a href="#">1</a>
+                                            <strong><span>2</span></strong>
+                                            <a href="#">3</a>
+                                            <a href="#">4</a>
+                                            <a href="#">5</a>
+                                            <a href="#" class="next">다음페이지</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <!-- 하단 전체메뉴 -->
+                    <div class="main-all-menu-area"></div>
+                    <!--// 하단 전체메뉴 -->
                 </div>
                 <!--wing banner-->
                 <div class="wing-banner">
@@ -745,13 +1899,116 @@
             <script type="text/javascript">
                 ;(function ($, win, doc, undefined) {
                     // do something...
+                    //검색한 옵션 삭제
                     function selectOptionDel() {
-                        $(".select-option-list > a").click(function() {
+                        $('.select-option-list > a').click(function() {
+                            let idx = $('.select-option-list > a').index(this);
+                            $(this).remove();
+                            if(idx == '0') {
+                                $('.box-gray').remove();
+                            }
+                        });
+                    }
+
+                    //layer 팝업 내 최근검색 삭제
+                    function selectOptionDel2() {
+                        $('.txt-del-item').click(function() {
+                            $(this).next('.txt-etc').remove();
                             $(this).remove();
                         });
                     }
+
+                    //최근검색 
+                    function recentSearch() {
+                        $("#recentSearch").click(function() {
+                            if($(this).next('.layer-option').css('display') === 'none') {
+                                $(this).next('.layer-option').css('display', 'block');
+                            } else {
+                                $(this).next('.layer-option').css('display', 'none');
+                            }
+                        });
+                    }
+                    function layerClose() {
+                        $('.layer-option .btn-layer-close').click(function() {
+                            $(this).parents('.layer-option').css('display', 'none');
+                        });
+                    }
+
+                    // //옵션버튼
+                    function optionBtnList () {
+                        $('.search-btn-item > div > button').click(function() {
+                            $('.search-btn-item > div > button').removeClass('active').next('.list-option').fadeOut(100);
+                            if($(this).next('.list-option').css('display') === 'none') {
+                                $(this).addClass('active').next('.list-option').fadeIn(100);
+
+                            } else {
+                                $(this).removeClass('active').next('.list-option').fadeOut(100);
+                            }
+                        });
+                    }
+                    function optionBtnClose() {
+                        $('.search-btn-item .list-option .btn-layer-close').click(function() {
+                            $('.search-btn-item > div > button').removeClass('active');
+                            $(this).parent('.list-option').fadeOut(100);
+                        });
+                    }
+
+                    //관심단지 설정
+                    function favoritesBtn() {
+                        $('.favorites-list a').click(function() {
+                            $(this).toggleClass('active');
+                        });
+                    }
+
+                    //관심단지 팝업
+                    function favoritesLayer() {
+                        $('#favoritesLayer').click(function() {
+                            if($('#favoritesLayer').next('.favorites-item').css('display') === 'none') {
+                                $(this).next('.favorites-item').fadeIn(50);
+                            } else {
+                                $(this).next('.favorites-item').fadeOut(50);
+                            }
+                        });
+                    }
+                    function favoritesLayerClose() {
+                        $('.favorites-item .btn-layer-close').click(function() {
+                            $(this).parents('.favorites-item').fadeOut(100);
+                        });
+                    }
+
+                    //관심단지 swiper
+                    var swiper = new Swiper('.favorites-lft', {
+                        direction: 'vertical',
+                        //spaceBetween: 10,
+                        slidesPerView: 'auto',
+                        freeMode: true,
+                        mousewheel: true,
+                        watchSlidesProgress: true,
+                        resistanceRatio: false,
+                    });
+                    var swiper2 = new Swiper('.favorites-rht', {
+                        direction: 'vertical',
+                        height: 'auto',
+                        slidesPerView: 'auto',
+                        spaceBetween: 1,
+                        resistanceRatio: false,
+                        // centeredSlides: true,
+                        loop: false,
+                        mousewheel: true,
+                        thumbs: {
+                            swiper: swiper
+                        },
+                    });
                     
                     selectOptionDel();
+                    selectOptionDel2();
+                    recentSearch();
+                    layerClose();
+                    optionBtnList();
+                    optionBtnClose();
+                    favoritesBtn();
+                    favoritesLayer();
+                    favoritesLayerClose();
                 })(jQuery, window, document);
             </script>
             <!-- // [End] 페이지 전용 js -->
@@ -761,6 +2018,6 @@
 
         <footer class="footer-area"></footer> <!-- common footer -->
     </main>
-    
+
 </body>
 </html>

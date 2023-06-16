@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+// layer popup, confirm, alert
+
+.popup{
+    position:fixed;
+    width:56.2rem;
+    background:#fff;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index:10;
+    display:none;
+    &.sm{
+        width:37rem;
+    }
+    &.md{
+        width:76.8rem;
+    }
+    &.lg{
+        width:132.8rem;
+    }
+    .close-btn{
+        position:absolute;
+        top:4rem;
+        border:none;
+        width:2rem;
+        height:2rem;
+        display:block;
+        background:url($img-root + 'icon/popup-close-icon.png') no-repeat center center;
+        font-size:0;
+        text-indent:-9999rem;
+        right:3rem;
+        z-index: 1;
+    }
+    .popup-title{
+        position: relative;
+        padding:4rem 4rem 4.5rem 4rem;
+        font-size:2rem;
+        //color:$bk-color;
+        font-weight: 400;
+        &.tit-ty1 {
+            color: $main-color;
+            font-weight: $font-weight-bold;
+            text-align: center;
+        }
+    }
+    .popup-sub-title {
+        position: absolute;
+        left:4rem;
+        bottom: 1.6rem;
+        font-size: 1.3rem;
+        font-weight: $font-weight-medium;
+    }
+    .txt-guide {
+        position: absolute;
+        right:8rem;
+        top:4.1rem;
+        display: block;
+        font-size: 1.3rem;
+        &::before {
+            content:"";
+            display: inline-block;
+            width:5.4rem;
+            height:.8rem;
+            margin-right:.8rem;
+            background-color: #FFCC00;
+        }
+    }
+    .popup-body{
+        padding:0 4rem 4rem 4rem;
+        box-sizing: border-box;
+        .car-search-result-table .price{
+            font-size:$font-size-normal;
+            font-weight: $font-weight-bold;
+            line-height: 3.1rem;
+        }
+    }
+    .popup-btn{
+        display:block;
+        padding:0 4rem 4rem 4rem;
+        text-align: center;
+        font-size: 0;
+        &.pop-btn-ty2 {
+            padding-bottom:0;
+            padding-top:4rem;
+        }
+        .btn-type03 + .btn-type01{
+            margin-left:1.5rem;
+        }
+        .btn-type01, .btn-type03{
+            min-width: 17rem;
+            height:6rem;
+            line-height: 6rem;
+            flex:1;
+            font-size:$font-size-large;
+            display:inline-block;
+        }
+    }
+}
+.popup-bg{
+    z-index:9;
+    background:rgba(0,0,0,0.8);
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    display:none;
+}
+.gap-ty {padding-bottom: 3rem !important;}

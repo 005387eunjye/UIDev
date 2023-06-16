@@ -12,13 +12,19 @@
     
     <title>KB차차차</title>
 
-    <link type="text/css" rel="stylesheet" href="/UIDev/v3/css/style.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery-ui.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery.mCustomScrollbar.min.css">
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script>
+    <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <!--230616 수정 : css 추가-->
+    <link rel="stylesheet" type="text/css" href="/UIDev/vendor/select2/v4.0.2/css/select2.min.css.css" />
+    <!-- //230616 수정 : css 추가-->
+    <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
+
+    <script type="text/javascript" src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
 
 </head>
 
@@ -134,28 +140,20 @@
     
                         <div class="mgt-m">
                             <div class="display-flex-area">
-                                <div class="custom-select-box wid100">
-                                    <span class="custom-select-selection">타사금융</span>
-                                    <div class="custom-select-option-box">
-                                        <ul>
-                                            <li class="active">옵션1</li>
-                                            <li>옵션2</li>
-                                            <li>옵션3</li>
-                                            <li>옵션4</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="custom-select-box wid100">
-                                    <span class="custom-select-selection">선택</span>
-                                    <div class="custom-select-option-box">
-                                        <ul>
-                                            <li class="active">옵션1</li>
-                                            <li>옵션2</li>
-                                            <li>옵션3</li>
-                                            <li>옵션4</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                <!--230616 수정 : select box 수정-->
+                                <select name="finance" id="finance01" class="wid100">
+                                    <option value="finance01" selected>타사금융1</option>
+                                    <option value="finance02">타사금융1</option>
+                                    <option value="finance03">타사금융2</option>
+                                    <option value="finance04">타사금융3</option>
+                                </select>
+                                <select name="financeOption" id="financeOption01" class="wid100">
+                                    <option value="financeOption01" selected>옵션1</option>
+                                    <option value="financeOption02">옵션1</option>
+                                    <option value="financeOption03">옵션2</option>
+                                    <option value="financeOption04">옵션3</option>
+                                </select>
+                                <!-- //230616 수정 : select box 수정-->
                             </div>
                         </div>
                     </li>

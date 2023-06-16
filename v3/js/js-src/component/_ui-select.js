@@ -1,47 +1,46 @@
 'use strict';
 
 const uiSelect = () => {
-    const customSelectOptionBox = $('.custom-select-option-box');
+    // const customSelectOptionBox = $('.custom-select-option-box');
     const dropDownOptionBox = $('.drop-down-box-option');
 
     $('body').click(function(e){
-        if($(e.target).closest('.custom-select-box, .drop-down-box').length === 0){
-            customSelectOptionBox.hide();
+        if($(e.target).closest('.drop-down-box').length === 0){
             dropDownOptionBox.hide();
         };
     });
 
-    $('.custom-select-box .custom-select-selection, .drop-down-box-tit a').click(function(){
-        //select
-        if($(this).next('.custom-select-option-box').css('display') == "block"){
-            $(this).next('.custom-select-option-box').hide();
-        }else{
-            customSelectOptionBox.hide();
-            $(this).next('.custom-select-option-box').show(); 
-        }
+    // $('.custom-select-box .custom-select-selection, .drop-down-box-tit a').click(function(){
+    //     //select
+    //     if($(this).next('.custom-select-option-box').css('display') == "block"){
+    //         $(this).next('.custom-select-option-box').hide();
+    //     }else{
+    //         customSelectOptionBox.hide();
+    //         $(this).next('.custom-select-option-box').show(); 
+    //     }
 
-        //dropdown
+    //     //dropdown
         if($(this).parents('.drop-down-box-tit').next('.drop-down-box-option').css('display') == "block"){
             $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').hide();
         }else{
             dropDownOptionBox.hide();
             $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').show(); 
         }
-    });
+    // });
 
     
-    //select    
-    customSelectOptionBox.find('li').click(function(){
-        const selectText = $(this).text();
+    // //select    
+    // customSelectOptionBox.find('li').click(function(){
+    //     const selectText = $(this).text();
 
-        $(this).parents('.custom-select-box').find('.custom-select-selection').text(selectText);
-        customSelectOptionBox.find('li').removeClass('active');
-        $(this).addClass('active');
-        $(this).parents('.custom-select-option-box').hide();
-    });
+    //     $(this).parents('.custom-select-box').find('.custom-select-selection').text(selectText);
+    //     customSelectOptionBox.find('li').removeClass('active');
+    //     $(this).addClass('active');
+    //     $(this).parents('.custom-select-option-box').hide();
+    // });
 
 
-    //dropdown
+    // //dropdown
     dropDownOptionBox.find('li').click(function(){
         const dropDownText = $(this).text();
 
@@ -49,6 +48,21 @@ const uiSelect = () => {
         dropDownOptionBox.find('li').removeClass('active');
         $(this).parents('.drop-down-box-option').hide();
     });
+
+
+    if ($('select').length > 0) {
+        $('select').select2({
+            minimumResultsForSearch: Infinity,
+            dropdownAutoWidth : false,
+            placeholder: "선택하세요.",
+            language: "ko",
+            dropdownCssClass:'custom-select-box'
+        });
+        
+    }
+    if($('.inline-ty1').length > 0){
+        $('.inline-ty1').data('select2').$container.addClass('inline-ty1');
+    }
 
     
     

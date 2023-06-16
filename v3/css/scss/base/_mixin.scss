@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+// 접근성용 숨김 텍스트
+@mixin a11y-hidden {
+    overflow: hidden !important;
+    position: absolute !important;
+    clip: rect(0, 0, 0, 0) !important;
+    clip-path: circle(0) !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    border: 0 !important;
+    padding: 0 !important;
+    white-space: nowrap !important;
+}
+
+@mixin common-layout {
+    // 디자인 상 최소 너비 + 양옆 20px씩 패딩 추가
+    width: $pc-min-width;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+}

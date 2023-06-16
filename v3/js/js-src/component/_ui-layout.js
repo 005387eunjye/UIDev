@@ -14,7 +14,7 @@ const navLoad = () => {
     .then(function (data) {
         const elHeader = document.querySelector('.header-area');
         elHeader.innerHTML = data;
-
+        modalAction.clickMenu();
         navAction.hoverMenu(); // hover evt on nav
 
     })
@@ -51,6 +51,23 @@ const dealerSell01LnbLoad = () => {
     })
 }
 
+const allMenu = () => {
+    (() => {
+        return new Promise(function (resolve, reject) {
+            $.get('/UIDev/v3/views/_include/_all-menu.html', function (response) {
+                if (response) {
+                    resolve(response);
+                }
+                reject(new Error('Request is failed'));
+            });
+        });
+    })().then(function (data) {
+        const elAllMenu = document.querySelector('.main-all-menu-area');
+        const elAllMenu2 = document.querySelector('.all-menu-pop-body');
+        elAllMenu.innerHTML = data;
+        elAllMenu2.innerHTML = data;
+    })
+}
 
 const navAction = {
     hoverMenu: function () {
@@ -59,4 +76,18 @@ const navAction = {
     }
 }
 
-export {navLoad, footerLoad, navAction, dealerSell01LnbLoad};
+const modalAction = {
+    clickMenu: function () {
+        $('.pop-btn-js').click(function(){
+            let popupLayer = $(this).attr('data-target');
+            openPop(popupLayer);
+        });
+        function openPop(openPopLayer){
+            $(openPopLayer).show();
+            $('.popup-bg').show();
+        }
+
+    }
+}
+
+export {navLoad, footerLoad, dealerSell01LnbLoad, allMenu};

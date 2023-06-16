@@ -2,6 +2,7 @@
 
 const uiModal = () => {
     $('.pop-btn-js').click(function(){
+        //alert();
         let popupLayer = $(this).attr('data-target');
         openPop(popupLayer);
     });

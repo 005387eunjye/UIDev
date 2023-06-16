@@ -9,6 +9,15 @@ const uiTab = () => {
         $('.tab-content > div').hide();
         $(activeTab).fadeIn();
     });
+    
+    $(".tab-item li a").click(function(){
+        $(".tab-item li a").removeClass('active');
+        $(this).addClass('active');
+
+        let activeTab = $(this).attr('href');
+        $('.tab-content-item > div').hide();
+        $(activeTab).fadeIn();
+    });
 };
 
 export {uiTab};

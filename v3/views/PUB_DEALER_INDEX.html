@@ -12,13 +12,16 @@
     
     <title>KB차차차</title>
 
-    <link type="text/css" rel="stylesheet" href="/UIDev/v3/css/style.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery-ui.min.css">
-    <link rel="stylesheet" href="/UIDev/v3/js/lib/jquery.mCustomScrollbar.min.css">
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery-3.6.1.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/lib/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script>
+    <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
+
+    <script type="text/javascript" src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
 
 </head>
 
@@ -28,16 +31,386 @@
         <header class="header-area"></header> <!-- common header-->
 
         <!-- [Start] main-area -->
-        <section class="main-area">
+        <section class="main-area gray-bg">
             <div class="section-area">
-                <div class="section-area-grid-full">
-                    
+                <div class="section-area-grid section-area-grid-full">
+                    <div class="main-card-area">
+                        <div class="wrapper">
+                            <div class="main-card card01">
+                                <a href="javascript:;" class="setting-btn">
+                                    <img src="/UIDev/v3/images/icon/icon-setting-mono.png" alt="설정">
+                                </a>
+                                <div class="profile">
+                                    <div class="mypage">
+                                        <div class="photo" style="background-image:url(/UIDev/v3/images/main/profile-photo.jpg);"></div>
+                                        <a href="javascript:;"><img src="/UIDev/v3/images/icon/icon-mypage.png" alt="마이페이지"></a>
+                                    </div>
+                                    <div class="info">
+                                        <p class="name">심은정 딜러님</p>
+                                        <p class="company">CC상사</p>
+                                    </div>
+                                </div>
+                                <div class="coin-area">
+                                    <div class="main-coin">
+                                        <p class="tit">KB코인</p>
+                                        <p class="price">435,400</p>
+                                    </div>
+                                    <div class="main-coin">
+                                        <p class="tit">원샷포인트</p>
+                                        <p class="price">5,400</p>
+                                    </div>
+                                </div>
+                                <div class="dealer-btn">
+                                    <button type="button" class="friends-dealer on"><!--신청하면 class="on"-->
+                                        <i><img src="/UIDev/v3/images/icon/icon-friend.png"></i>
+                                        프렌즈 딜러
+                                    </button>
+                                    <button type="button" class="super-dealer">
+                                        <i><img src="/UIDev/v3/images/icon/icon-super.png"></i>
+                                        슈퍼딜러
+
+                                        <!--신청하기-->
+                                        <!-- <a href="javascript:;" class="super-state">신청하기</a> -->
+                                        <!--//신청하기-->
+
+                                        <!--대기등록-->
+                                        <a href="javascript:;" class="super-state">
+                                            <span class="tooltip-btn">
+                                                !
+                                                <span class="tooltip tooltip2">
+                                                    신청 후 내부 검증을 통해<br>소속,차차차 활동이력, 경력 등을 확인합니다.<br>
+                                                    선착순으로 진행되지 않으며 중간에<br>
+                                                    인터뷰를 위한 연락이 가는 경우도 있습니다.
+                                                </span>
+                                            </span>
+                                            <em>대기등록</em> 40명
+                                        </a>
+                                        <!-- //대기등록-->
+
+                                        <!--가입승인-->
+                                        <!-- <a href="javascript:;" class="super-state">
+                                            가입승인 <em>(결제진행)</em> 
+                                        </a> -->
+                                        <!-- //가입승인-->
+
+                                        <!--입금대기-->
+                                        <!-- <a href="javascript:;" class="super-state">
+                                            입금대기
+                                        </a> -->
+                                        <!-- //입금대기-->
+
+                                        <!--입금완료-->
+                                        <!-- <a href="javascript:;" class="super-state">
+                                            <span class="tooltip-btn">
+                                                !
+                                                <span class="tooltip">
+                                                    익일 1일부터 서비스 이용이 가능합니다.
+                                                </span>
+                                            </span>
+                                            입금완료
+                                        </a> -->
+                                        <!-- //입금완료-->
+                                    </button>
+                                </div>
+
+                                <div class="customer-center">
+                                    <ul>
+                                        <li>
+                                            <a href="javascript:;" class="cst-menu01">
+                                                <p class="num">
+                                                    2
+                                                </p>
+                                                <p>
+                                                    구매문의
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="cst-menu02">
+                                                <p class="num">
+                                                    11
+                                                </p>
+                                                <p>
+                                                    방문예약
+                                                </p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="javascript:;" class="cst-menu03">
+                                                <p class="num">
+                                                    4
+                                                </p>
+                                                <p>
+                                                    공지사항
+                                                </p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="main-card card02">
+                                <a href="javascript:;">
+                                    <h2 class="title">내차관리</h2>
+                                    <div class="sell-car-num">
+                                        <i><img src="/UIDev/v3/images/main/main-card02-bg.png" alt=""></i>
+                                        <span class="car-count">
+                                            <strong>135</strong><em>대</em>
+                                            <span>판매중인 차량</span>
+                                        </span>
+                                    </div>
+                                    <div class="des">
+                                        관리가 필요한 <span>4대</span>의 차량이 있습니다.
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="main-card card03">
+                                <a href="javascript:;">
+                                    <h2 class="title">진단광고 관리</h2>
+                                    <div class="sell-car-num">
+                                        <i><img src="/UIDev/v3/images/main/main-card03-bg.png" alt=""></i>
+                                        <span class="car-count">
+                                            <strong>12</strong><em>대</em>
+                                            <span>진단가능</span>
+                                        </span>
+                                        <span class="car-count">
+                                            <strong>16</strong><em>대</em>
+                                            <span>진단 광고중</span>
+                                        </span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="main-card card04">
+                                <a href="javascript:;">
+                                    <img src="/UIDev/v3/images/main/main-card04-img.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="main-card card05">
+                                <a href="javascript:;">
+                                    <h2 class="title">팔아줘 경매 현황</h2>
+                                    <!--프렌즈 딜러일 경우-->
+                                    <!-- <div class="sell-car-num">
+                                        <i><img src="/UIDev/v3/images/main/main-card05-bg.png" alt=""></i>
+                                        <span class="car-count">
+                                            <strong>24</strong><em>대</em>
+                                            <span>견적 확인중</span>
+                                        </span>
+                                        <span class="car-count">
+                                            <strong>16</strong><em>대</em>
+                                            <span>방문일정 대기</span>
+                                        </span>
+                                        <span class="car-count">
+                                            <strong>26</strong><em>대</em>
+                                            <span>거래결과 입력</span>
+                                        </span>
+                                    </div> -->
+                                    <!-- //프렌즈 딜러일 경우-->
+
+                                    <!--슈퍼 딜러일 경우-->
+                                    <div class="sell-car-num super">
+                                        <i><img src="/UIDev/v3/images/main/main-card05-bg.png" alt=""></i>
+                                        <span class="car-count">
+                                            <em>오늘</em><strong>428</strong><em>대</em>
+                                            <span>경매 입찰중</span>
+                                        </span>
+                                    </div>
+                                    <!-- //슈퍼 딜러일 경우-->
+                                </a>
+                                <!--슈퍼 딜러일 경우 넣어주세요-->
+                                <div class="balloon-box">
+                                    <a href="javascript:;">
+                                        경매에 참여하고 싶다면?
+                                    </a>
+                                </div>
+                                <!--// 슈퍼 딜러일 경우-->
+                            </div>
+                            <div class="main-card card06">
+                                <a href="javascript:;" class="main-card06-section top">
+                                    <h2 class="title">매물탐색</h2>
+                                    <span class="car-count">
+                                        <strong>134,324</strong>
+                                        <span>광고중인 매물 수</span>
+                                    </span>
+                                </a>
+                                <a href="javascript:;" class="main-card06-section bottom">
+                                    <h2 class="title">내 평점</h2>
+                                    <span class="car-count">
+                                        <strong>4.5</strong>
+                                        <span>평균 점수<em class="tooltip-btn">i</em></span>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-service">
+                        <div class="wrapper">
+                            <h2 class="title">최근 이용한 서비스</h2>
+                            <ul>
+                                <li>
+                                    <a href="javascript:;" class="serv01">
+                                        <h3 class="title">매물검색</h3>
+                                        <button type="button" class="bookmark on">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="serv02">
+                                        <h3 class="title">차량시세<br>조회</h3>
+                                        <button type="button" class="bookmark">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="serv03">
+                                        <h3 class="title">오늘의<br>경매</h3>
+                                        <button type="button" class="bookmark">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="serv04">
+                                        <h3 class="title">진단차량<br>관리</h3>
+                                        <button type="button" class="bookmark">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="serv05">
+                                        <h3 class="title">광고등록</h3>
+                                        <button type="button" class="bookmark">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="serv06">
+                                        <h3 class="title">고객센터</h3>
+                                        <button type="button" class="bookmark">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="serv07">
+                                        <h3 class="title">패널티<br>관리</h3>
+                                        <button type="button" class="bookmark">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:;" class="serv08">
+                                        <h3 class="title">딜러홈</h3>
+                                        <button type="button" class="bookmark">
+                                            <img src="/UIDev/v3/images/icon/icon-bookmark.png" alt="즐겨찾기">
+                                        </button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="main-banner">
+                        <div class="wrapper">
+                            <a href="javascript:;"><img src="/UIDev/v3/images/main/main-banner.jpg" alt="금융이 필요한 고객에겐? KB캐피탈 다이렉트 중고차 오토론 최저금리 6.5%"></a>
+                        </div>
+                    </div>
+                    <div class="main-notice-area">
+                        <div class="wrapper">
+                            <h2 class="main-title">
+                                딜러 공지사항
+                                <a href="javascript:;">전체보기</a>
+                            </h2>
+                            <table class="noti-table">
+                                <caption>공지사항 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 3rem;">
+                                    <col style="width:auto">
+                                    <col style="width: 8rem;">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span>중요</span>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;">
+                                                [공지]고객 영업을 도와드릴 보험가입 서비스 안내 고객 영업을 도와드릴 보험가입 서비스 안내 고객 영업을 도와드릴 보험가입 서비스 안내 고객 영업을 도와드릴 보험가입 서비스 안내
+                                            </a>
+                                        </td>
+                                        <td>
+                                            2023.04.23
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <span>중요</span>
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;">
+                                                [공지]팔아줘 서비스 민원 확대에 따른 패널티 강화 안내
+                                            </a>
+                                        </td>
+                                        <td>
+                                            2023.04.22
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;">
+                                                [공지]차차차 앱 중복 로그인 등록 안내
+                                            </a>
+                                        </td>
+                                        <td>
+                                            2023.04.15
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;">
+                                                [공지]매물등록 주의사항 안내
+                                            </a>
+                                        </td>
+                                        <td>
+                                            2023.03.25
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;">
+                                                [공지]매물등록 주의사항 안내
+                                            </a>
+                                        </td>
+                                        <td>
+                                            2023.03.25
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="main-all-menu-area">
+                        
+                    </div>
                 </div>
             </div>
             <!-- [Start] 페이지 전용 js -->
             <script type="text/javascript">
                 ;(function ($, win, doc, undefined) {
-
+                    $('.bookmark').click(function(){
+                        $(this).toggleClass('on');
+                    });
                 })(jQuery, window, document);
             </script>
             <!-- // [End] 페이지 전용 js -->
@@ -47,5 +420,18 @@
 
         <footer class="footer-area"></footer> <!-- common footer -->
     </main>
+<!--팝업-->
+<div class="popup-bg"></div>
+<div class="popup all-menu-popup" id="all-menu-pop">
+    <h3 class="title">
+        <div class="wrapper">
+            전체서비스
+            <a href="javascript:;" class="popup-close-btn">x</a>
+        </div>
+    </h3>
+    <div class="pop-body all-menu-pop-body">
+        
+    </div>
+</div>
 </body>
 </html>

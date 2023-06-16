@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+/* KB금융 본문체 Medium*/
+@font-face {
+    font-family: 'KBFGText';
+    font-style: normal;
+    font-weight: 400;
+    src: local('KBFGTextM'),
+        url('/font/KBFGTextM.woff') format('woff');
+}
+
+/* KB금융 본문체 Bold*/
+@font-face {
+    font-family: 'KBFGText';
+    font-style: normal;
+    font-weight: 700;
+    src: local('KBFGTextB'),
+        url('/font/KBFGTextB.woff') format('woff');
+}
+
+/* KB금융 본문체 Light*/
+@font-face {
+    font-family: 'KBFGText';
+    font-style: normal;
+    font-weight: 300;
+    src: local('KBFGTextM'),
+        url('/font/KBFGTextL.woff') format('woff');
+
+}
+
+/*KB금융 제목체 Light*/
+@font-face {
+    font-family: 'KBFGDisplay';
+    font-style: normal;
+    font-weight: 300;
+    src: local('KBFGDisplayL'),
+        url('/font/KBFGDisplayL.woff') format('woff');
+}
+
+/*KB금융 제목체 Medium*/
+@font-face {
+    font-family: 'KBFGDisplay';
+    font-style: normal;
+    font-weight: 500;
+    src: local('KBFGDisplayM'),
+        url('/font/KBFGDisplayM.woff') format('woff');
+}
+
+/*KB금융 제목체 Blod*/
+@font-face {
+    font-family: 'KBFGDisplay';
+    font-style: normal;
+    font-weight: 700;
+    src: local('KBFGDisplayB'),
+        url('/font/KBFGDisplayB.woff') format('woff');
+}
