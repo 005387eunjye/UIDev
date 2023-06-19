@@ -71,42 +71,42 @@ caption {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 400;
-  src: local("KBFGTextM"), url("/font/KBFGTextM.woff") format("woff");
+  src: local("KBFGTextM"), url("/UIDev/font/KBFGTextM.woff") format("woff");
 }
 /* KB금융 본문체 Bold*/
 @font-face {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 700;
-  src: local("KBFGTextB"), url("/font/KBFGTextB.woff") format("woff");
+  src: local("KBFGTextB"), url("/UIDev/font/KBFGTextB.woff") format("woff");
 }
 /* KB금융 본문체 Light*/
 @font-face {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 300;
-  src: local("KBFGTextM"), url("/font/KBFGTextL.woff") format("woff");
+  src: local("KBFGTextM"), url("/UIDev/font/KBFGTextL.woff") format("woff");
 }
 /*KB금융 제목체 Light*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 300;
-  src: local("KBFGDisplayL"), url("/font/KBFGDisplayL.woff") format("woff");
+  src: local("KBFGDisplayL"), url("/UIDev/font/KBFGDisplayL.woff") format("woff");
 }
 /*KB금융 제목체 Medium*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 500;
-  src: local("KBFGDisplayM"), url("/font/KBFGDisplayM.woff") format("woff");
+  src: local("KBFGDisplayM"), url("/UIDev/font/KBFGDisplayM.woff") format("woff");
 }
 /*KB금융 제목체 Blod*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 700;
-  src: local("KBFGDisplayB"), url("/font/KBFGDisplayB.woff") format("woff");
+  src: local("KBFGDisplayB"), url("/UIDev/font/KBFGDisplayB.woff") format("woff");
 }
 .a11y-hidden {
   overflow: hidden !important;
@@ -1889,6 +1889,7 @@ body {
   background: #FDFDFD;
   color: #8B8B8B;
   font-size: 1.4rem;
+  letter-spacing: 0;
 }
 .footer-area .footer-area-grid {
   width: 130rem;
@@ -2862,7 +2863,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 }
 .pop-scroll .mCSB_scrollTools .mCSB_draggerRail, .cont-scroll .mCSB_scrollTools .mCSB_draggerRail {
   width: 1px;
-  background-color: #ddd;
+  background-color: #fff;
 }
 
 .pop-scroll .mCSB_inside > .mCSB_container {
@@ -4615,6 +4616,7 @@ span.point-push::after {
   display: inline-block;
   width: 1.8rem;
   height: 0.8rem;
+  vertical-align: 1px;
 }
 .color.blackColor {
   background-color: #000000;

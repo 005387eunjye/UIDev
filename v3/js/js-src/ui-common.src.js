@@ -18,10 +18,7 @@ import { uiWing } from "./component/_ui-wing";
         uiCalendar();
         uiTab();
         uiTooltip();
-        uiSelect();
-        uiModal();
         allMenu();
-        
         if (document.querySelector('.lnb')) {
             dealerSell01LnbLoad();
         }
@@ -36,6 +33,8 @@ import { uiWing } from "./component/_ui-wing";
     // 개발에서도 실행할 함수
     const distUI = () => {
         uiScroll(); // [ejh] 데이터 로드와 무관하게, 항상 고정 height값을 가지는 scroll 영역에는 개발에서도 실행시켜주세요!
+        uiSelect();
+        uiModal();
     }
 
     // dom ready
@@ -44,6 +43,7 @@ import { uiWing } from "./component/_ui-wing";
         // 퍼블 html에서만 실행
         if (document.body.classList.contains('only-pub')) {
             onlyPubUI();
+            
         }
 
         distUI();

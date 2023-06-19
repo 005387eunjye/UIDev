@@ -5118,8 +5118,6 @@ __webpack_require__.r(__webpack_exports__);
     (0,_component_ui_calendar__WEBPACK_IMPORTED_MODULE_5__.uiCalendar)();
     (0,_component_ui_tab__WEBPACK_IMPORTED_MODULE_3__.uiTab)();
     (0,_component_ui_tooltip__WEBPACK_IMPORTED_MODULE_4__.uiTooltip)();
-    (0,_component_ui_select__WEBPACK_IMPORTED_MODULE_6__.uiSelect)();
-    (0,_component_ui_modal__WEBPACK_IMPORTED_MODULE_1__.uiModal)();
     (0,_component_ui_layout__WEBPACK_IMPORTED_MODULE_0__.allMenu)();
     if (document.querySelector('.lnb')) {
       (0,_component_ui_layout__WEBPACK_IMPORTED_MODULE_0__.dealerSell01LnbLoad)();
@@ -5134,6 +5132,8 @@ __webpack_require__.r(__webpack_exports__);
   // 개발에서도 실행할 함수
   var distUI = function distUI() {
     (0,_component_ui_scroll__WEBPACK_IMPORTED_MODULE_2__.uiScroll)(); // [ejh] 데이터 로드와 무관하게, 항상 고정 height값을 가지는 scroll 영역에는 개발에서도 실행시켜주세요!
+    (0,_component_ui_select__WEBPACK_IMPORTED_MODULE_6__.uiSelect)();
+    (0,_component_ui_modal__WEBPACK_IMPORTED_MODULE_1__.uiModal)();
   };
 
   // dom ready

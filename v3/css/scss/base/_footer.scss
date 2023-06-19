@@ -8,7 +8,7 @@
     background: #FDFDFD;
     color: #8B8B8B;
     font-size: $font-size-normal;
-
+    letter-spacing: 0;
     .footer-area-grid {
         @include common-layout;
         position: relative;
