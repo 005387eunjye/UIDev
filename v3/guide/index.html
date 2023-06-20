@@ -14,6 +14,7 @@
     
     <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+        <link rel="stylesheet" href="/UIDev/vendor/select2/v4.0.2/css/select2.min.css.css" />
     <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
 
     <script src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
@@ -85,9 +86,18 @@
                             <li><a href="#Modal">Modal</a></li>
                             <li><a href="#Tab">Tab</a></li>
                             
-                            <li><a href="http://localhost:9090/UIDev/v3/guide/pc_pagelist.html" target="_blank" style="background:#326FC8; color:#fff; border-radius: 8px; padding:10px;">PC Pub List</a></li>
-                            <li><a href="http://localhost:9080/UIDev/v3/guide/mo_pagelist.html" target="_blank" style="background:#326FC8; color:#fff; border-radius: 8px; padding:10px;">MO Pub List</a></li>
+                            <li><a href="" id="btnGoPC" target="_blank" style="background:#326FC8; color:#fff; border-radius: 8px; padding:10px;">PC Pub List</a></li>
+                            <li><a href="" id="btnGoMO" target="_blank" style="background:#326FC8; color:#fff; border-radius: 8px; padding:10px;">MO Pub List</a></li>
                         </ul>
+
+                        <script>
+                            var urlPC = 'http://' + window.location.hostname + ':9090/UIDev/v3/guide/pc_pagelist.html';
+                            var urlMO = 'http://' + window.location.hostname + ':9080/UIDev/v3/guide/mo_pagelist.html';
+                            document.addEventListener('DOMContentLoaded', function(){
+                                document.querySelector('#btnGoPC').href = urlPC;
+                                document.querySelector('#btnGoMO').href = urlMO;
+                            })
+                        </script>
                     </div>
                     <div class="section-area-cont font-kb">
                         <div class="guide-content" id="Typograpy">
@@ -168,21 +178,15 @@
                                 <input type="text" placeholder="placeholder" >
                                 <input type="text" placeholder="placeholder" disabled style="margin-top:10px;">
                                 
-                                <span class="input-date mgt-s">
+                                <span class="input-date mgt-s mgb-s">
                                     <input type="text" title="날짜">
                                 </span>
-                                
-                                <div class="custom-select-box mgt-s">
-                                    <span class="custom-select-selection">select</span>
-                                    <div class="custom-select-option-box">
-                                        <ul>
-                                            <li class="active">옵션1</li>
-                                            <li>옵션2</li>
-                                            <li>옵션3</li>
-                                            <li>옵션4</li>
-                                        </ul>
-                                    </div>
-                                </div>
+
+                                <select name="selectbox" id="selbox01" style="width:100px;">
+                                    <option value="seloption01" selected>옵션1</option>
+                                    <option value="seloption02">옵션2</option>
+                                    <option value="seloption03">옵션3</option>
+                                </select>
 
                                 <figure class="form-chk" style="margin-top:20px;">
                                     <input type="checkbox" id="chk00" />
@@ -234,8 +238,8 @@
                             <h3>Modal</h3>
                             <div class="forms-guide">
                                 <button type="button" class="btn-type01 pop-btn-js" data-target="#layerPop">LayerPopup</button>
-                                <button type="button" class="btn-type01 pop-btn-js" data-target="#layerPop">ConfirmPopup</button>
-                                <button type="button" class="btn-type01 pop-btn-js" data-target="#layerPop">AlertPopup</button>
+                                <button type="button" class="btn-type01 pop-btn-js" data-target="#confirmPop">ConfirmPopup</button>
+                                <button type="button" class="btn-type01" onclick="alert('AlertPopup')">AlertPopup</button>
                             </div> 
                         </div>
                         <div class="guide-content" id="Tab">
@@ -333,8 +337,22 @@
         </div>
     </div>
     <div class="popup-btn">
-        <button type="button" class="btn-type01">확인</button>
         <button type="button" class="btn-type03 popup-close-btn">취소</button>
+        <button type="button" class="btn-type01">확인</button>
+    </div>
+</div>
+
+<div class="popup sm" id="confirmPop">
+    <h2 class="popup-title tac">
+        confirmPop입니다.
+    </h2>
+    <div class="popup-body tac">
+        <div class="inner">
+            confirmPop입니다.
+        </div>
+    </div>
+    <div class="popup-btn">
+        <button type="button" class="btn-type01 popup-close-btn">확인</button>
     </div>
 </div>
 </body>
