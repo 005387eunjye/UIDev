@@ -115,10 +115,15 @@ var allMenu = function allMenu() {
       });
     });
   })().then(function (data) {
-    var elAllMenu = document.querySelector('.main-all-menu-area');
-    var elAllMenu2 = document.querySelector('.all-menu-pop-body');
-    elAllMenu.innerHTML = data;
-    elAllMenu2.innerHTML = data;
+    var elAllMenu = '';
+    if ($('.main-all-menu-area').length > 0) {
+      elAllMenu = document.querySelector('.main-all-menu-area');
+      elAllMenu.innerHTML = data;
+    }
+    if ($('.all-menu-pop-body').length > 0) {
+      elAllMenu = document.querySelector('.all-menu-pop-body');
+      elAllMenu.innerHTML = data;
+    }
   });
 };
 var navAction = {
@@ -310,20 +315,19 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var uiTab = function uiTab() {
-  $(".tab-list ul li").click(function () {
+  $(".tab-list").each(function (index) {
     var _context;
-    $(".tab-list ul li").removeClass('on');
-    $(this).addClass('on');
-    var activeTab = _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context = $(this)).call(_context, 'a').attr('href');
-    $('.tab-content > div').hide();
-    $(activeTab).fadeIn();
-  });
-  $(".tab-item li a").click(function () {
-    $(".tab-item li a").removeClass('active');
-    $(this).addClass('active');
-    var activeTab = $(this).attr('href');
-    $('.tab-content-item > div').hide();
-    $(activeTab).fadeIn();
+    var tabLi = _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context = $(this)).call(_context, 'li');
+    var tabCont = $('.tab-content');
+    tabLi.click(function () {
+      var _context2, _context3;
+      tabLi.removeClass('on');
+      $(this).addClass('on');
+      var activeTab = _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context2 = $(this)).call(_context2, 'a').attr('href');
+      _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context3 = tabCont.eq(index)).call(_context3, 'div').hide();
+      $(activeTab).fadeIn();
+      return false;
+    });
   });
 };
 

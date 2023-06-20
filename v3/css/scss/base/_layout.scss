@@ -237,13 +237,24 @@ body {
         padding:.5rem;
         border-radius: .6rem;
     }
-    .mode-area > ul{
+    .mode-area .tab-item{
+        overflow-x:visible;
+    }
+    .mode-area .tab-item > ul{
         display:flex;
     }
-    .mode-area > ul > li + li{
-        margin-left:1.2rem;
+    .mode-area .tab-item > ul > li{
+        background:none;
+        border:none;
+        position:initial;
     }
-    .mode-area > ul > li a{
+    .mode-area .tab-item > ul > li.on::before,.mode-area .tab-item > ul > li.on::after{
+        display:none;
+    }
+    .mode-area .tab-item > ul > li + li{
+        margin-left:0;
+    }
+    .mode-area .tab-item > ul > li a{
         width:10.1rem;
         display:block;
         color:#999999;
@@ -254,7 +265,7 @@ body {
         text-align: center;
         letter-spacing: -3%;
     }
-    .mode-area > ul > li a.active{
+    .mode-area .tab-item > ul > li.on a{
         background:#fff;
         box-shadow: 0 .2rem .2rem 0 #0000000F;
         border-radius: .4rem;
@@ -611,7 +622,11 @@ body {
             line-height: 1.8rem;
             padding-left: 1rem;
             color: #000;
+            background:none;
+            text-align: left;
             font-size: 1.3rem;
+            display: block;
+            border:none;
             & > .icon {
                 position: absolute;
                 left: 0;
@@ -632,6 +647,9 @@ body {
                 border-radius: 50%;
                 background-color: #000;
                 color: #000;
+            }
+            & + li{
+                margin-left:0;
             }
         }
     }

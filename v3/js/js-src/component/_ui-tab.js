@@ -1,23 +1,21 @@
 'use strict';
 
 const uiTab = () => {
-    $(".tab-list ul li").click(function(){
-        $(".tab-list ul li").removeClass('on');
-        $(this).addClass('on');
+    $(".tab-list").each(function(index){
+        const tabLi = $(this).find('li');
+        const tabCont = $('.tab-content');
+        tabLi.click(function(){
+            tabLi.removeClass('on');
+            $(this).addClass('on');
+    
+            const activeTab = $(this).find('a').attr('href');
+            tabCont.eq(index).find('div').hide();
+            $(activeTab).fadeIn();
 
-        let activeTab = $(this).find('a').attr('href');
-        $('.tab-content > div').hide();
-        $(activeTab).fadeIn();
+            return false;
+        });
     });
     
-    $(".tab-item li a").click(function(){
-        $(".tab-item li a").removeClass('active');
-        $(this).addClass('active');
-
-        let activeTab = $(this).attr('href');
-        $('.tab-content-item > div').hide();
-        $(activeTab).fadeIn();
-    });
 };
 
 export {uiTab};

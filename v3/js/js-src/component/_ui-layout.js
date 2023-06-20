@@ -62,10 +62,15 @@ const allMenu = () => {
             });
         });
     })().then(function (data) {
-        const elAllMenu = document.querySelector('.main-all-menu-area');
-        const elAllMenu2 = document.querySelector('.all-menu-pop-body');
-        elAllMenu.innerHTML = data;
-        elAllMenu2.innerHTML = data;
+        let elAllMenu = '';
+        if($('.main-all-menu-area').length > 0){
+            elAllMenu = document.querySelector('.main-all-menu-area');
+            elAllMenu.innerHTML = data;
+        }
+        if($('.all-menu-pop-body').length > 0){
+            elAllMenu = document.querySelector('.all-menu-pop-body');
+            elAllMenu.innerHTML = data;
+        }
     })
 }
 
