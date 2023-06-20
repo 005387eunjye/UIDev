@@ -12,20 +12,20 @@
     
     <title>KB차차차</title>
 
-    <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
-    <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="/UIDev/vendor/swiper/v4.5.3/css/swiper-bundle.min.css"> <!-- [D] swiper import -->
+    <link rel="stylesheet" href="/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="/vendor/swiper/v4.5.3/css/swiper-bundle.min.css"> <!-- [D] swiper import -->
     <!--230616 수정 : css 추가-->
-    <link rel="stylesheet" href="/UIDev/vendor/select2/v4.0.2/css/select2.min.css.css" />
+    <link rel="stylesheet" href="/vendor/select2/v4.0.2/css/select2.min.css.css" />
     <!-- //230616 수정 : css 추가-->
     <link rel="stylesheet" href="/UIDev/v3/css/style.min.css"> <!-- [D] style.min.css 가 css 중 가장 밑에 위치 -->
 
-    <script type="text/javascript" src="/UIDev/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
-    <script type="text/javascript" src="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
-    <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
-    <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="/UIDev/vendor/swiper/v4.5.3/js/swiper-bundle.min.js"></script> <!-- [D] swiper import -->
+    <script type="text/javascript" src="/vendor/jquery/v1.12.4/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="/vendor/jquery-ui/v1.12.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/vendor/form/v3.5.1/jquery.form.js"></script>
+    <script type="text/javascript" src="/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
+    <script type="text/javascript" src="/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script type="text/javascript" src="/vendor/swiper/v4.5.3/js/swiper-bundle.min.js"></script> <!-- [D] swiper import -->
     <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
 
 </head>
@@ -41,9 +41,9 @@
                 <div class="section-area-grid section-area-grid-full">
 
                     <!-- 검색 -->
-                    <ul class="seacrh-item">
+                    <ul class="search-item">
                         <li class="active">
-                            <p class="seacrh-tit">제조사</p>
+                            <p class="search-tit">제조사</p>
                             <div class="search-cont-inner cont-scroll">
                                 <!-- 대분류 반복 -->
                                 <div class="search-list-group">
@@ -134,9 +134,9 @@
                             </div>
                         </li>
                         <li>
-                            <p class="seacrh-tit">모델</p>
+                            <p class="search-tit">모델</p>
                             <div class="search-cont-inner cont-scroll ty-nodata"><!--// data 없을 시 .ty-nodata 추가 -->
-                                <div class="no-data">모델을 선택하세요.</div>
+                                <div class="no-data">제조사를 선택하세요.</div>
                                 <!-- 대분류 반복 -->
                                 <div class="search-list-group">
                                     <p>인기모델</p>
@@ -226,9 +226,9 @@
                             </div>
                         </li>
                         <li>
-                            <p class="seacrh-tit">세부모델</p>
-                            <div class="search-cont-inner cont-scroll"><!--// data 없을 시 .ty-nodata 추가 -->
-                                <div class="no-data">세부모델을 선택하세요.</div>
+                            <p class="search-tit">세부모델</p>
+                            <div class="search-cont-inner cont-scroll ty-nodata"><!--// data 없을 시 .ty-nodata 추가 -->
+                                <div class="no-data">모델을 선택하세요.</div>
                                 <!-- 대분류 반복 -->
                                 <div class="search-list-group mgt-l">
                                     <ul>
@@ -274,9 +274,9 @@
                             </div>
                         </li>
                         <li>
-                            <p class="seacrh-tit">등급</p>
-                            <div class="search-cont-inner cont-scroll"><!--// data 없을 시 .ty-nodata 추가 -->
-                                <div class="no-data">등급을 선택하세요.</div>
+                            <p class="search-tit">등급</p>
+                            <div class="search-cont-inner cont-scroll ty-nodata"><!--// data 없을 시 .ty-nodata 추가 -->
+                                <div class="no-data">세부모델을 선택하세요.</div>
                                 <div class="search-list-group">
                                     <p>2.5 가솔린 2WD</p>
                                     <ul>
@@ -311,7 +311,7 @@
                                         <li>
                                             <div class="display-flex-area">
                                                 <div class="sel-wid">
-                                                    <select name="model" id="">
+                                                    <select name="model" id="" placeholder="연도 선택">
                                                         <option value="model01" selected></option>
                                                         <option value="model02">option1</option>
                                                         <option value="model03">option2</option>
@@ -323,7 +323,7 @@
                                         <li>
                                             <div class="display-flex-area">
                                                 <div class="sel-wid">
-                                                    <select name="model" id="">
+                                                    <select name="model" id="" placeholder="연도 선택">
                                                         <option value="model01" selected></option>
                                                         <option value="model02">option1</option>
                                                         <option value="model03">option2</option>
@@ -1589,7 +1589,7 @@
                                                                 <a href="javascript:;">2</a>
                                                                 <a href="javascript:;">2</a>
                                                                 <a href="javascript:;">2</a>
-                                                                <a href="javascript:;">경매장매매단지</a>
+                                                                <a href="javascript:;">경매장매지 텍스트 길어지면 아래로  텍스트 길어지면 아래로</a>
                                                                 <a href="javascript:;">고려매매단지</a>
                                                                 <a href="javascript:;">고양시 덕양구 개별단지</a>
                                                                 <a href="javascript:;" class="active">DY카랜드</a>
@@ -1738,7 +1738,7 @@
                                                         </span>
                                                     </td>
                                                     <td>20/05
-                                                        <div>(2020)</div>
+                                                        <div class="color-gray6">(2020)</div>
                                                     </td>
                                                     <td>디젤</td>
                                                     <td>175,433km</td>
@@ -1847,7 +1847,7 @@
                                                         </span>
                                                     </td>
                                                     <td>20/05
-                                                        <div>(2020)</div>
+                                                        <div class="color-gray6">(2020)</div>
                                                     </td>
                                                     <td>디젤</td>
                                                     <td>175,433km</td>
@@ -2018,6 +2018,19 @@
 
         <footer class="footer-area"></footer> <!-- common footer -->
     </main>
-
+<!-- 팝업 -->
+<div class="popup-bg"></div>
+<div class="popup all-menu-popup" id="all-menu-pop">
+    <h3 class="title">
+        <div class="wrapper">
+            전체서비스
+            <a href="javascript:;" class="popup-close-btn">x</a>
+        </div>
+    </h3>
+    <div class="pop-body all-menu-pop-body">
+        
+    </div>
+</div>
+<!--// 팝업 -->
 </body>
 </html>

@@ -71,42 +71,42 @@ caption {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 400;
-  src: local("KBFGTextM"), url("/UIDev/font/KBFGTextM.woff") format("woff");
+  src: local("KBFGTextM"), url("/font/KBFGTextM.woff") format("woff");
 }
 /* KB금융 본문체 Bold*/
 @font-face {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 700;
-  src: local("KBFGTextB"), url("/UIDev/font/KBFGTextB.woff") format("woff");
+  src: local("KBFGTextB"), url("/font/KBFGTextB.woff") format("woff");
 }
 /* KB금융 본문체 Light*/
 @font-face {
   font-family: "KBFGText";
   font-style: normal;
   font-weight: 300;
-  src: local("KBFGTextM"), url("/UIDev/font/KBFGTextL.woff") format("woff");
+  src: local("KBFGTextM"), url("/font/KBFGTextL.woff") format("woff");
 }
 /*KB금융 제목체 Light*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 300;
-  src: local("KBFGDisplayL"), url("/UIDev/font/KBFGDisplayL.woff") format("woff");
+  src: local("KBFGDisplayL"), url("/font/KBFGDisplayL.woff") format("woff");
 }
 /*KB금융 제목체 Medium*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 500;
-  src: local("KBFGDisplayM"), url("/UIDev/font/KBFGDisplayM.woff") format("woff");
+  src: local("KBFGDisplayM"), url("/font/KBFGDisplayM.woff") format("woff");
 }
 /*KB금융 제목체 Blod*/
 @font-face {
   font-family: "KBFGDisplay";
   font-style: normal;
   font-weight: 700;
-  src: local("KBFGDisplayB"), url("/UIDev/font/KBFGDisplayB.woff") format("woff");
+  src: local("KBFGDisplayB"), url("/font/KBFGDisplayB.woff") format("woff");
 }
 .a11y-hidden {
   overflow: hidden !important;
@@ -3537,6 +3537,10 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   color: rgba(153, 153, 153, 0.6);
 }
 
+.color-gray6 {
+  color: #666;
+}
+
 .txt-sub-color3 {
   font-size: 1.3rem;
   color: rgba(153, 153, 153, 0.6);
@@ -3944,27 +3948,27 @@ span.point-push::after {
   background: linear-gradient(rgba(255, 255, 255, 0), rgb(255, 255, 255));
 }
 
-.seacrh-item {
+.search-item {
   display: flex;
   justify-content: flex-start;
   align-items: self-start;
   border: 0.1rem solid #E9E9E9;
   border-radius: 0.4rem;
 }
-.seacrh-item > li {
+.search-item > li {
   width: 100%;
   height: 36rem;
   border-left: 1px solid #E9E9E9;
 }
-.seacrh-item > li:first-child {
+.search-item > li:first-child {
   border-left: 0;
 }
-.seacrh-item > li.active .seacrh-tit {
+.search-item > li.active .search-tit {
   background-color: #fff;
   color: #FF5D16;
   font-weight: 700;
 }
-.seacrh-item > li .seacrh-tit {
+.search-item > li .search-tit {
   height: 5.2rem;
   padding: 1.4rem 0.5rem;
   background-color: #FAF9F8;
@@ -3973,10 +3977,10 @@ span.point-push::after {
   text-align: center;
   font-weight: 500;
 }
-.seacrh-item > li .search-cont-inner {
+.search-item > li .search-cont-inner {
   height: 30.7rem;
 }
-.seacrh-item > li .search-cont-inner.ty-nodata .no-data {
+.search-item > li .search-cont-inner.ty-nodata .no-data {
   width: 100%;
   height: 30.7rem;
   color: #888;
@@ -3985,22 +3989,25 @@ span.point-push::after {
   text-align: center;
   display: block;
 }
-.seacrh-item > li .search-cont-inner .no-data {
+.search-item > li .search-cont-inner.ty-nodata .search-list-group {
   display: none;
 }
-.seacrh-item > li .search-list-group:last-child {
+.search-item > li .search-cont-inner .no-data {
+  display: none;
+}
+.search-item > li .search-list-group:last-child {
   padding-bottom: 2rem;
 }
-.seacrh-item > li .search-list-group > p {
+.search-item > li .search-list-group > p {
   padding: 2rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
-.seacrh-item > li .search-list-group > ul {
+.search-item > li .search-list-group > ul {
   width: 29.6rem;
   padding: 0 0 0 2rem;
 }
-.seacrh-item > li .search-list-group > ul > li + li {
+.search-item > li .search-list-group > ul > li + li {
   margin-top: 0.5rem;
 }
 
@@ -4315,9 +4322,11 @@ span.point-push::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+  min-height: 3.8rem;
+  padding-right: 3rem;
   color: #000;
   font-size: 1.3rem;
-  line-height: 3.8rem;
 }
 .favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list > a::after {
   content: "";
@@ -4325,9 +4334,12 @@ span.point-push::after {
   height: 1.6rem;
   margin-right: 1.3rem;
   background: url("/UIDev/v3/images/icon/icon-like-off.png") no-repeat;
-  display: inline-block;
-  vertical-align: -0.2rem;
   background-size: 1.6rem 1.6rem;
+  display: block;
+  position: absolute;
+  right: -0.2rem;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list > a.active::after {
   background: url("/UIDev/v3/images/icon/icon-like-on.png") no-repeat;
