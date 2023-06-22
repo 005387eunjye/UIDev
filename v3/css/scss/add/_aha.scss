@@ -130,8 +130,8 @@
 }
 .icon-recommend {
     display: inline-block;
-    width: 2.2rem;
-    height: 2.2rem;
+    width: 2rem;
+    height: 2rem;
     margin-right: .4rem;
     background:url($img-root + 'icon/icon-recommend.png') no-repeat;
     vertical-align: -.3rem;
@@ -300,33 +300,32 @@
     margin-top: 1rem;
     & > li {
         position: relative;
-        height: 2.9rem;
-        margin: .2rem 1rem .2rem 0;
-        padding: .4rem 3.9rem .7rem 1rem;
+        height: 4rem;
+        margin: .2rem 1rem .4rem 0;
+        padding: 1rem 3.9rem .7rem 1rem;
         border-radius: .2rem;
         background-color: #FAF9F8;
         display: inline-block;
         
         &::before {
             content:"";
-            width:1.2rem;
-            height:1.5rem;
+            width:1.6rem;
+            height:1.6rem;
             margin-right: .5rem;
             background:url($img-root + 'icon/icon-clip.png') no-repeat;
             display: inline-block;
             vertical-align: -.2rem;
-            background-size: 1.1rem 1.5rem;
         }
         &:last-child {margin-left: 0;}
         .btn-file-del {
             position: absolute;
-            right:0;
-            top:0;
-            width:3.9rem;
-            height:2.9rem;
+            right: 1rem;
+            top: .8rem;
+            width: 2.4rem;
+            height: 2.4rem;
             background:url($img-root + 'icon/icon-file-del.png') no-repeat;
-            background-position: right 1.3rem top .8rem;
-            background-size: 1.1rem 1.1rem;
+            //background-position: right 1.3rem top .8rem;
+            
             & > span {
                 position: absolute;
                 width: .1rem;

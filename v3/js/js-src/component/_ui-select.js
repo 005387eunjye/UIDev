@@ -10,7 +10,7 @@ const uiSelect = () => {
         };
     });
 
-    // $('.custom-select-box .custom-select-selection, .drop-down-box-tit a').click(function(){
+     $('.drop-down-box-tit a').click(function(){
     //     //select
     //     if($(this).next('.custom-select-option-box').css('display') == "block"){
     //         $(this).next('.custom-select-option-box').hide();
@@ -19,14 +19,14 @@ const uiSelect = () => {
     //         $(this).next('.custom-select-option-box').show(); 
     //     }
 
-    //     //dropdown
+        //dropdown
         if($(this).parents('.drop-down-box-tit').next('.drop-down-box-option').css('display') == "block"){
             $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').hide();
         }else{
             dropDownOptionBox.hide();
             $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').show(); 
         }
-    // });
+     });
 
     
     // //select    

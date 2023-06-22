@@ -5,6 +5,7 @@
     position:relative;
     display:block;
     flex: 1;
+    width: auto !important;
     &.select2-container--open .selection .select2-selection--single .select2-selection__arrow b{
         transform: rotate(315deg);
         margin-top:.4rem;
@@ -36,6 +37,9 @@
     }
 }
 .select2-container {
+    .select2-search--dropdown{
+        display:none;
+    }
 	.select2-dropdown {
 		overflow: hidden;
 		border-color: #ddd;
@@ -74,14 +78,13 @@
         &::after{
             content: '';
             background:#fff url('/UIDev/v3/images/icon/icon_down-s.png') 0 0 no-repeat;
-            
-            margin-left:0.6rem;
-            width:0.9rem;
-            height:0.7rem;
+            //margin-left:0.6rem;
+            width:1.2rem;
+            height:1.2rem;
             position:absolute;
             right:0;
             top:50%;
-            margin-top:-0.35rem;
+            margin-top:-0.6rem;
             display:inline-block;
         }
     }

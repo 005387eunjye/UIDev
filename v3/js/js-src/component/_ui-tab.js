@@ -9,7 +9,7 @@ const uiTab = () => {
             $(this).addClass('on');
     
             const activeTab = $(this).find('a').attr('href');
-            tabCont.eq(index).find('div').hide();
+            tabCont.eq(index).find('>div').hide();
             $(activeTab).fadeIn();
 
             return false;

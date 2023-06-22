@@ -485,10 +485,10 @@ body {
 .car-search-result-mode-area .mode-area .tab-item {
   overflow-x: visible;
 }
-.car-search-result-mode-area .mode-area .tab-item > ul {
+.car-search-result-mode-area .mode-area .tab-item > ul, .car-search-result-mode-area .mode-area > ul {
   display: flex;
 }
-.car-search-result-mode-area .mode-area .tab-item > ul > li {
+.car-search-result-mode-area .mode-area .tab-item > ul > li, .car-search-result-mode-area .mode-area > ul > li {
   background: none;
   border: none;
   position: initial;
@@ -499,7 +499,7 @@ body {
 .car-search-result-mode-area .mode-area .tab-item > ul > li + li {
   margin-left: 0;
 }
-.car-search-result-mode-area .mode-area .tab-item > ul > li a {
+.car-search-result-mode-area .mode-area .tab-item > ul > li a, .car-search-result-mode-area .mode-area > ul > li a {
   width: 10.1rem;
   display: block;
   color: #999999;
@@ -510,7 +510,7 @@ body {
   text-align: center;
   letter-spacing: -3%;
 }
-.car-search-result-mode-area .mode-area .tab-item > ul > li.on a {
+.car-search-result-mode-area .mode-area .tab-item > ul > li.on a, .car-search-result-mode-area .mode-area > ul > li a.active {
   background: #fff;
   box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.0588235294);
   border-radius: 0.4rem;
@@ -2904,6 +2904,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   position: relative;
   display: block;
   flex: 1;
+  width: auto !important;
 }
 .select2.select2-container--open .selection .select2-selection--single .select2-selection__arrow b {
   transform: rotate(315deg);
@@ -2935,6 +2936,9 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   display: block;
 }
 
+.select2-container .select2-search--dropdown {
+  display: none;
+}
 .select2-container .select2-dropdown {
   overflow: hidden;
   border-color: #ddd;
@@ -2972,13 +2976,12 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 .drop-down-box .drop-down-box-tit a::after {
   content: "";
   background: #fff url("/UIDev/v3/images/icon/icon_down-s.png") 0 0 no-repeat;
-  margin-left: 0.6rem;
-  width: 0.9rem;
-  height: 0.7rem;
+  width: 1.2rem;
+  height: 1.2rem;
   position: absolute;
   right: 0;
   top: 50%;
-  margin-top: -0.35rem;
+  margin-top: -0.6rem;
   display: inline-block;
 }
 .drop-down-box .drop-down-box-option {
@@ -3090,6 +3093,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 .tooltip-btn.ty-black {
   background: #4f4f4f;
   color: white;
+  vertical-align: 0.1rem;
 }
 .tooltip-btn.ty-black .tooltip {
   bottom: 2rem;
@@ -3328,8 +3332,8 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 
 .icon-recommend {
   display: inline-block;
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2rem;
+  height: 2rem;
   margin-right: 0.4rem;
   background: url("/UIDev/v3/images/icon/icon-recommend.png") no-repeat;
   vertical-align: -0.3rem;
@@ -3509,35 +3513,32 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 }
 .file-list > li {
   position: relative;
-  height: 2.9rem;
-  margin: 0.2rem 1rem 0.2rem 0;
-  padding: 0.4rem 3.9rem 0.7rem 1rem;
+  height: 4rem;
+  margin: 0.2rem 1rem 0.4rem 0;
+  padding: 1rem 3.9rem 0.7rem 1rem;
   border-radius: 0.2rem;
   background-color: #FAF9F8;
   display: inline-block;
 }
 .file-list > li::before {
   content: "";
-  width: 1.2rem;
-  height: 1.5rem;
+  width: 1.6rem;
+  height: 1.6rem;
   margin-right: 0.5rem;
   background: url("/UIDev/v3/images/icon/icon-clip.png") no-repeat;
   display: inline-block;
   vertical-align: -0.2rem;
-  background-size: 1.1rem 1.5rem;
 }
 .file-list > li:last-child {
   margin-left: 0;
 }
 .file-list > li .btn-file-del {
   position: absolute;
-  right: 0;
-  top: 0;
-  width: 3.9rem;
-  height: 2.9rem;
+  right: 1rem;
+  top: 0.8rem;
+  width: 2.4rem;
+  height: 2.4rem;
   background: url("/UIDev/v3/images/icon/icon-file-del.png") no-repeat;
-  background-position: right 1.3rem top 0.8rem;
-  background-size: 1.1rem 1.1rem;
 }
 .file-list > li .btn-file-del > span {
   position: absolute;
@@ -4935,7 +4936,7 @@ span.point-push::after {
   width: 558px;
   height: calc(100% - 11.7rem);
   background: #fff;
-  left: 463px;
+  left: 464px;
   top: 0;
   position: absolute;
   z-index: 1;
@@ -4945,10 +4946,10 @@ span.point-push::after {
   height: 4rem;
   position: absolute;
   left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 20rem;
+  -webkit-transform: translate(0%, -50%);
+  -ms-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
 }
 .loading-circle-area .loading-child.loading-circle2 {
   -webkit-transform: rotate(30deg);

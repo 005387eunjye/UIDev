@@ -233,7 +233,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0__);
 
 
-var _this = undefined;
 
 var uiSelect = function uiSelect() {
   // const customSelectOptionBox = $('.custom-select-option-box');
@@ -244,24 +243,23 @@ var uiSelect = function uiSelect() {
     }
     ;
   });
+  $('.drop-down-box-tit a').click(function () {
+    //     //select
+    //     if($(this).next('.custom-select-option-box').css('display') == "block"){
+    //         $(this).next('.custom-select-option-box').hide();
+    //     }else{
+    //         customSelectOptionBox.hide();
+    //         $(this).next('.custom-select-option-box').show(); 
+    //     }
 
-  // $('.custom-select-box .custom-select-selection, .drop-down-box-tit a').click(function(){
-  //     //select
-  //     if($(this).next('.custom-select-option-box').css('display') == "block"){
-  //         $(this).next('.custom-select-option-box').hide();
-  //     }else{
-  //         customSelectOptionBox.hide();
-  //         $(this).next('.custom-select-option-box').show(); 
-  //     }
-
-  //     //dropdown
-  if ($(_this).parents('.drop-down-box-tit').next('.drop-down-box-option').css('display') == "block") {
-    $(_this).parents('.drop-down-box-tit').next('.drop-down-box-option').hide();
-  } else {
-    dropDownOptionBox.hide();
-    $(_this).parents('.drop-down-box-tit').next('.drop-down-box-option').show();
-  }
-  // });
+    //dropdown
+    if ($(this).parents('.drop-down-box-tit').next('.drop-down-box-option').css('display') == "block") {
+      $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').hide();
+    } else {
+      dropDownOptionBox.hide();
+      $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').show();
+    }
+  });
 
   // //select    
   // customSelectOptionBox.find('li').click(function(){
@@ -324,7 +322,7 @@ var uiTab = function uiTab() {
       tabLi.removeClass('on');
       $(this).addClass('on');
       var activeTab = _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context2 = $(this)).call(_context2, 'a').attr('href');
-      _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context3 = tabCont.eq(index)).call(_context3, 'div').hide();
+      _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context3 = tabCont.eq(index)).call(_context3, '>div').hide();
       $(activeTab).fadeIn();
       return false;
     });
