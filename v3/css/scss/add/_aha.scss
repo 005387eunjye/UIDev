@@ -777,7 +777,7 @@ span.point-push {
             & > ul {
                 width: 29.6rem;
                 padding: 0 0 0 2rem;
-                & > li + li {margin-top: .5rem;}
+                & > li + li {margin-top: 1rem;}
             }
         }
     }
@@ -795,7 +795,7 @@ span.point-push {
         & > button {
             width: 100%;
             height: 4.6rem;
-            border: 1px solid #E9E9E9;
+            border: .1rem solid #E9E9E9;
             border-radius: .4rem;
             font-size: 1.4rem;
             font-weight: $font-weight-bold;
@@ -808,32 +808,34 @@ span.point-push {
                 height:1.8rem;
                 margin-right:.3rem;
                 background-repeat: no-repeat;
+                background-size: 66.2rem 17.5rem;
+                background-image:url($img-root + 'icon/icon-option.png');
                 vertical-align: sub;
             }
         }
-        &:nth-child(1) > button::before {background-image:url($img-root + 'icon/icon-sh01-model.png');}
-        &:nth-child(2) > button::before {background-image:url($img-root + 'icon/icon-sh02-mile.png');}
-        &:nth-child(3) > button::before {background-image:url($img-root + 'icon/icon-sh03-price.png');}
-        &:nth-child(4) > button::before {background-image:url($img-root + 'icon/icon-sh04-fuel.png');}
-        &:nth-child(5) > button::before {background-image:url($img-root + 'icon/icon-sh05-color.png');}
-        &:nth-child(6) > button::before {background-image:url($img-root + 'icon/icon-sh06-area.png');}
-        &:nth-child(7) > button::before {background-image:url($img-root + 'icon/icon-sh07-sale.png');}
-        &:nth-child(8) > button::before {background-image:url($img-root + 'icon/icon-sh08-geerbox.png');}
-        &:nth-child(9) > button::before {background-image:url($img-root + 'icon/icon-sh09-option.png');}
+        &:nth-child(1) > button::before {background-position: -4.5rem -9.7rem;}
+        &:nth-child(2) > button::before {background-position: -11.3rem -9.7rem;}
+        &:nth-child(3) > button::before {background-position: -18.4rem -9.7rem;}
+        &:nth-child(4) > button::before {background-position: -24.9rem -9.7rem;}
+        &:nth-child(5) > button::before {background-position: -31.7rem -9.7rem;}
+        &:nth-child(6) > button::before {background-position: -38.5rem -9.7rem;}
+        &:nth-child(7) > button::before {background-position: -45.3rem -9.7rem;}
+        &:nth-child(8) > button::before {background-position: -52.1rem -9.7rem;}
+        &:nth-child(9) > button::before {background-position: -58.9rem -9.7rem;}
 
         & > button.active {
             border: 1px solid #FFDFD0;
             color: $main-color;
         }
-        &:nth-child(1) > button.active::before {background-image:url($img-root + 'icon/icon-sh01-model-on.png');}
-        &:nth-child(2) > button.active::before {background-image:url($img-root + 'icon/icon-sh02-mile-on.png');}
-        &:nth-child(3) > button.active::before {background-image:url($img-root + 'icon/icon-sh03-price-on.png');}
-        &:nth-child(4) > button.active::before {background-image:url($img-root + 'icon/icon-sh04-fuel-on.png');}
-        &:nth-child(5) > button.active::before {background-image:url($img-root + 'icon/icon-sh05-color-on.png');}
-        &:nth-child(6) > button.active::before {background-image:url($img-root + 'icon/icon-sh06-area-on.png');}
-        &:nth-child(7) > button.active::before {background-image:url($img-root + 'icon/icon-sh07-sale-on.png');}
-        &:nth-child(8) > button.active::before {background-image:url($img-root + 'icon/icon-sh08-geerbox-on.png');}
-        &:nth-child(9) > button.active::before {background-image:url($img-root + 'icon/icon-sh09-option-on.png');}
+        &:nth-child(1) > button.active::before {background-position: -4.5rem -4.5rem;}
+        &:nth-child(2) > button.active::before {background-position: -11.3rem -4.5rem;}
+        &:nth-child(3) > button.active::before {background-position: -18.4rem -4.5rem;}
+        &:nth-child(4) > button.active::before {background-position: -24.9rem -4.5rem;}
+        &:nth-child(5) > button.active::before {background-position: -31.7rem -4.5rem;}
+        &:nth-child(6) > button.active::before {background-position: -38.5rem -4.5rem;}
+        &:nth-child(7) > button.active::before {background-position: -45.3rem -4.5rem;}
+        &:nth-child(8) > button.active::before {background-position: -52.1rem -4.5rem;}
+        &:nth-child(9) > button.active::before {background-position: -58.9rem -4.5rem;}
 
         .list-option {
             display: none;
@@ -972,6 +974,7 @@ span.point-push {
             background-color: white;
             border-top: 1px solid #E9E9E9;
             text-align: center;
+            z-index: 1;
             & > button {min-width: 16rem;}
         }
         .favorites-th {
@@ -1039,16 +1042,20 @@ span.point-push {
                 overflow: hidden;
                 .favorites-list {
                     width: 27.5rem;
-                    height: auto;
+                    height: 37.4rem;
                     min-height: 37.4rem;
-                    padding: 0 1.6rem;
-                    & > a {
+                    padding: 0 0 0 1.6rem;
+                    .mCSB_draggerRail{
+                        display: none;
+                    }
+                    & .favorites-box {height: 37.4rem;}
+                    & .favorites-box  a {
                         display: flex;
                         justify-content: space-between;
                         align-items: center;
                         position: relative;
                         min-height: 3.8rem;
-                        padding-right: 3rem;
+                        padding-right: 4rem;
                         color:$font-color-black;
                         font-size: 1.3rem;
                         //line-height: 3.8rem;
@@ -1061,7 +1068,7 @@ span.point-push {
                             background-size: 1.6rem 1.6rem;
                             display: block;
                             position: absolute;
-                            right: -.2rem;
+                            right: 0;
                             top: 50%;
                             transform: translateY(-50%);
                         }
@@ -1226,8 +1233,21 @@ span.point-push {
         font-size:1.3rem;
         line-height: 1.4rem;
         font-weight: 500;
+        vertical-align: baseline;
+        &.active {
+            position: relative;
+            color: $main-color;
+            &::before {
+                content: "";
+                display:inline-block;
+                width:1.6rem;
+                height:1.6rem;
+                background:url($img-root + 'icon/icon-check1.png') no-repeat;
+                background-position: 0 .2rem;
+            }
+        }
         &:active {opacity: .8;}
-        &::before{
+        &::after{
             content:'';
             width:.1rem;
             height:1rem;
@@ -1235,7 +1255,7 @@ span.point-push {
             display:inline-block;
             margin:0 .8rem;
         }
-        &:first-child::before{
+        &:last-child::after{
             display:none;        
         }
     }
@@ -1370,6 +1390,6 @@ span.point-push {
     &.purpleColor {
         background-color: #9345F7;
     }
-    
-} 
-
+}
+hr {border: 0; border-top: 1px solid #E9E9E9;font-size:0;}
+.mgt-40 {margin-top: 4rem;}

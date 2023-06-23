@@ -2961,10 +2961,16 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   color: #999;
 }
 
-.drop-down-box {
+.drop-down-box .selection {
   position: relative;
 }
-.drop-down-box .drop-down-box-tit a {
+.drop-down-box .selection .select2-selection {
+  border: none;
+  height: auto;
+  line-height: 1;
+  padding: 0;
+}
+.drop-down-box .selection .select2-selection .select2-selection__rendered {
   font-weight: 400;
   font-size: 1.2rem;
   color: #000;
@@ -2973,39 +2979,46 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   box-sizing: border-box;
   position: relative;
 }
-.drop-down-box .drop-down-box-tit a::after {
-  content: "";
-  background: #fff url("/UIDev/v3/images/icon/icon_down-s.png") 0 0 no-repeat;
-  width: 1.2rem;
-  height: 1.2rem;
-  position: absolute;
-  right: 0;
-  top: 50%;
-  margin-top: -0.6rem;
-  display: inline-block;
+.drop-down-box .selection .select2-selection .select2-selection__arrow b {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-left: 0.5rem;
+  margin-top: 0.4rem;
 }
-.drop-down-box .drop-down-box-option {
-  position: absolute;
-  display: none;
-  top: 3rem;
+
+.select2-container .drop-down-box-option {
   border-radius: 0.6rem;
   background: #fff;
-  padding: 1rem 0rem;
   width: 100%;
   text-align: center;
   z-index: 1;
   box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.0588235294);
 }
-.drop-down-box .drop-down-box-option li {
-  font-size: 1.3rem;
-  color: #000;
-  cursor: pointer;
+.select2-container .drop-down-box-option .select2-search--dropdown {
+  display: none;
 }
-.drop-down-box .drop-down-box-option li + li {
-  margin-top: 1rem;
+.select2-container .drop-down-box-option .select2-results {
+  padding: 1rem 0;
 }
-.drop-down-box .drop-down-box-option li:hover {
+.select2-container .drop-down-box-option .select2-results .select2-results__option {
+  line-height: initial;
+  padding: 0;
+  font-size: 1.2rem;
+  color: #222;
+}
+.select2-container .drop-down-box-option .select2-results .select2-results__option + .select2-results__option {
+  margin-top: 0.5rem;
+}
+.select2-container .drop-down-box-option .select2-results .select2-results__option[aria-selected=true] {
+  background: #fff;
   color: #FF5D16;
+}
+.select2-container .drop-down-box-option .select2-results .select2-results__option--highlighted[aria-selected] {
+  background: #fff;
+  color: #FF5D16;
+}
+.select2-container .drop-down-box-option .select2-results .select2-results__option[aria-disabled=true] {
+  color: #222;
 }
 
 .tab-list {
@@ -4030,7 +4043,7 @@ span.point-push::after {
   padding: 0 0 0 2rem;
 }
 .search-item > li .search-list-group > ul > li + li {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .search-btn-item {
@@ -4050,7 +4063,7 @@ span.point-push::after {
 .search-btn-item > div > button {
   width: 100%;
   height: 4.6rem;
-  border: 1px solid #E9E9E9;
+  border: 0.1rem solid #E9E9E9;
   border-radius: 0.4rem;
   font-size: 1.4rem;
   font-weight: 700;
@@ -4064,65 +4077,67 @@ span.point-push::after {
   height: 1.8rem;
   margin-right: 0.3rem;
   background-repeat: no-repeat;
+  background-size: 66.2rem 17.5rem;
+  background-image: url("/UIDev/v3/images/icon/icon-option.png");
   vertical-align: sub;
 }
 .search-btn-item > div:nth-child(1) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh01-model.png");
+  background-position: -4.5rem -9.7rem;
 }
 .search-btn-item > div:nth-child(2) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh02-mile.png");
+  background-position: -11.3rem -9.7rem;
 }
 .search-btn-item > div:nth-child(3) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh03-price.png");
+  background-position: -18.4rem -9.7rem;
 }
 .search-btn-item > div:nth-child(4) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh04-fuel.png");
+  background-position: -24.9rem -9.7rem;
 }
 .search-btn-item > div:nth-child(5) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh05-color.png");
+  background-position: -31.7rem -9.7rem;
 }
 .search-btn-item > div:nth-child(6) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh06-area.png");
+  background-position: -38.5rem -9.7rem;
 }
 .search-btn-item > div:nth-child(7) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh07-sale.png");
+  background-position: -45.3rem -9.7rem;
 }
 .search-btn-item > div:nth-child(8) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh08-geerbox.png");
+  background-position: -52.1rem -9.7rem;
 }
 .search-btn-item > div:nth-child(9) > button::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh09-option.png");
+  background-position: -58.9rem -9.7rem;
 }
 .search-btn-item > div > button.active {
   border: 1px solid #FFDFD0;
   color: #FF5D16;
 }
 .search-btn-item > div:nth-child(1) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh01-model-on.png");
+  background-position: -4.5rem -4.5rem;
 }
 .search-btn-item > div:nth-child(2) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh02-mile-on.png");
+  background-position: -11.3rem -4.5rem;
 }
 .search-btn-item > div:nth-child(3) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh03-price-on.png");
+  background-position: -18.4rem -4.5rem;
 }
 .search-btn-item > div:nth-child(4) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh04-fuel-on.png");
+  background-position: -24.9rem -4.5rem;
 }
 .search-btn-item > div:nth-child(5) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh05-color-on.png");
+  background-position: -31.7rem -4.5rem;
 }
 .search-btn-item > div:nth-child(6) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh06-area-on.png");
+  background-position: -38.5rem -4.5rem;
 }
 .search-btn-item > div:nth-child(7) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh07-sale-on.png");
+  background-position: -45.3rem -4.5rem;
 }
 .search-btn-item > div:nth-child(8) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh08-geerbox-on.png");
+  background-position: -52.1rem -4.5rem;
 }
 .search-btn-item > div:nth-child(9) > button.active::before {
-  background-image: url("/UIDev/v3/images/icon/icon-sh09-option-on.png");
+  background-position: -58.9rem -4.5rem;
 }
 .search-btn-item > div .list-option {
   display: none;
@@ -4264,6 +4279,7 @@ span.point-push::after {
   background-color: white;
   border-top: 1px solid #E9E9E9;
   text-align: center;
+  z-index: 1;
 }
 .favorites-item .favorites-option .layer-btn-area > button {
   min-width: 16rem;
@@ -4336,21 +4352,27 @@ span.point-push::after {
 }
 .favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list {
   width: 27.5rem;
-  height: auto;
+  height: 37.4rem;
   min-height: 37.4rem;
-  padding: 0 1.6rem;
+  padding: 0 0 0 1.6rem;
 }
-.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list > a {
+.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list .mCSB_draggerRail {
+  display: none;
+}
+.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list .favorites-box {
+  height: 37.4rem;
+}
+.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list .favorites-box a {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
   min-height: 3.8rem;
-  padding-right: 3rem;
+  padding-right: 4rem;
   color: #000;
   font-size: 1.3rem;
 }
-.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list > a::after {
+.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list .favorites-box a::after {
   content: "";
   width: 1.6rem;
   height: 1.6rem;
@@ -4359,11 +4381,11 @@ span.point-push::after {
   background-size: 1.6rem 1.6rem;
   display: block;
   position: absolute;
-  right: -0.2rem;
+  right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list > a.active::after {
+.favorites-item .favorites-option .favorites-menu > .favorites-rht .favorites-list .favorites-box a.active::after {
   background: url("/UIDev/v3/images/icon/icon-like-on.png") no-repeat;
 }
 
@@ -4542,11 +4564,24 @@ span.point-push::after {
   font-size: 1.3rem;
   line-height: 1.4rem;
   font-weight: 500;
+  vertical-align: baseline;
+}
+.txt-link-item a.active {
+  position: relative;
+  color: #FF5D16;
+}
+.txt-link-item a.active::before {
+  content: "";
+  display: inline-block;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: url("/UIDev/v3/images/icon/icon-check1.png") no-repeat;
+  background-position: 0 0.2rem;
 }
 .txt-link-item a:active {
   opacity: 0.8;
 }
-.txt-link-item a::before {
+.txt-link-item a::after {
   content: "";
   width: 0.1rem;
   height: 1rem;
@@ -4554,7 +4589,7 @@ span.point-push::after {
   display: inline-block;
   margin: 0 0.8rem;
 }
-.txt-link-item a:first-child::before {
+.txt-link-item a:last-child::after {
   display: none;
 }
 
@@ -4689,6 +4724,16 @@ span.point-push::after {
 }
 .color.purpleColor {
   background-color: #9345F7;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #E9E9E9;
+  font-size: 0;
+}
+
+.mgt-40 {
+  margin-top: 4rem;
 }
 
 .sell-price-area .tit {

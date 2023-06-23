@@ -229,37 +229,35 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "uiSelect": () => (/* binding */ uiSelect)
 /* harmony export */ });
-/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/instance/find */ "./.yarn/cache/@babel-runtime-corejs3-npm-7.21.5-f07017f763-c349a15675.zip/node_modules/@babel/runtime-corejs3/core-js-stable/instance/find.js");
-/* harmony import */ var _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0__);
-
 
 
 var uiSelect = function uiSelect() {
   // const customSelectOptionBox = $('.custom-select-option-box');
-  var dropDownOptionBox = $('.drop-down-box-option');
-  $('body').click(function (e) {
-    if ($(e.target).closest('.drop-down-box').length === 0) {
-      dropDownOptionBox.hide();
-    }
-    ;
-  });
-  $('.drop-down-box-tit a').click(function () {
-    //     //select
-    //     if($(this).next('.custom-select-option-box').css('display') == "block"){
-    //         $(this).next('.custom-select-option-box').hide();
-    //     }else{
-    //         customSelectOptionBox.hide();
-    //         $(this).next('.custom-select-option-box').show(); 
-    //     }
+  // const dropDownOptionBox = $('.drop-down-box-option');
 
-    //dropdown
-    if ($(this).parents('.drop-down-box-tit').next('.drop-down-box-option').css('display') == "block") {
-      $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').hide();
-    } else {
-      dropDownOptionBox.hide();
-      $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').show();
-    }
-  });
+  // $('body').click(function(e){
+  //     if($(e.target).closest('.drop-down-box').length === 0){
+  //         dropDownOptionBox.hide();
+  //     };
+  // });
+
+  // $('.drop-down-box-tit a').click(function(){
+  //     //select
+  //     if($(this).next('.custom-select-option-box').css('display') == "block"){
+  //         $(this).next('.custom-select-option-box').hide();
+  //     }else{
+  //         customSelectOptionBox.hide();
+  //         $(this).next('.custom-select-option-box').show(); 
+  //     }
+
+  //dropdown
+  // if($(this).parents('.drop-down-box-tit').next('.drop-down-box-option').css('display') == "block"){
+  //     $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').hide();
+  // }else{
+  //     dropDownOptionBox.hide();
+  //     $(this).parents('.drop-down-box-tit').next('.drop-down-box-option').show(); 
+  // }
+  //});
 
   // //select    
   // customSelectOptionBox.find('li').click(function(){
@@ -272,13 +270,14 @@ var uiSelect = function uiSelect() {
   // });
 
   // //dropdown
-  _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(dropDownOptionBox).call(dropDownOptionBox, 'li').click(function () {
-    var _context;
-    var dropDownText = $(this).text();
-    _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(_context = $(this).parents('.drop-down-box')).call(_context, '.drop-down-box-tit a').text(dropDownText);
-    _babel_runtime_corejs3_core_js_stable_instance_find__WEBPACK_IMPORTED_MODULE_0___default()(dropDownOptionBox).call(dropDownOptionBox, 'li').removeClass('active');
-    $(this).parents('.drop-down-box-option').hide();
-  });
+  // dropDownOptionBox.find('li').click(function(){
+  //     const dropDownText = $(this).text();
+
+  //     $(this).parents('.drop-down-box').find('.drop-down-box-tit a').text(dropDownText);
+  //     dropDownOptionBox.find('li').removeClass('active');
+  //     $(this).parents('.drop-down-box-option').hide();
+  // });
+
   if ($('select').length > 0) {
     $('select').select2({
       minimumResultsForSearch: Infinity,
@@ -286,6 +285,17 @@ var uiSelect = function uiSelect() {
       placeholder: "선택하세요.",
       language: "ko",
       dropdownCssClass: 'custom-select-box'
+    });
+  }
+  if ($('select.drop-down-box').length > 0) {
+    $('select.drop-down-box').select2({
+      minimumResultsForSearch: Infinity,
+      dropdownAutoWidth: false,
+      language: "ko",
+      dropdownCssClass: 'drop-down-box-option'
+    });
+    $('.drop-down-box').each(function () {
+      $(this).data('select2').$container.addClass('drop-down-box');
     });
   }
   if ($('.inline-ty1').length > 0) {
