@@ -152,12 +152,59 @@
         }
     }
 }
+.form-chk4{
+    position:relative;
+    input[type="checkbox"]{
+        display:none;
+        width:0;
+        height:0;
+        border:0 none;
+        font-size:0;
+        &:checked{
+            &+label {
+                font-weight: $font-weight-bold;
+                text-align: left;
+                & > .tit {
+                    & > em {font-weight: $font-weight-regular;}
+                }
+                &::before{
+                    content:'';
+                    display: inline-block;
+                    width:.4rem;
+                    height:.4rem;
+                    margin-right: .6rem;
+                    margin-top: .2rem;
+                    background-color: #000;
+                    border-radius: 50%;
+                    vertical-align: .4rem;
+                }   
+            }
+        }
+        & + label{
+            cursor:pointer;
+            position: relative;
+            display: block;
+            width: 100%;
+            color: $sub-color1;
+            font-weight: $font-weight-regular;
+            line-height: 1.8rem;
+            & > .tit {width: 19rem;display: inline-block;vertical-align: top;
+                & > em {font-style: normal;color:#999;}
+            }
+            .txt-rht {
+                float: right;
+                color: $sub-color3;
+                font-weight: $font-weight-regular;
+            }
+        }
+    }
+}
 
 //radio
 .form-radio input[type="radio"]{
     display:none;
-    width:1;
-    height:1;
+    width:0;
+    height:0;
     &:checked{
         &+label{
             &::before{
@@ -169,25 +216,25 @@
         }
     }
     & + label{
-        padding-left:23px;
+        padding-left:2.3rem;
         position:relative;
         &::before{
-            width:18px;
-            height:18px;
+            width:1.8rem;
+            height:1.8rem;
             content: '';
             position:absolute;
             left:0;
             top:50%;
             transform: translateY(-50%);
-            border:solid 1px #ddd;
+            border:solid .1rem #ddd;
             border-radius: 100%;
         }
         &::after{
-            width:8px;
-            height:8px;
+            width:.8rem;
+            height:.8rem;
             content: '';
             position:absolute;
-            left:5.5px;
+            left:.5rem;
             top:50%;
             transform: translateY(-50%);
             background:#ddd;

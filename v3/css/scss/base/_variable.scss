@@ -54,3 +54,12 @@ $sub-color2:#757575;
 $sub-color3:#9999;
 $sub-color4:#E9E9E9;
 $sub-color5:#FFDFD0;
+
+
+@function iconImgUrl($url){
+    @return url($img-root + 'icon/' + $url);
+}
+
+@function mainImgUrl($url){
+    @return url($img-root + 'main/' + $url);
+}

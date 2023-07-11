@@ -1,3 +1,5 @@
+
+
 html {
     font-size: 10px;
 }
@@ -53,13 +55,13 @@ body {
     font-size:$font-size-xlarge;
     text-align: left;
     .lnb-title{
-        margin-bottom: 4.15rem;
+        margin-bottom: 4.05rem;
         font-size: $font-size-xlarge;
         font-weight: $font-weight-bold;
     }
     .lnb-list{
         li + li{
-            margin-top:2rem;
+            margin-top:2.5rem;
         }
         a.active{
             color:$main-color;
@@ -125,10 +127,10 @@ body {
             height:0.8rem;
         }
         .ad-btn.setting span:before{
-            background-image: url($img-root + 'icon/setting-icon.png');
+            background-image: iconImgUrl("setting-icon.png");
         }
         .ad-btn.add span:before{
-            background-image: url($img-root + 'icon/check-icon.png');
+            background-image: iconImgUrl("check-icon.png");
         }
         .ad-btn + .ad-btn{
             margin-top:1rem;
@@ -153,7 +155,7 @@ body {
             color:$main-color;
             margin-right:0.4rem;
         }
-        &.small {font-size: $font-size-title-small;}
+        &.small {font-size: 2rem;}
     }
     .btn-type03{
         display: block;
@@ -205,7 +207,7 @@ body {
 
 
 .car-search-result-area{
-    margin-top:5rem; 
+    margin-top:6rem; 
 }
 .car-search-result-mode-area{
     display:flex;
@@ -233,6 +235,7 @@ body {
         }
     }
     .mode-area{
+        margin-left:1rem;
         background:#FAF9F8;
         padding:.5rem;
         border-radius: .6rem;
@@ -387,10 +390,13 @@ body {
             .tag span + span{
                 margin-left:.3rem;
             }
+            .tag{
+                margin-bottom: .8rem;
+            }
             .car-name{
                 text-align: left;
                 //color:$bk-color;
-                margin:1rem 0 .8rem 0;
+                margin-bottom:.8rem;
                 font-size: 2rem;
                 line-height: 2rem;
                 font-weight: $font-weight-bold;
@@ -417,9 +423,18 @@ body {
                 line-height: 1.2rem;
                 color:#757575;
                 text-align: left;
-                margin-top:.8rem;
+                margin-top:.9rem;
             }
-
+            .car-benefit span{
+                padding-left:12px;
+                background-repeat: no-repeat;
+                background-position: left center;
+                background-size:12px;
+                background-image: iconImgUrl("icon-ck-gray.png");
+            }
+            .car-benefit span + span{
+                margin-left:.6rem;
+            }
         }
     }
     .pre-price{
@@ -542,10 +557,10 @@ body {
             background-repeat: no-repeat;
             background-position: left center;
             background-size:1.6rem;
-            background-image: url(/UIDev/v3/images/icon/view-icon.png);
+            background-image: iconImgUrl("view-icon.png");
             &.like{
                 margin-left:1rem;
-                background-image: url(/UIDev/v3/images/icon/like-icon.png);
+                background-image: iconImgUrl("like-icon.png");
             }
         }
     }
@@ -1179,13 +1194,13 @@ body {
                 text-align: center;
                 display: block;
                 &.cst-menu01 .num::before{
-                    background-image: url(/UIDev/v3/images/icon/icon-inquiry.png);
+                    background-image: iconImgUrl("icon-inquiry.png");
                 }
                 &.cst-menu02 .num::before{
-                    background-image: url(/UIDev/v3/images/icon/icon-reserve.png);
+                    background-image: iconImgUrl("icon-reserve.png");
                 }
                 &.cst-menu03 .num::before{
-                    background-image: url(/UIDev/v3/images/icon/icon-notice.png);
+                    background-image: iconImgUrl("icon-notice.png");
                 }
             }
             a .num{
@@ -1341,10 +1356,10 @@ body {
             margin-top:1.6rem;
         }
         &.top{
-            background-image: url(/UIDev/v3/images/main/main-card06-bg.png);
+            background-image: mainImgUrl("main-card06-bg.png");
         }
         &.bottom{
-            background-image: url(/UIDev/v3/images/main/main-card07-bg.png);
+            background-image: mainImgUrl("main-card07-bg.png");
         }
     }
 }
@@ -1379,28 +1394,28 @@ body {
         background-position: calc(100% - 1.6rem) calc(100% - 2rem);
         background-size:4rem;
         &.serv01{
-            background-image: url(/UIDev/v3/images/main/main-service-icon01.png);
+            background-image:  mainImgUrl("main-service-icon01.png");
         }
         &.serv02{
-            background-image: url(/UIDev/v3/images/main/main-service-icon02.png);
+            background-image:  mainImgUrl("main-service-icon02.png");
         }
         &.serv03{
-            background-image: url(/UIDev/v3/images/main/main-service-icon03.png);
+            background-image:  mainImgUrl("main-service-icon03.png");
         }
         &.serv04{
-            background-image: url(/UIDev/v3/images/main/main-service-icon04.png);
+            background-image:  mainImgUrl("main-service-icon04.png");
         }
         &.serv05{
-            background-image: url(/UIDev/v3/images/main/main-service-icon05.png);
+            background-image:  mainImgUrl("main-service-icon05.png");
         }
         &.serv06{
-            background-image: url(/UIDev/v3/images/main/main-service-icon06.png);
+            background-image:  mainImgUrl("main-service-icon06.png");
         }
         &.serv07{
-            background-image: url(/UIDev/v3/images/main/main-service-icon07.png);
+            background-image:  mainImgUrl("main-service-icon07.png");
         }
         &.serv08{
-            background-image: url(/UIDev/v3/images/main/main-service-icon08.png);
+            background-image:  mainImgUrl("main-service-icon08.png");
         }
         .title{
             font-size: $font-size-xlarge;

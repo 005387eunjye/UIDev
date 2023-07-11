@@ -14,7 +14,7 @@
 
     <link rel="stylesheet" href="/UIDev/vendor/jquery-ui/v1.12.1/jquery-ui.min.css">
     <link rel="stylesheet" href="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="/UIDev/vendor/swiper/v4.5.3/css/swiper-bundle.min.css"> <!-- [D] swiper import -->
+    <link rel="stylesheet" href="/UIDev/vendor/swiper/v4.5.3/css/swiper.min.css"> <!-- [D] swiper import -->
     <!--230616 수정 : css 추가-->
     <link rel="stylesheet" href="/UIDev/vendor/select2/v4.0.2/css/select2.min.css.css" />
     <!-- //230616 수정 : css 추가-->
@@ -25,7 +25,7 @@
     <script type="text/javascript" src="/UIDev/vendor/form/v3.5.1/jquery.form.js"></script>
     <script type="text/javascript" src="/UIDev/vendor/select2/v4.0.2/js/select2.full.min.js"></script>
     <script type="text/javascript" src="/UIDev/vendor/jquery.mCustomScrollbar/v3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
-    <script type="text/javascript" src="/UIDev/vendor/swiper/v4.5.3/js/swiper-bundle.min.js"></script> <!-- [D] swiper import -->
+    <script type="text/javascript" src="/UIDev/vendor/swiper/v4.5.3/js/swiper.min.js"></script> <!-- [D] swiper import -->
     <script type="text/javascript" src="/UIDev/v3/js/ui-common.min.js"></script> <!-- [D] ui-common.min.js 가 js 중 가장 밑에 위치 -->
 
 </head>
@@ -186,37 +186,37 @@
                                     <ul>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="ck41" name="group04">
+                                                <input type="radio" id="ck41" name="group03">
                                                 <label for="ck41"><span class="tit">i30</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="ck42" name="group04">
+                                                <input type="radio" id="ck42" name="group03">
                                                 <label for="ck42"><span class="tit">i40</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="ck43" name="group04">
+                                                <input type="radio" id="ck43" name="group03">
                                                 <label for="ck43"><span class="tit">아반떼</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="ck44" name="group04">
+                                                <input type="radio" id="ck44" name="group03">
                                                 <label for="ck44"><span class="tit">스타렉스</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="ck45" name="group04">
+                                                <input type="radio" id="ck45" name="group03">
                                                 <label for="ck45"><span class="tit">산타페</span> <span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
                                         <li>
                                             <figure class="form-radio3">
-                                                <input type="radio" id="ck46" name="group04">
+                                                <input type="radio" id="ck46" name="group03">
                                                 <label for="ck46"><span class="tit">투싼</span><span class="txt-rht">6,975</span></label>
                                             </figure>
                                         </li>
@@ -277,23 +277,116 @@
                             <p class="search-tit">등급</p>
                             <div class="search-cont-inner cont-scroll ty-nodata"><!--// data 없을 시 .ty-nodata 추가 -->
                                 <div class="no-data">세부모델을 선택하세요.</div>
-                                <div class="search-list-group">
-                                    <p>2.5 가솔린 2WD</p>
-                                    <ul>
+                                <!-- 230706 수정 -->
+                                <div class="search-list-group mgt-l">
+                                    <ul class="chk-show-item">
                                         <li>
                                             <figure class="form-chk3">
                                                 <input type="checkbox" id="ck61" name="group06">
-                                                <label for="ck61"><span class="tit">프리미엄</span><span class="txt-rht">6,975</span></label>
+                                                <label for="ck61"><span class="tit">2.5 가솔린 2WD</span><span class="txt-rht">6,975</span></label>
                                             </figure>
+                                            <ul class="list-sub-group">
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck61-1">
+                                                        <label for="ck61-1"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck61-2">
+                                                        <label for="ck61-2"><span class="tit">익스클루시브</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck61-3">
+                                                        <label for="ck61-3"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
                                         </li>
                                         <li>
                                             <figure class="form-chk3">
                                                 <input type="checkbox" id="ck62" name="group06">
-                                                <label for="ck62"><span class="tit">익스클루시브</span><span class="txt-rht">6,975</span></label>
+                                                <label for="ck62"><span class="tit">3.5 가솔린 2WD</span><span class="txt-rht">6,975</span></label>
                                             </figure>
+                                            <ul class="list-sub-group">
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck62-1">
+                                                        <label for="ck62-1"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck62-2">
+                                                        <label for="ck62-2"><span class="tit">익스클루시브</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck62-3">
+                                                        <label for="ck62-3"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk3">
+                                                <input type="checkbox" id="ck63" name="group06">
+                                                <label for="ck63"><span class="tit">3.5 가솔린 AWD</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                            <ul class="list-sub-group">
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck63-1">
+                                                        <label for="ck63-1"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck63-2">
+                                                        <label for="ck63-2"><span class="tit">익스클루시브</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck63-3">
+                                                        <label for="ck63-3"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <figure class="form-chk3">
+                                                <input type="checkbox" id="ck64" name="group06">
+                                                <label for="ck64"><span class="tit">3.5 LPG일반</span><span class="txt-rht">6,975</span></label>
+                                            </figure>
+                                            <ul class="list-sub-group">
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck64-1">
+                                                        <label for="ck64-1"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck64-2">
+                                                        <label for="ck64-2"><span class="tit">익스클루시브</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                                <li>
+                                                    <figure class="form-chk4">
+                                                        <input type="checkbox" id="ck64-3">
+                                                        <label for="ck64-3"><span class="tit">프리미엄</span><span class="txt-rht">6</span></label>
+                                                    </figure>
+                                                </li>
+                                            </ul>
                                         </li>
                                     </ul>    
                                 </div>
+                                <!--// 230706 수정 -->
                             </div>
                         </li>
                     </ul>
@@ -1556,28 +1649,15 @@
                                                 </div>
                                                 <!-- swiper -->
                                                 <div class="favorites-menu swiper-area">
+                                                    <!--230704 수정-->
                                                     <div class="favorites-lft">
-                                                        <ul id="navbar" class="favorites-navbar swiper-wrapper">
-                                                            <li class="swiper-slide"><a href="javascript:;"><strong>MY</strong></a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">서울</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">인천</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">대전</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">대구</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">광주</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">부산</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">울산</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">세종</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">경기</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">강원</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">경남</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">경북</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">전남</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">전북</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">충남</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">충북</a></li>
-                                                            <li class="swiper-slide"><a href="javascript:;">제주</a></li>
-                                                        </ul>
+                                                        <div class="cont-scroll3">
+                                                            <ul id="navbar" class="favorites-navbar">
+                                                                
+                                                            </ul>
+                                                        </div>
                                                     </div>
+                                                    <!-- //230704 수정-->
                                                     
                                                     <div class="favorites-rht">
                                                         <div class="swiper-wrapper">
@@ -1930,11 +2010,13 @@
                                             <tbody>
                                                 <tr>
                                                     <td>
-                                                        <a href="javascript:;" class="car-info">
+                                                        <!-- 230628 수정 : a태그 div로 변경 -->
+                                                        <div class="car-info">
                                                             <div class="car-info-detail">
                                                                 <h3 class="car-name">페라리 F8 Tributo 3.9 V8 페라리 F8 Tributo 3.9 V8</h3>
                                                             </div>
-                                                        </a>
+                                                        </div>
+                                                        <!--// 230628 수정 : a태그 div로 변경 -->
                                                     </td>
                                                     
                                                     <td>
@@ -2018,6 +2100,19 @@
                                     $(`.search-item > li:gt(${index + 1})`).removeClass('active');
                                 }
                             })
+                        });
+                    }
+
+                    //등급 4depth,5depth
+                    function checkItem (){
+                        $('.list-sub-group').hide();
+                        $('.form-chk3 input:checkbox').on('click', function() {
+                            if ( $(this).prop('checked') ) {
+                                $(this).parent('.form-chk3').next('.list-sub-group').slideDown();
+                            } else {
+                                $(this).parent('.form-chk3').next('.list-sub-group').slideUp();
+                                $(this).parent('.form-chk3').next('.list-sub-group').find('input:checkbox').prop('checked',false);
+                            }
                         });
                     }
 
@@ -2155,30 +2250,34 @@
                     }
 
                     //관심단지 swiper
-
-                    var swiper = new Swiper('.favorites-lft', {
+                    /*  230704 수정 */
+                    // var swiper = new Swiper('.favorites-lft', {
+                    //     direction: 'vertical',
+                    //     //spaceBetween: 10,
+                    //     slidesPerView: 'auto',
+                    //     mousewheel: true,
+                    //     controller: {
+                    //         control: swiper2,
+                    //     },
+                    // });
+                    var swiper = new Swiper('.favorites-rht', {
                         direction: 'vertical',
-                        //spaceBetween: 10,
                         slidesPerView: 'auto',
-                        freeMode: true,
+                        observer: true,
+                        observeParents: true,
                         mousewheel: true,
-                        watchSlidesProgress: true,
-                        resistanceRatio: false,
+                        pagination: {
+                            el: ".favorites-lft ul",
+                            clickable: true,
+                            bulletClass:"swiper-pagination-custom-bullet",
+                            bulletActiveClass: "swiper-pagination-custom-bullet-active",
+                            renderBullet: function (index, className) {
+                                const bullet = ['MY','서울','인천','대전','대구','광주','부산','울산','세종','경기','강원','경남','경북','전남','전북','충남','충북','제주'];
+                                return `<li class="${className}"><a href="javascript:;">${bullet[index]}</a></li>`;
+                            },
+                        }
                     });
-                    var swiper2 = new Swiper('.favorites-rht', {
-                        direction: 'vertical',
-                        height: 'auto',
-                        slidesPerView: 'auto',
-                        spaceBetween: 1,
-                        resistanceRatio: false,
-                        // centeredSlides: true,
-                        loop: false,
-                        mousewheel: true,
-                        thumbs: {
-                            swiper: swiper
-                        },
-                    });
-
+                    /* // 230704 수정 */
                     selectOptionDel();
                     selectOptionDel2();
                     recentSearch();
@@ -2192,6 +2291,7 @@
                     txtAlignLink();
                     _f_select();
                     _f_refresh();
+                    checkItem ();
                 })(jQuery, window, document);
             </script>
             <!-- // [End] 페이지 전용 js -->

@@ -76,7 +76,15 @@ const allMenu = () => {
 
 const navAction = {
     hoverMenu: function () {
-        
+        const gnb = $('.gnb-menu li');
+
+        gnb.mouseover(function(){
+            $(this).find('.menu-depth2').fadeIn('fast');
+        });
+
+        gnb.mouseleave(function(){
+            $(this).find('.menu-depth2').fadeOut('fast');
+        });
 
     }
 }

@@ -32,6 +32,7 @@
     <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev01">일반차량 가격 수정</button>
     <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev02">특가차량 가격 수정</button>
     <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev03">KB인증차량 가격 수정</button>
+    <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev06">KB인증차량 특가 가격 수정</button>
     <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev04">운용리스 CASE</button>
     <button type="button" class="btn-type01 sm pop-btn-js" data-target="#price-rev05">금융리스 CASE</button>
     <!--popup-->
@@ -45,8 +46,14 @@
                     <p class="tit">판매 가격</p>
                     <p class="input-area">
                         <input type="number" value="2430">만원
-                    </p>
+                    </p>                    
                 </div>
+                <!--23030704 수정 : 추가-->
+                <figure class="form-chk special-price-check">
+                    <input type="checkbox" id="specialPriceCheck00" />
+                    <label for="specialPriceCheck00" >특가차량 신청</label>
+                </figure>
+                <!-- //23030704 수정 : 추가-->
                 <div class="sell-price-txt-ballon">
                     <div class="ad-area">
                         <span>AD</span>특가차량으로 광고 노출도를 더욱 높여보세요!
@@ -54,9 +61,12 @@
                     <div class="special-price-car-area">
                         <p class="tit">특가차량 신청</p>
                         <div class="form-box">
-                            <p class="input-area">
-                                <input type="number">만원
+                            <!--23030704 수정 -->
+                            <p class="input-area short disabled">
+                                <input type="number" disabled>만원
+                                
                             </p>
+                            <!--23030704 수정 -->
                             <button type="button" class="btn-type02 sm">신청</button>
                         </div>
                     </div>
@@ -74,44 +84,62 @@
     </div>
     <div class="popup" id="price-rev02">
         <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
-        <h2 class="popup-title">차량 가격 수정</h2>
+        <!--23030704 수정-->
+        <h2 class="popup-title">특가 가격 수정</h2>
+        <!-- //23030704 수정-->
         <div class="popup-body">
             <div class="inner">
                 <div class="sell-price-area">
-                    <p class="tit">판매 가격</p>
-                    <p class="input-area del">
+                    <!--23030704 수정-->
+                    <p class="tit">판매 원가</p>
+                    <p class="input-area dis_inline del">
                         <input type="number" value="2430">만원
                     </p>
+                    <!-- //23030704 수정-->
+
+                    <!--23030704 수정 : 추가-->
+                    <button class="btn-type02">특가취소</button>
+                    <!--23030704 수정 : 추가-->
                 </div>
+
                 <div class="sell-price-txt-ballon">
-                    <div class="ad-area">
+                    <!--23030704 수정 : 삭제-->
+                    <!-- <div class="ad-area">
                         <span>AD</span>특가차량으로 광고 노출도를 더욱 높여보세요!
-                    </div>
+                    </div> -->
+                    <!--23030704 수정 : 삭제-->
                     <div class="special-price-car-area">
-                        <p class="tit">특가차량 신청</p>
+                        <!--23030704 수정 -->
+                        <p class="tit">특가가격 수정</p>
+                        <!--23030704 수정 -->
                         <div class="form-box">
                             <p class="input-area">
                                 <input type="number" value="3350">만원
                             </p>
-                            <button type="button" class="btn-type02 sm">취소</button>
+                            <!--23030704 수정 : 삭제-->
+                            <!-- <button type="button" class="btn-type02 sm">취소</button> -->
+                            <!--23030704 수정 : 삭제-->
                         </div>
                     </div>
                     <ul class="dot-txt">
-                        <li>특가차량테마 구역에 차량이 노출됩니다.</li>
-                        <li>현재 판매금액보다 적은 금액만 입력할 수 있습니다.</li>
+                        <!--23030704 수정 -->
+                        <li>특가차량은 판매원가보다 높은 금액으로 수정할 수 없습니다.</li>
+                        <!--23030704 수정 -->
                     </ul>
                 </div>
             </div>
         </div>
         <div class="popup-btn">
             <button type="button" class="btn-type03 popup-close-btn">취소</button>
-            <button type="button" class="btn-type01">확인</button>
+            <!--230704 수정-->
+            <button type="button" class="btn-type01 fixed-btn">수정</button>
+            <!-- // 230704 수정-->
         </div>
     </div>
     <div class="popup" id="price-rev03">
         <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
         <h2 class="popup-title">차량 가격 수정</h2>
-        <div class="popup-body">
+        <div class="popup-body pop-scroll">
             <div class="inner">
                 <div class="sell-price-area">
                     <p class="tit">현금 판매가</p>
@@ -119,44 +147,71 @@
                         <input type="number" value="2430">만원
                     </p>
                 </div>
-                <div class="sell-price-txt-ballon gray">
-                    <div class="special-price-car-area none-flex">
-                        <p class="tit">월 납입액</p>
-                        <div class="form-box">
-                            <div class="form-radio">
-                                <input type="radio" id="finance1" name="finance" value="finance">
-                                <label for="finance1">표기안함</label>
-                            </div>
-                            <div class="form-radio">
-                                <input type="radio" id="finance2" name="finance" value="finance">
-                                <label for="finance2">인증리스</label>
-                            </div>
-                            <div class="form-radio">
-                                <input type="radio" id="finance3" name="finance" value="finance">
-                                <label for="finance3">인증렌트</label>
-                            </div>
-                        </div>
-                        <ul class="dot-txt">
-                            <li>선수금 30% / 48개월 기준</li>
-                        </ul>
-                    </div> 
+                <!--23030704 수정 : 추가-->
+                <figure class="form-chk special-price-check">
+                    <input type="checkbox" id="specialPriceCheck01" />
+                    <label for="specialPriceCheck01">특가차량 신청</label>
+                </figure>
+                <div class="sell-price-txt-ballon">
+                    <div class="ad-area">
+                        <span>AD</span>특가차량으로 광고 노출도를 더욱 높여보세요!
+                    </div>
                     <div class="special-price-car-area">
-                        <p class="tit">월 납입액</p>
+                        <p class="tit">특가차량 신청</p>
                         <div class="form-box">
-                            <p class="input-area">
-                                <input type="number" value="3350">만원
+                            <p class="input-area short">
+                                <input type="number">만원
+                                
                             </p>
-                        </div>
-                    </div>  
-                    <div class="special-price-car-area">
-                        <p class="tit">금융이용 할인금액</p>
-                        <div class="form-box">
-                            <p class="input-area">
-                                <input type="number" value="3350">만원
-                            </p>
+                            <button type="button" class="btn-type02 sm">신청</button>
                         </div>
                     </div>
+                    <ul class="dot-txt">
+                        <li>특가차량테마 구역에 차량이 노출됩니다.</li>
+                        <li>현재 판매금액보다 적은 금액만 입력할 수 있습니다.</li>
+                    </ul>
                 </div>
+                <!-- //23030704 수정 : 추가-->
+                <!--2300704 수정 : class="sell-price-txt-ballon gray" layout삭제-->
+                <div class="special-price-car-area none-flex">
+                    <!--23030704 수정-->
+                    <p class="tit">금융제공 여부</p>
+                    <!--//23030704 수정-->
+                    <div class="form-box">
+                        <div class="form-radio">
+                            <input type="radio" id="finance1" name="finance" value="finance">
+                            <label for="finance1">표기안함</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="finance2" name="finance" value="finance">
+                            <label for="finance2">인증리스</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="finance3" name="finance" value="finance">
+                            <label for="finance3">인증렌트</label>
+                        </div>
+                    </div>
+                    <ul class="dot-txt">
+                        <li>선수금 30% / 48개월 기준</li>
+                    </ul>
+                </div> 
+                <div class="special-price-car-area">
+                    <p class="tit">월 납입액</p>
+                    <div class="form-box">
+                        <p class="input-area">
+                            <input type="number" value="3350">만원
+                        </p>
+                    </div>
+                </div>  
+                <div class="special-price-car-area">
+                    <p class="tit">금융이용 할인금액</p>
+                    <div class="form-box">
+                        <p class="input-area">
+                            <input type="number" value="3350">만원
+                        </p>
+                    </div>
+                </div>
+                <!-- // 2300704 수정 : class="sell-price-txt-ballon gray" layout삭제-->
             </div>
         </div>
         <div class="popup-btn">
@@ -164,6 +219,79 @@
             <button type="button" class="btn-type01">확인</button>
         </div>
     </div>
+    <!--230704 수정 case06 :  특가 가격 수정 케이스 추가-->
+    <div class="popup" id="price-rev06">
+        <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
+        <h2 class="popup-title">특가 가격 수정</h2>
+        <div class="popup-body pop-scroll">
+            <div class="inner">
+                <div class="sell-price-area">
+                    <p class="tit">판매 원가</p>
+                    <p class="input-area dis_inline del">
+                        <input type="number" value="2430">만원
+                    </p>
+                    <button class="btn-type02">특가취소</button>
+                </div>
+                <div class="sell-price-txt-ballon">
+                    <div class="special-price-car-area">
+                        <p class="tit">특가가격 신청</p>
+                        <div class="form-box">
+                            <p class="input-area">
+                                <input type="number" value="30350">만원
+                                
+                            </p> 
+                        </div>
+                    </div>
+                    <ul class="dot-txt">
+                        <li>특가차량은 판매원가보다 높은 금액으로 수정할 수 없습니다.</li>
+                    </ul>
+                </div>
+                <div class="special-price-car-area none-flex">
+                    <p class="tit">금융제공 여부</p>
+                    <div class="form-box">
+                        <div class="form-radio">
+                            <input type="radio" id="finance1" name="finance" value="finance">
+                            <label for="finance1">표기안함</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="finance2" name="finance" value="finance">
+                            <label for="finance2">인증리스</label>
+                        </div>
+                        <div class="form-radio">
+                            <input type="radio" id="finance3" name="finance" value="finance">
+                            <label for="finance3">인증렌트</label>
+                        </div>
+                    </div>
+                    <ul class="dot-txt">
+                        <li>선수금 30% / 48개월 기준</li>
+                    </ul>
+                </div> 
+                <div class="special-price-car-area">
+                    <p class="tit">월 납입액</p>
+                    <div class="form-box">
+                        <p class="input-area">
+                            <input type="number" value="3350">만원
+                        </p>
+                    </div>
+                </div>  
+                <div class="special-price-car-area">
+                    <p class="tit">금융이용 할인금액</p>
+                    <div class="form-box">
+                        <p class="input-area">
+                            <input type="number" value="3350">만원
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-btn">
+            <button type="button" class="btn-type03 popup-close-btn">취소</button>
+            <!--230704 수정-->
+            <button type="button" class="btn-type01 fixed-btn">수정</button>
+            <!-- // 230704 수정-->
+        </div>
+    </div>
+    <!--230704 수정 case06 :  특가 가격 수정 케이스 추가-->
     <div class="popup" id="price-rev04">
         <a href="javascript:;" class="popup-close-btn close-btn">popup close</a>
         <h2 class="popup-title">차량 가격 수정</h2>
@@ -409,5 +537,124 @@
             <button type="button" class="btn-type01">확인</button>
         </div>
     </div>
+    <div class="confirm-popup" id="special-confirmPopup">
+        <div class="popup sm">
+            <div class="confirm-popup-bg"></div>
+            <div class="popup-body tac">
+                <div class="inner">
+                    특가차량 신청 시 이전 판매금액을<br> 기준으로 신청이 진행됩니다. <br>특가차량을 신청하시겠습니까?
+                </div>
+            </div>
+            <div class="popup-btn">
+                <button type="button" class="btn-type03 popup-close-btn">취소</button>
+                <button type="button" class="btn-type01 popup-confirm-btn">확인</button>
+            </div>
+        </div>
+    </div>
+    <div class="confirm-popup" id="special-confirmPopup2">
+        <div class="popup sm">
+            <div class="confirm-popup-bg"></div>
+            <div class="popup-body tac">
+                <div class="inner">
+                    특가차량 가격 수정 시<br>관리자 승인 후 가격이 변동됩니다.
+                    <ul class="dot-txt">
+                        <li>
+                            시세에서 벗어날 경우 승인이 취소됩니다.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="popup-btn">
+                <button type="button" class="btn-type03 popup-close-btn">취소</button>
+                <button type="button" class="btn-type01 popup-confirm-btn">확인</button>
+            </div>
+        </div>
+    </div>
+    
+    <!--230704 수정 : js 추가-->
+    <!-- [Start] 페이지 전용 js -->
+    <script type="text/javascript">
+        ;(function ($, win, doc, undefined) {
+            const specialPriceCheckBox = $('.special-price-check input');
+            const sellPrice = $('.sell-price-area .input-area');
+            const confirmPopup = $('#special-confirmPopup');
+            const confirmPopup2 = $('#special-confirmPopup2');
+            const specialCancelBtn = sellPrice.next('.btn-type02');
+            const fixedBtn = $('.fixed-btn');
+
+            specialPriceCheckBox.click(function(){
+                const _this = $(this);
+                const specialInput = _this.parent().next().find('.input-area');
+                const sellInput = _this.parent().prev().find('.input-area');
+                confirmPopup.show(0,function(){
+                    $(this).find('.popup-close-btn').click(function(){
+                        $('.popup-bg').show();
+                        $(this).parents('.confirm-popup').hide();
+                        $('html').css('overflow','auto');
+                        _this.prop("checked",false);
+                        specialInput.addClass('disabled');
+                        specialInput.find('input').attr('disabled', true);
+                        sellInput.removeClass('disabled');
+                        sellInput.find('input').attr('disabled', false);
+                    })
+                    $(this).find('.popup-confirm-btn').click(function(){
+                        $(this).parents('.confirm-popup').remove();
+                        _this.prop("checked",true);
+                        specialInput.removeClass('disabled');
+                        specialInput.find('input').attr('disabled', false);
+                        sellInput.addClass('disabled');
+                        sellInput.find('input').attr('disabled', true);
+                    });
+                });
+                
+            });
+
+            specialPriceCheckBox.change(function(){
+                if($(this).is(':checked')){
+                    $(this).prop('checked', true);
+                    $(this).parent().next().find('.input-area').removeClass('disabled');
+                    $(this).parent().next().find('.input-area').find('input').attr('disabled',false);
+                    $(this).parent().prev().find('.input-area').addClass('disabled');
+                    $(this).parent().prev().find('.input-area').find('input').attr('disabled',true);
+                }else{
+                    $(this).prop('checked', false);
+                    $(this).parent().prev().find('.input-area').removeClass('disabled');
+                    $(this).parent().prev().find('.input-area').find('input').attr('disabled',false);
+                    $(this).parent().next().find('.input-area').addClass('disabled');
+                    $(this).parent().next().find('.input-area').find('input').attr('disabled',true);
+                }
+            });
+        
+            specialCancelBtn.click(function(){
+                alert('특가차량을 취소하시겠습니까?');
+            });
+
+            fixedBtn.click(function(){
+                const specialPriceValue = $(this).parents('.popup').find('.sell-price-txt-ballon .input-area input').val();
+                const sellPriceValue = $(this).parents('.popup').find('.sell-price-area .input-area input').val();
+                const popup = $(this).parents('.popup');
+                if(specialPriceValue > sellPriceValue){
+                    alert('특가차량은 판매원가보다 높은 가격으로 변경할 수 없습니다.');
+                }else{
+                    confirmPopup2.show(0,function(){
+                        $(this).find('.popup-close-btn').click(function(){
+                            $('.popup-bg').show();
+                            $('html').css('overflow','auto');
+                            $(this).parents('.confirm-popup').hide();
+                        });
+                        $(this).find('.popup-confirm-btn').click(function(){
+                            $(this).parents('.confirm-popup').hide();
+                            popup.hide();
+                            $('.popup-bg').hide();
+                        })
+                    });
+
+                }
+            });
+        
+        })(jQuery, window, document);
+    </script>
+    <!-- // [End] 페이지 전용 js -->
+    <!-- // 230704 수정 : js 추가-->
 </body>
 </html>

@@ -1,46 +1,63 @@
 @charset "UTF-8";
 
+
+.special-price-check{
+    margin-top:2rem;
+    margin-bottom: .4rem;
+    label{
+        font-weight: $font-weight-bold;
+        font-size: $font-size-normal;
+    }
+}
 .sell-price-area{
     .tit{
-        font-size:2rem;
+        font-size:$font-size-xlarge;
         font-weight: bold;
+    }
+    .input-area + .btn-type02{
+        height:5.6rem;
+        line-height: 5.6rem;
+        vertical-align: middle;
+        margin-top: 2.4rem;
+        width:13rem;
+        font-size:$font-size-large;
     }
     .input-area{
         margin-top:2.4rem;
         border:solid .1rem #e9e9e9;
         background:#faf9f8;
         color:#dfdfdf;
-        font-size:3rem;
+        font-size:2.4rem;
         font-weight: bold;
         text-align: right;
-        height:7.6rem;
+        height:5.6rem;
         padding:0 3rem;
-        line-height: 7.6rem;
+        line-height: 5.6rem;
         border-radius: .4rem;
         position:relative;
+        &.disabled{
+            background:#e9e9e9;
+        }
         &.del{
             input{
                 color:#999;
+                text-decoration: line-through;
             }
-            &:before{
-                content: '';
-                width:10rem;
-                height:.1rem;
-                top:50%;
-                right:9rem;
-                display:block;
-                position:absolute;
-                background:#999;
-            }
+        }
+        &.dis_inline{
+            vertical-align: middle;
+            display:inline-block;
+            width:calc(100% - 14rem);
+            margin-right:.5rem;
         }
         input{
             border:none;
             background:none;
             color:#000;
-            font-size:3.5rem;
+            font-size:2.5rem;
             font-weight: bold;
-            height:7.5rem;
-            line-height: 7.5rem;
+            height:5.6rem;
+            line-height: 5.6rem;
             width:60%;
             text-align: right;
             padding:0;
@@ -111,6 +128,12 @@
     }
 }
 
+.sell-price-txt-ballon + .special-price-car-area{
+    margin-top:3rem;
+    .dot-txt{
+        margin-top:2rem;
+    }
+}
 
 .special-price-car-area{
     display:flex;
@@ -152,7 +175,13 @@
             line-height: 3.6rem;
             text-align: right;
             color:#999;
-            width:18rem;
+            width:30rem;
+            &.disabled{
+                background:#e9e9e9;
+            }
+            &.short{
+                width:18rem;
+            }
             input{
                 text-align: right;
                 border:none;
@@ -179,12 +208,6 @@
             width:11rem !important;
             &:nth-of-type(2n){
                 margin-left:1rem;
-            }
-            .custom-select-selection{
-                background:#fff url("/UIDev/v3/images/icon/down.png") calc(100% - 7px) center no-repeat;
-                background-size:2rem;
-                padding:0 3.4rem 0 1rem;
-                font-size:1.3rem;
             }
         }
         .period{
@@ -400,5 +423,15 @@
 #tab01{
     .btn-type02.sm{
         font-size:$font-size-small;
+    }
+}
+
+#special-confirmPopup2{
+    .dot-txt{
+        margin-top:1rem;
+        font-size:$font-size-normal;
+        li{
+            display:inline-block;
+        }
     }
 }
