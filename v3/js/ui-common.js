@@ -169,6 +169,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "uiModal": () => (/* binding */ uiModal)
 /* harmony export */ });
+/* harmony import */ var _babel_runtime_corejs3_core_js_stable_parse_int__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs3/core-js-stable/parse-int */ "./.yarn/cache/@babel-runtime-corejs3-npm-7.21.5-f07017f763-c349a15675.zip/node_modules/@babel/runtime-corejs3/core-js-stable/parse-int.js");
+/* harmony import */ var _babel_runtime_corejs3_core_js_stable_parse_int__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs3_core_js_stable_parse_int__WEBPACK_IMPORTED_MODULE_0__);
+
 
 
 var uiModal = function uiModal() {
@@ -195,6 +198,12 @@ var uiModal = function uiModal() {
       'overflow': 'hidden'
     });
   }
+  var winH = $(window).height();
+  var winW = $(window).width();
+  $('.popup').css({
+    'top': _babel_runtime_corejs3_core_js_stable_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(winH / 2 - $('.popup').height() / 2),
+    'left': _babel_runtime_corejs3_core_js_stable_parse_int__WEBPACK_IMPORTED_MODULE_0___default()(winW / 2 - $('.popup').width() / 2)
+  });
 };
 
 
@@ -480,6 +489,20 @@ module.exports = function (it) {
   var own = it.find;
   return it === ArrayPrototype || (isPrototypeOf(ArrayPrototype, it) && own === ArrayPrototype.find) ? method : own;
 };
+
+
+/***/ }),
+
+/***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/es/parse-int.js":
+/*!******************************************************************************************************!*\
+  !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/es/parse-int.js ***!
+  \******************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+__webpack_require__(/*! ../modules/es.parse-int */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/modules/es.parse-int.js");
+var path = __webpack_require__(/*! ../internals/path */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/path.js");
+
+module.exports = path.parseInt;
 
 
 /***/ }),
@@ -2741,6 +2764,38 @@ module.exports = function (argument, $default) {
 
 /***/ }),
 
+/***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/number-parse-int.js":
+/*!********************************************************************************************************************!*\
+  !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/number-parse-int.js ***!
+  \********************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var global = __webpack_require__(/*! ../internals/global */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/global.js");
+var fails = __webpack_require__(/*! ../internals/fails */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/fails.js");
+var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/function-uncurry-this.js");
+var toString = __webpack_require__(/*! ../internals/to-string */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/to-string.js");
+var trim = (__webpack_require__(/*! ../internals/string-trim */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/string-trim.js").trim);
+var whitespaces = __webpack_require__(/*! ../internals/whitespaces */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/whitespaces.js");
+
+var $parseInt = global.parseInt;
+var Symbol = global.Symbol;
+var ITERATOR = Symbol && Symbol.iterator;
+var hex = /^[+-]?0x/i;
+var exec = uncurryThis(hex.exec);
+var FORCED = $parseInt(whitespaces + '08') !== 8 || $parseInt(whitespaces + '0x16') !== 22
+  // MS Edge 18- broken with boxed symbols
+  || (ITERATOR && !fails(function () { $parseInt(Object(ITERATOR)); }));
+
+// `parseInt` method
+// https://tc39.es/ecma262/#sec-parseint-string-radix
+module.exports = FORCED ? function parseInt(string, radix) {
+  var S = trim(toString(string));
+  return $parseInt(S, (radix >>> 0) || (exec(hex, S) ? 16 : 10));
+} : $parseInt;
+
+
+/***/ }),
+
 /***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/object-create.js":
 /*!*****************************************************************************************************************!*\
   !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/object-create.js ***!
@@ -3582,6 +3637,46 @@ module.exports = {
 
 /***/ }),
 
+/***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/string-trim.js":
+/*!***************************************************************************************************************!*\
+  !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/string-trim.js ***!
+  \***************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var uncurryThis = __webpack_require__(/*! ../internals/function-uncurry-this */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/function-uncurry-this.js");
+var requireObjectCoercible = __webpack_require__(/*! ../internals/require-object-coercible */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/require-object-coercible.js");
+var toString = __webpack_require__(/*! ../internals/to-string */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/to-string.js");
+var whitespaces = __webpack_require__(/*! ../internals/whitespaces */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/whitespaces.js");
+
+var replace = uncurryThis(''.replace);
+var ltrim = RegExp('^[' + whitespaces + ']+');
+var rtrim = RegExp('(^|[^' + whitespaces + '])[' + whitespaces + ']+$');
+
+// `String.prototype.{ trim, trimStart, trimEnd, trimLeft, trimRight }` methods implementation
+var createMethod = function (TYPE) {
+  return function ($this) {
+    var string = toString(requireObjectCoercible($this));
+    if (TYPE & 1) string = replace(string, ltrim, '');
+    if (TYPE & 2) string = replace(string, rtrim, '$1');
+    return string;
+  };
+};
+
+module.exports = {
+  // `String.prototype.{ trimLeft, trimStart }` methods
+  // https://tc39.es/ecma262/#sec-string.prototype.trimstart
+  start: createMethod(1),
+  // `String.prototype.{ trimRight, trimEnd }` methods
+  // https://tc39.es/ecma262/#sec-string.prototype.trimend
+  end: createMethod(2),
+  // `String.prototype.trim` method
+  // https://tc39.es/ecma262/#sec-string.prototype.trim
+  trim: createMethod(3)
+};
+
+
+/***/ }),
+
 /***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/symbol-constructor-detection.js":
 /*!********************************************************************************************************************************!*\
   !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/symbol-constructor-detection.js ***!
@@ -4058,6 +4153,19 @@ module.exports = function (name) {
 
 /***/ }),
 
+/***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/whitespaces.js":
+/*!***************************************************************************************************************!*\
+  !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/whitespaces.js ***!
+  \***************************************************************************************************************/
+/***/ ((module) => {
+
+// a string of all valid unicode whitespaces
+module.exports = '\u0009\u000A\u000B\u000C\u000D\u0020\u00A0\u1680\u2000\u2001\u2002' +
+  '\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028\u2029\uFEFF';
+
+
+/***/ }),
+
 /***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/modules/es.aggregate-error.constructor.js":
 /*!********************************************************************************************************************************!*\
   !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/modules/es.aggregate-error.constructor.js ***!
@@ -4245,6 +4353,24 @@ if (!IS_PURE && DESCRIPTORS && values.name !== 'values') try {
 /***/ (() => {
 
 // empty
+
+
+/***/ }),
+
+/***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/modules/es.parse-int.js":
+/*!**************************************************************************************************************!*\
+  !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/modules/es.parse-int.js ***!
+  \**************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+var $ = __webpack_require__(/*! ../internals/export */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/export.js");
+var $parseInt = __webpack_require__(/*! ../internals/number-parse-int */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/internals/number-parse-int.js");
+
+// `parseInt` method
+// https://tc39.es/ecma262/#sec-parseint-string-radix
+$({ global: true, forced: parseInt != $parseInt }, {
+  parseInt: $parseInt
+});
 
 
 /***/ }),
@@ -4995,6 +5121,19 @@ module.exports = parent;
 
 /***/ }),
 
+/***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/stable/parse-int.js":
+/*!**********************************************************************************************************!*\
+  !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/stable/parse-int.js ***!
+  \**********************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var parent = __webpack_require__(/*! ../es/parse-int */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/es/parse-int.js");
+
+module.exports = parent;
+
+
+/***/ }),
+
 /***/ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/stable/promise/index.js":
 /*!**************************************************************************************************************!*\
   !*** ./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/stable/promise/index.js ***!
@@ -5016,6 +5155,16 @@ module.exports = parent;
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__(/*! core-js-pure/stable/instance/find */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/stable/instance/find.js");
+
+/***/ }),
+
+/***/ "./.yarn/cache/@babel-runtime-corejs3-npm-7.21.5-f07017f763-c349a15675.zip/node_modules/@babel/runtime-corejs3/core-js-stable/parse-int.js":
+/*!*************************************************************************************************************************************************!*\
+  !*** ./.yarn/cache/@babel-runtime-corejs3-npm-7.21.5-f07017f763-c349a15675.zip/node_modules/@babel/runtime-corejs3/core-js-stable/parse-int.js ***!
+  \*************************************************************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__(/*! core-js-pure/stable/parse-int */ "./.yarn/unplugged/core-js-pure-npm-3.30.2-15bcabea6c/node_modules/core-js-pure/stable/parse-int.js");
 
 /***/ }),
 

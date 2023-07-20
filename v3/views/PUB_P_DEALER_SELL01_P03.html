@@ -37,9 +37,10 @@
         </h2>
         <div class="popup-body">
             <!--// 스크롤 필요시 inner에 .pop-scroll 추가-->
+            <!-- 230711 옵션정보 변경 -->
             <div class="inner pop-scroll">
                 <ul class="form-list3">
-                    <li class="display-flex-start-area">
+                    <li>
                         <div class="tit-area">외장 (<em>6</em>)</div>
                         <ul class="box-chk-list2">
                             <li>
@@ -47,16 +48,17 @@
                                     <input type="checkbox" id="chk01" name="dealer-option1" />
                                     <label for="chk01">썬루프</label>
                                 </figure> 
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk01-1" name="dealer-option1" />
-                                    <label for="chk01-1">일반</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk01-2" name="dealer-option1" />
-                                    <label for="chk01-2">파노라마</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-radio">
+                                        <input type="radio" id="chk01-1" name="dealer-option1" />
+                                        <label for="chk01-1">일반</label>
+                                    </figure>
+                                    <figure class="form-radio">
+                                        <input type="radio" id="chk01-2" name="dealer-option1" />
+                                        <label for="chk01-2">파노라마</label>
+                                    </figure>
+                                </div>
+                                
                             </li>
                             <li>
                                 <figure class="form-chk">
@@ -126,7 +128,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="display-flex-start-area">
+                    <li>
                         <div class="tit-area">내장 (<em>6</em>)</div>
                         <ul class="box-chk-list2">
                             <li>
@@ -134,32 +136,32 @@
                                     <input type="checkbox" id="chk13" name="dealer-option2" />
                                     <label for="chk13">열선시트</label>
                                 </figure>
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk14" name="dealer-option2" />
-                                    <label for="chk14">앞좌석</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk15" name="dealer-option2" />
-                                    <label for="chk15">뒷좌석</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk14" name="dealer-option2" />
+                                        <label for="chk14">앞좌석</label>
+                                    </figure>
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk15" name="dealer-option2" />
+                                        <label for="chk15">뒷좌석</label>
+                                    </figure>
+                                </div>
                             </li>
                             <li>
                                 <figure class="form-chk">
                                     <input type="checkbox" id="chk16" name="dealer-option2" />
                                     <label for="chk16">통풍시트</label>
                                 </figure>
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk17" name="dealer-option2" />
-                                    <label for="chk17">운전석</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk18" name="dealer-option2" />
-                                    <label for="chk18">동승석</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk17" name="dealer-option2" />
+                                        <label for="chk17">운전석</label>
+                                    </figure>
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk18" name="dealer-option2" />
+                                        <label for="chk18">동승석</label>
+                                    </figure>
+                                </div>
                             </li>
                             <li>
                                 <figure class="form-chk">
@@ -184,16 +186,16 @@
                                     <input type="checkbox" id="chk22" name="dealer-option2" />
                                     <label for="chk22">전동시트</label>
                                 </figure>
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk23" name="dealer-option2" />
-                                    <label for="chk23">운전석</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk24" name="dealer-option2" />
-                                    <label for="chk24">동승석</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk23" name="dealer-option2" />
+                                        <label for="chk23">운전석</label>
+                                    </figure>
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk24" name="dealer-option2" />
+                                        <label for="chk24">동승석</label>
+                                    </figure>
+                                </div>
                             </li>
                             <li>
                                 <figure class="form-chk">
@@ -206,16 +208,16 @@
                                     <input type="checkbox" id="chk26" name="dealer-option2" />
                                     <label for="chk26">메모리시트</label>
                                 </figure>
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk26-1" name="dealer-option2" />
-                                    <label for="chk26-1">운전석</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk26-2" name="dealer-option2" />
-                                    <label for="chk26-2">동승석</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk26-1" name="dealer-option2" />
+                                        <label for="chk26-1">운전석</label>
+                                    </figure>
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk26-2" name="dealer-option2" />
+                                        <label for="chk26-2">동승석</label>
+                                    </figure>
+                                </div>
                             </li>
                             <li>
                                 <figure class="form-chk">
@@ -267,7 +269,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="display-flex-start-area">
+                    <li>
                         <div class="tit-area">안전 (<em>6</em>)</div>
                         <ul class="box-chk-list2">
                             <li>
@@ -275,16 +277,16 @@
                                     <input type="checkbox" id="chk35" name="dealer-option3" />
                                     <label for="chk35">주차감지센서</label>
                                 </figure>
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk35-1" name="dealer-option3" />
-                                    <label for="chk35-1">전방</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk35-2" name="dealer-option3" />
-                                    <label for="chk35-2">후방</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk35-1" name="dealer-option3" />
+                                        <label for="chk35-1">전방</label>
+                                    </figure>
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk35-2" name="dealer-option3" />
+                                        <label for="chk35-2">후방</label>
+                                    </figure>
+                                </div>
                             </li>
                             <li>
                                 <figure class="form-chk">
@@ -297,16 +299,16 @@
                                     <input type="checkbox" id="chk37" name="dealer-option3" />
                                     <label for="chk37">에어백</label>
                                 </figure>
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk37-1" name="dealer-option3" />
-                                    <label for="chk37-1">운전석</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk37-2" name="dealer-option3" />
-                                    <label for="chk37-2">동승석</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk37-1" name="dealer-option3" />
+                                        <label for="chk37-1">운전석</label>
+                                    </figure>
+                                    <figure class="form-chk">
+                                        <input type="checkbox" id="chk37-2" name="dealer-option3" />
+                                        <label for="chk37-2">동승석</label>
+                                    </figure>
+                                </div>
                             </li>
                             <li>
                                 <figure class="form-chk">
@@ -388,7 +390,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="display-flex-start-area">
+                    <li>
                         <div class="tit-area">편의 (<em>6</em>)</div>
                         <ul class="box-chk-list2">
                             <li>
@@ -489,24 +491,24 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="display-flex-start-area">
-                        <div class="tit-area">멀티<br>미디어 (<em>6</em>)</div>
+                    <li>
+                        <div class="tit-area">멀티미디어 (<em>6</em>)</div>
                         <ul class="box-chk-list2">
                             <li>
                                 <figure class="form-chk">
                                     <input type="checkbox" id="chk67" name="dealer-option5" />
                                     <label for="chk67">내비게이션</label>
                                 </figure>
-                                <span class="form-gap">(</span>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk68" name="dealer-option5" />
-                                    <label for="chk68">운전석</label>
-                                </figure>
-                                <figure class="form-chk">
-                                    <input type="checkbox" id="chk69" name="dealer-option5" />
-                                    <label for="chk69">동승석</label>
-                                </figure>
-                                <span class="form-gap">)</span>
+                                <div class="form-sub-box">
+                                    <figure class="form-radio">
+                                        <input type="radio" id="chk68" name="dealer-option5" />
+                                        <label for="chk68">순정</label>
+                                    </figure>
+                                    <figure class="form-radio">
+                                        <input type="radio" id="chk69" name="dealer-option5" />
+                                        <label for="chk69">비순정</label>
+                                    </figure>
+                                </div>
                             </li>
                             <li>
                                 <figure class="form-chk">
@@ -578,6 +580,7 @@
                     </li>
                 </ul>
             </div>
+            <!--// 230711 옵션정보 변경 -->
         </div>
         <!-- <div class="popup-btn">
             <button type="button" class="btn-type03 popup-close-btn">삭제</button>

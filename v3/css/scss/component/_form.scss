@@ -26,7 +26,8 @@
         }
         &:checked{
             &+label::before{
-                background-image: url(/UIDev/v3/images/icon/icon-ck-on.png);
+                background-color: #FF5D16;
+                background-image: url(/UIDev/v3/images/icon/icon-ck-white-on.png);
                 border:solid .1rem #FF5D16;
             }
         }
@@ -49,6 +50,7 @@
                 border:1px solid #ddd;
                 background-image: url(/UIDev/v3/images/icon/icon-ck-off.png);
                 background-repeat: no-repeat;
+                background-color: white;
                 background-position: .3rem .4rem;
                 
                 width:1.8rem;
@@ -218,6 +220,7 @@
     & + label{
         padding-left:2.3rem;
         position:relative;
+        background: white;
         &::before{
             width:1.8rem;
             height:1.8rem;
@@ -237,7 +240,7 @@
             left:.5rem;
             top:50%;
             transform: translateY(-50%);
-            background:#ddd;
+            background:#fff;
             border-radius: 100%;
         }
     }

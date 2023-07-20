@@ -733,6 +733,7 @@ body {
   padding-top: 0.4rem;
 }
 .car-search-result-table .ad-ing {
+  color: #757575;
   font-size: 1.3rem;
   text-align: left;
   margin-bottom: 0.5rem;
@@ -2467,7 +2468,8 @@ button.disabled {
   border: solid 0.1rem #ddd;
 }
 .form-chk input[type=checkbox]:checked + label::before {
-  background-image: url(/UIDev/v3/images/icon/icon-ck-on.png);
+  background-color: #FF5D16;
+  background-image: url(/UIDev/v3/images/icon/icon-ck-white-on.png);
   border: solid 0.1rem #FF5D16;
 }
 .form-chk input[type=checkbox] + label {
@@ -2492,6 +2494,7 @@ button.disabled {
   border: 1px solid #ddd;
   background-image: url(/UIDev/v3/images/icon/icon-ck-off.png);
   background-repeat: no-repeat;
+  background-color: white;
   background-position: 0.3rem 0.4rem;
   width: 1.8rem;
   height: 1.8rem;
@@ -2660,6 +2663,7 @@ button.disabled {
 .form-radio input[type=radio] + label {
   padding-left: 2.3rem;
   position: relative;
+  background: white;
 }
 .form-radio input[type=radio] + label::before {
   width: 1.8rem;
@@ -2680,7 +2684,7 @@ button.disabled {
   left: 0.5rem;
   top: 50%;
   transform: translateY(-50%);
-  background: #ddd;
+  background: #fff;
   border-radius: 100%;
 }
 
@@ -2906,9 +2910,6 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   position: fixed;
   width: 56.2rem;
   background: #fff;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
   z-index: 10;
   display: none;
 }
@@ -2936,7 +2937,7 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
 }
 .popup .popup-title {
   position: relative;
-  padding: 4rem 4rem 4.5rem 4rem;
+  padding: 4rem;
   font-size: 2rem;
   font-weight: 400;
 }
@@ -2945,27 +2946,27 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   font-weight: 700;
   text-align: center;
 }
+.popup .txt-guide {
+  position: absolute;
+  left: 4rem;
+  bottom: 1rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+.popup .txt-guide::after {
+  content: "";
+  display: inline-block;
+  width: 5.4rem;
+  height: 0.8rem;
+  margin-left: 0.8rem;
+  background-color: #FFCC00;
+}
 .popup .popup-sub-title {
   position: absolute;
   left: 4rem;
   bottom: 1.6rem;
   font-size: 1.3rem;
   font-weight: 500;
-}
-.popup .txt-guide {
-  position: absolute;
-  right: 8rem;
-  top: 4.1rem;
-  display: block;
-  font-size: 1.3rem;
-}
-.popup .txt-guide::before {
-  content: "";
-  display: inline-block;
-  width: 5.4rem;
-  height: 0.8rem;
-  margin-right: 0.8rem;
-  background-color: #FFCC00;
 }
 .popup .popup-body {
   padding: 0 4rem 4rem 4rem;
@@ -3386,14 +3387,17 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   padding-top: 0;
 }
 
-.form-list3 > li {
-  padding-top: 3.3rem;
+.form-list3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 0.1rem solid #E9E9E9;
+  padding-top: 3rem;
 }
-.form-list3 > li:first-child {
-  padding-top: 0;
+.form-list3 > li {
+  width: 20%;
 }
 .form-list3 > li .tit-area {
-  width: 7.8rem;
   font-weight: 700;
 }
 
@@ -3954,36 +3958,48 @@ input[type=number]::-webkit-outer-spin-button, ::-webkit-inner-spin-button {
   font-weight: 700;
 }
 
-.box-chk-list2 {
-  display: flex;
-  flex-flow: wrap;
-  justify-content: flex-start;
-  align-items: self-start;
-  width: 100%;
-  margin-top: -0.3rem;
-}
-.box-chk-list2 > li:nth-child(5n+0) {
-  width: 16%;
-}
 .box-chk-list2 > li {
-  width: 21%;
-  padding: 0.3em 0;
+  padding: 0.6em 0;
 }
 .box-chk-list2 > li .form-chk {
   display: inline-block;
   letter-spacing: -0.2rem;
 }
-.box-chk-list2 > li .form-chk + .form-chk {
-  margin-left: 0.5rem;
+.box-chk-list2 > li:first-child {
+  padding-top: 2rem;
 }
 .box-chk-list2 > .form-chk2 {
   padding: 0.8rem 0;
   display: inline-block;
 }
 
-.form-gap {
+.form-sub-box {
+  position: relative;
+  padding: 2rem 0 0 2.6rem;
+}
+.form-sub-box::after {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  top: -0.1rem;
+  width: 0.1rem;
+  height: 3rem;
+  background-color: #E9E9E9;
+}
+.form-sub-box::before {
+  content: "";
+  position: absolute;
+  left: 0.8rem;
+  top: 2.8rem;
+  width: 1.3rem;
+  height: 0.1rem;
+  background-color: #E9E9E9;
+}
+.form-sub-box .form-radio, .form-sub-box .form-chk {
   display: inline-block;
-  padding: 0 0.1rem;
+}
+.form-sub-box figure + figure {
+  margin-left: 1rem;
 }
 
 .gap-input {
@@ -4378,7 +4394,7 @@ span.point-push::after {
 }
 .layer-item .layer-option .list-tit {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 700;
 }
 .layer-item .layer-option .list-tit-s {
   color: #666;
@@ -4386,7 +4402,7 @@ span.point-push::after {
   font-weight: 400;
 }
 .layer-item .layer-option .list-cont {
-  margin-top: 2.4rem;
+  margin-top: 4rem;
 }
 
 .favorites-item {

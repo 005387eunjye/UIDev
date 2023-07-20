@@ -1,5 +1,4 @@
 'use strict';
-
 const uiModal = () => {
     $('.pop-btn-js').click(function(){
         //alert();
@@ -20,5 +19,12 @@ const uiModal = () => {
         $('.popup-bg').show();
         $('html').css({'overflow': 'hidden'});
     }
+
+    const winH = $(window).height();
+    const winW = $(window).width();
+    $('.popup').css({
+        'top': parseInt((winH / 2) - ($('.popup').height() / 2)),
+        'left': parseInt((winW / 2) - ($('.popup').width() / 2)),
+    });
 } ;
 export {uiModal};
